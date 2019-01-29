@@ -1,6 +1,6 @@
 global class DummyBatch implements Database.Batchable<sObject>,Database.Stateful  {
     
-	/*test*/
+	/*testui*/
     private Set<Id> setContactIdsParam = new Set<Id>();
     private map<Id,Id> parentToChildMap = new Map<Id,Id>();
     public DummyBatch(Set<Id> conIdParam) {
