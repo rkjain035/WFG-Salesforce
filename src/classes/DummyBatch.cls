@@ -8,7 +8,7 @@ global class DummyBatch implements Database.Batchable<sObject>,Database.Stateful
     
     global Database.QueryLocator start(Database.BatchableContext bc)
     {
-        for(Contact c : [select id,reportsToId from Contact where id in :setContactIdsParam])
+        for(Contact c : [select id,reportsToId,LastName from Contact where id in :setContactIdsParam])
         {
             parentToChildMap.put(c.ReportsToId, c.Id);
         }
