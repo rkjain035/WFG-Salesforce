@@ -6,7 +6,7 @@ global class DummyBatch implements Database.Batchable<sObject>,Database.Stateful
     public DummyBatch(Set<Id> conIdParam) {
         setContactIdsParam.addAll(conIdParam); 
     }
-    // added by hampesh
+    // added by hampesh90  
     global Database.QueryLocator start(Database.BatchableContext bc)
     {
         for(Contact c : [select id,reportsToId,LastName from Contact where id in :setContactIdsParam])
