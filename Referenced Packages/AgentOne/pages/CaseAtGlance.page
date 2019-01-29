@@ -1,0 +1,279 @@
+<apex:page cache="false" standardController="AgentOne__InsuranceCase__c"  extensions="AgentOne.CaseAtGlanceController" standardStylesheets="false" docType="html-5.0" id="headerPage" applybodyTag="false" tabStyle="AgentOne__InsuranceCase__c">
+
+  <html xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <head>
+    <style>
+
+    .aLink {
+      color: #1589ee;
+    }
+
+    .aLink:hover {
+      cursor: pointer;
+      text-decoration: underline;
+    }
+
+
+    </style>
+
+    <apex:includeScript value="/support/console/36.0/integration.js"/>
+
+      <script type="text/javascript">
+        // this session Id is used by the streaming API to update information
+        var sessionId = '{!JSENCODE($Api.Session_ID)}';
+        var uiTheme = '{!$User.UIThemeDisplayed}';
+
+      function navigateToRecord(recordId, consoleTabName, controlClicked) {
+        // var isSF1 =  ( (typeof sforce != 'undefined') && (sforce != null) && (sforce.one != null));
+        var isSF1 = (uiTheme === 'Theme4t')
+           // mobile theme is Theme4t
+          if (isSF1) {
+            sforce.one.navigateToSObject(recordId);
+
+          } else {
+              // Adds check for console apps
+              if (sforce.console.isInConsole()) {
+                  // update inside the existing subtab
+                             sforce.console.getEnclosingTabId( function (enclosingTabInfo) {
+                              if (consoleTabName == "") {
+                                sforce.console.closeTab(enclosingTabInfo.id);
+                              } else {
+                                sforce.console.getEnclosingPrimaryTabId(function (primaryTabInfo) {
+                                    sforce.console.openSubtab(primaryTabInfo.id,  '/'+ recordId, true, consoleTabName, enclosingTabInfo.id);
+                                });
+                              }
+                           });
+              } else {
+
+                // here we need to check if they click on CTRL
+                if (controlClicked) {
+                  window.open("/" + recordId);
+                } else {
+                  window.parent.location = "/" + recordId;
+                }
+
+              }
+          }
+
+          return false;
+
+	};
+
+
+      </script>
+
+      <script src="{!URLFOR($Resource.svg4everybody_zip, 'svg4everybody.legacy.js')}"></script>
+      <script>svg4everybody(); </script>
+
+      <apex:includeScript value="{!URLFOR($Resource.AgentOne__AgentOne, '/jquery/jquery-1.10.2.js')}" />
+      <c:ScriptsComponent />
+      <apex:includeScript value="{!URLFOR($Resource.AgentOne__AngularJS)}" />
+      <apex:includeScript value="{!URLFOR($Resource.AgentOne__AgentOne,'/js/custom/ao.casephasecomponent.js')}"/>
+
+      <apex:stylesheet value="{!URLFOR($Resource.AgentOne__SLDS, 'assets/styles/salesforce-lightning-design-system-vf.min.css')}" />
+
+    </head>
+
+    <apex:form >
+      <!-- REQUIRED SLDS WRAPPER -->
+      <div class="agentone">
+      <div class="slds" >
+
+        <!-- MAIN SECTION -->
+        <main class="slds-box slds-box slds-theme--shade">
+
+          <apex:outputPanel rendered="{!displayButtons}" >
+            <!-- TOP SIMPLE GRID -->
+             <section class="slds-clearfix slds-theme--shade">
+
+              <!-- GRID COL -->
+              <apex:outputPanel rendered="!!isLE">
+                <div class="slds-float--left">
+                  <h1 id="typeOfSearchLabel" class="slds-text-heading--medium">At a Glance</h1>
+                </div>
+              </apex:outputPanel>
+
+
+              <!-- GRID COL  - APPLICATION BUTTONS -->
+
+              <section class="slds-col slds-float--right">
+                <!--  Parent container will control whether this component is displayed or not  -->
+                <c:CaseButtons entityId="{!AgentOne__InsuranceCase__c.Id}" entityName="InsuranceCase" source="InsuranceCase"></c:CaseButtons>
+              </section>
+
+              <!-- / GRID COL -->
+            </section>
+            <!-- / LAYOUT GRID -->
+          </apex:outputPanel>
+
+          <apex:outputPanel rendered="{!!isLE}">
+          <!-- This is the start of the information section -->
+          <apex:outputPanel styleClass="slds-col slds-size--1-of-1 {!IF(displayButtons, 'slds-m-top--small', '')}" layout="block" id="panTable">
+
+      
+          <apex:outputPanel rendered="{!!loadOldChevron}" >
+
+          <div class="slds-grid slds-has-flexi-truncate">
+          <div class="slds-col slds-size--1-of-6">
+             <div class="slds-form-element slds-has-flexi-truncate">
+                  <span class="slds-form-element__label slds-truncate">{!$ObjectType.InsuranceCase__c.Fields.Contact__c.Label}</span>
+                  <div class="slds-form-element__control slds-truncate">
+
+                    <span title="{!iCase.Contact__r.name}" class="aLink"
+                      onclick="navigateToRecord('{!JSENCODE(iCase.Contact__c)}','', event.ctrlKey);">{!iCase.Contact__r.name}</span>
+
+
+
+                  </div>
+                </div>
+          </div>
+          <div class="slds-col slds-size--1-of-6">
+             <div class="slds-form-element slds-has-flexi-truncate">
+                  <span class="slds-form-element__label slds-truncate">{!$ObjectType.InsuranceCase__c.Fields.Status__c.Label}</span>
+                  <div class="slds-form-element__control slds-truncate">
+                   <span class="slds-form_element__static slds-truncate">{!iCase.Status__c}</span></div>
+              </div>
+          </div>
+
+          <div class="slds-col slds-size--1-of-6">
+            <div class="slds-form-element slds-has-flexi-truncate">
+                  <span class="slds-form-element__label slds-truncate">{!$ObjectType.InsuranceCase__c.Fields.CoverageAmount__c.Label}</span>
+                  <div class="slds-form-element__control slds-truncate">
+                     <apex:outputField value="{!iCase.AgentOne__CoverageAmount__c}" styleClass="mlsx plsx" id="caseAmt"/></div>
+                </div>
+            </div>
+
+          <div class="slds-col slds-size--1-of-6">
+              <div class="slds-form-element slds-has-flexi-truncate">
+                  <span class="slds-form-element__label slds-truncate">{!$ObjectType.InsuranceCase__c.Fields.Product_Name__c.Label}</span>
+                  <div class="slds-form-element__control slds-truncate">
+                     <apex:outputPanel rendered="{!displayProductHyperlink}">
+                      <span class="aLink" title="{!iCase.AgentOne__Product_Name__c}" onclick="navigateToRecord('{!JSENCODE(iCase.InsuranceProduct__c)}', '{!JSENCODE(iCase.Product_Name__c)}', event.ctrlKey);">{!iCase.AgentOne__Product_Name_Formula__c}</span>&#160;
+                     </apex:outputPanel>
+                     <apex:outputField rendered="{!!displayProductHyperlink}"  value="{!iCase.AgentOne__Product_Name_Formula__c}"  id="caseProduct"/>
+                  </div>
+                </div>
+          </div>
+
+          <div class="slds-col slds-size--1-of-6">
+              <div class="slds-form-element slds-has-flexi-truncate">
+                  <span class="slds-form-element__label slds-truncate">{!$ObjectType.InsuranceCase__c.Fields.PolicyNumber__c.Label}</span>
+                  <div class="slds-form-element__control slds-truncate">
+                    <apex:outputField value="{!iCase.AgentOne__PolicyNumber__c}" id="policyNumber"/>
+                  </div>
+                </div>
+          </div>
+
+          
+          <div class="slds-col slds-size--1-of-6">
+            <div class="slds-form-element slds-has-flexi-truncate">
+                <span class="slds-form-element__label slds-truncate"></span>
+                <div class="slds-form-element__control slds-truncate">
+                  <apex:outputField value="{!iCase.AgentOne__Tool_Indicator__c}" id="toolIndicator"/>
+                </div>
+              </div>
+        </div>
+
+
+        </div>
+      </apex:outputPanel>
+      <apex:outputPanel rendered="{!loadOldChevron}" >
+
+
+
+<table>
+
+              <tr>
+
+              <td width="16.6%" class="slds-text-align--left">
+                <div class="slds-form-element slds-has-flexi-truncate">
+                  <label class="slds-form-element__label slds-truncate" for="col1">{!$ObjectType.InsuranceCase__c.Fields.Contact__c.Label}</label>
+                  <div class="slds-form-element__control slds-truncate">
+                    <span class="aLink" title="{!iCase.Contact__r.name}"
+                    onclick="navigateToRecord('{!JSENCODE(iCase.Contact__c)}', '', event.ctrlKey);">{!iCase.Contact__r.name}</span>
+                  </div>
+                </div>
+              </td>
+
+              <td width="16.6%" class="slds-text-align--left">
+                <div class="slds-form-element slds-has-flexi-truncate">
+                  <label class="slds-form-element__label slds-truncate" for="col2">{!$ObjectType.InsuranceCase__c.Fields.Status__c.Label}</label>
+                  <div class="slds-form-element__control slds-truncate">{!iCase.Status__c}</div>
+                </div>
+              </td>
+
+              <td width="16.6%" class="slds-text-align--left">
+                <div class="slds-form-element slds-has-flexi-truncate">
+                  <label class="slds-form-element__label slds-truncate" for="col3">{!$ObjectType.InsuranceCase__c.Fields.CoverageAmount__c.Label}</label>
+                  <div class="slds-form-element__control slds-truncate">
+                    <apex:outputField value="{!iCase.AgentOne__CoverageAmount__c}" styleClass="mlsx plsx" id="caseAmtIE"/>
+                  </div>
+                </div>
+              </td>
+
+        <!--  &nbps; only works in pure HTML - can use &#160; hexadecimal notation instead -->
+              <td width="16.6%" class="slds-text-align--left">
+                <div class="slds-form-element slds-has-flexi-truncate">
+                  <label class="slds-form-element__label slds-truncate" for="col4">{!$ObjectType.InsuranceCase__c.Fields.Product_Name__c.Label}</label>
+                  <div class="slds-form-element__control slds-truncate">
+                     <apex:outputPanel rendered="{!displayProductHyperlink}">
+                     <span class="aLink" title="{!iCase.AgentOne__Product_Name__c}"
+                      onclick="navigateToRecord('{!JSENCODE(iCase.InsuranceProduct__c)}', '{!JSENCODE(iCase.Product_Name__c)}', event.ctrlKey);">{!iCase.AgentOne__Product_Name__c}</span>&#160;
+                     </apex:outputPanel>
+                     <apex:outputField rendered="{!!displayProductHyperlink}"  value="{!iCase.AgentOne__Product_Name__c}"  id="caseProductIE"/>
+                  </div>
+                </div>
+              </td>
+
+              <td width="16.6%" class="slds-text-align--left">
+                <div class="slds-form-element slds-has-flexi-truncate">
+                  <label class="slds-form-element__label slds-truncate" for="col5">{!$ObjectType.InsuranceCase__c.Fields.PolicyNumber__c.Label}</label>
+                  <div class="slds-form-element__control slds-truncate">
+                    <apex:outputField value="{!iCase.AgentOne__PolicyNumber__c}"  id="policyNumberIE"/>
+                  </div>
+                </div>
+              </td>
+
+              <td width="16.6%" class="slds-text-align--left">
+                <div class="slds-form-element slds-has-flexi-truncate">
+                  <label class="slds-form-element__label slds-truncate" for="col6"></label>
+                  <div class="slds-form-element__control slds-truncate">
+                    <apex:outputField value="{!iCase.AgentOne__Tool_Indicator__c}"  id="toolIndicatorIE"/>
+                  </div>
+                </div>
+              </td>
+
+
+                </tr>
+            </table>
+          </apex:outputPanel>
+          </apex:outputPanel>
+
+
+          </apex:outputPanel>
+
+
+        </main>
+        <!-- MAIN End -->
+        <apex:outputPanel id="panPhase">
+          	<c:CasePhase casePhasesFileName="{!iCase.AgentOne__PhaseImageFileName__c}" loadOldChevron="{!loadOldChevron}"></c:CasePhase>
+        </apex:outputPanel>
+      </div>
+      </div>
+      <!-- END REQUIRED SLDS WRAPPER -->
+      <apex:outputPanel layout="block" rendered="{!!displayButtons}">
+        <br></br>
+      </apex:outputPanel>
+
+      <apex:outputpanel id="dummyRerenderSection"/>
+      <apex:actionFunction name="createPushTopic" action="{!createPushTopic}" rerender="dummyRerenderSection"/>
+      <apex:actionFunction name="show" reRender="panPhase,panTable" action="{!fetchInsuranceCaseDetails}" />
+      <apex:actionFunction name="update" reRender="tooltip" action="{!fetchInsuranceCaseDetails}" />
+    </apex:form>
+
+
+
+
+
+  </html>
+</apex:page>

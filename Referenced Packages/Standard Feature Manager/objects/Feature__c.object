@@ -1,0 +1,1711 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <actionOverrides>
+        <actionName>Accept</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Clone</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>List</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>New</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Tab</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <allowInChatterGroups>false</allowInChatterGroups>
+    <compactLayoutAssignment>SYSTEM</compactLayoutAssignment>
+    <deploymentStatus>Deployed</deploymentStatus>
+    <deprecated>false</deprecated>
+    <description>The Features object holds the features that are released in a seasonal Salesforce Release.  You could extend this object to hold any feature that you wish to track.</description>
+    <enableActivities>true</enableActivities>
+    <enableBulkApi>true</enableBulkApi>
+    <enableFeeds>true</enableFeeds>
+    <enableHistory>true</enableHistory>
+    <enableReports>true</enableReports>
+    <enableSearch>true</enableSearch>
+    <enableSharing>true</enableSharing>
+    <enableStreamingApi>true</enableStreamingApi>
+    <externalSharingModel>ControlledByParent</externalSharingModel>
+    <fields>
+        <fullName>Application__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <label>Application</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Salesforce</fullName>
+                    <default>true</default>
+                </value>
+                <value>
+                    <fullName>SAP</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Siebel</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>InHouse Solution</fullName>
+                    <default>false</default>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Auto_Visible_to_Admin__c</fullName>
+        <defaultValue>false</defaultValue>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <label>Auto Visible to Admin</label>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Auto_Visible_to_All__c</fullName>
+        <defaultValue>false</defaultValue>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <label>Auto Visible to All</label>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Cloud__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <label>Cloud</label>
+        <required>false</required>
+        <trackFeedHistory>true</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Force.com</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Sales</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Service</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Marketing</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>App</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Work.com</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Data.com</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Analytics</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Collaboration</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Community</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Platform</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Mobile</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Reporting</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Lightning Experience</fullName>
+                    <default>false</default>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Complexity__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <label>Complexity</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Low</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Low / Medium</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Medium</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Medium / High</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>High</fullName>
+                    <default>false</default>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Contact_to_Enable__c</fullName>
+        <defaultValue>false</defaultValue>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <label>Contact to Enable</label>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Deprecated__c</fullName>
+        <defaultValue>false</defaultValue>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <label>Deprecated</label>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Description__c</fullName>
+        <deprecated>false</deprecated>
+        <encrypted>false</encrypted>
+        <externalId>false</externalId>
+        <label>Description</label>
+        <length>32768</length>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>LongTextArea</type>
+        <visibleLines>3</visibleLines>
+    </fields>
+    <fields>
+        <fullName>Feature_Name_Long__c</fullName>
+        <deprecated>false</deprecated>
+        <encrypted>false</encrypted>
+        <externalId>false</externalId>
+        <label>Feature Name (Long)</label>
+        <required>false</required>
+        <trackFeedHistory>true</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>TextArea</type>
+    </fields>
+    <fields>
+        <fullName>Feature_Owner__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <deprecated>false</deprecated>
+        <description>This field hold the feature owner name who is responsible for entering and maintaining features</description>
+        <externalId>false</externalId>
+        <label>Feature Owner</label>
+        <referenceTo>User</referenceTo>
+        <relationshipName>Features</relationshipName>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Feature_Release_Date__c</fullName>
+        <deprecated>false</deprecated>
+        <description>The date the feature was released by Salesforce into customer orgs for customers to leverage.</description>
+        <encrypted>false</encrypted>
+        <externalId>false</externalId>
+        <label>Feature Release Date</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>Feature_Sort_Key__c</fullName>
+        <deprecated>false</deprecated>
+        <displayFormat>{00000}</displayFormat>
+        <externalId>false</externalId>
+        <label>Feature Sort Key</label>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>AutoNumber</type>
+    </fields>
+    <fields>
+        <fullName>Master_Feature__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <label>Master Feature</label>
+        <referenceTo>Master_Feature__c</referenceTo>
+        <relationshipLabel>Features</relationshipLabel>
+        <relationshipName>Features</relationshipName>
+        <relationshipOrder>0</relationshipOrder>
+        <reparentableMasterDetail>true</reparentableMasterDetail>
+        <trackFeedHistory>true</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>MasterDetail</type>
+        <writeRequiresMasterRead>false</writeRequiresMasterRead>
+    </fields>
+    <fields>
+        <fullName>Prior_Feature_Replaced__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <deprecated>false</deprecated>
+        <description>Used to identify those prior features that the successor feature replaced.</description>
+        <externalId>false</externalId>
+        <label>Prior Feature Replaced</label>
+        <referenceTo>Feature__c</referenceTo>
+        <relationshipLabel>Features</relationshipLabel>
+        <relationshipName>Features</relationshipName>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Product_Text__c</fullName>
+        <deprecated>false</deprecated>
+        <encrypted>false</encrypted>
+        <externalId>false</externalId>
+        <label>Product Text</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>TextArea</type>
+    </fields>
+    <fields>
+        <fullName>Product__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <label>Product</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Analytics</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Analytics Cloud: Engage Your Team with Dashboards</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Analytics Cloud: Explore Data</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Analytics Cloud: Integrate Data</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Analytics Cloud: Mobile Analytics</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Analytics Cloud: SAQL (Pilot)</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Analytics Cloud: Wave REST API (Pilot)</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Analytics Enhancements</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Chatter</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Chatter: Additional Enhancements</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Chatter: API Enhancements</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Chatter: Email Notifications</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Chatter: Feeds</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Chatter: Files</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Chatter: Groups</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Chatter: Other Chatter Changes</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Chatter: Profiles</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Chatter: Reporting</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Chatter: Topics</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Chatter Enhancements</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Communities</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Communities: Community Builder</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Communities: Community Management</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Communities: Community Templates</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Communities: Other Communities Changes</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Communities: Reporting</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Critical Updates</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Customization: Cross-Organization Data Sharing</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Customization: Data Customization</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Customization: General Administration</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Customization: Globalization</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Customization: Lightning Connect</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Customization: Process Builder</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Customization: Visual Workflow</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Data.com</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Data.com: Additional Enhancements</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Data.com: Clean</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Data.com: Prospector</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Deployment</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Development</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Development: Apex Code</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Development: APIs</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Development: Developer Console</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Development: Lightning Components</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Development: Other Changes in Development</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Development: SOQL</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Development: Visualforce</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Development: Visual Workflow</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Force.com: Additional Customization</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Force.com: Administration</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Force.com: Files</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Force.com: My Domain</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Force.com: Sessions</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Force.com: Site.com</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Force.com (Data Export)</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Force.com (Email)</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Force.com (Home Page)</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Force.com (Licenses)</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Force.com (Permission Sets)</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Force.com (Platform Development Tools)</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Force.com (Setup)</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Force.com Customization: Actions</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Force.com Customization: Approvals</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Force.com Customization: Authentication</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Force.com Customization: Identity</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Force.com Customization: Other</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Force.com Customization: Security</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Force.com Customization: Sharing</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Force.com Customization: Workflow</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Force.com Development: Canvas</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Force.com Development: Change Sets &amp; Deployment</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Force.com Development: Sandboxes</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>General Enhancements</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>General Enhancements: Search</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>ISVforce</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Mobile</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Mobile: Additional Mobile Enhancements</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Mobile: Additional Mobile Information</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Mobile: Additional Salesforce1</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Mobile: Chatter Mobile</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Mobile: Other Changes</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Mobile: Other Salesforce1</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Mobile: Salesforce1</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Mobile: SalesforceA</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Mobile: Salesforce Touch</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Reporting</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Sales: Accounts, Contacts &amp; Leads</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Sales: Activities</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Sales: Collaborative Forecasts</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Sales: Contracts and Orders</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Sales: Duplicate Management</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Sales: Email Connect</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Sales: Enterprise Territory Management</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Sales: Forecasts</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Sales: Notes</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Sales: Opportunity Management</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Sales: Other</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Sales: Products</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Sales: S1</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Sales: Salesforce Console</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Sales: Salesforce for Outlook</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Sales: Salesforce to Salesforce</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Sales: Sales Path</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Sales Enhancements</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Security &amp; Identity: Authentication</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Security &amp; Identity: Encryption</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Security &amp; Identity: Identity</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Security &amp; Identity: My Domain</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Service: Assets</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Service: Case Feed</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Service: Cases</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Service: Console Tab</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Service: Email-to-Case</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Service: Entitlement Management</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Service: Knowledge</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Service: Live Agent</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Service: Macros</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Service: Omni-Channel</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Service: Open CTI</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Service: Organization Sync</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Service: Salesforce Console</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Service: Self Service</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Service: Service Communities</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Service: Social Customer Service</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Service: SOS</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Site.com</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Work.com</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Work.com: Other Changes in Work.com</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Lightning Experience</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Social Media Integration</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Service</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Files</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Search</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Customization</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Security and Identity</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>General</fullName>
+                    <default>false</default>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Release_Type__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <label>Release Type</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>GA</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Beta</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Pilot</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Developer Preview</fullName>
+                    <default>false</default>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Respects_DNAE__c</fullName>
+        <defaultValue>false</defaultValue>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <label>Respects DNAE</label>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Salesforce_Release__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <label>Salesforce Release</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Winter 12</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Spring 12</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Summer 12</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Winter 13</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Spring 13</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Summer 13</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Winter 14</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Spring 14</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Summer 14</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Winter 15</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Spring 15</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Summer 15</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Winter 16</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Spring 16</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Summer 16</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Winter 17</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Spring 17</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Summer 17</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Winter 18</fullName>
+                    <default>false</default>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Setup_Required__c</fullName>
+        <defaultValue>false</defaultValue>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <label>Setup Required</label>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Status__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <label>Status</label>
+        <required>false</required>
+        <trackFeedHistory>true</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Not Reviewed</fullName>
+                    <default>true</default>
+                </value>
+                <value>
+                    <fullName>Evaluate</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Deferred</fullName>
+                    <default>false</default>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Sub_Product__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <label>Sub-Product</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>General</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Accounts</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Forecasts</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Campaigns</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Opportunities</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Productivity</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Email</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Activities</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Notes</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Salesforce App for Outlook</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Exchange Sync</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Salesforce for Outlook</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Other</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Reports and Dashboards</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Wave</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Lightning Experience</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Field Service</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Assets</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Knowledge</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Console for Service</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Case Feed</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Live Agent</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Omni-Channel</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>SOS</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Social Customer Service</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Macros</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Organization Sync</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Salesforce1</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>SalesforceA</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Chatter</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Files</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Templates</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Topics</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Templates - Misc</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Community Builder</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Community Setup</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Community Management</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Insights and Analytics</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Groups</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>User Profiles</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Feeds</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Digest Emails</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Chatter Messenger</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Data.com Prospector</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Data.com Clean</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Lightning Experience Navigation</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>LIghtning Experience Setup</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Lightning App Builder</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Data Customization</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>LIghtning Connect</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Process Builder</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Sharing</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Monitoring</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Authentication and Identity</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Platform Encryption</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Platform Security</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Sandboxes</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Custom Metadata Types</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Visualforce</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Apex Code</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Lightning Components</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>API</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>ISVforce</fullName>
+                    <default>false</default>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>UI_Impact__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <label>UI Impact</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetName>UI_Impact</valueSetName>
+        </valueSet>
+    </fields>
+    <label>Feature</label>
+    <listViews>
+        <fullName>AllReleaseFeatures</fullName>
+        <columns>NAME</columns>
+        <columns>Feature_Name_Long__c</columns>
+        <columns>Master_Feature__c</columns>
+        <columns>Description__c</columns>
+        <columns>Salesforce_Release__c</columns>
+        <columns>Cloud__c</columns>
+        <columns>Product_Text__c</columns>
+        <columns>Auto_Visible_to_All__c</columns>
+        <columns>Auto_Visible_to_Admin__c</columns>
+        <columns>Contact_to_Enable__c</columns>
+        <columns>Setup_Required__c</columns>
+        <columns>Status__c</columns>
+        <columns>Feature_Release_Date__c</columns>
+        <columns>Release_Type__c</columns>
+        <columns>CREATED_DATE</columns>
+        <filterScope>Everything</filterScope>
+        <label>All Release Features</label>
+    </listViews>
+    <listViews>
+        <fullName>AllReleaseFeaturesUndefined</fullName>
+        <columns>Salesforce_Release__c</columns>
+        <columns>Master_Feature__c</columns>
+        <columns>NAME</columns>
+        <columns>Feature_Name_Long__c</columns>
+        <columns>Cloud__c</columns>
+        <columns>Product__c</columns>
+        <columns>Product_Text__c</columns>
+        <columns>Auto_Visible_to_All__c</columns>
+        <columns>Auto_Visible_to_Admin__c</columns>
+        <columns>Contact_to_Enable__c</columns>
+        <columns>Setup_Required__c</columns>
+        <columns>Complexity__c</columns>
+        <columns>Status__c</columns>
+        <columns>Feature_Release_Date__c</columns>
+        <columns>Release_Type__c</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>Master_Feature__c</field>
+            <operation>equals</operation>
+            <value>Undefined</value>
+        </filters>
+        <label>Features with undefined master feature</label>
+    </listViews>
+    <listViews>
+        <fullName>Spring14Features</fullName>
+        <columns>NAME</columns>
+        <columns>Master_Feature__c</columns>
+        <columns>Cloud__c</columns>
+        <columns>Product__c</columns>
+        <columns>Status__c</columns>
+        <columns>Feature_Release_Date__c</columns>
+        <columns>Release_Type__c</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>Salesforce_Release__c</field>
+            <operation>equals</operation>
+            <value>Spring 14</value>
+        </filters>
+        <label>Spring 14 Features</label>
+    </listViews>
+    <listViews>
+        <fullName>Spring15Features</fullName>
+        <columns>NAME</columns>
+        <columns>Master_Feature__c</columns>
+        <columns>Cloud__c</columns>
+        <columns>Product__c</columns>
+        <columns>Status__c</columns>
+        <columns>Feature_Release_Date__c</columns>
+        <columns>Release_Type__c</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>Salesforce_Release__c</field>
+            <operation>equals</operation>
+            <value>Spring 15</value>
+        </filters>
+        <label>Spring 15 Features</label>
+    </listViews>
+    <listViews>
+        <fullName>Spring16Features</fullName>
+        <columns>NAME</columns>
+        <columns>Master_Feature__c</columns>
+        <columns>Cloud__c</columns>
+        <columns>Product__c</columns>
+        <columns>Status__c</columns>
+        <columns>Feature_Release_Date__c</columns>
+        <columns>Release_Type__c</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>Salesforce_Release__c</field>
+            <operation>equals</operation>
+            <value>Spring 16</value>
+        </filters>
+        <label>Spring 16 Features</label>
+    </listViews>
+    <listViews>
+        <fullName>Spring_17_Features</fullName>
+        <columns>NAME</columns>
+        <columns>Master_Feature__c</columns>
+        <columns>Cloud__c</columns>
+        <columns>Product__c</columns>
+        <columns>Sub_Product__c</columns>
+        <columns>UI_Impact__c</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>Salesforce_Release__c</field>
+            <operation>equals</operation>
+            <value>Spring 17</value>
+        </filters>
+        <label>Spring 17 Features</label>
+    </listViews>
+    <listViews>
+        <fullName>Summer14Features</fullName>
+        <columns>NAME</columns>
+        <columns>Master_Feature__c</columns>
+        <columns>Cloud__c</columns>
+        <columns>Product__c</columns>
+        <columns>Status__c</columns>
+        <columns>Feature_Release_Date__c</columns>
+        <columns>Release_Type__c</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>Salesforce_Release__c</field>
+            <operation>equals</operation>
+            <value>Summer 14</value>
+        </filters>
+        <label>Summer 14 Features</label>
+    </listViews>
+    <listViews>
+        <fullName>Summer15Features</fullName>
+        <columns>NAME</columns>
+        <columns>Master_Feature__c</columns>
+        <columns>Cloud__c</columns>
+        <columns>Product__c</columns>
+        <columns>Status__c</columns>
+        <columns>Feature_Release_Date__c</columns>
+        <columns>Release_Type__c</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>Salesforce_Release__c</field>
+            <operation>equals</operation>
+            <value>Summer 15</value>
+        </filters>
+        <label>Summer 15 Features</label>
+    </listViews>
+    <listViews>
+        <fullName>Summer16Features</fullName>
+        <columns>NAME</columns>
+        <columns>Master_Feature__c</columns>
+        <columns>Cloud__c</columns>
+        <columns>Product__c</columns>
+        <columns>Status__c</columns>
+        <columns>Feature_Release_Date__c</columns>
+        <columns>Release_Type__c</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>Salesforce_Release__c</field>
+            <operation>equals</operation>
+            <value>Summer 16</value>
+        </filters>
+        <label>Summer 16 Features</label>
+    </listViews>
+    <listViews>
+        <fullName>Summer_17_Features</fullName>
+        <columns>NAME</columns>
+        <columns>Feature_Name_Long__c</columns>
+        <columns>Salesforce_Release__c</columns>
+        <columns>Product__c</columns>
+        <columns>Sub_Product__c</columns>
+        <columns>Status__c</columns>
+        <columns>Feature_Release_Date__c</columns>
+        <columns>Release_Type__c</columns>
+        <columns>UI_Impact__c</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>Salesforce_Release__c</field>
+            <operation>equals</operation>
+            <value>Summer 17</value>
+        </filters>
+        <label>Summer 17 Features</label>
+    </listViews>
+    <listViews>
+        <fullName>Winter14Features</fullName>
+        <columns>NAME</columns>
+        <columns>Master_Feature__c</columns>
+        <columns>Cloud__c</columns>
+        <columns>Product__c</columns>
+        <columns>Status__c</columns>
+        <columns>Feature_Release_Date__c</columns>
+        <columns>Release_Type__c</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>Salesforce_Release__c</field>
+            <operation>equals</operation>
+            <value>Winter 14</value>
+        </filters>
+        <label>Winter 14 Features</label>
+    </listViews>
+    <listViews>
+        <fullName>Winter15Features</fullName>
+        <columns>NAME</columns>
+        <columns>Master_Feature__c</columns>
+        <columns>Cloud__c</columns>
+        <columns>Product__c</columns>
+        <columns>Status__c</columns>
+        <columns>Feature_Release_Date__c</columns>
+        <columns>Release_Type__c</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>Salesforce_Release__c</field>
+            <operation>equals</operation>
+            <value>Winter 15</value>
+        </filters>
+        <label>Winter 15 Features</label>
+    </listViews>
+    <listViews>
+        <fullName>Winter16Features</fullName>
+        <columns>NAME</columns>
+        <columns>Master_Feature__c</columns>
+        <columns>Cloud__c</columns>
+        <columns>Product__c</columns>
+        <columns>Status__c</columns>
+        <columns>Feature_Release_Date__c</columns>
+        <columns>Release_Type__c</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>Salesforce_Release__c</field>
+            <operation>equals</operation>
+            <value>Winter 16</value>
+        </filters>
+        <label>Winter 16 Features</label>
+    </listViews>
+    <listViews>
+        <fullName>Winter17Features</fullName>
+        <columns>NAME</columns>
+        <columns>Master_Feature__c</columns>
+        <columns>Cloud__c</columns>
+        <columns>Product__c</columns>
+        <columns>Status__c</columns>
+        <columns>Release_Type__c</columns>
+        <columns>Feature_Release_Date__c</columns>
+        <columns>UI_Impact__c</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>Salesforce_Release__c</field>
+            <operation>equals</operation>
+            <value>Winter 17</value>
+        </filters>
+        <label>Winter 17 Features</label>
+    </listViews>
+    <listViews>
+        <fullName>Winter_18_Features</fullName>
+        <columns>NAME</columns>
+        <columns>Master_Feature__c</columns>
+        <columns>Cloud__c</columns>
+        <columns>Product__c</columns>
+        <columns>Status__c</columns>
+        <columns>Release_Type__c</columns>
+        <columns>Feature_Release_Date__c</columns>
+        <columns>UI_Impact__c</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>Salesforce_Release__c</field>
+            <operation>equals</operation>
+            <value>Winter 18</value>
+        </filters>
+        <label>Winter 18 Features</label>
+    </listViews>
+    <nameField>
+        <encrypted>false</encrypted>
+        <label>Name</label>
+        <trackFeedHistory>true</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+    </nameField>
+    <pluralLabel>Features</pluralLabel>
+    <searchLayouts>
+        <customTabListAdditionalFields>Master_Feature__c</customTabListAdditionalFields>
+        <customTabListAdditionalFields>Cloud__c</customTabListAdditionalFields>
+        <customTabListAdditionalFields>Product__c</customTabListAdditionalFields>
+        <customTabListAdditionalFields>Salesforce_Release__c</customTabListAdditionalFields>
+        <listViewButtons>Mass_Edit</listViewButtons>
+        <listViewButtons>Mass_Update</listViewButtons>
+        <lookupDialogsAdditionalFields>Application__c</lookupDialogsAdditionalFields>
+        <lookupDialogsAdditionalFields>Cloud__c</lookupDialogsAdditionalFields>
+        <lookupDialogsAdditionalFields>Complexity__c</lookupDialogsAdditionalFields>
+        <lookupDialogsAdditionalFields>Product__c</lookupDialogsAdditionalFields>
+        <lookupDialogsAdditionalFields>Status__c</lookupDialogsAdditionalFields>
+        <searchFilterFields>NAME</searchFilterFields>
+        <searchFilterFields>Application__c</searchFilterFields>
+        <searchFilterFields>Cloud__c</searchFilterFields>
+        <searchFilterFields>Complexity__c</searchFilterFields>
+        <searchFilterFields>Product__c</searchFilterFields>
+        <searchFilterFields>Status__c</searchFilterFields>
+        <searchResultsAdditionalFields>Cloud__c</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>Complexity__c</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>Feature_Release_Date__c</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>Status__c</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>Product__c</searchResultsAdditionalFields>
+    </searchLayouts>
+    <sharingModel>ControlledByParent</sharingModel>
+    <webLinks>
+        <fullName>Lookup_Feature_Release_Notes</fullName>
+        <availability>online</availability>
+        <displayType>button</displayType>
+        <encodingKey>UTF-8</encodingKey>
+        <hasMenubar>false</hasMenubar>
+        <hasScrollbars>true</hasScrollbars>
+        <hasToolbar>false</hasToolbar>
+        <height>600</height>
+        <isResizable>true</isResizable>
+        <linkType>url</linkType>
+        <masterLabel>Lookup Feature Release Notes</masterLabel>
+        <openType>newWindow</openType>
+        <position>none</position>
+        <protected>false</protected>
+        <showsLocation>false</showsLocation>
+        <showsStatus>false</showsStatus>
+        <url>http://docs.releasenotes.salesforce.com/en-us/search?query={!Feature__c.Name}</url>
+    </webLinks>
+    <webLinks>
+        <fullName>Mass_Edit</fullName>
+        <availability>online</availability>
+        <displayType>massActionButton</displayType>
+        <height>600</height>
+        <linkType>page</linkType>
+        <masterLabel>Mass Edit</masterLabel>
+        <openType>sidebar</openType>
+        <page>MassEditFeature</page>
+        <protected>false</protected>
+        <requireRowSelection>true</requireRowSelection>
+    </webLinks>
+    <webLinks>
+        <fullName>Mass_Update</fullName>
+        <availability>online</availability>
+        <displayType>massActionButton</displayType>
+        <height>600</height>
+        <linkType>page</linkType>
+        <masterLabel>Mass Update</masterLabel>
+        <openType>sidebar</openType>
+        <page>MassUpdateFeature</page>
+        <protected>false</protected>
+        <requireRowSelection>true</requireRowSelection>
+    </webLinks>
+</CustomObject>

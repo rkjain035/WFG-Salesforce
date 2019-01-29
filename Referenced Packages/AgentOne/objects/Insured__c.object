@@ -1,0 +1,287 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <actionOverrides>
+        <actionName>Accept</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Clone</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>List</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>New</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Tab</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <allowInChatterGroups>false</allowInChatterGroups>
+    <compactLayoutAssignment>AgentOne_Insurance_Case_Insured_Compact_Layout</compactLayoutAssignment>
+    <compactLayouts>
+        <fullName>AgentOne_Insurance_Case_Insured_Compact_Layout</fullName>
+        <fields>Name</fields>
+        <fields>Insured_Birthdate__c</fields>
+        <fields>Insured_Gender__c</fields>
+        <fields>Is_Primary__c</fields>
+        <label>AgentOne Insurance Case Insured Compact Layout</label>
+    </compactLayouts>
+    <deploymentStatus>Deployed</deploymentStatus>
+    <deprecated>false</deprecated>
+    <description>Insureds associated to an Insurance Case.  It includes the Primary Insured as well as Additional Insureds</description>
+    <enableActivities>false</enableActivities>
+    <enableBulkApi>true</enableBulkApi>
+    <enableEnhancedLookup>true</enableEnhancedLookup>
+    <enableFeeds>false</enableFeeds>
+    <enableHistory>false</enableHistory>
+    <enableReports>false</enableReports>
+    <enableSearch>true</enableSearch>
+    <enableSharing>true</enableSharing>
+    <enableStreamingApi>true</enableStreamingApi>
+    <externalSharingModel>ControlledByParent</externalSharingModel>
+    <fields>
+        <fullName>Ext_LastModifiedDate__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Last Modified Date from external application.</description>
+        <encrypted>false</encrypted>
+        <externalId>false</externalId>
+        <inlineHelpText>Last Modified TimeStamp from external system for records sent to AgentOne.</inlineHelpText>
+        <label>Ext. Last Modified TimeStamp</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>DateTime</type>
+    </fields>
+    <fields>
+        <fullName>External_Id__c</fullName>
+        <caseSensitive>false</caseSensitive>
+        <deprecated>false</deprecated>
+        <encrypted>false</encrypted>
+        <externalId>true</externalId>
+        <label>External Id</label>
+        <length>64</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>true</unique>
+    </fields>
+    <fields>
+        <fullName>Flat_Extra_Amount__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Insured - Flat Extra Amount</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Insured - Flat Extra Amount</inlineHelpText>
+        <label>Flat Extra Amount</label>
+        <precision>10</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>InsuranceCase__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <label>Insurance Case</label>
+        <referenceTo>InsuranceCase__c</referenceTo>
+        <relationshipLabel>Insureds</relationshipLabel>
+        <relationshipName>CaseInsured</relationshipName>
+        <relationshipOrder>0</relationshipOrder>
+        <reparentableMasterDetail>false</reparentableMasterDetail>
+        <trackTrending>false</trackTrending>
+        <type>MasterDetail</type>
+        <writeRequiresMasterRead>false</writeRequiresMasterRead>
+    </fields>
+    <fields>
+        <fullName>Insured_Birthdate__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Birthdate at the time Case was created</description>
+        <encrypted>false</encrypted>
+        <externalId>false</externalId>
+        <inlineHelpText>Birthdate at the time Case was created</inlineHelpText>
+        <label>Insured Birthdate</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>Insured_Gender__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <label>Insured Gender</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Male</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Female</fullName>
+                    <default>false</default>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Insured__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <label>Insured</label>
+        <referenceTo>Contact</referenceTo>
+        <relationshipLabel>Insured on Insurance Cases</relationshipLabel>
+        <relationshipName>ContactInsured</relationshipName>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Is_Primary__c</fullName>
+        <defaultValue>false</defaultValue>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <label>Is Primary</label>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Issue_Age__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Age of the Insured at Issue</description>
+        <externalId>false</externalId>
+        <inlineHelpText>0-99</inlineHelpText>
+        <label>Issue Age</label>
+        <precision>2</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Relationship_to_Primary_Insured__c</fullName>
+        <deprecated>false</deprecated>
+        <encrypted>false</encrypted>
+        <externalId>false</externalId>
+        <label>Relationship to Primary Insured</label>
+        <length>100</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Temp_Flat_Extra_Duration__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Insured - Duration of flat extra</description>
+        <externalId>false</externalId>
+        <label>Temp Flat Extra Duration</label>
+        <precision>3</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Type_of_Rating__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Type of Rating</description>
+        <externalId>false</externalId>
+        <label>Type of Rating</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Permanent Flat Extra</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Temporary Flat Extra</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Permanent Table Rating</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Temporary Table Rating</fullName>
+                    <default>false</default>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <label>Insurance Case Insured</label>
+    <listViews>
+        <fullName>All</fullName>
+        <filterScope>Everything</filterScope>
+        <label>All</label>
+    </listViews>
+    <nameField>
+        <encrypted>false</encrypted>
+        <label>Insured Name</label>
+        <type>Text</type>
+    </nameField>
+    <pluralLabel>Insurance Case Insureds</pluralLabel>
+    <searchLayouts>
+        <customTabListAdditionalFields>InsuranceCase__c</customTabListAdditionalFields>
+        <customTabListAdditionalFields>Is_Primary__c</customTabListAdditionalFields>
+        <customTabListAdditionalFields>Relationship_to_Primary_Insured__c</customTabListAdditionalFields>
+        <customTabListAdditionalFields>Insured__c</customTabListAdditionalFields>
+        <customTabListAdditionalFields>Insured_Gender__c</customTabListAdditionalFields>
+        <customTabListAdditionalFields>Insured_Birthdate__c</customTabListAdditionalFields>
+        <customTabListAdditionalFields>Issue_Age__c</customTabListAdditionalFields>
+        <lookupDialogsAdditionalFields>InsuranceCase__c</lookupDialogsAdditionalFields>
+        <lookupDialogsAdditionalFields>Is_Primary__c</lookupDialogsAdditionalFields>
+        <lookupDialogsAdditionalFields>Relationship_to_Primary_Insured__c</lookupDialogsAdditionalFields>
+        <lookupDialogsAdditionalFields>Insured__c</lookupDialogsAdditionalFields>
+        <lookupDialogsAdditionalFields>Insured_Gender__c</lookupDialogsAdditionalFields>
+        <lookupDialogsAdditionalFields>Insured_Birthdate__c</lookupDialogsAdditionalFields>
+        <lookupDialogsAdditionalFields>Issue_Age__c</lookupDialogsAdditionalFields>
+        <lookupPhoneDialogsAdditionalFields>InsuranceCase__c</lookupPhoneDialogsAdditionalFields>
+        <lookupPhoneDialogsAdditionalFields>Is_Primary__c</lookupPhoneDialogsAdditionalFields>
+        <lookupPhoneDialogsAdditionalFields>Relationship_to_Primary_Insured__c</lookupPhoneDialogsAdditionalFields>
+        <lookupPhoneDialogsAdditionalFields>Insured__c</lookupPhoneDialogsAdditionalFields>
+        <lookupPhoneDialogsAdditionalFields>Insured_Gender__c</lookupPhoneDialogsAdditionalFields>
+        <lookupPhoneDialogsAdditionalFields>Insured_Birthdate__c</lookupPhoneDialogsAdditionalFields>
+        <lookupPhoneDialogsAdditionalFields>Issue_Age__c</lookupPhoneDialogsAdditionalFields>
+        <searchResultsAdditionalFields>InsuranceCase__c</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>Is_Primary__c</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>Relationship_to_Primary_Insured__c</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>Insured__c</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>Insured_Gender__c</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>Insured_Birthdate__c</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>Issue_Age__c</searchResultsAdditionalFields>
+    </searchLayouts>
+    <sharingModel>ControlledByParent</sharingModel>
+</CustomObject>

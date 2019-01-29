@@ -1,0 +1,263 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <actionOverrides>
+        <actionName>Accept</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Clone</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>List</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>New</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Tab</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <allowInChatterGroups>false</allowInChatterGroups>
+    <compactLayoutAssignment>AgentOne_Policy_Insured_Compact_Layout</compactLayoutAssignment>
+    <compactLayouts>
+        <fullName>AgentOne_Policy_Insured_Compact_Layout</fullName>
+        <fields>Name</fields>
+        <fields>Insured_Birthdate__c</fields>
+        <fields>Insured_Gender__c</fields>
+        <fields>Is_Primary__c</fields>
+        <label>AgentOne Policy Insured Compact Layout</label>
+    </compactLayouts>
+    <deploymentStatus>Deployed</deploymentStatus>
+    <deprecated>false</deprecated>
+    <description>Insureds associated to a Policy.  It includes the Primary Insured as well as Additional Insureds</description>
+    <enableActivities>false</enableActivities>
+    <enableBulkApi>true</enableBulkApi>
+    <enableEnhancedLookup>false</enableEnhancedLookup>
+    <enableFeeds>false</enableFeeds>
+    <enableHistory>false</enableHistory>
+    <enableReports>false</enableReports>
+    <enableSearch>true</enableSearch>
+    <enableSharing>true</enableSharing>
+    <enableStreamingApi>true</enableStreamingApi>
+    <externalSharingModel>ControlledByParent</externalSharingModel>
+    <fields>
+        <fullName>Ext_LastModifiedDate__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Last Modified Date from external application.</description>
+        <encrypted>false</encrypted>
+        <externalId>false</externalId>
+        <inlineHelpText>Last Modified TimeStamp from external system for records sent to AgentOne.</inlineHelpText>
+        <label>Ext. Last Modified TimeStamp</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>DateTime</type>
+    </fields>
+    <fields>
+        <fullName>External_Id__c</fullName>
+        <caseSensitive>false</caseSensitive>
+        <deprecated>false</deprecated>
+        <encrypted>false</encrypted>
+        <externalId>true</externalId>
+        <label>External Id</label>
+        <length>64</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>true</unique>
+    </fields>
+    <fields>
+        <fullName>Flat_Extra_Amount__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Insured - Flat Extra Amount</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Insured - Flat Extra Amount</inlineHelpText>
+        <label>Flat Extra Amount</label>
+        <precision>10</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>Inforce_Policy__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <label>Policy</label>
+        <referenceTo>Inforce_Policy__c</referenceTo>
+        <relationshipLabel>Policy Insureds</relationshipLabel>
+        <relationshipName>Inforce_Insured</relationshipName>
+        <relationshipOrder>0</relationshipOrder>
+        <reparentableMasterDetail>false</reparentableMasterDetail>
+        <trackTrending>false</trackTrending>
+        <type>MasterDetail</type>
+        <writeRequiresMasterRead>false</writeRequiresMasterRead>
+    </fields>
+    <fields>
+        <fullName>Insured_Birthdate__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Birthdate of the insured on the Inforce Policy.</description>
+        <encrypted>false</encrypted>
+        <externalId>false</externalId>
+        <inlineHelpText>Birthdate of the insured on the Inforce Policy.</inlineHelpText>
+        <label>Insured Birthdate</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>Insured_Gender__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Gender of the insured on the Inforce Policy.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Gender of the insured on the Inforce Policy.</inlineHelpText>
+        <label>Insured Gender</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Male</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Female</fullName>
+                    <default>false</default>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Insured__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <label>Insured</label>
+        <referenceTo>Contact</referenceTo>
+        <relationshipLabel>Policy Insureds</relationshipLabel>
+        <relationshipName>InforceContactInsured</relationshipName>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Is_Primary__c</fullName>
+        <defaultValue>false</defaultValue>
+        <deprecated>false</deprecated>
+        <description>Check box indicator that identifies the insured as the primary insured on the Inforce Policy.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>This check box identifies the insured as the primary insured on the Inforce Policy.</inlineHelpText>
+        <label>Is Primary</label>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Issue_Age__c</fullName>
+        <deprecated>false</deprecated>
+        <description>The age of the Insured at the time of issue.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>The age of the Insured at the time of issue.</inlineHelpText>
+        <label>Issue Age</label>
+        <precision>2</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Temp_Flat_Extra_Duration__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Insured - Duration of flat extra</description>
+        <externalId>false</externalId>
+        <label>Temp Flat Extra Duration</label>
+        <precision>3</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Type_of_Rating__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Type of Rating</description>
+        <externalId>false</externalId>
+        <label>Type of Rating</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Permanent Flat Extra</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Temporary Flat Extra</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Permanent Table Rating</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Temporary Table Rating</fullName>
+                    <default>false</default>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <label>Policy Insured</label>
+    <listViews>
+        <fullName>All</fullName>
+        <filterScope>Everything</filterScope>
+        <label>All</label>
+    </listViews>
+    <nameField>
+        <encrypted>false</encrypted>
+        <label>Policy Insured Name</label>
+        <type>Text</type>
+    </nameField>
+    <pluralLabel>Policy Insureds</pluralLabel>
+    <searchLayouts>
+        <lookupDialogsAdditionalFields>Inforce_Policy__c</lookupDialogsAdditionalFields>
+        <lookupDialogsAdditionalFields>Is_Primary__c</lookupDialogsAdditionalFields>
+        <lookupDialogsAdditionalFields>Insured__c</lookupDialogsAdditionalFields>
+        <lookupDialogsAdditionalFields>Insured_Gender__c</lookupDialogsAdditionalFields>
+        <lookupDialogsAdditionalFields>Insured_Birthdate__c</lookupDialogsAdditionalFields>
+        <lookupDialogsAdditionalFields>Issue_Age__c</lookupDialogsAdditionalFields>
+        <lookupPhoneDialogsAdditionalFields>Inforce_Policy__c</lookupPhoneDialogsAdditionalFields>
+        <lookupPhoneDialogsAdditionalFields>Is_Primary__c</lookupPhoneDialogsAdditionalFields>
+        <lookupPhoneDialogsAdditionalFields>Insured__c</lookupPhoneDialogsAdditionalFields>
+        <lookupPhoneDialogsAdditionalFields>Insured_Gender__c</lookupPhoneDialogsAdditionalFields>
+        <lookupPhoneDialogsAdditionalFields>Insured_Birthdate__c</lookupPhoneDialogsAdditionalFields>
+        <lookupPhoneDialogsAdditionalFields>Issue_Age__c</lookupPhoneDialogsAdditionalFields>
+    </searchLayouts>
+    <sharingModel>ControlledByParent</sharingModel>
+</CustomObject>

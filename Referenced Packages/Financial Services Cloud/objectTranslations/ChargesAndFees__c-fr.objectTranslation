@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Frais et commission</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Frais et commissions</value>
+    </caseValues>
+    <fields>
+        <label>Type de taux annuel effectif global</label>
+        <name>APRType__c</name>
+        <picklistValues>
+            <masterLabel>Fixed</masterLabel>
+            <translation><!-- Fixed --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Other</masterLabel>
+            <translation><!-- Other --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Variable</masterLabel>
+            <translation><!-- Variable --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label>Taux annuel effectif global</label>
+        <name>APR__c</name>
+    </fields>
+    <fields>
+        <label>Frais de guichet automatique</label>
+        <name>ATMFee__c</name>
+    </fields>
+    <fields>
+        <label>Frais de compte annuels</label>
+        <name>AnnualAccountCharge__c</name>
+    </fields>
+    <fields>
+        <label>Frais d&apos;abonnement annuels</label>
+        <name>AnnualMembershipFee__c</name>
+    </fields>
+    <fields>
+        <label>Tx annuel eff. global transfert de solde</label>
+        <name>BalanceTransferAPR__c</name>
+    </fields>
+    <fields>
+        <label>Type de tx annuel eff. global de fonds</label>
+        <name>CashAPRType__c</name>
+        <picklistValues>
+            <masterLabel>Fixed</masterLabel>
+            <translation><!-- Fixed --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Other</masterLabel>
+            <translation><!-- Other --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Variable</masterLabel>
+            <translation><!-- Variable --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label>Taux annuel effectif global de fonds</label>
+        <name>CashAPR__c</name>
+    </fields>
+    <fields>
+        <label>Frais d&apos;avance de fonds</label>
+        <name>CashAdvanceFee__c</name>
+    </fields>
+    <fields>
+        <label>Frais de transaction étrangère</label>
+        <name>ForeignTransactionFee__c</name>
+    </fields>
+    <fields>
+        <label>Frais d&apos;insuffisance de fonds</label>
+        <name>InsufficientFundsFee__c</name>
+    </fields>
+    <fields>
+        <label>Taux d&apos;intérêt</label>
+        <name>InterestRate__c</name>
+    </fields>
+    <fields>
+        <label>Frais de retard de paiement</label>
+        <name>LatePaymentFee__c</name>
+    </fields>
+    <fields>
+        <label>Frais de transaction maximum</label>
+        <name>MaximumTransactionFee__c</name>
+    </fields>
+    <fields>
+        <label>Frais de service mensuel</label>
+        <name>MonthlyServiceFee__c</name>
+    </fields>
+    <fields>
+        <label>Frais de découvert</label>
+        <name>OverdraftFees__c</name>
+    </fields>
+    <fields>
+        <label>Frais de remplacement de carte</label>
+        <name>ReplacementCardFee__c</name>
+    </fields>
+    <fields>
+        <label>Frais de renvoi de chèque</label>
+        <name>ReturnedCheckFee__c</name>
+    </fields>
+    <fields>
+        <label>ID du système source</label>
+        <name>SourceSystemId__c</name>
+    </fields>
+    <fields>
+        <label>Frais de relevé</label>
+        <name>StatementFee__c</name>
+    </fields>
+    <fields>
+        <label>Frais d&apos;arrêt de paiement</label>
+        <name>StopPaymentFee__c</name>
+    </fields>
+    <gender>Masculine</gender>
+    <nameFieldLabel>Nom des frais et des commissions</nameFieldLabel>
+    <recordTypes>
+        <label>Crédit</label>
+        <name>Credit</name>
+    </recordTypes>
+    <recordTypes>
+        <label>Débit</label>
+        <name>Debit</name>
+    </recordTypes>
+    <startsWith>Consonant</startsWith>
+</CustomObjectTranslation>

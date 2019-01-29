@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fields>
+        <label>Compte financier</label>
+        <name>FinancialAccount__c</name>
+        <relationshipLabel>Opportunités</relationshipLabel>
+    </fields>
+    <fields>
+        <label>Foyer</label>
+        <name>Household__c</name>
+        <relationshipLabel>Opportunités du foyer</relationshipLabel>
+    </fields>
+    <fields>
+        <label>Référent externe</label>
+        <name>ReferredByContact__c</name>
+        <relationshipLabel>Mes référents</relationshipLabel>
+    </fields>
+    <fields>
+        <label>Référent interne</label>
+        <name>ReferredByUser__c</name>
+        <relationshipLabel><!-- Opportunities --></relationshipLabel>
+    </fields>
+    <layouts>
+        <layout>Opportunity (General) Layout</layout>
+        <sections>
+            <label><!-- Referral Information --></label>
+            <section>Referral Information</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Opportunity (Wallet Share) Layout</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+    <recordTypes>
+        <label>Général</label>
+        <name>General</name>
+    </recordTypes>
+    <recordTypes>
+        <label>Plan de retraite</label>
+        <name>RetirementPlanning</name>
+    </recordTypes>
+    <recordTypes>
+        <label>Opportunité (part du portefeuille)</label>
+        <name>WalletShareOpportunity</name>
+    </recordTypes>
+    <validationRules>
+        <errorMessage>Les référents internes doivent être des utilisateurs Salesforce internes.</errorMessage>
+        <name>NonPortalUserReferrer</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage>Saisissez un référent interne ou un référent externe. Vous pouvez répertorier un seul référent pour chaque référence.</errorMessage>
+        <name>SingleReferredByEntryByRecord</name>
+    </validationRules>
+</CustomObjectTranslation>

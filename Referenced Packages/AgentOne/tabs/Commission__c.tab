@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomTab xmlns="http://soap.sforce.com/2006/04/metadata">
+    <customObject>true</customObject>
+    <description>Shows commission statement and commission detail</description>
+    <icon>AgentOne/Commissions_Icon.jpg</icon>
+    <mobileReady>false</mobileReady>
+    <motif>Custom242: TV Widescreen</motif>
+</CustomTab>

@@ -1,0 +1,2 @@
+<apex:page controller="AgentOne.HelpPageController" action="{!loadInsuranceCaseHelp}">
+</apex:page>

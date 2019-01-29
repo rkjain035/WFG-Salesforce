@@ -1,0 +1,123 @@
+<apex:page controller="AgentOne.ApplicationToolsDispatcherController">
+    <html xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+        <apex:stylesheet value="{!URLFOR($Resource.AgentOne__SLDS, 'assets/styles/salesforce-lightning-design-system-vf.min.css')}" />
+        <apex:stylesheet value="{!URLFOR($Resource.AgentOne__AgentOneSLDS, 'agentone-slds.css')}" />
+        <div class="agentone">
+            <div class="slds">
+                <apex:form id="f">
+                    <apex:actionFunction action="{!dispatch}" name="setResolution" rerender="op">
+                        <apex:param name="resolution" value="" />
+                    </apex:actionFunction>
+                </apex:form>
+                <apex:form id="passResolutionCheckForm">
+                    <apex:actionFunction action="{!dispatch}" name="passResolutionCheckAction" rerender="false">
+                        <apex:param name="resolution" value="" />
+                        <apex:param name="passResolutionCheck" value="" />
+                    </apex:actionFunction>
+                </apex:form>
+                <apex:outputPanel id="op">
+                    <apex:pageBlock rendered="{!AND(showErrorMessage, checkMinOS == true)}">
+                        <div aria-hidden="false" aria-labelledby="prompt-heading-id" aria-describedby="prompt-message-wrapper" role="alertdialog" class="slds-modal slds-modal--prompt slds-fade-in-open">
+                            <div class="slds-modal__container slds-modal--prompt" role="document" id="prompt-message-wrapper">
+                            <div class="slds-modal__header slds-theme--warning slds-theme--alert-texture">
+                                <h2 class="slds-text-heading--medium" id="prompt-heading-id">{!$Label.LBL_Warning}</h2>
+                            </div>
+                            <div class="slds-modal__content slds-p-around--medium">
+                                {!errorMessage}
+                            </div>
+                            <div class="slds-modal__footer slds-theme--default">
+                                <button class="slds-button slds-button--neutral" onclick="passResolutionCheckClick()">{!$Label.LBL_Continue}</button>
+                                <button class="slds-button slds-button--neutral" onclick="cancelClick('{!JSENCODE(retUrl)}')">{!$Label.LBL_Cancel}</button>
+                            </div>
+                        </div>
+                      </div>
+                      <div class="slds-backdrop slds-backdrop--open"></div>
+                    </apex:pageBlock>
+                    <apex:pageBlock rendered="{!AND(showErrorMessage, checkMinOS == false)}">
+                        <div aria-hidden="false" aria-labelledby="prompt-heading-id" aria-describedby="prompt-message-wrapper" role="alertdialog" class="slds-modal slds-modal--prompt slds-fade-in-open">
+                        <div class="slds-modal__container slds-modal--prompt" role="document" id="prompt-message-wrapper">
+                          <div class="slds-modal__header slds-theme--error slds-theme--alert-texture">
+                            <h2 class="slds-text-heading--medium" id="prompt-heading-id">{!$Label.LBL_Error}</h2>
+                          </div>
+                          <div class="slds-modal__content slds-p-around--medium">
+                            {!errorMessage}
+                          </div>
+                          <div class="slds-modal__footer slds-theme--default">
+                            <button class="slds-button slds-button--neutral" onclick="cancelClick('{!JSENCODE(retUrl)}')">{!$Label.LBL_Ok}</button>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="slds-backdrop slds-backdrop--open"></div>
+                    </apex:pageBlock>
+                </apex:outputPanel>
+            </div>
+        </div>
+        <script>
+            var scale = window.devicePixelRatio || window.screen.deviceXDPI / window.screen.logicalXDPI;
+            var screenWidth = screen.width;
+            var screenHeight = screen.height;
+
+            var isSF1oniPad = false;
+            var isFirefox = navigator.userAgent.toLowerCase().indexOf('firefox') > -1;
+
+            if ((typeof sforce != 'undefined') && (sforce != null) && navigator.userAgent.indexOf('iPad') != -1)
+                isSF1oniPad = true;
+
+            if(scale && !isSF1oniPad && !detectIE() && !isFirefox) {
+                screenWidth = screenWidth * (1/scale);
+                screenHeight = screenHeight * (1/scale);
+            }
+            var resolution = screenWidth+'x'+screenHeight;
+            var isPassResolutionCheck = true;
+
+            setResolution(resolution);
+
+            var isSF1 = ((typeof sforce != 'undefined') && (sforce != null));
+
+            function cancelClick(retUrl) {
+               if (isSF1) {
+                   sforce.one.back();
+               } else {
+                console.log(retUrl);
+                   //window.location.href = retUrl;
+                    window.history.back();
+               }
+               // console.log('redirect back: ', retUrl);
+               // window.location.href = retUrl;
+            }
+
+            function passResolutionCheckClick() {
+                isPassResolutionCheck = 'true';
+                passResolutionCheckAction(resolution, isPassResolutionCheck);
+            }
+
+            function detectIE() {
+                var ua = window.navigator.userAgent;
+                var msie = ua.indexOf('MSIE ');
+                if (msie > 0) {
+                    return true;
+                // IE 10 or older => return version number
+                // return parseInt(ua.substring(msie + 5, ua.indexOf('.', msie)), 10);
+                }
+
+                var trident = ua.indexOf('Trident/');
+                if (trident > 0) {
+                    return true;
+                // IE 11 => return version number
+                // var rv = ua.indexOf('rv:');
+                // return parseInt(ua.substring(rv + 3, ua.indexOf('.', rv)), 10);
+                }
+
+                var edge = ua.indexOf('Edge/');
+                if (edge > 0) {
+                    return true;
+                // Edge (IE 12+) => return version number
+                //return parseInt(ua.substring(edge + 5, ua.indexOf('.', edge)), 10);
+                }
+
+                // other browser
+                return false;
+            }
+        </script>
+    </html>
+</apex:page>

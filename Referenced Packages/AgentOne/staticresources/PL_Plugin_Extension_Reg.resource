@@ -1,0 +1,71 @@
+<!-- Page Layout Template -->
+<Pagelayouts entityName="Setting.PluginExtensionReg">
+    <Layout mode="Edit" entityName="Setting.PluginExtensionReg">
+        <!-- Page Header -->
+        <Header />
+        <!-- Page Body -->
+        <Body id="body">
+            <!-- Page Section, Leave cols attribute empty -->
+            <UISection cols="" label="Information">
+                <UIColumn cols="">
+
+                    <UIInputField field="name" value="v.entity.name" id="name" required="true" />
+                    <UIInputField field="entityname" value="v.entity.entityname" id="entityname" />
+                    <UIInputField field="eventname" value="v.entity.eventname" id="eventname" />
+                    <UIInputField field="order" value="v.entity.order" id="order" />
+                    <UIInputField field="pluginclassname" value="v.entity.pluginclassname" id="pluginclassname" />
+                    <UIInputField field="pluginnamespace" value="v.entity.pluginnamespace" id="pluginnamespace" />
+                    <UIInputField field="isenabled" value="v.entity.isenabled" id="isenabled" />
+                 
+                </UIColumn>
+
+            </UISection>
+        </Body>
+
+        <Footer >
+            <UIButton label="Cancel" id="btnCancel" class="slds-button slds-button--neutral" press="c.cancel" />
+            <UIButton label="Save" id="btnSave" class="slds-button slds-button--brand" press="c.save" />
+        </Footer>
+    </Layout>
+    <Layout mode="View" entityName="Setting.EntityFieldList">
+        <!-- Page Header -->
+        <Header>
+            <UIButton label="Clone" id="btnClone" class="slds-button slds-button--neutral" press="c.edit" action="RecordClone"/>
+            <UIButton label="Edit" id="btnEdit" class="slds-button slds-button--neutral" press="c.edit" action="RecordEdit"/>
+            <UIButton label="Delete" id="btnDel" class="slds-button slds-button--neutral" press="c.del" action="RecordDelete"/>
+        </Header>
+        <!-- Page Body -->
+        <Body>
+            <!-- Page Section, Leave cols attribute empty -->
+            <UISection cols="" label="Information">
+                <UIColumn cols="">
+
+                    <UIOutputField field="isenabled" value="v.entity.isenabled" id="isenabled" />
+                    <UIOutputField field="entityname" value="v.entity.entityname" id="entityname" />
+                    <UIOutputField field="eventname" value="v.entity.eventname" id="eventname" />
+                    <UIOutputField field="order" value="v.entity.order" id="order" />
+                    <UIOutputField field="pluginclassname" value="v.entity.pluginclassname" id="pluginclassname" />
+                    <UIOutputField field="pluginnamespace" value="v.entity.pluginnamespace" id="pluginnamespace" />
+
+                    </UIColumn>
+            </UISection>
+        </Body>
+        <Footer />
+    </Layout>
+    <Layout mode="List">
+        <Header>
+            <UIButton label="New" id="btnNew" class="slds-button slds-button--neutral" press="c.createEntity" action="RecordCreate"/>
+            <UIButton label="Import" id="btnImport" class="slds-button slds-button--neutral" press="c.import" action="RecordImport"/>
+            <UIButton label="Export" id="btnExport" class="slds-button slds-button--neutral" press="c.export" action="RecordExport"/>
+        </Header>
+        <Body>
+            <UISection cols="1">
+                <UIColumn cols="1">
+                    <UIList checkbox="True" mode="Full" id="gridView" entitySchema="v.entitySchema" currentViewName="v.currentViewName">
+                    </UIList>
+                </UIColumn>
+            </UISection>
+        </Body>
+        <Footer />
+    </Layout>
+</Pagelayouts>

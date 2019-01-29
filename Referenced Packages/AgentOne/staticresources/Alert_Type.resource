@@ -1,0 +1,11 @@
+Name,Action,Source,Alert Type,Key
+Required Signature,Not Urgent,iGO,ALERT_SIGNATURE_REQUIRED,igo-alert_signature_required
+Declined Signature,Not Urgent,iGO,ALERT_SIGNATURE_DECLINED,igo-alert_signature_declined
+Locked Out,Not Urgent,iGO,ALERT_SIGNATURE_LOCKED_OUT,igo-alert_signature_locked_out
+Expired Signature,Not Urgent,iGO,ALERT_SIGNATURE_EXPIRED,igo-alert_signature_expired
+Signature Expiry Warnings,Not Urgent,iGO,ALERT_SIGNATURE_ABOUT_TO_EXPIRE,igo-alert_signature_about_to_expire
+Requirement Received,Not Urgent,PendingCaseFeed,REQUIREMENT_RECEIVED,pendingcasefeed-requirement_received
+Issued and Ready for Delivery,Not Urgent,PendingCaseFeed,ISSUED_AND_READY_FOR_DELIVERY,pendingcasefeed-issued_and_ready_for_delivery
+Delivered and Active (Inforce),Not Urgent,PendingCaseFeed,DELIVERED_AND_ACTIVE,pendingcasefeed-delivered_and_active
+Concluded (Not Active),Not Urgent,PendingCaseFeed,CONCLUDED,pendingcasefeed-concluded
+Placement End Date,Not Urgent,PendingCaseFeed,PLACEMENT_END_DATE_UPCOMING,pendingcasefeed-placement_end_date_upcoming

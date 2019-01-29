@@ -1,0 +1,577 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <actionOverrides>
+        <actionName>Accept</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Clone</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>List</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>New</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Tab</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <allowInChatterGroups>false</allowInChatterGroups>
+    <compactLayoutAssignment>Commission_Compact_Layout</compactLayoutAssignment>
+    <compactLayouts>
+        <fullName>Commission_Compact_Layout</fullName>
+        <fields>Carrier_Name__c</fields>
+        <fields>Statement_Date__c</fields>
+        <fields>Paid_Amount__c</fields>
+        <fields>Payment_Date__c</fields>
+        <label>Commission Compact Layout</label>
+    </compactLayouts>
+    <deploymentStatus>Deployed</deploymentStatus>
+    <deprecated>false</deprecated>
+    <description>Commission Statements
+
+A statement of compensation activity for a producer/agent, provided by the compensating entity (e.g. carrier, distributor, agency) for each commission event within a commission cycle.</description>
+    <enableActivities>false</enableActivities>
+    <enableBulkApi>true</enableBulkApi>
+    <enableFeeds>false</enableFeeds>
+    <enableHistory>false</enableHistory>
+    <enableReports>true</enableReports>
+    <enableSearch>true</enableSearch>
+    <enableSharing>true</enableSharing>
+    <enableStreamingApi>true</enableStreamingApi>
+    <externalSharingModel>Private</externalSharingModel>
+    <fields>
+        <fullName>Agent_Number__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <formula>Owner:User.Agent_Number__c</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Agent Number</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Carrier_Code__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Carrier Code</description>
+        <encrypted>false</encrypted>
+        <externalId>false</externalId>
+        <label>Carrier Code</label>
+        <length>80</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Carrier_Id__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <deprecated>false</deprecated>
+        <description>Optional Lookup to Carrier Name on Insurance Product Carrier object</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Link to the  Insurance Product Carrier</inlineHelpText>
+        <label>Carrier Id</label>
+        <referenceTo>Insurance_Product_Carrier__c</referenceTo>
+        <relationshipLabel>Commissions</relationshipLabel>
+        <relationshipName>Commissions</relationshipName>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Carrier_Name__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Carrier Name</description>
+        <encrypted>false</encrypted>
+        <externalId>false</externalId>
+        <label>Carrier Name</label>
+        <length>80</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>End_Date__c</fullName>
+        <deprecated>false</deprecated>
+        <description>End date of the transactions for which the statement is generated</description>
+        <encrypted>false</encrypted>
+        <externalId>false</externalId>
+        <inlineHelpText>End date of the transactions for which the statement is generated</inlineHelpText>
+        <label>End Date</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>External_Id__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Carrier assigned unique id to commission statement</description>
+        <encrypted>false</encrypted>
+        <externalId>true</externalId>
+        <inlineHelpText>Carrier assigned unique id to commission statement</inlineHelpText>
+        <label>External Id</label>
+        <length>50</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Net_New_Commission_Amount__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Total new payment amount.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Total new payment amount.</inlineHelpText>
+        <label>Net New Commission Amount</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>New_Balance_Amount__c</fullName>
+        <deprecated>false</deprecated>
+        <description>This is the amount of any new amounts that are being billed.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>This is the amount of any new amounts that are being billed.</inlineHelpText>
+        <label>New Balance Amount</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>Notes__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Notes</description>
+        <encrypted>false</encrypted>
+        <externalId>false</externalId>
+        <label>Notes</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>TextArea</type>
+    </fields>
+    <fields>
+        <fullName>Paid_Amount__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Amount paid on a statement</description>
+        <externalId>false</externalId>
+        <label>Paid Amount</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>Payment_Date__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Date the Commission Statement was transmitted</description>
+        <encrypted>false</encrypted>
+        <externalId>false</externalId>
+        <inlineHelpText>Date the Commission Statement was transmitted</inlineHelpText>
+        <label>Payment Date</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>Payment_Type__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Payment Form of Payment</description>
+        <externalId>false</externalId>
+        <label>Payment Type</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Cash</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Cashier&apos;s Check</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Certified Check</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Clearinghouse</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Corporate Check</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Credit Card</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Debit Card/Check Card</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Debit Order</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Electronic Funds Transfer</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Funds to follow</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Money Order</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Official Check</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Payment from within this Policy</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Payment is made from another Policy</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Personal Check</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Retained Asset Account</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Stop Order</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Teller Check</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Travelers Check</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Treasury Check</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>US Postal Service Money Order</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Wire</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Other</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Unknown</fullName>
+                    <default>false</default>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Previous_Balance_Amount__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Previous Balance Amount. This is the amount that was left over from the previous statement.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>This is the amount that was left over from the previous statement</inlineHelpText>
+        <label>Previous Balance Amount</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>SourceText__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Field to be updated by ESB to indicate the source.</description>
+        <encrypted>false</encrypted>
+        <externalId>false</externalId>
+        <label>Source Name</label>
+        <length>50</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Source__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Source system Id.</description>
+        <encrypted>false</encrypted>
+        <externalId>false</externalId>
+        <label>Source ID</label>
+        <length>20</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Start_Date__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Start date of the transactions for which the statement is generated.</description>
+        <encrypted>false</encrypted>
+        <externalId>false</externalId>
+        <inlineHelpText>Start date of the transactions for which the statement is generated.</inlineHelpText>
+        <label>Start Date</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>Statement_Date__c</fullName>
+        <deprecated>false</deprecated>
+        <description>The date as of which the data on the statement is current.</description>
+        <encrypted>false</encrypted>
+        <externalId>false</externalId>
+        <inlineHelpText>The date as of which the data on the statement is current.</inlineHelpText>
+        <label>Statement Date</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>Statement_Frequency__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Frequency the statement is produced - e.g. Weekly, Monthly</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Frequency the statement is produced - e.g. Weekly, Monthly</inlineHelpText>
+        <label>Statement Frequency</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Any</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Annual Calendar</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Bi-Weekly</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Day or Daily</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Monthly</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Quarterly</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Semi-Annual</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Weekly</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Single Payment</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Unknown</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Other</fullName>
+                    <default>false</default>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Total_Charge_Backs__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Total charge backs accounted for on this statement.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Total charge backs accounted for on this statement.</inlineHelpText>
+        <label>Total Charge Backs</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>Total_Earnings_YTD__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Total earnings earned by this agent (for this producer ID), annual to date, at time of this commission statement.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Total earnings earned by this agent (for this producer ID), annual to date, at time of this commission statement.</inlineHelpText>
+        <label>Total Earnings YTD</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>Total_Expense_Recovered__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Total expenses recovered based on this statement.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Total expenses recovered based on this statement.</inlineHelpText>
+        <label>Total Expense Recovered</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>Total_Manual_Adjustments__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Total manual adjustments accounted for on this statement.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Total manual adjustments accounted for on this statement.</inlineHelpText>
+        <label>Total Manual Adjustments</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>Total_Taxable_Earnings_YTD__c</fullName>
+        <deprecated>false</deprecated>
+        <description>The total amount of taxable earnings for a policy year to date.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>The total amount of taxable earnings for a policy year to date.</inlineHelpText>
+        <label>Total Taxable Earnings YTD</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <label>Commission</label>
+    <listViews>
+        <fullName>All</fullName>
+        <filterScope>Everything</filterScope>
+        <label>All</label>
+    </listViews>
+    <listViews>
+        <fullName>All_Commissions_Statements</fullName>
+        <columns>NAME</columns>
+        <columns>Statement_Date__c</columns>
+        <columns>Start_Date__c</columns>
+        <columns>End_Date__c</columns>
+        <columns>Paid_Amount__c</columns>
+        <filterScope>Everything</filterScope>
+        <label>All Commission Statements</label>
+    </listViews>
+    <listViews>
+        <fullName>My_Commissions_Statements</fullName>
+        <columns>NAME</columns>
+        <columns>Statement_Date__c</columns>
+        <columns>Start_Date__c</columns>
+        <columns>End_Date__c</columns>
+        <columns>Paid_Amount__c</columns>
+        <filterScope>Everything</filterScope>
+        <label>My Commission Statements</label>
+    </listViews>
+    <listViews>
+        <fullName>Past_Year_Commissions_Statements</fullName>
+        <columns>NAME</columns>
+        <columns>Statement_Date__c</columns>
+        <columns>Start_Date__c</columns>
+        <columns>End_Date__c</columns>
+        <columns>Paid_Amount__c</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>Statement_Date__c</field>
+            <operation>equals</operation>
+            <value>LAST_FISCAL_YEAR</value>
+        </filters>
+        <label>Past Year Commissions Statements</label>
+    </listViews>
+    <nameField>
+        <displayFormat>CS-{0000000}</displayFormat>
+        <label>Commission Name</label>
+        <type>AutoNumber</type>
+    </nameField>
+    <pluralLabel>Commissions</pluralLabel>
+    <searchLayouts>
+        <customTabListAdditionalFields>Statement_Date__c</customTabListAdditionalFields>
+        <customTabListAdditionalFields>Start_Date__c</customTabListAdditionalFields>
+        <customTabListAdditionalFields>End_Date__c</customTabListAdditionalFields>
+        <customTabListAdditionalFields>Paid_Amount__c</customTabListAdditionalFields>
+        <lookupDialogsAdditionalFields>Statement_Date__c</lookupDialogsAdditionalFields>
+        <lookupDialogsAdditionalFields>Start_Date__c</lookupDialogsAdditionalFields>
+        <lookupDialogsAdditionalFields>End_Date__c</lookupDialogsAdditionalFields>
+        <lookupDialogsAdditionalFields>Paid_Amount__c</lookupDialogsAdditionalFields>
+        <lookupPhoneDialogsAdditionalFields>Statement_Date__c</lookupPhoneDialogsAdditionalFields>
+        <lookupPhoneDialogsAdditionalFields>Start_Date__c</lookupPhoneDialogsAdditionalFields>
+        <lookupPhoneDialogsAdditionalFields>End_Date__c</lookupPhoneDialogsAdditionalFields>
+        <lookupPhoneDialogsAdditionalFields>Paid_Amount__c</lookupPhoneDialogsAdditionalFields>
+        <searchFilterFields>NAME</searchFilterFields>
+        <searchFilterFields>Statement_Date__c</searchFilterFields>
+        <searchFilterFields>Start_Date__c</searchFilterFields>
+        <searchFilterFields>End_Date__c</searchFilterFields>
+        <searchFilterFields>Paid_Amount__c</searchFilterFields>
+        <searchResultsAdditionalFields>Statement_Date__c</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>Start_Date__c</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>End_Date__c</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>Paid_Amount__c</searchResultsAdditionalFields>
+    </searchLayouts>
+    <sharingModel>Private</sharingModel>
+</CustomObject>

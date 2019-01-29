@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Formation</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Formations</value>
+    </caseValues>
+    <fields>
+        <label>Contact</label>
+        <name>Contact__c</name>
+        <relationshipLabel>Éducation</relationshipLabel>
+    </fields>
+    <fields>
+        <label>Niveau d&apos;éducation</label>
+        <name>EducationLevel__c</name>
+        <picklistValues>
+            <masterLabel>Decline to Comment</masterLabel>
+            <translation><!-- Decline to Comment --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Graduate</masterLabel>
+            <translation><!-- Graduate --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>High School</masterLabel>
+            <translation><!-- High School --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Post Graduate</masterLabel>
+            <translation><!-- Post Graduate --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label>Date d&apos;obtention du diplôme</label>
+        <name>GraduationDate__c</name>
+    </fields>
+    <fields>
+        <label>Institution</label>
+        <name>Institution__c</name>
+    </fields>
+    <fields>
+        <label>ID du système source</label>
+        <name>SourceSystemId__c</name>
+    </fields>
+    <gender>Feminine</gender>
+    <layouts>
+        <layout>Education Layout</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+    <nameFieldLabel>Nom de l&apos;institution</nameFieldLabel>
+    <startsWith>Consonant</startsWith>
+    <validationRules>
+        <errorMessage>L&apos;année d&apos;obtention du diplôme ne peut pas être future.</errorMessage>
+        <name>YearOfGradCannotBeInFuture</name>
+    </validationRules>
+</CustomObjectTranslation>

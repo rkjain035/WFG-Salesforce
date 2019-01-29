@@ -1,0 +1,227 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <actionOverrides>
+        <actionName>Accept</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Clone</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>List</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>New</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Tab</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <allowInChatterGroups>false</allowInChatterGroups>
+    <compactLayoutAssignment>SYSTEM</compactLayoutAssignment>
+    <deploymentStatus>Deployed</deploymentStatus>
+    <deprecated>false</deprecated>
+    <description>A relationship between two accounts, such as a household and a business account.</description>
+    <enableActivities>false</enableActivities>
+    <enableBulkApi>true</enableBulkApi>
+    <enableFeeds>false</enableFeeds>
+    <enableHistory>true</enableHistory>
+    <enableReports>false</enableReports>
+    <enableSearch>true</enableSearch>
+    <enableSharing>true</enableSharing>
+    <enableStreamingApi>true</enableStreamingApi>
+    <externalSharingModel>Private</externalSharingModel>
+    <fields>
+        <fullName>Account__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <label>Account</label>
+        <referenceTo>Account</referenceTo>
+        <relationshipName>RelatedFromAccounts</relationshipName>
+        <required>false</required>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Active__c</fullName>
+        <defaultValue>true</defaultValue>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <label>Active</label>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>EndDate__c</fullName>
+        <deprecated>false</deprecated>
+        <encrypted>false</encrypted>
+        <externalId>false</externalId>
+        <label>End Date</label>
+        <required>false</required>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>ExternalId__c</fullName>
+        <caseSensitive>false</caseSensitive>
+        <deprecated>false</deprecated>
+        <encrypted>false</encrypted>
+        <externalId>true</externalId>
+        <label>External ID</label>
+        <length>64</length>
+        <required>false</required>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>true</unique>
+    </fields>
+    <fields>
+        <fullName>InverseRelationship__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <deprecated>false</deprecated>
+        <description>Uniquely identifies the relationship between Account__c and RelatedAccount__c so that it can be referenced by a trigger that creates the inverse relationship record.</description>
+        <externalId>false</externalId>
+        <label>InverseRelationship</label>
+        <referenceTo>AccountAccountRelation__c</referenceTo>
+        <relationshipLabel>Account Account Relations</relationshipLabel>
+        <relationshipName>AccountAccountRelations</relationshipName>
+        <required>false</required>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>RelatedAccount__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <label>Related Account</label>
+        <referenceTo>Account</referenceTo>
+        <relationshipName>RelatedToAccounts</relationshipName>
+        <required>false</required>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Role__c</fullName>
+        <deleteConstraint>Restrict</deleteConstraint>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <label>Related Role</label>
+        <lookupFilter>
+            <active>true</active>
+            <filterItems>
+                <field>ReciprocalRole__c.RecordType.Name</field>
+                <operation>equals</operation>
+                <value>Account Role</value>
+            </filterItems>
+            <isOptional>false</isOptional>
+        </lookupFilter>
+        <referenceTo>ReciprocalRole__c</referenceTo>
+        <relationshipName>AccountReciprocalRole</relationshipName>
+        <required>true</required>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>SourceSystemId__c</fullName>
+        <deprecated>false</deprecated>
+        <encrypted>false</encrypted>
+        <externalId>true</externalId>
+        <label>Source System ID</label>
+        <length>100</length>
+        <required>false</required>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>StartDate__c</fullName>
+        <defaultValue>TODAY()</defaultValue>
+        <deprecated>false</deprecated>
+        <encrypted>false</encrypted>
+        <externalId>false</externalId>
+        <label>Start Date</label>
+        <required>false</required>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <label>Account-Account Relationship</label>
+    <listViews>
+        <fullName>All</fullName>
+        <filterScope>Everything</filterScope>
+        <label>All</label>
+    </listViews>
+    <nameField>
+        <displayFormat>R-{000000000}</displayFormat>
+        <label>Account Relation Name</label>
+        <trackHistory>true</trackHistory>
+        <type>AutoNumber</type>
+    </nameField>
+    <pluralLabel>Account Account Relations</pluralLabel>
+    <searchLayouts/>
+    <sharingModel>Private</sharingModel>
+    <validationRules>
+        <fullName>AARCanOnlyBeDeactivated</fullName>
+        <active>true</active>
+        <errorConditionFormula>AND(OR(ISCHANGED(Account__c),ISCHANGED(RelatedAccount__c),ISCHANGED(Role__c)),NOT(ISNEW()))</errorConditionFormula>
+        <errorMessage>This record can&apos;t be edited. To update relationship information, you can deactivate this record and create a new one.</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>AccountAndRelatedAccountCannotBeSame</fullName>
+        <active>true</active>
+        <errorConditionFormula>Account__c = RelatedAccount__c</errorConditionFormula>
+        <errorMessage>Account and Related Account must be different entities.</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>AccountCannotBeAnIndividual</fullName>
+        <active>true</active>
+        <description>Error message when any selected account is part of an individual in an AAR.</description>
+        <errorConditionFormula>OR(ISPICKVAL(Account__r.IndividualType__c,&apos;Individual&apos;),ISPICKVAL( RelatedAccount__r.IndividualType__c, &apos;Individual&apos;))</errorConditionFormula>
+        <errorMessage>Account can&apos;t be a part of an individual.</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>CannotCreateInactiveRecord</fullName>
+        <active>true</active>
+        <description>Ensures that a record cannot be created as Inactive</description>
+        <errorConditionFormula>AND(ISNEW(),Active__c == false)</errorConditionFormula>
+        <errorMessage>A Account-Account Relationship cannot be created as Inactive.</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>InactiveAARCannotBeEdited</fullName>
+        <active>true</active>
+        <errorConditionFormula>AND(PRIORVALUE(Active__c) == false,NOT(ISNEW()))</errorConditionFormula>
+        <errorMessage>Inactive record can&apos;t be edited. To update relationship information, you can create a new one.</errorMessage>
+    </validationRules>
+</CustomObject>

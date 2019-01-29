@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Configuration Cumul par référence</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Configurations Cumul par référence</value>
+    </caseValues>
+    <fields>
+        <label>Actif</label>
+        <name>Active__c</name>
+    </fields>
+    <fields>
+        <label>Champ source de cumul</label>
+        <name>FromField__c</name>
+    </fields>
+    <fields>
+        <label>Objet De</label>
+        <name>FromObject__c</name>
+    </fields>
+    <fields>
+        <label>Type d&apos;enregistrement De</label>
+        <name>FromRecordType__c</name>
+    </fields>
+    <fields>
+        <label>Champ de référence</label>
+        <name>LookupField__c</name>
+    </fields>
+    <fields>
+        <label>Espace de noms</label>
+        <name>Namespace__c</name>
+        <picklistValues>
+            <masterLabel>Industries</masterLabel>
+            <translation><!-- Industries --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label>Type de processus</label>
+        <name>ProcessType__c</name>
+        <picklistValues>
+            <masterLabel>Async</masterLabel>
+            <translation><!-- Async --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Batch</masterLabel>
+            <translation><!-- Batch --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Realtime</masterLabel>
+            <translation><!-- Realtime --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label>Opération de cumul</label>
+        <name>RollupOperation__c</name>
+        <picklistValues>
+            <masterLabel>Avg</masterLabel>
+            <translation><!-- Avg --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Count</masterLabel>
+            <translation><!-- Count --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Max</masterLabel>
+            <translation><!-- Max --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Min</masterLabel>
+            <translation><!-- Min --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Sum</masterLabel>
+            <translation><!-- Sum --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label>Champ cible de cumul</label>
+        <name>ToField__c</name>
+    </fields>
+    <fields>
+        <label>Objet À</label>
+        <name>ToObject__c</name>
+    </fields>
+    <fields>
+        <label>Champs qui déclenchent une mise à jour</label>
+        <name>UpdateOnChange__c</name>
+    </fields>
+    <fields>
+        <help><!-- A sample expression for the Where Clause is: (1 OR 2) AND 3.
+Here the numbers correspond to the filter criterias defined in the child object RollUpByLookupFilterCriteria. --></help>
+        <label>Clause Where</label>
+        <name>WhereClause__c</name>
+    </fields>
+    <gender>Feminine</gender>
+    <layouts>
+        <layout>RollupByLookupConfig Layout</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+    <nameFieldLabel>Nom de la configuration de Cumul par réf</nameFieldLabel>
+    <startsWith>Consonant</startsWith>
+    <webLinks>
+        <label>Exécuter les règles</label>
+        <name>Run_Rules</name>
+    </webLinks>
+</CustomObjectTranslation>

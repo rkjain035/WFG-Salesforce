@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Feature Service Mapping</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Feature Service Mappings</value>
+    </caseValues>
+    <fields>
+        <label><!-- Default Service Name --></label>
+        <name>DefaultServiceName__c</name>
+    </fields>
+    <fields>
+        <label><!-- Enabled Service Name --></label>
+        <name>EnabledServiceName__c</name>
+    </fields>
+    <fields>
+        <label><!-- Feature Name --></label>
+        <name>FeatureName__c</name>
+    </fields>
+    <fields>
+        <label><!-- Is Mapping Active --></label>
+        <name>IsMappingActive__c</name>
+    </fields>
+    <startsWith>Consonant</startsWith>
+</CustomObjectTranslation>

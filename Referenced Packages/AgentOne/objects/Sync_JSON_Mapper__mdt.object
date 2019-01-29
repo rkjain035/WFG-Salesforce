@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fields>
+        <fullName>Default__c</fullName>
+        <defaultValue>false</defaultValue>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <fieldManageability>DeveloperControlled</fieldManageability>
+        <label>Default Mapping</label>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Enabled__c</fullName>
+        <defaultValue>true</defaultValue>
+        <deprecated>false</deprecated>
+        <description>Indicates if this synchronization mapping is active.</description>
+        <externalId>false</externalId>
+        <fieldManageability>SubscriberControlled</fieldManageability>
+        <inlineHelpText>Indicates if this synchronization mapping is active.</inlineHelpText>
+        <label>Enabled</label>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Entity_Name__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Name of the entity for the AngetOne field being mapped to.</description>
+        <externalId>false</externalId>
+        <fieldManageability>DeveloperControlled</fieldManageability>
+        <inlineHelpText>Name of the entity for the AngetOne field being mapped to.</inlineHelpText>
+        <label>Entity Name</label>
+        <length>50</length>
+        <required>true</required>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Input_Fields__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Specify the field name from the source application.</description>
+        <externalId>false</externalId>
+        <fieldManageability>DeveloperControlled</fieldManageability>
+        <inlineHelpText>Specify the field name from the source application.</inlineHelpText>
+        <label>Input Fields</label>
+        <required>true</required>
+        <type>TextArea</type>
+    </fields>
+    <fields>
+        <fullName>Match_All__c</fullName>
+        <defaultValue>false</defaultValue>
+        <deprecated>false</deprecated>
+        <description>Indicates that the output field will only be populated if all the &quot;input&quot; fields have a value.</description>
+        <externalId>false</externalId>
+        <fieldManageability>DeveloperControlled</fieldManageability>
+        <inlineHelpText>Indicates that the output field will only be populated if all the &quot;input&quot; fields have a value.</inlineHelpText>
+        <label>Match All Input Fields</label>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Output_Field__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Specify the api name of the target field that you would like the value from the &quot;input&quot; field mapped to.</description>
+        <externalId>false</externalId>
+        <fieldManageability>DeveloperControlled</fieldManageability>
+        <inlineHelpText>Specify the api name of the target field that you would like the value from the &quot;input&quot; field mapped to.</inlineHelpText>
+        <label>Output Field</label>
+        <length>255</length>
+        <required>true</required>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Person_Type__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <fieldManageability>DeveloperControlled</fieldManageability>
+        <label>Person Type</label>
+        <required>false</required>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>1</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>2</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>3</fullName>
+                    <default>true</default>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>SourceId__c</fullName>
+        <deprecated>false</deprecated>
+        <description>The source where the input field is coming from.</description>
+        <externalId>false</externalId>
+        <fieldManageability>DeveloperControlled</fieldManageability>
+        <inlineHelpText>The source where the input field is coming from.</inlineHelpText>
+        <label>Source App</label>
+        <length>50</length>
+        <required>false</required>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Transform_Action__c</fullName>
+        <deprecated>false</deprecated>
+        <description>The transformation to be performed to the value on the target &quot;output&quot; field.</description>
+        <externalId>false</externalId>
+        <fieldManageability>DeveloperControlled</fieldManageability>
+        <inlineHelpText>The transformation to be performed to the value on the target &quot;output&quot; field.</inlineHelpText>
+        <label>Transform Action</label>
+        <required>false</required>
+        <type>TextArea</type>
+    </fields>
+    <label>Synchronization Mapper</label>
+    <pluralLabel>Synchronization Mappers</pluralLabel>
+    <visibility>Public</visibility>
+</CustomObject>

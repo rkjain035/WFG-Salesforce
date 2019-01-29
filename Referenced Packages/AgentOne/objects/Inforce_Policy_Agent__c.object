@@ -1,0 +1,255 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <actionOverrides>
+        <actionName>Accept</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Clone</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>List</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>New</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Tab</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <allowInChatterGroups>false</allowInChatterGroups>
+    <compactLayoutAssignment>Policy_Agent_Compact_Layout</compactLayoutAssignment>
+    <compactLayouts>
+        <fullName>Policy_Agent_Compact_Layout</fullName>
+        <fields>Name</fields>
+        <fields>First_Name__c</fields>
+        <fields>Last_Name__c</fields>
+        <fields>Agent_Role__c</fields>
+        <label>Policy Agent Compact Layout</label>
+    </compactLayouts>
+    <deploymentStatus>Deployed</deploymentStatus>
+    <deprecated>false</deprecated>
+    <description>Agents associated to a Policy. It includes the Primary Agent as well as Additional Agent. If the Agent happens to be a User in the system, it will also have a link back to the User record.</description>
+    <enableActivities>true</enableActivities>
+    <enableBulkApi>true</enableBulkApi>
+    <enableFeeds>false</enableFeeds>
+    <enableHistory>true</enableHistory>
+    <enableReports>true</enableReports>
+    <enableSearch>false</enableSearch>
+    <enableSharing>true</enableSharing>
+    <enableStreamingApi>true</enableStreamingApi>
+    <externalSharingModel>ControlledByParent</externalSharingModel>
+    <fields>
+        <fullName>Agent_Role__c</fullName>
+        <deprecated>false</deprecated>
+        <description>This field contains the available relationships for an &quot;agent&quot; or &quot;agency&quot; from OLI_LU_REL in the ACORD help file.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>This field contains the available relationships for an &quot;agent&quot; or &quot;agency&quot;.</inlineHelpText>
+        <label>Agent Role</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Primary Servicing Agent</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Secondary Servicing Agent</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>General Agent</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Primary Writing Agent</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Secondary Writing Agent</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Agent</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Assigned Agent</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Consignee Agent</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Counter Signing Agent</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Coverage Primary Agent</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Coverage Servicing Agent</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Regional Agent</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Servicing Agency</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Subordinate Agent</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Superior Agent</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Writing Agency</fullName>
+                    <default>false</default>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Agent_User__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <deprecated>false</deprecated>
+        <description>This field is the lookup to the associated AgnetOne user.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>This field is the lookup to the associated AgnetOne user.</inlineHelpText>
+        <label>Agent User</label>
+        <referenceTo>User</referenceTo>
+        <relationshipName>InforcePolicy_Agents</relationshipName>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Allocation__c</fullName>
+        <deprecated>false</deprecated>
+        <description>This field stores the allocation for the policy agent.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>This field stores the allocation for the policy agent.</inlineHelpText>
+        <label>Allocation</label>
+        <precision>5</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Percent</type>
+    </fields>
+    <fields>
+        <fullName>Ext_LastModifiedDate__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Last Modified Date from external application.</description>
+        <encrypted>false</encrypted>
+        <externalId>false</externalId>
+        <inlineHelpText>Last Modified TimeStamp from external system for records sent to AgentOne.</inlineHelpText>
+        <label>Ext. Last Modified TimeStamp</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>DateTime</type>
+    </fields>
+    <fields>
+        <fullName>External_Id__c</fullName>
+        <caseSensitive>false</caseSensitive>
+        <deprecated>false</deprecated>
+        <encrypted>false</encrypted>
+        <externalId>true</externalId>
+        <label>External Id</label>
+        <length>64</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>true</unique>
+    </fields>
+    <fields>
+        <fullName>First_Name__c</fullName>
+        <deprecated>false</deprecated>
+        <description>This field stores the first name of the inforce policy agent.</description>
+        <encrypted>false</encrypted>
+        <externalId>false</externalId>
+        <label>First Name</label>
+        <length>40</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Inforce_Policy__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <label>Policy</label>
+        <referenceTo>Inforce_Policy__c</referenceTo>
+        <relationshipLabel>Policy Agents</relationshipLabel>
+        <relationshipName>InforcePolicy_Agents</relationshipName>
+        <relationshipOrder>0</relationshipOrder>
+        <reparentableMasterDetail>false</reparentableMasterDetail>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>MasterDetail</type>
+        <writeRequiresMasterRead>false</writeRequiresMasterRead>
+    </fields>
+    <fields>
+        <fullName>Last_Name__c</fullName>
+        <deprecated>false</deprecated>
+        <description>This field stores the last name of the inforce policy agent.</description>
+        <encrypted>false</encrypted>
+        <externalId>false</externalId>
+        <label>Last Name</label>
+        <length>80</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <label>Policy Agent</label>
+    <nameField>
+        <encrypted>false</encrypted>
+        <label>Agent #</label>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+    </nameField>
+    <pluralLabel>Policy Agents</pluralLabel>
+    <searchLayouts/>
+    <sharingModel>ControlledByParent</sharingModel>
+</CustomObject>

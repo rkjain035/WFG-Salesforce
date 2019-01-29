@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Actif financier</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Actifs financiers</value>
+    </caseValues>
+    <fields>
+        <label>Nom de la catégorie d&apos;actifs</label>
+        <name>AssetCategoryName__c</name>
+        <picklistValues>
+            <masterLabel>Large Blend</masterLabel>
+            <translation><!-- Large Blend --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Large Growth</masterLabel>
+            <translation><!-- Large Growth --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Large Value</masterLabel>
+            <translation><!-- Large Value --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Mid-Cap Blend</masterLabel>
+            <translation><!-- Mid-Cap Blend --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Mid-Cap Growth</masterLabel>
+            <translation><!-- Mid-Cap Growth --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Mid-Cap Value</masterLabel>
+            <translation><!-- Mid-Cap Value --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Small Blend</masterLabel>
+            <translation><!-- Small Blend --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Small Growth</masterLabel>
+            <translation><!-- Small Growth --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Small Value</masterLabel>
+            <translation><!-- Small Value --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label>Catégorie d&apos;actifs</label>
+        <name>AssetCategory__c</name>
+        <picklistValues>
+            <masterLabel>Allocation</masterLabel>
+            <translation><!-- Allocation --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Alternative</masterLabel>
+            <translation><!-- Alternative --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Commodities</masterLabel>
+            <translation><!-- Commodities --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>International Equity</masterLabel>
+            <translation><!-- International Equity --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Municipal Bond</masterLabel>
+            <translation><!-- Municipal Bond --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Sector Equity</masterLabel>
+            <translation><!-- Sector Equity --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Taxable Bond</masterLabel>
+            <translation><!-- Taxable Bond --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>U.S. Equity</masterLabel>
+            <translation><!-- U.S. Equity --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label>Classes d&apos;actifs</label>
+        <name>AssetClass__c</name>
+        <picklistValues>
+            <masterLabel>Alternative Investments</masterLabel>
+            <translation><!-- Alternative Investments --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Cash Equivalents</masterLabel>
+            <translation><!-- Cash Equivalents --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Equities</masterLabel>
+            <translation><!-- Equities --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Fixed Income</masterLabel>
+            <translation><!-- Fixed Income --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label>Compte financier</label>
+        <name>FinancialAccount__c</name>
+        <relationshipLabel>Actifs financiers</relationshipLabel>
+    </fields>
+    <fields>
+        <help><!-- Change in value since purchase. --></help>
+        <label>Gain/Perte</label>
+        <name>GainLoss__c</name>
+    </fields>
+    <fields>
+        <label>Foyer</label>
+        <name>Household__c</name>
+        <relationshipLabel>Actifs financiers du foyer</relationshipLabel>
+    </fields>
+    <fields>
+        <label>Dernière mise à jour</label>
+        <name>LastUpdated__c</name>
+    </fields>
+    <fields>
+        <label>Valeur marchande</label>
+        <name>MarketValue__c</name>
+    </fields>
+    <fields>
+        <label>Changement de pourcentage</label>
+        <name>PercentChange__c</name>
+    </fields>
+    <fields>
+        <label>Prix</label>
+        <name>Price__c</name>
+    </fields>
+    <fields>
+        <label>Propriétaire principal</label>
+        <name>PrimaryOwner__c</name>
+        <relationshipLabel>Actifs financiers du client</relationshipLabel>
+    </fields>
+    <fields>
+        <label>Prix d&apos;achat</label>
+        <name>PurchasePrice__c</name>
+    </fields>
+    <fields>
+        <label>Symbole</label>
+        <name>Securities__c</name>
+        <relationshipLabel>Valeurs mobilières</relationshipLabel>
+    </fields>
+    <fields>
+        <label>Parts</label>
+        <name>Shares__c</name>
+    </fields>
+    <fields>
+        <label>ID du système source</label>
+        <name>SourceSystemId__c</name>
+    </fields>
+    <fields>
+        <label>Symbole</label>
+        <name>Symbol__c</name>
+    </fields>
+    <gender>Masculine</gender>
+    <layouts>
+        <layout>Financial Holding Layout</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- Financials --></label>
+            <section>Financials</section>
+        </sections>
+    </layouts>
+    <nameFieldLabel>Nom de l&apos;actif financier</nameFieldLabel>
+    <startsWith>Vowel</startsWith>
+</CustomObjectTranslation>

@@ -1,0 +1,86 @@
+<apex:page standardController="AgentOne__InsuranceCase__c" showQuickActionVfHeader="False" extensions="AgentOne.DuplicateCaseController" lightningStylesheets="true">
+
+    <apex:slds />
+    <div class="slds-scope">
+        <!-- Lightning Design system modal  -->
+        <div class="demo-only" style="height: 640px;">
+            <section role="dialog" tabindex="-1" aria-labelledby="modal-heading-01" aria-modal="true" aria-describedby="modal-content-id-1"
+                class="slds-modal slds-fade-in-open">
+                <div class="slds-modal__container">
+                    <header class="slds-modal__header">
+                        <h2 id="modal-heading-01" class="slds-text-heading_medium slds-hyphenate">
+                            <apex:outputText value="{!promptHeading}" id="promptHeadingTag"></apex:outputText>
+                        </h2>
+                    </header>
+                    <div class="slds-modal__content slds-p-around_medium" id="modal-content-id-1">
+                        <apex:outputText escape="false" value="{!promptMessage}" id="promptMsgTag" />
+                        <br/>
+                        <!--apex:outputText value="{!calloutResult}" id="returnedResult" /> -->
+                    </div>
+                    <footer class="slds-modal__footer">
+
+                        <apex:outputPanel id="statuses">
+                            <!-- Spinner for duplicating the salesforce insurance case first  -->
+                            <apex:actionStatus id="Status1">
+                                <apex:facet name="start">
+                                    <apex:outputPanel >
+                                        <img src="/img/loading32.gif" />
+                                        <apex:outputLabel value="{!duplicatingAOMessage}" />
+                                    </apex:outputPanel>
+                                </apex:facet>
+                            </apex:actionStatus>
+                            <!-- Spinner for webservice call  -->
+                            <apex:actionStatus id="Status2">
+                                <apex:facet name="start">
+                                    <apex:outputPanel >
+                                        <img src="/img/loading32.gif" />
+                                        <apex:outputLabel value="{!duplicatingIGOMessage}" />
+                                    </apex:outputPanel>
+                                </apex:facet>
+                            </apex:actionStatus>
+
+                        </apex:outputPanel>
+                        <button class="slds-button slds-button_brand" onclick="this.disabled=true;this.value='...Please Wait';CreateCaseDupeFunction();return false;"
+                            style="display:{!visibleOKButton}">Ok</button>
+                        <button class="slds-button slds-button_neutral" onclick="openExistingCase();">Cancel</button>
+                    </footer>
+                </div>
+            </section>
+            <div class="slds-backdrop slds-backdrop_open"></div>
+        </div>
+        <!-- End Lightning Design system modal  -->
+    </div>
+
+    <apex:form >
+        <!-- Action functions to duplicate salesforce case and then make we callout to duplicate in iGo  -->
+        <!-- Needed 2 ajax calls so as you can run web callout syn after a DML statement (ie insert of new case)  -->
+        <apex:actionFunction action="{!createCaseDuplicate}" name="CreateCaseDupeFunction" status="Status1" rerender="statuses" onComplete="CalliGOFunction();"
+        />
+        <apex:actionFunction action="{!callIGoRequest}" name="CalliGOFunction" status="Status2" rerender="promptHeadingTag,promptMsgTag"
+            onComplete="checkToRedirect('{!shouldRedirect}');" />
+        <apex:actionFunction name="NavigatePage" action="{!navigatePage}">
+        </apex:actionFunction>
+    </apex:form>
+
+    <script type="text/javascript">
+        var isSF1 = ((typeof sforce != 'undefined') && (sforce != null));
+        function openExistingCase() {
+            if (isSF1) {
+                sforce.one.back();
+            } else {
+                window.parent.location.href = "{!URLFOR($Action.InsuranceCase__c.View, InsuranceCase__c.Id)}";
+            }
+        }
+
+        var checkToRedirect = function (shouldRedirect) {
+
+            if (shouldRedirect === 'true') {
+                NavigatePage();
+            }
+
+        };
+
+
+    </script>
+
+</apex:page>

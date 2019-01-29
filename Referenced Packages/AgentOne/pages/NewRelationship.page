@@ -1,0 +1,33 @@
+<apex:page standardController="AgentOne__Relationship_Account_To_Account__c">
+<!-- **NOTE: This page is no longer used. It's replaced with EditRelationshipForm -->
+
+<!--   <script src="../../soap/ajax/35.0/connection.js" type="text/javascript">
+  </script>
+  <script>
+    function insertParam(key, value)
+    {
+        key = encodeURI(key); value = encodeURI(value);
+        
+        var kvp = document.location.search.substr(1).split('&');
+        
+        var i=kvp.length; var x; while(i--) 
+        {
+            x = kvp[i].split('=');
+        
+            if (x[0]==key)
+            {
+                x[1] = value;
+                kvp[i] = x.join('=');
+                break;
+            }
+        }       
+        if(i<0) {kvp[kvp.length] = [key,value].join('=');}   
+              
+        return kvp.join('&').replace('&sfdc.override=1','').replace('&save_new=1',''); 
+    }
+    var params = insertParam('Name', '{!$Label.Msg_RelationshipTitle}');
+    
+    window.top.location.href = '/'+'{!$ObjectType.Relationship_Account_To_Account__c}'+'/e?nooverride=1&' + params ;
+    
+  </script> -->
+</apex:page>

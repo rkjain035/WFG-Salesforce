@@ -1,0 +1,40 @@
+<apex:page standardController="AgentOne__InsuranceCase__c" extensions="AgentOne.LaunchInsuranceCaseToolController" sidebar="true" applyBodyTag="false">
+    <apex:includeScript value="/lightning/lightning.out.js" />
+
+    <script type="text/javascript">
+        
+        function getQuickStartComponents(componentName, divId) {
+            if (componentName === null || componentName === "") return;
+                 $Lightning.createComponent(componentName, {
+                        title:'INSURANCE CASES', 
+                        needsAnalysisPhase: 'Evaluate Needs', 
+                        illustrationPhase: 'Run Illustration', 
+                        applicationPhase: 'Begin Application', 
+                        disableGetStartButton: true, 
+                        selectedPhase: '{!JSINHTMLENCODE(phase)}', 
+                        primaryInsureId: '{!JSINHTMLENCODE(primaryInsureId)}', 
+                        primaryInsureName: '{!JSINHTMLENCODE(primaryInsureName)}', 
+                        isQuickStartMode: false
+                    },
+                      divId,
+                      function(cmp) {
+
+                      });
+        }
+
+        $Lightning.use("c:AgentOneHomeTabApp", function() {
+            getQuickStartComponents("{!JSINHTMLENCODE(QuickStartComponentName)}", "QuickStartComponentLO_M0");
+        });
+    </script>
+
+    <div class="quickStartContainer">
+        <div id="QuickStartComponentLO_M0" />
+    </div>
+
+    <style type="text/css">
+        .quickStartContainer {
+            padding: 20px;
+        }
+    </style>
+
+</apex:page>

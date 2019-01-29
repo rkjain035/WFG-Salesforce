@@ -1,0 +1,30 @@
+<apex:page cache="false" standardController="Account"  standardStylesheets="false" docType="html-5.0" id="headerPage" applybodyTag="false" tabStyle="Account">
+
+    <!-- HTML attributes for SVG use -->
+    <html xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <head>
+
+       <!-- Include scripts for SLDS -->
+       <apex:slds />
+
+    </head>
+
+         <!-- REQUIRED SLDS WRAPPER -->
+         <div class="slds-scope">
+
+             <!-- MAIN SECTION -->
+            <main class="slds-m-top_x-small">
+
+                <!-- GRID COL  - APPLICATION BUTTONS -->
+              <section class="slds-clearfix ">
+                	<!--  Parent container will control whether this component is displayed or not  -->
+       				 <c:ContactButtons entityId="{!Account.Id}" entityName="Account" source="Person"/>
+
+	  		      </section>
+
+	  		</main>
+
+      </div>
+
+    </html>
+</apex:page>

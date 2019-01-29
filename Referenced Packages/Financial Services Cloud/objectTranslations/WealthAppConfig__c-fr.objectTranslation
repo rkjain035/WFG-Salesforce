@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value><!-- Wealth Application Config --></value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value><!-- Wealth Application Config --></value>
+    </caseValues>
+    <fields>
+        <help><!-- Enable Business Referrals Made List and Referrals Made Summary component. --></help>
+        <label>Activer référents commerciaux générés</label>
+        <name>EnableBusinessReferralsMade__c</name>
+    </fields>
+    <fields>
+        <label>Activer cumuls enregistrement de groupe</label>
+        <name>EnableGroupRecordRollups__c</name>
+    </fields>
+    <fields>
+        <label>Activer le récapitulatif de cumul</label>
+        <name>EnableRollupSummary__c</name>
+    </fields>
+    <fields>
+        <label>Date/heure cumul enregistrement groupe</label>
+        <name>GroupRecordRollupTimestamp__c</name>
+    </fields>
+    <fields>
+        <label>Fréquence mise à jour de l&apos;interaction</label>
+        <name>InteractionUpdateFrequency__c</name>
+    </fields>
+    <fields>
+        <label>Activer le score du référent</label>
+        <name>ReferrerScoreCalcEnabled__c</name>
+    </fields>
+    <fields>
+        <label>Statut du référent rejeté</label>
+        <name>RejectedReferralStatus__c</name>
+    </fields>
+    <fields>
+        <label>Date et heure de récapitulatif de cumul</label>
+        <name>RollupSummaryTimestamp__c</name>
+    </fields>
+    <gender><!-- Masculine --></gender>
+    <startsWith><!-- Consonant --></startsWith>
+</CustomObjectTranslation>

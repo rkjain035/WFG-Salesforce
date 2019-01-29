@@ -1,0 +1,5 @@
+<apex:page cache="false" standardController="AgentOne__InsuranceCase__c" standardStylesheets="false" docType="html-5.0" id="headerPage">  
+  <apex:form >
+        <c:CaseButtons source="InsuranceCase" entityId="{!AgentOne__InsuranceCase__c.Id}" entityName="InsuranceCase"/>               
+  </apex:form>
+</apex:page>

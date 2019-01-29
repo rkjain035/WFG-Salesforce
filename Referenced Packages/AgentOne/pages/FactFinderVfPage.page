@@ -1,0 +1,78 @@
+<apex:page docType="html-5.0" sidebar="false" applyBodyTag="false" standardController="Account" extensions="AgentOne.FactFinderPageController" >
+
+<apex:variable var="Theme4x" value="LEX" rendered="{!$User.UIThemeDisplayed == 'Theme4d' || $User.UIThemeDisplayed == 'Theme4t' }">
+    <apex:stylesheet value="{!URLFOR($Resource.AgentOne__SLDS, '/assets/styles/salesforce-lightning-design-system-ltng.css')}" />
+</apex:variable>
+
+<apex:variable var="viewUrl" value="{!URLFOR($Action.Fact_Finder__c.View, factFinder.id)}" rendered="{! factFinder.id != NULL }" />
+
+<!-- The margin style on the body is to offset the paddings of the parent iframe container -->
+<body id="bodyTag" style="{!HTMLENCODE(bodyStyle)}">
+    <apex:form >
+    <!-- Classic Experience -->
+    <apex:outputPanel rendered="{! $User.UIThemeDisplayed == 'Theme3'}">
+        <apex:pageBlock mode="maindetail" id="block" title="Fact Finder">
+            <apex:pageBlockButtons location="top">
+                <apex:commandButton id="viewButton" onclick="viewFactFinder(); return false;" value="View All" rendered="{! factFinder.id != NULL }" style="{!IF(hasError, 'display:none', '')}" />
+                <apex:commandButton id="saveButton" action="{!save}" value="Save" style="{!IF(hasError, '', 'display:none')}"/>
+                <apex:commandButton id="cancelButton" action="{!cancel}" value="Cancel" style="{!IF(hasError, '', 'display:none')}"/>
+            </apex:pageBlockButtons>
+            <apex:outputPanel id="divMessage" layout="block" style="color:red;text-align:center;font-weight:bold;" rendered="{!hasError}">You do not have the level of access necessary to perform the operation you requested. Please contact the owner of the record or your administrator if access is necessary.</apex:outputPanel>
+            <apex:pageBlockSection id="section" collapsible="true">
+                <apex:repeat value="{!fieldSetMembers}" var="f">
+                    <apex:outputField value="{!factFinder[f.fieldPath]}">
+                        <apex:inlineEditSupport showOnEdit="saveButton, cancelButton" hideOnEdit="viewButton" event="ondblclick"/>
+                    </apex:outputField>
+                </apex:repeat>
+            </apex:pageBlockSection>
+        </apex:pageBlock>
+    </apex:outputPanel>
+
+    <!-- LEX Experience -->
+    <apex:outputPanel rendered="{!$User.UIThemeDisplayed == 'Theme4d' || $User.UIThemeDisplayed == 'Theme4t' }" styleClass="agentone" layout="block" id="agentone_lexVfPage" >
+    <apex:outputPanel rendered="{!$User.UIThemeDisplayed == 'Theme4d' || $User.UIThemeDisplayed == 'Theme4t' }" styleClass="slds" layout="block" id="lexVfPage" >
+        <apex:actionFunction name="switchPageMode" action="{!switchPageMode}" reRender="lexVfPage" />
+        <apex:outputPanel id="divMessage" layout="block" style="color:red;text-align:center;font-weight:bold;" rendered="{!hasError}">You do not have the level of access necessary to perform the operation you requested. Please contact the owner of the record or your administrator if access is necessary.</apex:outputPanel>
+        <div class="slds-grid">
+            <div class="slds-size--1-of-2" style="padding-right:16px;padding-bottom:8px;">
+                <div class="slds-form-stack" >
+                    <apex:repeat value="{!LeftFieldSetMembers}" var="f">
+                        <c:LexInputField SObject="{!factFinder}" Field="{!f.fieldPath}" rendered="{! pageMode=='Edit'}"></c:LexInputField>
+                        <c:LexOutputField SObject="{!factFinder}" Field="{!f.fieldPath}" inlineEditHandler="switchPageMode();" rendered="{! pageMode=='View'}"></c:LexOutputField>
+                    </apex:repeat>
+                </div>
+            </div>
+            <div class="slds-size--1-of-2" style="padding-left:16px;padding-bottom:8px;">
+                <div class="slds-form-stack" >
+                    <apex:repeat value="{!RightFieldSetMembers}" var="f">
+                        <c:LexInputField SObject="{!factFinder}" Field="{!f.fieldPath}" rendered="{!pageMode=='Edit'}"></c:LexInputField>
+                        <c:LexOutputField SObject="{!factFinder}" Field="{!f.fieldPath}" inlineEditHandler="switchPageMode();" rendered="{!pageMode=='View'}"></c:LexOutputField>
+                    </apex:repeat>
+                </div>
+            </div>
+        </div>
+        <div class="slds-text-align--center">
+            <apex:commandButton id="lexViewButton" onclick="viewFactFinder(); return false;" value="View All" styleClass="slds-button slds-button--neutral" rendered="{!pageMode=='View' && factFinder.id != NULL}" style="font-weight:normal"/>
+            <apex:commandButton id="lexCancelButton" onclick="switchPageMode(); return false" value="Cancel" styleClass="slds-button slds-button--neutral" rendered="{!pageMode=='Edit'}" style="font-weight:normal"/>
+            <apex:commandButton id="lexSaveButton" action="{!save}" value="Save" styleClass="slds-button slds-button--brand" rendered="{!pageMode=='Edit'}" style="font-weight:normal" />
+        </div>
+    </apex:outputPanel>
+    </apex:outputPanel>
+    <script>
+        document.getElementById('bodyTag').className = "";  //
+        var viewFactFinder = function() {
+            // URLFOR already encodes the URL
+            var fullUrl = "{!viewUrl}";
+
+            if(typeof sforce != 'undefined') {
+                sforce.one.navigateToURL(fullUrl);
+            } else {
+                window.parent.location.href= fullUrl;
+            }
+
+        }
+    </script>
+
+    </apex:form>
+</body>
+</apex:page>

@@ -1,0 +1,1831 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Translations xmlns="http://soap.sforce.com/2006/04/metadata">
+    <customApplications>
+        <label>Console de banque de détail</label>
+        <name>BankingConsoleFinancialServicesCloud</name>
+    </customApplications>
+    <customApplications>
+        <label>Console de banque commerciale</label>
+        <name>CommBankingConsoleFinancialServicesCloud</name>
+    </customApplications>
+    <customApplications>
+        <label>Gestion de Wealth</label>
+        <name>FSC_Lightning</name>
+    </customApplications>
+    <customApplications>
+        <label>Financial Services Cloud (Classic)</label>
+        <name>FinancialServicesCloud</name>
+    </customApplications>
+    <customApplications>
+        <label>Banque de détail</label>
+        <name>FinancialServicesCloudRetailBanking</name>
+    </customApplications>
+    <customApplications>
+        <label>Console d&apos;assurance</label>
+        <name>InsuranceConsoleFinancialServicesCloud</name>
+    </customApplications>
+    <customLabels>
+        <label>+ Ajouter un compte</label>
+        <name>Button_Label_Add_Account</name>
+    </customLabels>
+    <customLabels>
+        <label>+ Ajouter un contact</label>
+        <name>Button_Label_Add_Contact</name>
+    </customLabels>
+    <customLabels>
+        <label>+ Ajouter un groupe</label>
+        <name>Button_Label_Add_Group</name>
+    </customLabels>
+    <customLabels>
+        <label>+ Ajouter un membre</label>
+        <name>Button_Label_Add_Member</name>
+    </customLabels>
+    <customLabels>
+        <label>+ Ajouter une relation</label>
+        <name>Button_Label_Add_Relationship</name>
+    </customLabels>
+    <customLabels>
+        <label>Retour</label>
+        <name>Button_Label_Back</name>
+    </customLabels>
+    <customLabels>
+        <label>Annuler</label>
+        <name>Button_Label_Cancel</name>
+    </customLabels>
+    <customLabels>
+        <label>Supprimer</label>
+        <name>Button_Label_Delete</name>
+    </customLabels>
+    <customLabels>
+        <label>Désactivé</label>
+        <name>Button_Label_Disabled</name>
+    </customLabels>
+    <customLabels>
+        <label>Modifier</label>
+        <name>Button_Label_Edit</name>
+    </customLabels>
+    <customLabels>
+        <label>Activé</label>
+        <name>Button_Label_Enabled</name>
+    </customLabels>
+    <customLabels>
+        <label>Masquer les membres du groupe</label>
+        <name>Button_Label_Hide_Group_Members</name>
+    </customLabels>
+    <customLabels>
+        <label>Plus d&apos;informations</label>
+        <name>Button_Label_More_Info</name>
+    </customLabels>
+    <customLabels>
+        <label>Nouveau</label>
+        <name>Button_Label_New</name>
+    </customLabels>
+    <customLabels>
+        <label>Ajouter une ligne</label>
+        <name>Button_Label_New_Row</name>
+    </customLabels>
+    <customLabels>
+        <label>Suivant</label>
+        <name>Button_Label_Next</name>
+    </customLabels>
+    <customLabels>
+        <label>Retirer</label>
+        <name>Button_Label_Remove</name>
+    </customLabels>
+    <customLabels>
+        <label>Enregistrer</label>
+        <name>Button_Label_Save</name>
+    </customLabels>
+    <customLabels>
+        <label>Enregistrer et nouveau</label>
+        <name>Button_Label_SaveAndNew</name>
+    </customLabels>
+    <customLabels>
+        <label>Enregistrer et suivant</label>
+        <name>Button_Label_SaveAndNext</name>
+    </customLabels>
+    <customLabels>
+        <label>Afficher/masquer les membres du groupe</label>
+        <name>Button_Label_ShowHide_Group_Members</name>
+    </customLabels>
+    <customLabels>
+        <label>Afficher les membres du groupe</label>
+        <name>Button_Label_Show_Group_Members</name>
+    </customLabels>
+    <customLabels>
+        <label>Lorsque vous retirez un membre, ses comptes associés sont retirés du groupe de relations.</label>
+        <name>Detail_Dialog_Household_Member_Remove</name>
+    </customLabels>
+    <customLabels>
+        <label>Lorsque vous supprimez une relation, les relations du membre avec ce groupe sont supprimées de Salesforce.</label>
+        <name>Detail_Dialog_Household_Relationship_Delete</name>
+    </customLabels>
+    <customLabels>
+        <label>client</label>
+        <name>Entity_Client_Lowercase</name>
+    </customLabels>
+    <customLabels>
+        <label>Client</label>
+        <name>Entity_Client_Uppercase</name>
+    </customLabels>
+    <customLabels>
+        <label>clients</label>
+        <name>Entity_Clients_Lowercase</name>
+    </customLabels>
+    <customLabels>
+        <label>Clients</label>
+        <name>Entity_Clients_Uppercase</name>
+    </customLabels>
+    <customLabels>
+        <label>foyer</label>
+        <name>Entity_Household_Lowercase</name>
+    </customLabels>
+    <customLabels>
+        <label>Foyer</label>
+        <name>Entity_Household_Uppercase</name>
+    </customLabels>
+    <customLabels>
+        <label>foyers</label>
+        <name>Entity_Households_Lowercase</name>
+    </customLabels>
+    <customLabels>
+        <label>Foyers</label>
+        <name>Entity_Households_Uppercase</name>
+    </customLabels>
+    <customLabels>
+        <label>Référents que j&apos;ai attribués ({0})</label>
+        <name>Header_Component_Assigned_Referrals</name>
+    </customLabels>
+    <customLabels>
+        <label>Requêtes</label>
+        <name>Header_Component_Cases</name>
+    </customLabels>
+    <customLabels>
+        <label>Créer un individu</label>
+        <name>Header_Component_Create_Individual</name>
+    </customLabels>
+    <customLabels>
+        <label>Pistes ({0})</label>
+        <name>Header_Component_Leads</name>
+    </customLabels>
+    <customLabels>
+        <label>Opportunités ({0})</label>
+        <name>Header_Component_Opportunities</name>
+    </customLabels>
+    <customLabels>
+        <label>Tâches ({0})</label>
+        <name>Header_Component_Tasks</name>
+    </customLabels>
+    <customLabels>
+        <label>Créer un client</label>
+        <name>Header_Dialog_Client_Create</name>
+    </customLabels>
+    <customLabels>
+        <label>Créer</label>
+        <name>Header_Dialog_Create</name>
+    </customLabels>
+    <customLabels>
+        <label>Modifier</label>
+        <name>Header_Dialog_Edit</name>
+    </customLabels>
+    <customLabels>
+        <label>Créer un membre du foyer</label>
+        <name>Header_Dialog_Household_Member_Create</name>
+    </customLabels>
+    <customLabels>
+        <label>Modifier le membre du foyer</label>
+        <name>Header_Dialog_Household_Member_Edit</name>
+    </customLabels>
+    <customLabels>
+        <label>Retirer le membre du groupe ?</label>
+        <name>Header_Dialog_Household_Member_Remove</name>
+    </customLabels>
+    <customLabels>
+        <label>Supprimer la relation ?</label>
+        <name>Header_Dialog_Household_Relationship_Delete</name>
+    </customLabels>
+    <customLabels>
+        <label>Client</label>
+        <name>Header_Page_Client</name>
+    </customLabels>
+    <customLabels>
+        <label>Foyer</label>
+        <name>Header_Page_Household</name>
+    </customLabels>
+    <customLabels>
+        <label>Foyers</label>
+        <name>Header_Page_Households</name>
+    </customLabels>
+    <customLabels>
+        <label>Synthèse financière</label>
+        <name>Header_Panel_Financial_Summary</name>
+    </customLabels>
+    <customLabels>
+        <label>Synthèse des objectifs</label>
+        <name>Header_Panel_Goals_Summary</name>
+    </customLabels>
+    <customLabels>
+        <label>Créer un groupe de relations : {0}</label>
+        <name>Header_Panel_Group_Create</name>
+    </customLabels>
+    <customLabels>
+        <label>Modifier {0}</label>
+        <name>Header_Panel_Group_Edit</name>
+    </customLabels>
+    <customLabels>
+        <label>Nouveau groupe de relations</label>
+        <name>Header_Panel_Group_New</name>
+    </customLabels>
+    <customLabels>
+        <label>Synthèse du foyer</label>
+        <name>Header_Panel_Household_Summary</name>
+    </customLabels>
+    <customLabels>
+        <label>Nouveau compte : {0}</label>
+        <name>Header_Panel_Individual_Create</name>
+    </customLabels>
+    <customLabels>
+        <label>Nouvel individu</label>
+        <name>Header_Panel_Individual_New</name>
+    </customLabels>
+    <customLabels>
+        <label>Actifs et passifs</label>
+        <name>Header_Section_Assets_Liabilities</name>
+    </customLabels>
+    <customLabels>
+        <label>Comptes bancaires</label>
+        <name>Header_Section_Bank_Accounts</name>
+    </customLabels>
+    <customLabels>
+        <label>Rôles Compte financier</label>
+        <name>Header_Section_Financial_Account_Roles</name>
+    </customLabels>
+    <customLabels>
+        <label>{0} ({1})</label>
+        <name>Header_Section_Group_Name</name>
+    </customLabels>
+    <customLabels>
+        <label>Membres du groupe</label>
+        <name>Header_Section_Household_Members</name>
+    </customLabels>
+    <customLabels>
+        <label>Polices d&apos;assurance</label>
+        <name>Header_Section_Insurance_Policies</name>
+    </customLabels>
+    <customLabels>
+        <label>Comptes d&apos;investissement</label>
+        <name>Header_Section_Investment_Accounts</name>
+    </customLabels>
+    <customLabels>
+        <label>Groupe principal</label>
+        <name>Header_Section_Primary_Group</name>
+    </customLabels>
+    <customLabels>
+        <label>Comptes associés</label>
+        <name>Header_Section_Related_Accounts</name>
+    </customLabels>
+    <customLabels>
+        <label>Contacts associés</label>
+        <name>Header_Section_Related_Contacts</name>
+    </customLabels>
+    <customLabels>
+        <label>Groupes associés</label>
+        <name>Header_Section_Related_Groups</name>
+    </customLabels>
+    <customLabels>
+        <label>Saisissez les informations sur votre client</label>
+        <name>Header_Wizard_New_Client</name>
+    </customLabels>
+    <customLabels>
+        <label>Saisissez les informations sur le groupe de votre client</label>
+        <name>Header_Wizard_New_Client_Group</name>
+    </customLabels>
+    <customLabels>
+        <label>Ensemble de champs du compte</label>
+        <name>Label_Account_Field_Set</name>
+    </customLabels>
+    <customLabels>
+        <label>Nom de l&apos;ensemble de champs de résumé du compte à afficher.</label>
+        <name>Label_Account_Field_Set_Description</name>
+    </customLabels>
+    <customLabels>
+        <label>Actions</label>
+        <name>Label_Action_Dropdown_ListView_Table</name>
+    </customLabels>
+    <customLabels>
+        <label>Toutes les options sont sélectionnées</label>
+        <name>Label_All_Options_Selected</name>
+    </customLabels>
+    <customLabels>
+        <label>Autoriser tous les utilisateurs à soumettre un formulaire</label>
+        <name>Label_All_Users_Submit</name>
+    </customLabels>
+    <customLabels>
+        <label>Contourne les contrôles CRUD et de sécurité au niveau du champ dans l&apos;objet Piste.</label>
+        <name>Label_All_Users_Submit_Description</name>
+    </customLabels>
+    <customLabels>
+        <label>Nom du client</label>
+        <name>Label_Client_Name_Assets_Liabilities</name>
+    </customLabels>
+    <customLabels>
+        <label>Nom du client</label>
+        <name>Label_Client_Name_Bank_Accounts</name>
+    </customLabels>
+    <customLabels>
+        <label>Nom du client</label>
+        <name>Label_Client_Name_Insurance_Policies</name>
+    </customLabels>
+    <customLabels>
+        <label>Nom du client</label>
+        <name>Label_Client_Name_Investment_Accounts</name>
+    </customLabels>
+    <customLabels>
+        <label>Adresse permanente</label>
+        <name>Label_Client_Permanent_Address</name>
+    </customLabels>
+    <customLabels>
+        <label>Ville permanente</label>
+        <name>Label_Client_Permanent_City</name>
+    </customLabels>
+    <customLabels>
+        <label>Pays permanent</label>
+        <name>Label_Client_Permanent_Country</name>
+    </customLabels>
+    <customLabels>
+        <label>Code postal permanent</label>
+        <name>Label_Client_Permanent_Postal_Code</name>
+    </customLabels>
+    <customLabels>
+        <label>Région/province permanente</label>
+        <name>Label_Client_Permanent_State</name>
+    </customLabels>
+    <customLabels>
+        <label>Rue permanente</label>
+        <name>Label_Client_Permanent_Street</name>
+    </customLabels>
+    <customLabels>
+        <label>Adresse principale (permanente)</label>
+        <name>Label_Client_Primary_Address_Permanent</name>
+    </customLabels>
+    <customLabels>
+        <label>Adresse principale (saisonnière)</label>
+        <name>Label_Client_Primary_Address_Seasonal</name>
+    </customLabels>
+    <customLabels>
+        <label>Tout le temps</label>
+        <name>Label_Client_Referral_Summary_All_Time</name>
+    </customLabels>
+    <customLabels>
+        <label>Taux de conversion moyen des référents</label>
+        <name>Label_Client_Referral_Summary_Average_Conversion_Rate</name>
+    </customLabels>
+    <customLabels>
+        <label>Référents convertis</label>
+        <name>Label_Client_Referral_Summary_Converted</name>
+    </customLabels>
+    <customLabels>
+        <label>Mois à ce jour</label>
+        <name>Label_Client_Referral_Summary_MTD</name>
+    </customLabels>
+    <customLabels>
+        <label>Référents créés</label>
+        <name>Label_Client_Referral_Summary_Made</name>
+    </customLabels>
+    <customLabels>
+        <label>Abonnements moyens de référents convertis</label>
+        <name>Label_Client_Referral_Summary_Membership</name>
+    </customLabels>
+    <customLabels>
+        <label>Trimestre à ce jour</label>
+        <name>Label_Client_Referral_Summary_QTD</name>
+    </customLabels>
+    <customLabels>
+        <label>Référents reçus</label>
+        <name>Label_Client_Referral_Summary_Received</name>
+    </customLabels>
+    <customLabels>
+        <label>Référents</label>
+        <name>Label_Client_Referral_Summary_Referrals</name>
+    </customLabels>
+    <customLabels>
+        <label>Référents rejetés</label>
+        <name>Label_Client_Referral_Summary_Rejected</name>
+    </customLabels>
+    <customLabels>
+        <label>Chiffre d&apos;affaires généré</label>
+        <name>Label_Client_Referral_Summary_Revenue</name>
+    </customLabels>
+    <customLabels>
+        <label>Score du référent</label>
+        <name>Label_Client_Referral_Summary_Score</name>
+    </customLabels>
+    <customLabels>
+        <label>Résumé du référent</label>
+        <name>Label_Client_Referral_Summary_Title</name>
+    </customLabels>
+    <customLabels>
+        <label>Année à ce jour</label>
+        <name>Label_Client_Referral_Summary_YTD</name>
+    </customLabels>
+    <customLabels>
+        <label>Contact associé</label>
+        <name>Label_Client_Related_Contact_Name</name>
+    </customLabels>
+    <customLabels>
+        <label>Rôle</label>
+        <name>Label_Client_Related_Contact_Role</name>
+    </customLabels>
+    <customLabels>
+        <label>Adresse saisonnière</label>
+        <name>Label_Client_Seasonal_Address</name>
+    </customLabels>
+    <customLabels>
+        <label>Ville saisonnière</label>
+        <name>Label_Client_Seasonal_City</name>
+    </customLabels>
+    <customLabels>
+        <label>Pays saisonnier</label>
+        <name>Label_Client_Seasonal_Country</name>
+    </customLabels>
+    <customLabels>
+        <label>Code postal saisonnier</label>
+        <name>Label_Client_Seasonal_Postal_Code</name>
+    </customLabels>
+    <customLabels>
+        <label>Région/province saisonnière</label>
+        <name>Label_Client_Seasonal_State</name>
+    </customLabels>
+    <customLabels>
+        <label>Rue saisonnière</label>
+        <name>Label_Client_Seasonal_Street</name>
+    </customLabels>
+    <customLabels>
+        <label>Réduire la ligne</label>
+        <name>Label_Collapse_Arrow_Assistive</name>
+    </customLabels>
+    <customLabels>
+        <label>Foyer</label>
+        <name>Label_Dialog_Client_Create_Field_Household</name>
+    </customLabels>
+    <customLabels>
+        <label>Membre principal</label>
+        <name>Label_Dialog_Client_Create_Field_Primary_Member</name>
+    </customLabels>
+    <customLabels>
+        <label>Inclure dans la synthèse de cumul du foyer</label>
+        <name>Label_Dialog_Client_Create_Field_RollUp_Summary</name>
+    </customLabels>
+    <customLabels>
+        <label>Montrer le lien Afficher tout</label>
+        <name>Label_Display_View_All_Link</name>
+    </customLabels>
+    <customLabels>
+        <label>Agrandir la ligne</label>
+        <name>Label_Expand_Arrow_Assistive</name>
+    </customLabels>
+    <customLabels>
+        <label>Ensemble de champs</label>
+        <name>Label_Field_Set</name>
+    </customLabels>
+    <customLabels>
+        <label>Adresses</label>
+        <name>Label_Field_Set_Addresses</name>
+    </customLabels>
+    <customLabels>
+        <label>En-tête du client</label>
+        <name>Label_Field_Set_Client_Header</name>
+    </customLabels>
+    <customLabels>
+        <label>Informations sur le client</label>
+        <name>Label_Field_Set_Client_Info</name>
+    </customLabels>
+    <customLabels>
+        <label>Services client</label>
+        <name>Label_Field_Set_Client_Services</name>
+    </customLabels>
+    <customLabels>
+        <label>Nom de l&apos;ensemble de champs utilisé pour restituer ce composant.</label>
+        <name>Label_Field_Set_Description</name>
+    </customLabels>
+    <customLabels>
+        <label>Informations sur l&apos;emploi</label>
+        <name>Label_Field_Set_Employment_Info</name>
+    </customLabels>
+    <customLabels>
+        <label>Synthèse des comptes financiers</label>
+        <name>Label_Field_Set_Financial_Accounts_Summary</name>
+    </customLabels>
+    <customLabels>
+        <label>Synthèse financière</label>
+        <name>Label_Field_Set_Financial_Summary</name>
+    </customLabels>
+    <customLabels>
+        <label>Ensemble de champs des membres du groupe</label>
+        <name>Label_Field_Set_Group_Members</name>
+    </customLabels>
+    <customLabels>
+        <label>En-tête du foyer</label>
+        <name>Label_Field_Set_Household_Header</name>
+    </customLabels>
+    <customLabels>
+        <label>Informations sur le foyer</label>
+        <name>Label_Field_Set_Household_Info</name>
+    </customLabels>
+    <customLabels>
+        <label>Informations sur le foyer</label>
+        <name>Label_Field_Set_Household_Info_Create_Client</name>
+    </customLabels>
+    <customLabels>
+        <label>Informations sur le foyer</label>
+        <name>Label_Field_Set_Household_Info_Create_Household_Member</name>
+    </customLabels>
+    <customLabels>
+        <label>Informations sur le foyer</label>
+        <name>Label_Field_Set_Household_Info_Edit_Membership</name>
+    </customLabels>
+    <customLabels>
+        <label>Synthèse du foyer</label>
+        <name>Label_Field_Set_Household_Summary</name>
+    </customLabels>
+    <customLabels>
+        <label>Connaissance du client</label>
+        <name>Label_Field_Set_Know_Your_Client</name>
+    </customLabels>
+    <customLabels>
+        <label>Adresse postale</label>
+        <name>Label_Field_Set_Mailing_Address</name>
+    </customLabels>
+    <customLabels>
+        <label>Informations sur le membre</label>
+        <name>Label_Field_Set_Member_Info_Create_Household_Member</name>
+    </customLabels>
+    <customLabels>
+        <label>Autre adresse</label>
+        <name>Label_Field_Set_Other_Address</name>
+    </customLabels>
+    <customLabels>
+        <label>Adresse permanente</label>
+        <name>Label_Field_Set_Permanent_Address</name>
+    </customLabels>
+    <customLabels>
+        <label>Téléphone et e-mail</label>
+        <name>Label_Field_Set_Phone_and_Email</name>
+    </customLabels>
+    <customLabels>
+        <label>Nouveau référent</label>
+        <name>Label_Field_Set_Referral_Form</name>
+    </customLabels>
+    <customLabels>
+        <label>Intérêts exprimés</label>
+        <name>Label_Field_Set_Referrals_Expressed_Interest</name>
+    </customLabels>
+    <customLabels>
+        <label>Référents créés</label>
+        <name>Label_Field_Set_Referrals_Made</name>
+    </customLabels>
+    <customLabels>
+        <label>Groupes de relations</label>
+        <name>Label_Field_Set_Relationship_Groups</name>
+    </customLabels>
+    <customLabels>
+        <label>Adresse saisonnière</label>
+        <name>Label_Field_Set_Seasonal_Address</name>
+    </customLabels>
+    <customLabels>
+        <label>Informations système</label>
+        <name>Label_Field_Set_System_Info</name>
+    </customLabels>
+    <customLabels>
+        <label>Ensemble de champs du compte financier</label>
+        <name>Label_Financial_Account_Field_Set</name>
+    </customLabels>
+    <customLabels>
+        <label>Nom de l&apos;ensemble de champs à afficher pour les détails du compte financier.</label>
+        <name>Label_Financial_Account_Field_Set_Description</name>
+    </customLabels>
+    <customLabels>
+        <label>Types d&apos;enregistrement de compte financier</label>
+        <name>Label_Financial_Account_Record_Types</name>
+    </customLabels>
+    <customLabels>
+        <label>Liste de valeurs de type d&apos;enregistrement de compte financier séparées par une virgule à afficher.</label>
+        <name>Label_Financial_Account_Record_Types_Description</name>
+    </customLabels>
+    <customLabels>
+        <label>Ensemble de champs du rôle du compte financier</label>
+        <name>Label_Financial_Account_Role_Field_Set</name>
+    </customLabels>
+    <customLabels>
+        <label>Nom de l&apos;ensemble de champs à afficher pour les détails du compte financier.</label>
+        <name>Label_Financial_Account_Role_Field_Set_Description</name>
+    </customLabels>
+    <customLabels>
+        <label>Rôles Compte financier</label>
+        <name>Label_Financial_Account_Roles</name>
+    </customLabels>
+    <customLabels>
+        <label>Liste de valeurs de rôles de compte financier séparées par une virgule à afficher.</label>
+        <name>Label_Financial_Account_Roles_Description</name>
+    </customLabels>
+    <customLabels>
+        <label>Ensemble de champs d&apos;actif financier</label>
+        <name>Label_Financial_Holding_Field_Set</name>
+    </customLabels>
+    <customLabels>
+        <label>Nom de l&apos;ensemble de champs à afficher pour les détails d&apos;actif financier.</label>
+        <name>Label_Financial_Holding_Field_Set_Description</name>
+    </customLabels>
+    <customLabels>
+        <label>Affichez les détails du contact en tant que première étape de l&apos;assistant.</label>
+        <name>Label_First_Step_Description</name>
+    </customLabels>
+    <customLabels>
+        <label>Le client a atteint {0} pour cent de son objectif.</label>
+        <name>Label_Goal_Detail_Description</name>
+    </customLabels>
+    <customLabels>
+        <label>Nom du compte</label>
+        <name>Label_Group_Account_Name</name>
+    </customLabels>
+    <customLabels>
+        <label>Activités et objets à cumuler</label>
+        <name>Label_Group_Activities_Objects_Rollup</name>
+    </customLabels>
+    <customLabels>
+        <label>Ajouter au groupe</label>
+        <name>Label_Group_Add_To_Group</name>
+    </customLabels>
+    <customLabels>
+        <label>Nom du contact</label>
+        <name>Label_Group_Contact_Name</name>
+    </customLabels>
+    <customLabels>
+        <label>Nom du membre</label>
+        <name>Label_Group_Member_Name</name>
+    </customLabels>
+    <customLabels>
+        <label>Rôle du membre</label>
+        <name>Label_Group_Member_Role</name>
+    </customLabels>
+    <customLabels>
+        <label>Groupe principal</label>
+        <name>Label_Group_Primary_Group</name>
+    </customLabels>
+    <customLabels>
+        <label>Membre principal</label>
+        <name>Label_Group_Primary_Member</name>
+    </customLabels>
+    <customLabels>
+        <label>Membre associé</label>
+        <name>Label_Group_Related_Member</name>
+    </customLabels>
+    <customLabels>
+        <label>Rôle associé</label>
+        <name>Label_Group_Related_Role</name>
+    </customLabels>
+    <customLabels>
+        <label>Rôle dans le groupe</label>
+        <name>Label_Group_Role_In_Group</name>
+    </customLabels>
+    <customLabels>
+        <label>Les membres ont-ils des relations avec d&apos;autres comptes ?</label>
+        <name>Label_Group_Setup_Accounts</name>
+    </customLabels>
+    <customLabels>
+        <label>Les membres ont-ils des relations avec d&apos;autres personnes ?</label>
+        <name>Label_Group_Setup_Contacts</name>
+    </customLabels>
+    <customLabels>
+        <label>Qui sont les membres de ce groupe ?</label>
+        <name>Label_Group_Setup_Members</name>
+    </customLabels>
+    <customLabels>
+        <label>Membres et détails du groupe</label>
+        <name>Label_Groups_Members_Details</name>
+    </customLabels>
+    <customLabels>
+        <label>Propriétaire principal</label>
+        <name>Label_Household_Goal_Primary_Owner</name>
+    </customLabels>
+    <customLabels>
+        <label>Âge</label>
+        <name>Label_Household_Member_Age</name>
+    </customLabels>
+    <customLabels>
+        <label>E-mail</label>
+        <name>Label_Household_Member_Email</name>
+    </customLabels>
+    <customLabels>
+        <label>Foyer existant</label>
+        <name>Label_Household_Member_Field_Household</name>
+    </customLabels>
+    <customLabels>
+        <label>Nom</label>
+        <name>Label_Household_Member_Field_Name</name>
+    </customLabels>
+    <customLabels>
+        <label>Membre principal</label>
+        <name>Label_Household_Member_Field_Primary_Member</name>
+    </customLabels>
+    <customLabels>
+        <label>Inclure dans la synthèse de cumul du foyer</label>
+        <name>Label_Household_Member_Field_RollUp_Summary</name>
+    </customLabels>
+    <customLabels>
+        <label>Dernière interaction</label>
+        <name>Label_Household_Member_Last_Interaction</name>
+    </customLabels>
+    <customLabels>
+        <label>Mobile</label>
+        <name>Label_Household_Member_Mobile</name>
+    </customLabels>
+    <customLabels>
+        <label>Prochaine interaction</label>
+        <name>Label_Household_Member_Next_Interaction</name>
+    </customLabels>
+    <customLabels>
+        <label>Téléphone</label>
+        <name>Label_Household_Member_Phone</name>
+    </customLabels>
+    <customLabels>
+        <label>Rôles</label>
+        <name>Label_Household_Member_Roles</name>
+    </customLabels>
+    <customLabels>
+        <label>Foyer</label>
+        <name>Label_Household_Membership_Edit_Field_Household</name>
+    </customLabels>
+    <customLabels>
+        <label>Compte associé</label>
+        <name>Label_Household_Related_Account_Name</name>
+    </customLabels>
+    <customLabels>
+        <label>Rôle</label>
+        <name>Label_Household_Related_Account_Role</name>
+    </customLabels>
+    <customLabels>
+        <label>Contact associé</label>
+        <name>Label_Household_Related_Contact_Name</name>
+    </customLabels>
+    <customLabels>
+        <label>Associé à</label>
+        <name>Label_Household_Related_Contact_Related_To</name>
+    </customLabels>
+    <customLabels>
+        <label>Rôle</label>
+        <name>Label_Household_Related_Contact_Role</name>
+    </customLabels>
+    <customLabels>
+        <label>Style de l&apos;icône</label>
+        <name>Label_Icon_Style</name>
+    </customLabels>
+    <customLabels>
+        <label>Nom de l&apos;icône du composant.</label>
+        <name>Label_Icon_Style_Description</name>
+    </customLabels>
+    <customLabels>
+        <label>Certaines données ne sont pas encore prêtes. Réessayez ultérieurement.</label>
+        <name>Label_Invalid_Individual</name>
+    </customLabels>
+    <customLabels>
+        <label>Nom de l&apos;ensemble de champs de piste à partir duquel créer le référent</label>
+        <name>Label_Lead_Field_Set</name>
+    </customLabels>
+    <customLabels>
+        <label>Pistes</label>
+        <name>Label_Leads</name>
+    </customLabels>
+    <customLabels>
+        <label>Premier</label>
+        <name>Label_Link_Pagination_First</name>
+    </customLabels>
+    <customLabels>
+        <label>Dernier</label>
+        <name>Label_Link_Pagination_Last</name>
+    </customLabels>
+    <customLabels>
+        <label>Suivant</label>
+        <name>Label_Link_Pagination_Next</name>
+    </customLabels>
+    <customLabels>
+        <label>Précédent</label>
+        <name>Label_Link_Pagination_Previous</name>
+    </customLabels>
+    <customLabels>
+        <label>Chargement</label>
+        <name>Label_Loading_Alternative_Text</name>
+    </customLabels>
+    <customLabels>
+        <label>{0} {1}</label>
+        <name>Label_Member_Activity_Counts</name>
+    </customLabels>
+    <customLabels>
+        <label>{0} :</label>
+        <name>Label_Member_Fields</name>
+    </customLabels>
+    <customLabels>
+        <label>Sélectionner une période</label>
+        <name>Label_MenuButton_Select_Period</name>
+    </customLabels>
+    <customLabels>
+        <label>Nouveau client</label>
+        <name>Label_New_Client</name>
+    </customLabels>
+    <customLabels>
+        <label>Nouveau client</label>
+        <name>Label_New_Client_Create_Household_Member</name>
+    </customLabels>
+    <customLabels>
+        <label>Nouveau foyer</label>
+        <name>Label_New_Household_Create_Client</name>
+    </customLabels>
+    <customLabels>
+        <label>Nouveau foyer</label>
+        <name>Label_New_Household_Create_Household_Member</name>
+    </customLabels>
+    <customLabels>
+        <label>Nouveau foyer</label>
+        <name>Label_New_Household_Edit_Household_Member</name>
+    </customLabels>
+    <customLabels>
+        <label>[non applicable]</label>
+        <name>Label_Not_Applicable</name>
+    </customLabels>
+    <customLabels>
+        <label>Nombre d&apos;enregistrements</label>
+        <name>Label_Number_Records</name>
+    </customLabels>
+    <customLabels>
+        <label>Tableau de bord Mes principaux référents</label>
+        <name>Label_Of_My_Top_Referrers_Dashboard</name>
+    </customLabels>
+    <customLabels>
+        <label>Ouvrir les référents qui me sont attribués</label>
+        <name>Label_Open_Referrals_Im_Assigned</name>
+    </customLabels>
+    <customLabels>
+        <label>Opportunités</label>
+        <name>Label_Opportunities</name>
+    </customLabels>
+    <customLabels>
+        <label>{0} options sélectionnées</label>
+        <name>Label_Options_Selected</name>
+    </customLabels>
+    <customLabels>
+        <label>Sélectionner un type d&apos;enregistrement</label>
+        <name>Label_Panel_Group_New</name>
+    </customLabels>
+    <customLabels>
+        <label>Jours d&apos;absence : {0}</label>
+        <name>Label_RMD_Days_Away</name>
+    </customLabels>
+    <customLabels>
+        <label>{0} mois</label>
+        <name>Label_RMD_Month</name>
+    </customLabels>
+    <customLabels>
+        <label>{0} années</label>
+        <name>Label_RMD_Year</name>
+    </customLabels>
+    <customLabels>
+        <label>Lecture seule</label>
+        <name>Label_Read_Only</name>
+    </customLabels>
+    <customLabels>
+        <label>N&apos;autorisez pas la modification des référents.</label>
+        <name>Label_Read_Only_Description</name>
+    </customLabels>
+    <customLabels>
+        <label>Ensemble de champs du référent</label>
+        <name>Label_Referral_Field_Set</name>
+    </customLabels>
+    <customLabels>
+        <label>Nom de l&apos;ensemble de champs à afficher pour les détails du référent.</label>
+        <name>Label_Referral_Field_Set_Description</name>
+    </customLabels>
+    <customLabels>
+        <label>Performances des référents</label>
+        <name>Label_Referral_Performance_Chart</name>
+    </customLabels>
+    <customLabels>
+        <label>Ajoutez un référent, puis revenez ici pour afficher les performances des référents que vous avez créés.</label>
+        <name>Label_Referral_Performance_Chart_Empty</name>
+    </customLabels>
+    <customLabels>
+        <label>Type d&apos;enregistrement de référent</label>
+        <name>Label_Referral_Record_Type</name>
+    </customLabels>
+    <customLabels>
+        <label>Le type d&apos;enregistrement du référent créé.</label>
+        <name>Label_Referral_Record_Type_Description</name>
+    </customLabels>
+    <customLabels>
+        <label>Référents</label>
+        <name>Label_Referrals</name>
+    </customLabels>
+    <customLabels>
+        <label>Référents convertis</label>
+        <name>Label_Referrals_Converted</name>
+    </customLabels>
+    <customLabels>
+        <label>Référents convertis, moyenne par foyer</label>
+        <name>Label_Referrals_Converted_Household_Average</name>
+    </customLabels>
+    <customLabels>
+        <label>Référents que j&apos;ai attribués</label>
+        <name>Label_Referrals_I_Am_Assigned</name>
+    </customLabels>
+    <customLabels>
+        <label>Référents reçus</label>
+        <name>Label_Referrals_Received</name>
+    </customLabels>
+    <customLabels>
+        <label>Référents rejetés</label>
+        <name>Label_Referrals_Rejected</name>
+    </customLabels>
+    <customLabels>
+        <label>Taux de conversion moyen de référents</label>
+        <name>Label_Referrer_Average_Conversion_Rate</name>
+    </customLabels>
+    <customLabels>
+        <label>Score du référent</label>
+        <name>Label_Referrer_Score</name>
+    </customLabels>
+    <customLabels>
+        <label>Converti</label>
+        <name>Label_Referrers_Summary_Converted</name>
+    </customLabels>
+    <customLabels>
+        <label>Référents convertis en {0}</label>
+        <name>Label_Referrers_Summary_Converted_Amount</name>
+    </customLabels>
+    <customLabels>
+        <label>Créé</label>
+        <name>Label_Referrers_Summary_Made</name>
+    </customLabels>
+    <customLabels>
+        <label>Référents créés en {0}</label>
+        <name>Label_Referrers_Summary_Made_Amount</name>
+    </customLabels>
+    <customLabels>
+        <label>Ouvert</label>
+        <name>Label_Referrers_Summary_Open</name>
+    </customLabels>
+    <customLabels>
+        <label>Refusé</label>
+        <name>Label_Referrers_Summary_Rejected</name>
+    </customLabels>
+    <customLabels>
+        <label>Chiffre d&apos;affaires</label>
+        <name>Label_Referrers_Summary_Revenue</name>
+    </customLabels>
+    <customLabels>
+        <label>Chiffre d&apos;affaires généré en {0}</label>
+        <name>Label_Referrers_Summary_Revenue_Amount</name>
+    </customLabels>
+    <customLabels>
+        <label>Chiffre d&apos;affaires généré</label>
+        <name>Label_Revenue_Generated</name>
+    </customLabels>
+    <customLabels>
+        <label>Tout le temps</label>
+        <name>Label_Select_Period_All_Time</name>
+    </customLabels>
+    <customLabels>
+        <label>Mois à ce jour</label>
+        <name>Label_Select_Period_MTD</name>
+    </customLabels>
+    <customLabels>
+        <label>Trimestre à ce jour</label>
+        <name>Label_Select_Period_QTD</name>
+    </customLabels>
+    <customLabels>
+        <label>Année à ce jour</label>
+        <name>Label_Select_Period_YTD</name>
+    </customLabels>
+    <customLabels>
+        <label>Vue {0}</label>
+        <name>Label_Selected_Summary_Period_View</name>
+    </customLabels>
+    <customLabels>
+        <label>Trié par {0}</label>
+        <name>Label_Selected_Summary_Sorted_By</name>
+    </customLabels>
+    <customLabels>
+        <label>Afficher/masquer les membres</label>
+        <name>Label_ShowHide_Members_ListView_Table</name>
+    </customLabels>
+    <customLabels>
+        <label>Afficher les détails du contact en premier</label>
+        <name>Label_Show_Contact_Details</name>
+    </customLabels>
+    <customLabels>
+        <label>Afficher la section du contact en premier</label>
+        <name>Label_Show_Contact_Section</name>
+    </customLabels>
+    <customLabels>
+        <label>Afficher les comptes associés</label>
+        <name>Label_Show_Related_Accounts</name>
+    </customLabels>
+    <customLabels>
+        <label>Affiche les comptes associés dans la carte des relations et le générateur de groupe</label>
+        <name>Label_Show_Related_Accounts_Description</name>
+    </customLabels>
+    <customLabels>
+        <label>Afficher les contacts associés</label>
+        <name>Label_Show_Related_Contacts</name>
+    </customLabels>
+    <customLabels>
+        <label>Affiche les contacts associés dans la carte des relations et le générateur de groupe</label>
+        <name>Label_Show_Related_Contacts_Description</name>
+    </customLabels>
+    <customLabels>
+        <label>Critère de tri</label>
+        <name>Label_Sort_Criteria</name>
+    </customLabels>
+    <customLabels>
+        <label>Choisissez un critère de tri des référents.</label>
+        <name>Label_Sort_Criteria_Description</name>
+    </customLabels>
+    <customLabels>
+        <label>Cette évaluation est {0}</label>
+        <name>Label_Star_Rating</name>
+    </customLabels>
+    <customLabels>
+        <label>Résumé</label>
+        <name>Label_Summary</name>
+    </customLabels>
+    <customLabels>
+        <label>Tâches</label>
+        <name>Label_Tasks</name>
+    </customLabels>
+    <customLabels>
+        <label>à</label>
+        <name>Label_Text_List_View_Items_Count_Separator</name>
+    </customLabels>
+    <customLabels>
+        <label>sur</label>
+        <name>Label_Text_List_View_Items_Count_Total</name>
+    </customLabels>
+    <customLabels>
+        <label>Chronologie</label>
+        <name>Label_Timeline</name>
+    </customLabels>
+    <customLabels>
+        <label>La chronologie par défaut du graphique.</label>
+        <name>Label_Timeline_Description</name>
+    </customLabels>
+    <customLabels>
+        <label>Titre</label>
+        <name>Label_Title</name>
+    </customLabels>
+    <customLabels>
+        <label>Un titre alternatif à afficher dans l&apos;en-tête du composant.</label>
+        <name>Label_Title_Description</name>
+    </customLabels>
+    <customLabels>
+        <label>Afficher/masquer l&apos;info-bulle</label>
+        <name>Label_Tooltip_Visibility</name>
+    </customLabels>
+    <customLabels>
+        <label>Principal intérêt exprimé</label>
+        <name>Label_Top_Expressed_Interest</name>
+    </customLabels>
+    <customLabels>
+        <label>Référent principal</label>
+        <name>Label_Top_Referrer</name>
+    </customLabels>
+    <customLabels>
+        <label>Type de référent principal</label>
+        <name>Label_Top_Referrer_Type</name>
+    </customLabels>
+    <customLabels>
+        <label>Référents externes</label>
+        <name>Label_Top_Referrers_Summary_External</name>
+    </customLabels>
+    <customLabels>
+        <label>Référents internes</label>
+        <name>Label_Top_Referrers_Summary_Internal</name>
+    </customLabels>
+    <customLabels>
+        <label>Mes principaux référents</label>
+        <name>Label_Top_Referrers_Summary_Title</name>
+    </customLabels>
+    <customLabels>
+        <label>Anniversaires dans les sept prochains jours</label>
+        <name>Label_Upcoming_Birthdays_Next_7_Days</name>
+    </customLabels>
+    <customLabels>
+        <label>Distributions minimales requises dans les sept prochains jours</label>
+        <name>Label_Upcoming_RMDs_Next_7_Days</name>
+    </customLabels>
+    <customLabels>
+        <label>Afficher/masquer le lien Afficher plus</label>
+        <name>Label_View_More_Link_Visibility</name>
+    </customLabels>
+    <customLabels>
+        <label>Groupe principal</label>
+        <name>Label_Visualization_Primary_Group</name>
+    </customLabels>
+    <customLabels>
+        <label>Membre principal</label>
+        <name>Label_Visualization_Primary_Member</name>
+    </customLabels>
+    <customLabels>
+        <label>Appels</label>
+        <name>Link_Calls</name>
+    </customLabels>
+    <customLabels>
+        <label>E-mails</label>
+        <name>Link_Emails</name>
+    </customLabels>
+    <customLabels>
+        <label>Événements</label>
+        <name>Link_Events</name>
+    </customLabels>
+    <customLabels>
+        <label>Tâches</label>
+        <name>Link_Tasks</name>
+    </customLabels>
+    <customLabels>
+        <label>Afficher tout</label>
+        <name>Link_View_All</name>
+    </customLabels>
+    <customLabels>
+        <label>Afficher plus</label>
+        <name>Link_View_More</name>
+    </customLabels>
+    <customLabels>
+        <label>Modifier le groupe</label>
+        <name>Menu_Item_Group_Edit</name>
+    </customLabels>
+    <customLabels>
+        <label>Supprimer la relation</label>
+        <name>Menu_Item_Household_Membership_Delete</name>
+    </customLabels>
+    <customLabels>
+        <label>Modifier la relation</label>
+        <name>Menu_Item_Household_Membership_Edit</name>
+    </customLabels>
+    <customLabels>
+        <label>Retirer le membre</label>
+        <name>Menu_Item_Household_Membership_Remove</name>
+    </customLabels>
+    <customLabels>
+        <label>Retirer la relation</label>
+        <name>Menu_Item_Relationship_Remove</name>
+    </customLabels>
+    <customLabels>
+        <label>Créer</label>
+        <name>Msg_Action_Variable_Create</name>
+    </customLabels>
+    <customLabels>
+        <label>Supprimer</label>
+        <name>Msg_Action_Variable_Delete</name>
+    </customLabels>
+    <customLabels>
+        <label>Lire</label>
+        <name>Msg_Action_Variable_Read</name>
+    </customLabels>
+    <customLabels>
+        <label>Mettre à jour</label>
+        <name>Msg_Action_Variable_Update</name>
+    </customLabels>
+    <customLabels>
+        <label>Pour pouvoir exécuter cette action, demandez à votre administrateur Salesforce de vous accorder l&apos;accès aux champs requis :</label>
+        <name>Msg_Cannot_Complete_Actions</name>
+    </customLabels>
+    <customLabels>
+        <label>Aloha</label>
+        <name>Msg_Community_User_Greeting</name>
+    </customLabels>
+    <customLabels>
+        <label>Pour accéder à ce composant, demandez à votre administrateur Salesforce la licence d&apos;ensemble d&apos;autorisations Financial Services Cloud requise.</label>
+        <name>Msg_Component_Has_NoAccess</name>
+    </customLabels>
+    <customLabels>
+        <label>Vous n&apos;avez pas accès à cette fonctionnalité.</label>
+        <name>Msg_Component_ObjectAccess_Invalid</name>
+    </customLabels>
+    <customLabels>
+        <label>Voulez-vous vraiment retirer ?</label>
+        <name>Msg_Confirm_Remove</name>
+    </customLabels>
+    <customLabels>
+        <label>Impossible de choisir une personne en tant que compte dans cette relation.</label>
+        <name>Msg_Error_ACR_Account_Invalid</name>
+    </customLabels>
+    <customLabels>
+        <label>Le compte sélectionné doit être un foyer, pas un individu ni un compte professionnel.</label>
+        <name>Msg_Error_Add_Member_Household_Invalid</name>
+    </customLabels>
+    <customLabels>
+        <label>Impossible de charger les alertes. Actualisez votre page ou demandez une aide à votre administrateur Salesforce.</label>
+        <name>Msg_Error_Alerts_Cannot_Load</name>
+    </customLabels>
+    <customLabels>
+        <label>Impossible de retirer les alertes. Actualisez votre page ou demandez une aide à votre administrateur Salesforce.</label>
+        <name>Msg_Error_Alerts_Cannot_Remove</name>
+    </customLabels>
+    <customLabels>
+        <label>Pour pouvoir exécuter cette action, demandez à votre administrateur Salesforce de vous accorder l&apos;accès {0} à {1} dans {2}.</label>
+        <name>Msg_Error_Cannot_Access_Fields</name>
+    </customLabels>
+    <customLabels>
+        <label>Ce type d&apos;enregistrement ne peut pas être modifié.</label>
+        <name>Msg_Error_Changing_Record_Types</name>
+    </customLabels>
+    <customLabels>
+        <label>Pour le type d&apos;enregistrement sélectionné, Société doit être identique au nom de la piste, {0} {1}</label>
+        <name>Msg_Error_Company_Name_Invalid</name>
+    </customLabels>
+    <customLabels>
+        <label>Ce composant a été déprécié. Demandez une aide à votre administrateur Salesforce.</label>
+        <name>Msg_Error_Component_Deprecated</name>
+    </customLabels>
+    <customLabels>
+        <label>Vous pouvez ajouter ce composant uniquement à la page {0}.</label>
+        <name>Msg_Error_Component_Invalid</name>
+    </customLabels>
+    <customLabels>
+        <label>Un enregistrement de contact ne peut pas être créé sans type d&apos;enregistrement Individu.</label>
+        <name>Msg_Error_Contact_Invalid_Record_Type</name>
+    </customLabels>
+    <customLabels>
+        <label>Impossible de charger les informations. Demandez à votre administrateur Salesforce de configurer des ensembles de champs.</label>
+        <name>Msg_Error_FieldSets_Cannot_Load</name>
+    </customLabels>
+    <customLabels>
+        <label>La valeur {0} ne peut pas être nulle. Restaurez sa valeur d&apos;origine.</label>
+        <name>Msg_Error_Field_Value_Null</name>
+    </customLabels>
+    <customLabels>
+        <label>La taille de fichier ne peut pas dépasser {0} octets. Taille du fichier sélectionné : {1}</label>
+        <name>Msg_Error_File_Size</name>
+    </customLabels>
+    <customLabels>
+        <label>Message d&apos;erreur affiché lorsque les critères de filtrage ne sont pas valides dans des vues de listes de clients ou de foyers</label>
+        <name>Msg_Error_Filter_Criteria_Invalid</name>
+    </customLabels>
+    <customLabels>
+        <label>Saisissez un ensemble de champs associé à cet objet</label>
+        <name>Msg_Error_FinancialAccountRoleList_InvalidFieldSet</name>
+    </customLabels>
+    <customLabels>
+        <label>Saisissez un type d&apos;enregistrement pertinent pour cet objet</label>
+        <name>Msg_Error_FinancialAccountRoleList_InvalidRecordTypes</name>
+    </customLabels>
+    <customLabels>
+        <label>Saisissez un rôle pertinent pour cet objet</label>
+        <name>Msg_Error_FinancialAccountRoleList_InvalidRoles</name>
+    </customLabels>
+    <customLabels>
+        <label>Vous ne pouvez pas supprimer un Rôle de compte financier dont le propriétaire principal est actif. Pour le supprimer, attribuez un autre propriétaire principal au compte financier.</label>
+        <name>Msg_Error_FinancialAccountRole_Delete</name>
+    </customLabels>
+    <customLabels>
+        <label>Une erreur s&apos;est produite, veuillez réessayer. Si le problème persiste, contactez votre administrateur pour obtenir une aide.</label>
+        <name>Msg_Error_General</name>
+    </customLabels>
+    <customLabels>
+        <label>Le compte sélectionné a déjà une relation avec ce membre.</label>
+        <name>Msg_Error_Group_Account_Duplicate</name>
+    </customLabels>
+    <customLabels>
+        <label>Impossible de supprimer des enregistrements AccountContactRelation. À la place, désactivez-les.</label>
+        <name>Msg_Error_Group_Acr_No_Delete</name>
+    </customLabels>
+    <customLabels>
+        <label>Impossible de choisir une entreprise en tant que groupe principal ou membre principal.</label>
+        <name>Msg_Error_Group_Business_Primary_Invalid</name>
+    </customLabels>
+    <customLabels>
+        <label>Impossible d&apos;inclure une entreprise dans plusieurs groupes.</label>
+        <name>Msg_Error_Group_Cannot_Include_Business</name>
+    </customLabels>
+    <customLabels>
+        <label>Le membre sélectionné a déjà une relation avec ce groupe.</label>
+        <name>Msg_Error_Group_Member_Duplicate</name>
+    </customLabels>
+    <customLabels>
+        <label>Plusieurs types d&apos;enregistrement Groupe existent pour le compte. Le type d&apos;enregistrement doit être unique. Contactez votre administrateur pour obtenir une aide.</label>
+        <name>Msg_Error_Group_Record_Type_Not_Unique</name>
+    </customLabels>
+    <customLabels>
+        <label>Nous ne pouvons pas ajouter cette personne à ce foyer, car elle appartient déjà à un foyer.</label>
+        <name>Msg_Error_Household_Existing_Membership</name>
+    </customLabels>
+    <customLabels>
+        <label>Nous ne pouvons pas définir cette personne en tant que membre principal. Le membre principal du foyer est déjà défini.</label>
+        <name>Msg_Error_Household_Primary_Member</name>
+    </customLabels>
+    <customLabels>
+        <label>Règles de cumul : {0} non actif/active. Activez pour effectuer un nouveau calcul.</label>
+        <name>Msg_Error_Inactive_RollupRule</name>
+    </customLabels>
+    <customLabels>
+        <label>Impossible d&apos;inclure un groupe dans un groupe.</label>
+        <name>Msg_Error_IncludeInGroup_Invalid</name>
+    </customLabels>
+    <customLabels>
+        <label>Le compte sélectionné a un type d&apos;enregistrement Individu et ne peut pas être associé à un contact supplémentaire.</label>
+        <name>Msg_Error_Individual_Multiple_Contact</name>
+    </customLabels>
+    <customLabels>
+        <label>Pour exécuter cette action, demandez à votre administrateur Salesforce la licence d&apos;ensemble d&apos;autorisations Financial Services Cloud requise.</label>
+        <name>Msg_Error_Insufficient_Permission_Set_Privileges</name>
+    </customLabels>
+    <customLabels>
+        <label>Vous ne disposez pas du niveau d&apos;accès requis pour exécuter cette action. Contactez votre administrateur pour obtenir une aide.</label>
+        <name>Msg_Error_Insufficient_Privileges</name>
+    </customLabels>
+    <customLabels>
+        <label>Argument d’entrée non valide {0}</label>
+        <name>Msg_Error_Invalid_Attribute</name>
+    </customLabels>
+    <customLabels>
+        <label>Le type d’enregistrement de votre compte est manquant, est un doublon ou n’est pas valide. Demandez à votre administrateur de vérifier les configurations de type d’enregistrement Groupe dans Configuration.</label>
+        <name>Msg_Error_Invalid_Group_Record_Type</name>
+    </customLabels>
+    <customLabels>
+        <label>Vous pouvez ajouter uniquement des comptes personnels comme membres d&apos;un foyer.</label>
+        <name>Msg_Error_Invalid_Household_Member_Account</name>
+    </customLabels>
+    <customLabels>
+        <label>Le type d&apos;enregistrement Compte personnel n&apos;est pas disponible. Pour obtenir une aide, contactez votre administrateur.</label>
+        <name>Msg_Error_Invalid_Person_Account_Record_Type</name>
+    </customLabels>
+    <customLabels>
+        <label>Requête non valide {0}</label>
+        <name>Msg_Error_Invalid_Query</name>
+    </customLabels>
+    <customLabels>
+        <label>Le type d’enregistrement de votre compte est manquant, est un doublon ou n’est pas valide. Demandez à votre administrateur de vérifier les configurations de type d’enregistrement Individu dans Configuration.</label>
+        <name>Msg_Error_Invalid_Record_Type</name>
+    </customLabels>
+    <customLabels>
+        <label>Hmm, l&apos;opération n&apos;a pas fonctionné. Informez votre administrateur Salesforce que le type d&apos;enregistrement de piste n&apos;est pas valide dans le mappage référent.</label>
+        <name>Msg_Error_Invalid_Referral_Record_Type</name>
+    </customLabels>
+    <customLabels>
+        <label>Impossible d&apos;accéder à ce rapport. Affichez-le dans Rapports.</label>
+        <name>Msg_Error_Invalid_Report</name>
+    </customLabels>
+    <customLabels>
+        <label>Règles de cumul : certains enregistrements ou ID ne remplissent pas nos critères. Vérifiez vos enregistrements et ID, puis réessayez.</label>
+        <name>Msg_Error_Invalid_RollupRules</name>
+    </customLabels>
+    <customLabels>
+        <label>Vous ne pouvez pas créer un compte ou un contact en utilisant le type d&apos;enregistrement Individu, car votre organisation a activé les Comptes personnels. Créez le compte ou le contact en utilisant un autre type d&apos;enregistrement.</label>
+        <name>Msg_Error_Invalid_Use_Of_Individual_RT</name>
+    </customLabels>
+    <customLabels>
+        <label>Nous ne pouvons pas sauvegarder cet enregistrement, car des informations requises sont manquantes dans le rôle sélectionné. Demandez à votre administrateur de définir son rôle inverse.</label>
+        <name>Msg_Error_Inverse_Role_Needed</name>
+    </customLabels>
+    <customLabels>
+        <label>Cette piste n&apos;a pas pu être convertie en Individu. Veuillez réessayer.</label>
+        <name>Msg_Error_Lead_Conversion</name>
+    </customLabels>
+    <customLabels>
+        <label>Sélectionner un type d&apos;enregistrement Individu.</label>
+        <name>Msg_Error_Lead_Convert_Account_Record_Type_Invalid</name>
+    </customLabels>
+    <customLabels>
+        <label>Sélectionnez un contact individuel pour un compte d&apos;individu.</label>
+        <name>Msg_Error_Lead_Convert_ContactType_Invalid</name>
+    </customLabels>
+    <customLabels>
+        <label>Sélectionnez Créer un contact pour créer un compte d&apos;individu.</label>
+        <name>Msg_Error_Lead_Convert_Contact_Invalid</name>
+    </customLabels>
+    <customLabels>
+        <label>Nous ne pouvons pas convertir la piste en compte non associé. Choisissez un compte associé.</label>
+        <name>Msg_Error_Lead_Convert_ExpressedInterest_Invalid</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Error msg on lead conversion when account/contact is from different individual --></label>
+        <name>Msg_Error_Lead_Convert_Individual_Invalid</name>
+    </customLabels>
+    <customLabels>
+        <label>Sélectionnez un contact associé à un individu ou sélectionnez le compte d&apos;un individu.</label>
+        <name>Msg_Error_Lead_Convert_MixedType_Invalid</name>
+    </customLabels>
+    <customLabels>
+        <label>Doublons détectés pour le type d&apos;enregistrement de piste : {0}.</label>
+        <name>Msg_Error_Lead_Record_Type_Not_Unique</name>
+    </customLabels>
+    <customLabels>
+        <label>Nous activons actuellement plusieurs groupes de relations pour des contacts. Réessayez dans quelques minutes.</label>
+        <name>Msg_Error_Multi_Group_Migration</name>
+    </customLabels>
+    <customLabels>
+        <label>Un contact ne peut avoir qu&apos;un seul groupe principal.</label>
+        <name>Msg_Error_One_Primary_Group_For_Contact</name>
+    </customLabels>
+    <customLabels>
+        <label>Nous n&apos;avons pas pu {0} ce/cette {1}. Veuillez réessayer.</label>
+        <name>Msg_Error_Operation_Entity</name>
+    </customLabels>
+    <customLabels>
+        <label>Cette page n&apos;est pas configurée. Demandez une aide à votre administrateur Salesforce.</label>
+        <name>Msg_Error_Page_Not_Configured</name>
+    </customLabels>
+    <customLabels>
+        <label>Désactivez la configuration pour supprimer un enregistrement.</label>
+        <name>Msg_Error_RBLConfig_Delete_Active_Rule</name>
+    </customLabels>
+    <customLabels>
+        <label>La combinaison de {0}, {1} et {2} doit être unique dans vos configurations actives.</label>
+        <name>Msg_Error_RBLConfig_Duplicate_Rule</name>
+    </customLabels>
+    <customLabels>
+        <label>Désactivez la configuration pour modifier un champ.</label>
+        <name>Msg_Error_RBLConfig_Edit_Active_Rule</name>
+    </customLabels>
+    <customLabels>
+        <label>Saisissez un nom de champ valide pour {0}.</label>
+        <name>Msg_Error_RBLConfig_Invalid_Field</name>
+    </customLabels>
+    <customLabels>
+        <label>Saisissez un champ de référence valide appartenant à {0}.</label>
+        <name>Msg_Error_RBLConfig_Invalid_Lookup_Field</name>
+    </customLabels>
+    <customLabels>
+        <label>Saisissez un nom d&apos;objet valide.</label>
+        <name>Msg_Error_RBLConfig_Invalid_Object</name>
+    </customLabels>
+    <customLabels>
+        <label>Sélectionnez un opérateur valide pour le type de champ {0}.</label>
+        <name>Msg_Error_RBLConfig_Invalid_Operation</name>
+    </customLabels>
+    <customLabels>
+        <label>Saisissez un type d&apos;enregistrement valide associé à {0}.</label>
+        <name>Msg_Error_RBLConfig_Invalid_Record_Type</name>
+    </customLabels>
+    <customLabels>
+        <label>Vous avez atteint le nombre maximal de {0} éléments de configuration actifs.</label>
+        <name>Msg_Error_RBLConfig_Maximum_Active_Rules</name>
+    </customLabels>
+    <customLabels>
+        <label>Cette expression n&apos;est pas correctement formatée.</label>
+        <name>Msg_Error_RBLConfig_Where_Clause_Formatting</name>
+    </customLabels>
+    <customLabels>
+        <label>La clause where référence des critères de filtrage non définis : {0}.</label>
+        <name>Msg_Error_RBLConfig_Where_Clause_Numbers</name>
+    </customLabels>
+    <customLabels>
+        <label>Désactivez la configuration parente pour supprimer un enregistrement.</label>
+        <name>Msg_Error_RBLFilterCriteria_Delete_With_Active_Config</name>
+    </customLabels>
+    <customLabels>
+        <label>Désactivez la configuration parente pour modifier un champ.</label>
+        <name>Msg_Error_RBLFilterCriteria_Edit_With_Active_Config</name>
+    </customLabels>
+    <customLabels>
+        <label>Sélectionnez un opérateur pris en charge.</label>
+        <name>Msg_Error_RBLFilterCriteria_Invalid_Operation</name>
+    </customLabels>
+    <customLabels>
+        <label>Sélectionnez une configuration parente valide.</label>
+        <name>Msg_Error_RBLFilterCriteria_Invalid_RBLConfig</name>
+    </customLabels>
+    <customLabels>
+        <label>Plusieurs types d&apos;enregistrement Individu existent pour le compte ou le contact. Le type d&apos;enregistrement doit être unique. Contactez votre administrateur pour obtenir une aide.</label>
+        <name>Msg_Error_Record_Type_Not_Unique</name>
+    </customLabels>
+    <customLabels>
+        <label>Hmm, l&apos;opération n&apos;a pas fonctionné. Informez votre administrateur Salesforce que le type d&apos;enregistrement de piste dans le mappage référent est déjà utilisé.</label>
+        <name>Msg_Error_Referral_Record_Type_Not_Unique</name>
+    </customLabels>
+    <customLabels>
+        <label>Ces informations résumées ont été déplacées vers la section des membres du groupe de cette page. Demandez une aide à votre administrateur Salesforce pour retirer ce message.</label>
+        <name>Msg_Error_RelationshipSummary_Component_Deprecated</name>
+    </customLabels>
+    <customLabels>
+        <label>Nous n&apos;avons pas pu retirer ce membre du foyer.</label>
+        <name>Msg_Error_Remove_Member_Household</name>
+    </customLabels>
+    <customLabels>
+        <label>{0} est requis.</label>
+        <name>Msg_Error_Required_Field_Missing</name>
+    </customLabels>
+    <customLabels>
+        <label>Les champs obligatoires suivants doivent être renseignés : {0}</label>
+        <name>Msg_Error_Required_Fields</name>
+    </customLabels>
+    <customLabels>
+        <label>Vous ne pouvez pas effectuer un nouveau calcul pendant qu&apos;un autre est en cours. Veuillez réessayer ultérieurement.</label>
+        <name>Msg_Error_RollupRecal_Running</name>
+    </customLabels>
+    <customLabels>
+        <label>Sélectionnez au moins une règle de cumul.</label>
+        <name>Msg_Error_RollupRules_NotSelected</name>
+    </customLabels>
+    <customLabels>
+        <label>Service introuvable pour la fonctionnalité {0}</label>
+        <name>Msg_Error_Service_Not_Found</name>
+    </customLabels>
+    <customLabels>
+        <label>Taux de conversion moyen d&apos;un référent.</label>
+        <name>Msg_Help_Average_Conversion_Rate</name>
+    </customLabels>
+    <customLabels>
+        <label>Une valeur de 0 à 100. Un score élevé reflète un taux élevé de conversion de référents.</label>
+        <name>Msg_Help_Referrer_Score</name>
+    </customLabels>
+    <customLabels>
+        <label>Reportez-vous à vos Principaux référents par chiffre d&apos;affaires, Référents créés ou Référents convertis.</label>
+        <name>Msg_Help_Top_Referrers</name>
+    </customLabels>
+    <customLabels>
+        <label>(nous pouvons afficher uniquement les {0} premiers éléments)</label>
+        <name>Msg_Info_List_Display_Limit</name>
+    </customLabels>
+    <customLabels>
+        <label>Aucun élément à afficher. Essayez d&apos;ajuster les filtres ou choisissez une autre vue de liste.</label>
+        <name>Msg_Info_List_Empty</name>
+    </customLabels>
+    <customLabels>
+        <label>Client créé.</label>
+        <name>Msg_Success_Client_Created</name>
+    </customLabels>
+    <customLabels>
+        <label>Client mis à jour.</label>
+        <name>Msg_Success_Client_Updated</name>
+    </customLabels>
+    <customLabels>
+        <label>Le membre a été retiré.</label>
+        <name>Msg_Success_Member_Removed</name>
+    </customLabels>
+    <customLabels>
+        <label>Le référent a été créé.</label>
+        <name>Msg_Success_Referral_Created</name>
+    </customLabels>
+    <customLabels>
+        <label>La relation a été supprimée.</label>
+        <name>Msg_Success_Relationship_Deleted</name>
+    </customLabels>
+    <customLabels>
+        <label>Tâche mise à jour.</label>
+        <name>Msg_Success_Task_Updated</name>
+    </customLabels>
+    <customLabels>
+        <label>Aucun résultat trouvé</label>
+        <name>Msg_Text_Lookup_NoResults</name>
+    </customLabels>
+    <customLabels>
+        <label>Spécifiez un ou plusieurs noms de champ valides qui existent dans {0}.</label>
+        <name>Not_Valid_Field_Error</name>
+    </customLabels>
+    <customLabels>
+        <label>Le nom de l&apos;objet doit être valide pour votre organisation.</label>
+        <name>Not_Valid_Object_Error</name>
+    </customLabels>
+    <customLabels>
+        <label>Principal</label>
+        <name>Pill_Primary</name>
+    </customLabels>
+    <customLabels>
+        <label>Activité</label>
+        <name>Tab_Activity</name>
+    </customLabels>
+    <customLabels>
+        <label>Collaboration</label>
+        <name>Tab_Collaborate</name>
+    </customLabels>
+    <customLabels>
+        <label>Détails</label>
+        <name>Tab_Details</name>
+    </customLabels>
+    <customLabels>
+        <label>Données financières</label>
+        <name>Tab_Financials</name>
+    </customLabels>
+    <customLabels>
+        <label>Objectifs</label>
+        <name>Tab_Goals</name>
+    </customLabels>
+    <customLabels>
+        <label>Plus</label>
+        <name>Tab_More</name>
+    </customLabels>
+    <customLabels>
+        <label>Associés</label>
+        <name>Tab_Related</name>
+    </customLabels>
+    <customLabels>
+        <label>Relations</label>
+        <name>Tab_Relationships</name>
+    </customLabels>
+    <customLabels>
+        <label>Justificatif</label>
+        <name>Tab_Tear_Sheet</name>
+    </customLabels>
+    <customLabels>
+        <label>Anniversaires ({0})</label>
+        <name>Text_Birthdays</name>
+    </customLabels>
+    <customLabels>
+        <label>Externe</label>
+        <name>Text_External_Referrer</name>
+    </customLabels>
+    <customLabels>
+        <label>Copropriétaire</label>
+        <name>Text_Financials_Owner_Joint</name>
+    </customLabels>
+    <customLabels>
+        <label>Principal</label>
+        <name>Text_Financials_Owner_Primary</name>
+    </customLabels>
+    <customLabels>
+        <label>Aucune piste à afficher.</label>
+        <name>Text_No_Leads</name>
+    </customLabels>
+    <customLabels>
+        <label>Aucune opportunité à afficher.</label>
+        <name>Text_No_Opportunities</name>
+    </customLabels>
+    <customLabels>
+        <label>Aucune</label>
+        <name>Text_No_Option_Selected</name>
+    </customLabels>
+    <customLabels>
+        <label>Aucun référent.</label>
+        <name>Text_No_Referrals</name>
+    </customLabels>
+    <customLabels>
+        <label>Aucune tâche à afficher.</label>
+        <name>Text_No_Tasks</name>
+    </customLabels>
+    <customLabels>
+        <label>Aucun anniversaire à venir.</label>
+        <name>Text_No_Upcoming_Birthdays</name>
+    </customLabels>
+    <customLabels>
+        <label>Aucun RMD à venir.</label>
+        <name>Text_No_Upcoming_RMD</name>
+    </customLabels>
+    <customLabels>
+        <label>Nom du propriétaire</label>
+        <name>Text_Owner_Name</name>
+    </customLabels>
+    <customLabels>
+        <label>Sélectionner un type d&apos;enregistrement</label>
+        <name>Text_Panel_Group_New</name>
+    </customLabels>
+    <customLabels>
+        <label>RMD à venir ({0})</label>
+        <name>Text_RMD</name>
+    </customLabels>
+    <customLabels>
+        <label>Bientôt {0}</label>
+        <name>Text_Turning_Age</name>
+    </customLabels>
+    <customLabels>
+        <label>Pièce jointe</label>
+        <name>Text_Upload_File</name>
+    </customLabels>
+    <customLabels>
+        <label>Détails du compte</label>
+        <name>Wizard_Step_Account_Details</name>
+    </customLabels>
+    <customLabels>
+        <label>Détails du contact</label>
+        <name>Wizard_Step_Contact_Details</name>
+    </customLabels>
+    <customLabels>
+        <label>Détails</label>
+        <name>Wizard_Step_Group_Details</name>
+    </customLabels>
+    <customLabels>
+        <label>Membres et relations</label>
+        <name>Wizard_Step_Group_Members_Relationships</name>
+    </customLabels>
+    <customLabels>
+        <label>Détails de l&apos;individu</label>
+        <name>Wizard_Step_Individual_Details</name>
+    </customLabels>
+    <customLabels>
+        <label>({0} sur {1})</label>
+        <name>Wizard_Step_Number</name>
+    </customLabels>
+    <customLabels>
+        <label>Détails du groupe</label>
+        <name>Wizard_Step_Relationship_Group_Details</name>
+    </customLabels>
+    <customTabs>
+        <label>Clients</label>
+        <name>WMClients</name>
+    </customTabs>
+    <customTabs>
+        <label>Foyers</label>
+        <name>WMHouseholds</name>
+    </customTabs>
+    <customTabs>
+        <label><!-- Home --></label>
+        <name>WMToday</name>
+    </customTabs>
+    <quickActions>
+        <label><!-- Log a Call --></label>
+        <name>LogACall</name>
+    </quickActions>
+    <quickActions>
+        <label><!-- Log a Call --></label>
+        <name>LogACallAdvisor</name>
+    </quickActions>
+    <quickActions>
+        <label><!-- Log a Call --></label>
+        <name>LogACallClientAssociate</name>
+    </quickActions>
+    <quickActions>
+        <label>Nouvelle piste et nouveau référent d&apos;entreprise</label>
+        <name>NewBusinessLeadReferral</name>
+    </quickActions>
+    <quickActions>
+        <label><!-- New Event --></label>
+        <name>NewEvent</name>
+    </quickActions>
+    <quickActions>
+        <label><!-- New Event --></label>
+        <name>NewEventAdvisor</name>
+    </quickActions>
+    <quickActions>
+        <label><!-- New Event --></label>
+        <name>NewEventClientAssociate</name>
+    </quickActions>
+    <quickActions>
+        <label>Nouvelle piste et nouveau référent</label>
+        <name>NewLeadReferral</name>
+    </quickActions>
+    <quickActions>
+        <label><!-- New Task --></label>
+        <name>NewTask</name>
+    </quickActions>
+    <quickActions>
+        <label><!-- New Task --></label>
+        <name>NewTaskAdvisor</name>
+    </quickActions>
+    <quickActions>
+        <label><!-- New Task --></label>
+        <name>NewTaskClientAssociate</name>
+    </quickActions>
+    <reportTypes>
+        <label>Clients</label>
+        <name>Clients</name>
+        <sections>
+            <columns>
+                <label>Client</label>
+                <name>Client</name>
+            </columns>
+            <label>Clients</label>
+            <name>Clients</name>
+        </sections>
+    </reportTypes>
+    <reportTypes>
+        <label>Clients - Tableaux de bord</label>
+        <name>Clients_Dashboards</name>
+        <sections>
+            <columns>
+                <label>Client</label>
+                <name>Client</name>
+            </columns>
+            <label>Clients</label>
+            <name>Clients</name>
+        </sections>
+    </reportTypes>
+    <reportTypes>
+        <label>Comptes financiers</label>
+        <name>FinancialAccounts</name>
+        <sections>
+            <label>Comptes financiers</label>
+            <name>Financial Accounts</name>
+        </sections>
+    </reportTypes>
+    <reportTypes>
+        <label>Foyers</label>
+        <name>Households</name>
+        <sections>
+            <columns>
+                <label>Foyer</label>
+                <name>Household</name>
+            </columns>
+            <label>Foyers</label>
+            <name>Households</name>
+        </sections>
+    </reportTypes>
+    <reportTypes>
+        <label>Foyers - Tableaux de bord</label>
+        <name>Households_Dashboards</name>
+        <sections>
+            <columns>
+                <label>Foyer</label>
+                <name>Household</name>
+            </columns>
+            <label>Foyers</label>
+            <name>Households</name>
+        </sections>
+    </reportTypes>
+</Translations>

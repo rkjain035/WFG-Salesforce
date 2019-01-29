@@ -1,0 +1,58 @@
+<apex:page cache="false" standardController="AgentOne__Inforce_Policy__c"  extensions="AgentOne.PolicyAlertMessageController" standardStylesheets="false" docType="html-5.0" id="headerPage" applybodyTag="false" tabStyle="AgentOne__InsuranceCase__c">
+<html xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+	<head>
+      <script src="{!URLFOR($Resource.svg4everybody_zip, 'svg4everybody.legacy.js')}"></script>
+      <script>svg4everybody(); </script>
+
+      <apex:stylesheet value="{!URLFOR($Resource.AgentOne__SLDS, 'assets/styles/salesforce-lightning-design-system-vf.min.css')}" />
+	</head>
+    <style>
+        div.no_alert_message {
+            background-color: #e0e5ee !important;
+            color: #5876A3 !important;
+        }
+    </style>
+
+    <div class="agentone">
+    <div class="slds" >
+
+	<apex:outputPanel rendered="{!haveAlerts}">
+		<div class="slds-notify slds-notify--alert slds-theme--warning" role="alert">
+		  <span class="slds-assistive-text">Info</span>
+		  <button class="slds-button slds-button--icon-inverse slds-notify__close" style="display:none">
+		    <svg aria-hidden="true" class="slds-button__icon">
+		      <use xlink:href="{!URLFOR($Resource.SLDS, '/assets/icons/utility-sprite/svg/symbols.svg#close')}"></use>
+		    </svg>
+		    <span class="slds-assistive-text">Close</span>
+		  </button>
+		  <h2>
+		  	<svg aria-hidden="true" class="slds-icon icon-text-email slds-icon--small slds-m-right--x-small">
+		  		<use xlink:href="{!URLFOR($Resource.SLDS, '/assets/icons/utility-sprite/svg/symbols.svg#warning')}"></use>
+		  	</svg>
+		  	{!haveAlertsMsg}
+		  </h2>
+		</div>
+	</apex:outputPanel>
+
+	<apex:outputPanel rendered="{!NOT(haveAlerts)}">
+		<div class="slds-notify slds-notify--alert slds-theme--inverse-text no_alert_message" role="alert">
+		  <span class="slds-assistive-text">Info</span>
+		  <button class="slds-button slds-button--icon-inverse slds-notify__close" style="display:none">
+		    <svg aria-hidden="true" class="slds-button__icon">
+		      <use xlink:href="{!URLFOR($Resource.SLDS, '/assets/icons/utility-sprite/svg/symbols.svg#close')}"></use>
+		    </svg>
+		    <span class="slds-assistive-text">Close</span>
+		  </button>
+		  <h2>
+		  	<svg aria-hidden="true" class="slds-icon icon-text-email slds-icon--small slds-m-right--x-small" style="display:none">
+		  		<use xlink:href="{!URLFOR($Resource.SLDS, '/assets/icons/utility-sprite/svg/symbols.svg#warning')}"></use>
+		  	</svg>
+		  	{!$Label.Msg_No_Alert}
+		  </h2>
+		</div>
+	</apex:outputPanel>
+
+    </div>
+	</div>
+</html>
+</apex:page>

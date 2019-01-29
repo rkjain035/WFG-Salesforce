@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value><!-- Industries Application Config --></value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value><!-- Industries Application Config --></value>
+    </caseValues>
+    <fields>
+        <help><!-- By default, account names are displayed: {firstname} {lastname}. To change the order, enter: {lastname} {firstname} --></help>
+        <label>Format de nom de compte</label>
+        <name>AccountNameFormat__c</name>
+    </fields>
+    <fields>
+        <label>Nom de l&apos;application</label>
+        <name>AppName__c</name>
+    </fields>
+    <fields>
+        <label>Créer inverse (Salesforce uniquement)</label>
+        <name>AutoCreateInverseRole__c</name>
+    </fields>
+    <fields>
+        <label>Création de compte individuel à partir du contact</label>
+        <name>AutocreateIndividualAccount__c</name>
+    </fields>
+    <fields>
+        <label>Type d&apos;individu par défaut</label>
+        <name>DefaultIndividualType__c</name>
+    </fields>
+    <fields>
+        <label>Packages dépendants</label>
+        <name>DependentPackageNS__c</name>
+    </fields>
+    <fields>
+        <label>Taille de lot de conversion de piste</label>
+        <name>LeadConversionBatchSize__c</name>
+    </fields>
+    <fields>
+        <label>Groupes de relations multiples</label>
+        <name>MultipleRelationshipGroups__c</name>
+    </fields>
+    <fields>
+        <help><!-- For example : v32.0 --></help>
+        <label>Version d&apos;API de présentation de page</label>
+        <name>PageLayoutApiVersion__c</name>
+    </fields>
+    <fields>
+        <help><!-- Only users with at least read access to the account and contact in an account-contact relationship record can see the record in relationship components. --></help>
+        <label>Restriction visibilité enregist. ACR</label>
+        <name>RestrictACRRecordVisibility__c</name>
+    </fields>
+    <fields>
+        <help><!-- Show a detailed error message when someone performs an action without having permission. --></help>
+        <label>Afficher les messages d&apos;erreur détaillés</label>
+        <name>ShowDetailedError__c</name>
+    </fields>
+    <fields>
+        <help><!-- Sync Account and Contact fields when records are created in the individual object model. --></help>
+        <label>Synchroniser les champs système Individu</label>
+        <name>SyncIndividualSystemFields__c</name>
+    </fields>
+    <gender><!-- Masculine --></gender>
+    <startsWith><!-- Consonant --></startsWith>
+</CustomObjectTranslation>

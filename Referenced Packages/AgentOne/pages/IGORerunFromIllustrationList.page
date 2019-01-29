@@ -1,0 +1,75 @@
+<apex:page standardController="AgentOne__Illustration__c" extensions="AgentOne.IGOStartEAppFromIllustrationController" recordSetVar="illustrations" showQuickActionVfHeader="False">
+    <html xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+        <apex:stylesheet value="{!URLFOR($Resource.AgentOne__SLDS, 'assets/styles/salesforce-lightning-design-system-vf.min.css')}" />
+        <apex:stylesheet value="{!URLFOR($Resource.AgentOne__AgentOneSLDS, 'agentone-slds.css')}" />
+
+        <div class="agentone">
+          <div class="slds">
+            <apex:outputPanel rendered="{!ISBLANK(pageMessage)}">
+             <div>
+                <div role="dialog" tabindex="-1" aria-labelledby="header43" class="slds-modal slds-fade-in-open">
+                  <div class="slds-modal__container">
+                    <div class="slds-modal__header">
+                      <h2 id="header43" class="slds-text-heading--medium">Rerun Illustration</h2>
+                    </div>
+                    <div class="slds-modal__content slds-p-around--medium">
+                      {!confirmationMessage}
+                    </div>
+                    <div class="slds-modal__footer">
+                      <button class="slds-button slds-button--neutral" onclick="cancelClick('{!JSENCODE(retUrl)}')">{!$Label.LBL_Cancel}</button>
+                      <button class="slds-button slds-button--brand" onclick="confirmClick()">Rerun</button>
+                    </div>
+                  </div>
+                </div>
+                <div class="slds-backdrop slds-backdrop--open"></div>
+              </div>
+            </apex:outputPanel>
+            <apex:outputPanel id="rerunNotification">
+              <apex:pageBlock rendered="{!ISBLANK(pageMessage) == false}">
+                <div>
+                  <div role="dialog" tabindex="-1" aria-labelledby="header43" class="slds-modal slds-fade-in-open">
+                    <div class="slds-modal__container">
+                      <apex:outputPanel rendered="{!isRerunSuccess == false}">
+                        <div class="slds-modal__header">
+                          <h2 id="header43" class="slds-text-heading--medium">Rerun Illustration</h2>
+                        </div>
+                      </apex:outputPanel>
+                      <apex:outputPanel rendered="{!isRerunSuccess == true}">
+                        <div class="slds-modal__header slds-theme--success slds-theme--alert-texture">
+                          <h2 class="slds-text-heading--medium" id="prompt-heading-id">{!$Label.LBL_Success}</h2>
+                        </div>
+                      </apex:outputPanel>
+                      <div class="slds-modal__content slds-p-around--medium">
+                        {!pageMessage}
+                      </div>
+                      <div class="slds-modal__footer slds-theme--default">
+                        <button class="slds-button slds-button--neutral" onclick="cancelClick('{!JSENCODE(retUrl)}')">{!$Label.LBL_Ok}</button>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="slds-backdrop slds-backdrop--open"></div>
+                </div>
+              </apex:pageBlock>
+            </apex:outputPanel>
+
+            <apex:form >
+              <apex:actionFunction name="rerenderPageMessage" action="{!rerunIllustration}" rerender="rerunNotification"/>
+            </apex:form>
+          </div>
+        </div>
+        <script type="text/javascript">
+            var isSF1 = ((typeof sforce != 'undefined') && (sforce != null));
+            function cancelClick(retUrl) {
+               if (isSF1) {
+                   sforce.one.back();
+               } else {
+                   window.location.href = retUrl;
+               }
+            }
+
+            function confirmClick() {
+              rerenderPageMessage();
+            }
+        </script>
+    </html>
+</apex:page>

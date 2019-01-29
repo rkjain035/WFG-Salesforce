@@ -1,0 +1,1066 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <actionOverrides>
+        <actionName>Accept</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Clone</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>List</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>New</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Tab</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <allowInChatterGroups>false</allowInChatterGroups>
+    <compactLayoutAssignment>Commission_Details_Compact_layout</compactLayoutAssignment>
+    <compactLayouts>
+        <fullName>Commission_Details_Compact_layout</fullName>
+        <fields>Policy_Formula__c</fields>
+        <fields>Commission_Type__c</fields>
+        <fields>Paid_Amount__c</fields>
+        <fields>Writing_Agent_Formula__c</fields>
+        <label>Commission Details Compact layout</label>
+    </compactLayouts>
+    <deploymentStatus>Deployed</deploymentStatus>
+    <deprecated>false</deprecated>
+    <description>Individual compensation activity being reported for each Agents</description>
+    <enableActivities>false</enableActivities>
+    <enableBulkApi>true</enableBulkApi>
+    <enableFeeds>false</enableFeeds>
+    <enableHistory>false</enableHistory>
+    <enableReports>true</enableReports>
+    <enableSearch>true</enableSearch>
+    <enableSharing>true</enableSharing>
+    <enableStreamingApi>true</enableStreamingApi>
+    <externalSharingModel>Private</externalSharingModel>
+    <fields>
+        <fullName>Actual_Plan_Name__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Plan Name based on the ActualProductCode</description>
+        <encrypted>false</encrypted>
+        <externalId>false</externalId>
+        <inlineHelpText>Plan Name based on the ActualProductCode.</inlineHelpText>
+        <label>Actual Plan Name</label>
+        <length>80</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Advanced_Indicator__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Indicated if this detail is an advanced amount.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Indicated if this detail is an advanced amount.</inlineHelpText>
+        <label>Advanced Indicator</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>True</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>False</fullName>
+                    <default>false</default>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Charge_Back_Rate__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Chargeback Percent-The percentage of the original commission that is charged on a chargeback</description>
+        <externalId>false</externalId>
+        <inlineHelpText>The percentage of the original commission that is charged on a chargeback</inlineHelpText>
+        <label>Charge Back Rate</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackTrending>false</trackTrending>
+        <type>Percent</type>
+    </fields>
+    <fields>
+        <fullName>Client_Name__c</fullName>
+        <deprecated>false</deprecated>
+        <description>An appropriate name describing the name associated with this detail. It could be the Primary Insured for the base coverage or the primary insured on the coverage associated with this detail item</description>
+        <encrypted>false</encrypted>
+        <externalId>false</externalId>
+        <label>Client Name</label>
+        <length>80</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Commission_Earned_Date__c</fullName>
+        <deprecated>false</deprecated>
+        <description>The date a commission is earned (but not yet paid) by a producer (agent/broker).</description>
+        <encrypted>false</encrypted>
+        <externalId>false</externalId>
+        <inlineHelpText>The date a commission is earned (but not yet paid) by a producer.</inlineHelpText>
+        <label>Commission Earned Date</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>Commission_Event__c</fullName>
+        <deprecated>false</deprecated>
+        <description>The commission event that triggered the creation of this commission detail.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>The commission event that triggered the creation of this commission detail.</inlineHelpText>
+        <label>Commission Event</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Anniversary</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Any change in Policy Status</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>APL Payment</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Application submitted</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Asset Based or Trail commissions</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Business Rule Enforcement</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Change in coverage and or plan</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Change in Insured</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Change in Producer</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Change Planned Premium</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Commission adjustment</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Commission advance</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Commission Advance Adjustment</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Commission bonus</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Conversion Credit</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Coverage Anniversary</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Exchange</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Exchange - External</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Exchange - Internal</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Full Surrender</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Monthaversary</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Non Forfeiture Processing</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Other</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Partial Surrender</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Pay Day</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Payment is from a Non-Tax Qualified Rollover</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Payment Mode or Method Change</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Payment of Waived Premium</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Policy Annuitized</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Policy Change Conflict</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Policy Conversion</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Policy Lapsed</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Premium</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Premium - Additional</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Premium - Cash with App</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Premium - Initial</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Reinstatement payment</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Target Premium Change</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Unknown</fullName>
+                    <default>false</default>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Commission_Paid_Date__c</fullName>
+        <deprecated>false</deprecated>
+        <description>The date of the commissionable event that generated this commission detail.</description>
+        <encrypted>false</encrypted>
+        <externalId>false</externalId>
+        <inlineHelpText>The date of the commissionable event that generated this commission detail</inlineHelpText>
+        <label>Commission Paid Date</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>Commission_Rate__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Commission rate for overall commission payment (in absence of split).</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Commission rate for overall commission payment (in absence of split).</inlineHelpText>
+        <label>Commission Rate</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackTrending>false</trackTrending>
+        <type>Percent</type>
+    </fields>
+    <fields>
+        <fullName>Commission_Statement_Name__c</fullName>
+        <deleteConstraint>Restrict</deleteConstraint>
+        <deprecated>false</deprecated>
+        <description>Lookup to Commission (Statement) Object</description>
+        <externalId>false</externalId>
+        <label>Commission Statement Name</label>
+        <referenceTo>Commission__c</referenceTo>
+        <relationshipLabel>Commission Details</relationshipLabel>
+        <relationshipName>Commission_Details</relationshipName>
+        <required>true</required>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Commission_Status__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Current status of a commission payment.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Current status of a commission payment.</inlineHelpText>
+        <label>Commission Status</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Active</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Cancelled</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Complete</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Did not take place</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>History</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Pending</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Suspended</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Void</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Other</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Unknown</fullName>
+                    <default>false</default>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Commission_Transaction_Type__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Commission Transaction Type</description>
+        <externalId>false</externalId>
+        <label>Commission Transaction Type</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Adjustment Manual</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Bonus</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Charge back earned</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Charge Back of Commissions Payable</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Commission/Override earned</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Commission/Override payable</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Credits</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Deductions</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Imputed Income</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Other</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Payment to carrier in any form</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Payment to producer in any form</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Reversal of Payment to Producer in any form</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Transfer</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Unknown</fullName>
+                    <default>false</default>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Commission_Type__c</fullName>
+        <deprecated>false</deprecated>
+        <description>The general type or category of the commission e.g. First Year and Renewal Commission</description>
+        <externalId>false</externalId>
+        <inlineHelpText>The general type or category of the commission e.g. First Year and Renewal Commission</inlineHelpText>
+        <label>Commission Type</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Advance</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Commission</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Debt Recovery</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Deferred Commission Payment</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Deferred Override Payment</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Expense Reimbursement Allowance</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Expense Reimbursement Allowance Override</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Expense Reimbursement Allowance Supplemental/ Split Override</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Finance Debt</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>First Year Commission</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>First Year Gross Dealer Compensation for Broker</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>First Year Gross Dealer Compensation for GA</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>First Year Override</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Marketing Allowance for Broker</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Override, type unspecified</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Renewal Commission</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Renewal Gross Dealer Compensation for Broker</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Renewal Gross Dealer Compensation for GA</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Renewal Override</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Service Fees</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Trail / asset based comm</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Trail Gross Dealer Compensation for Broker</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Trail Gross Dealer Compensation for GA</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Transfer from one Producer to another</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Other</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Unknown</fullName>
+                    <default>false</default>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Coverage_Amount__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Face amount of coverage.</description>
+        <externalId>false</externalId>
+        <label>Coverage Amount</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>Earned_Amount__c</fullName>
+        <deprecated>false</deprecated>
+        <description>The amount of earned commission for this transaction/commission.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>The amount of earned commission for this transaction/commission.</inlineHelpText>
+        <label>Earned Amount</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>External_Id__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Carrier assigned unique id to commission detail records(optional).</description>
+        <encrypted>false</encrypted>
+        <externalId>true</externalId>
+        <inlineHelpText>Carrier assigned unique id to commission detail records(optional).</inlineHelpText>
+        <label>External Id</label>
+        <length>50</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Notes__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Additional Notes on the commission details.</description>
+        <encrypted>false</encrypted>
+        <externalId>false</externalId>
+        <label>Notes</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>TextArea</type>
+    </fields>
+    <fields>
+        <fullName>Paid_Amount__c</fullName>
+        <deprecated>false</deprecated>
+        <description>The actual amount of commission that has been calculated as payable for this transaction/commission</description>
+        <externalId>false</externalId>
+        <inlineHelpText>The actual amount of commission that has been calculated as payable for this transaction/commission</inlineHelpText>
+        <label>Paid Amount</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>Paid_To_Date__c</fullName>
+        <deprecated>false</deprecated>
+        <description>The date to which the contract is currently funded.</description>
+        <encrypted>false</encrypted>
+        <externalId>false</externalId>
+        <inlineHelpText>The date to which the contract is currently funded.</inlineHelpText>
+        <label>Paid To Date</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>Pay_Type__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Lookup describing the type of payments.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Lookup describing the type of payments.</inlineHelpText>
+        <label>Pay Type</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Bonus</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Commission</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Draw account</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Hourly</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Other</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Salaried</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Salary plus bonus</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Salary plus commission</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Salary plus commission plus bonus</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Unknown</fullName>
+                    <default>false</default>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Payment_Basis_Amount__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Gross amount of related transaction or assets or premiums that is the base on which this commission calculation was done.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Gross amount of related transaction or assets or premiums that is the base on which this commission calculation was done.</inlineHelpText>
+        <label>Payment Basis Amount</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>Payment_Mode__c</fullName>
+        <deprecated>false</deprecated>
+        <description>The frequency of a payment. Typically annual, monthly, weekly, etc.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>The frequency of a payment. Typically annual, monthly, weekly, etc.</inlineHelpText>
+        <label>Payment Mode</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Annual Calendar</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Any</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Bi-Weekly</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Day or Daily</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Monthly</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Other</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Quarterly</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Semi-Annual</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Semi-Monthly</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Single Payment</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Unknown</fullName>
+                    <default>false</default>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Payment_Rate_Category__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Rate category that is applied to this commission.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Rate category that is applied to this commission.</inlineHelpText>
+        <label>Payment Rate Category</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Annuity Payout Amount</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Asset Value</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Asset Value Change</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Basic premium</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Cost of Insurance</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Coverage Amount</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Excess</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Flat amount</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Fund Premium</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Gross</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Minimum</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>No commission payable</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Other</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Outstanding debt to carrier</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Policy Fee</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Previously Paid Commission</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Rider Premium</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Scheduled Premium</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Subordinates Commissions</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Substandard Risk Premium</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Target Premium</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Unknown</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Withdrawal Amount</fullName>
+                    <default>false</default>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Policy_Formula__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <formula>IF( ISBLANK(  Policy__c  ),  Related_Policy_Number__c  , HYPERLINK(&quot;/&quot;&amp;Policy__c,  Policy__r.Name   ) )</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Policy</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Policy__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <deprecated>false</deprecated>
+        <description>Inforce Policy Number</description>
+        <externalId>false</externalId>
+        <label>Policy(Lookup)</label>
+        <referenceTo>Inforce_Policy__c</referenceTo>
+        <relationshipLabel>Commission Details</relationshipLabel>
+        <relationshipName>Commission_Details</relationshipName>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Related_Policy_Number__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Related Policy Number - Is always populated irrespective of the in-force policy on AgentOne or not</description>
+        <encrypted>false</encrypted>
+        <externalId>false</externalId>
+        <label>Policy (Text)</label>
+        <length>80</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Related_Writing_Agent__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Writing Agent (not Hyperlinked)</description>
+        <encrypted>false</encrypted>
+        <externalId>false</externalId>
+        <label>Writing Agent (Text)</label>
+        <length>80</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Split_Percent__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Split percent the paid producer receives on this commission, % of Agent Commission</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Split percent the paid producer receives on this commission, % of Agent Commission</inlineHelpText>
+        <label>Split Percent</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackTrending>false</trackTrending>
+        <type>Percent</type>
+    </fields>
+    <fields>
+        <fullName>Taxable_Indicator__c</fullName>
+        <deprecated>false</deprecated>
+        <description>True indicates commission details is a taxable event.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>True indicates commission details is a taxable event.</inlineHelpText>
+        <label>Taxable Indicator</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>False</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>True</fullName>
+                    <default>false</default>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Writing_Agent_Formula__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <formula>IF( ISBLANK(  Writing_Agent__c  ),  Related_Writing_Agent__c  , HYPERLINK(&quot;/&quot;&amp;Writing_Agent__c,   Writing_Agent__r.FirstName+&apos; &apos;+ Writing_Agent__r.LastName    ) )</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Writing Agent</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Writing_Agent__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <deprecated>false</deprecated>
+        <description>Company Identifier for the Writing Agent. In those cases where the commission is an override being made to an agency this value identifies which company producer wrote the contract.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Company Identifier for the Writing Agent. In those cases where the commission is an override being made to an agency this value identifies which company producer wrote the contract.</inlineHelpText>
+        <label>Writing Agent(Lookup)</label>
+        <referenceTo>User</referenceTo>
+        <relationshipLabel>Commission Details</relationshipLabel>
+        <relationshipName>Commission_Details</relationshipName>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <label>Commission Detail</label>
+    <nameField>
+        <displayFormat>CD-{0000000}</displayFormat>
+        <label>Commission Detail Name</label>
+        <type>AutoNumber</type>
+    </nameField>
+    <pluralLabel>Commission Details</pluralLabel>
+    <searchLayouts>
+        <lookupDialogsAdditionalFields>Commission_Statement_Name__c</lookupDialogsAdditionalFields>
+        <lookupDialogsAdditionalFields>Policy_Formula__c</lookupDialogsAdditionalFields>
+        <lookupDialogsAdditionalFields>Commission_Type__c</lookupDialogsAdditionalFields>
+        <lookupDialogsAdditionalFields>Commission_Paid_Date__c</lookupDialogsAdditionalFields>
+        <lookupDialogsAdditionalFields>Paid_Amount__c</lookupDialogsAdditionalFields>
+        <lookupDialogsAdditionalFields>Payment_Basis_Amount__c</lookupDialogsAdditionalFields>
+        <lookupDialogsAdditionalFields>Writing_Agent_Formula__c</lookupDialogsAdditionalFields>
+        <lookupDialogsAdditionalFields>Split_Percent__c</lookupDialogsAdditionalFields>
+        <lookupPhoneDialogsAdditionalFields>Commission_Statement_Name__c</lookupPhoneDialogsAdditionalFields>
+        <lookupPhoneDialogsAdditionalFields>Policy_Formula__c</lookupPhoneDialogsAdditionalFields>
+        <lookupPhoneDialogsAdditionalFields>Commission_Type__c</lookupPhoneDialogsAdditionalFields>
+        <lookupPhoneDialogsAdditionalFields>Commission_Paid_Date__c</lookupPhoneDialogsAdditionalFields>
+        <lookupPhoneDialogsAdditionalFields>Paid_Amount__c</lookupPhoneDialogsAdditionalFields>
+        <lookupPhoneDialogsAdditionalFields>Payment_Basis_Amount__c</lookupPhoneDialogsAdditionalFields>
+        <lookupPhoneDialogsAdditionalFields>Writing_Agent_Formula__c</lookupPhoneDialogsAdditionalFields>
+        <lookupPhoneDialogsAdditionalFields>Split_Percent__c</lookupPhoneDialogsAdditionalFields>
+        <searchFilterFields>NAME</searchFilterFields>
+        <searchFilterFields>Commission_Statement_Name__c</searchFilterFields>
+        <searchFilterFields>Policy_Formula__c</searchFilterFields>
+        <searchFilterFields>Commission_Type__c</searchFilterFields>
+        <searchFilterFields>Commission_Paid_Date__c</searchFilterFields>
+        <searchFilterFields>Paid_Amount__c</searchFilterFields>
+        <searchFilterFields>Payment_Basis_Amount__c</searchFilterFields>
+        <searchFilterFields>Writing_Agent_Formula__c</searchFilterFields>
+        <searchFilterFields>Split_Percent__c</searchFilterFields>
+    </searchLayouts>
+    <sharingModel>Private</sharingModel>
+</CustomObject>

@@ -1,0 +1,823 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fields>
+        <label>AUM (actifs sous gestion)</label>
+        <name>AUM__c</name>
+    </fields>
+    <fields>
+        <label>Numéro de banque</label>
+        <name>BankNumber__c</name>
+    </fields>
+    <fields>
+        <label>Historique d&apos;emprunts</label>
+        <name>BorrowingHistory__c</name>
+        <picklistValues>
+            <masterLabel>Excellent</masterLabel>
+            <translation><!-- Excellent --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Limited to No History</masterLabel>
+            <translation><!-- Limited to No History --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Moderate</masterLabel>
+            <translation><!-- Moderate --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Poor</masterLabel>
+            <translation><!-- Poor --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label>Priorités d&apos;emprunt</label>
+        <name>BorrowingPriorities__c</name>
+        <picklistValues>
+            <masterLabel>Build Equity</masterLabel>
+            <translation><!-- Build Equity --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Debt Consolidation</masterLabel>
+            <translation><!-- Debt Consolidation --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Education</masterLabel>
+            <translation><!-- Education --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Investments</masterLabel>
+            <translation><!-- Investments --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Large Capital Purchases</masterLabel>
+            <translation><!-- Large Capital Purchases --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Property Purchase</masterLabel>
+            <translation><!-- Property Purchase --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Renovations</masterLabel>
+            <translation><!-- Renovations --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label>Code guichet</label>
+        <name>BranchCode__c</name>
+    </fields>
+    <fields>
+        <label>Nom de la succursale</label>
+        <name>BranchName__c</name>
+    </fields>
+    <fields>
+        <label>Catégorie</label>
+        <name>ClientCategory__c</name>
+        <picklistValues>
+            <masterLabel>Bronze</masterLabel>
+            <translation><!-- Bronze --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Gold</masterLabel>
+            <translation><!-- Gold --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Platinum</masterLabel>
+            <translation><!-- Platinum --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Silver</masterLabel>
+            <translation><!-- Silver --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label>Date/heure de conversion</label>
+        <name>ConversionDateTime__c</name>
+    </fields>
+    <fields>
+        <label>Indice de solvabilité</label>
+        <name>CreditRating__c</name>
+        <picklistValues>
+            <masterLabel>Excellent</masterLabel>
+            <translation><!-- Excellent --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Fair</masterLabel>
+            <translation><!-- Fair --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Good</masterLabel>
+            <translation><!-- Good --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Poor</masterLabel>
+            <translation><!-- Poor --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label>Score de crédit</label>
+        <name>CreditScore__c</name>
+    </fields>
+    <fields>
+        <label>ID de client</label>
+        <name>CustomerID__c</name>
+    </fields>
+    <fields>
+        <label>Segment de clientèle</label>
+        <name>CustomerSegment__c</name>
+        <picklistValues>
+            <masterLabel>Borrower</masterLabel>
+            <translation><!-- Borrower --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Long Term Growth</masterLabel>
+            <translation><!-- Long Term Growth --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Mass Affluent</masterLabel>
+            <translation><!-- Mass Affluent --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Mass Market</masterLabel>
+            <translation><!-- Mass Market --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Millennial</masterLabel>
+            <translation><!-- Millennial --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Transactional</masterLabel>
+            <translation><!-- Transactional --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Wealth Accumulation</masterLabel>
+            <translation><!-- Wealth Accumulation --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label>Type de client</label>
+        <name>CustomerType__c</name>
+        <picklistValues>
+            <masterLabel>Borrower</masterLabel>
+            <translation><!-- Borrower --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Investor</masterLabel>
+            <translation><!-- Investor --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Relational</masterLabel>
+            <translation><!-- Relational --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Transaction</masterLabel>
+            <translation><!-- Transaction --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label>Intérêts financiers</label>
+        <name>FinancialInterests__c</name>
+        <picklistValues>
+            <masterLabel>College Planning</masterLabel>
+            <translation><!-- College Planning --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Energy</masterLabel>
+            <translation><!-- Energy --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Fixed Income</masterLabel>
+            <translation><!-- Fixed Income --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Municipal Bonds</masterLabel>
+            <translation><!-- Municipal Bonds --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Retirement</masterLabel>
+            <translation><!-- Retirement --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Technology</masterLabel>
+            <translation><!-- Technology --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label>ID de l&apos;individu</label>
+        <name>IndividualId__c</name>
+    </fields>
+    <fields>
+        <label>Type d&apos;individu</label>
+        <name>IndividualType__c</name>
+        <picklistValues>
+            <masterLabel>Group</masterLabel>
+            <translation><!-- Group --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Individual</masterLabel>
+            <translation><!-- Individual --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label>Expérience en investissement</label>
+        <name>InvestmentExperience__c</name>
+        <picklistValues>
+            <masterLabel>Experienced</masterLabel>
+            <translation><!-- Experienced --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Inexperienced</masterLabel>
+            <translation><!-- Inexperienced --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Moderately Experienced</masterLabel>
+            <translation><!-- Moderately Experienced --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Moderately Inexperienced</masterLabel>
+            <translation><!-- Moderately Inexperienced --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label>Objectifs d&apos;investissement</label>
+        <name>InvestmentObjectives__c</name>
+        <picklistValues>
+            <masterLabel>Aggressive Growth</masterLabel>
+            <translation><!-- Aggressive Growth --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Balanced</masterLabel>
+            <translation><!-- Balanced --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Conservative Income</masterLabel>
+            <translation><!-- Conservative Income --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Growth</masterLabel>
+            <translation><!-- Growth --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Income</masterLabel>
+            <translation><!-- Income --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label>Date KYC</label>
+        <name>KYCDate__c</name>
+    </fields>
+    <fields>
+        <label>Statut KYC</label>
+        <name>KYCStatus__c</name>
+        <picklistValues>
+            <masterLabel>Completed - Invalid</masterLabel>
+            <translation><!-- Completed - Invalid --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Completed - Valid</masterLabel>
+            <translation><!-- Completed - Valid --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Expired</masterLabel>
+            <translation><!-- Expired --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>In Queue</masterLabel>
+            <translation><!-- In Queue --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>In progress</masterLabel>
+            <translation><!-- In progress --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Overdue</masterLabel>
+            <translation><!-- Overdue --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Required</masterLabel>
+            <translation><!-- Required --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label>Dernière interaction</label>
+        <name>LastInteraction__c</name>
+    </fields>
+    <fields>
+        <label>Dernière révision</label>
+        <name>LastReview__c</name>
+    </fields>
+    <fields>
+        <label>Dernière transaction - Copropriétaire</label>
+        <name>LastTransactionDateJointOwner__c</name>
+    </fields>
+    <fields>
+        <label>Dernière transaction - Prop. principal</label>
+        <name>LastTransactionDatePrimaryOwner__c</name>
+    </fields>
+    <fields>
+        <label>Date de dernière transaction</label>
+        <name>LastTransactionDate__c</name>
+    </fields>
+    <fields>
+        <label>Dernier canal utilisé</label>
+        <name>LastUsedChannel__c</name>
+        <picklistValues>
+            <masterLabel>Branch</masterLabel>
+            <translation><!-- Branch --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Call Center</masterLabel>
+            <translation><!-- Call Center --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Mobile</masterLabel>
+            <translation><!-- Mobile --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Other</masterLabel>
+            <translation><!-- Other --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Web</masterLabel>
+            <translation><!-- Web --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label>Durée de la relation</label>
+        <name>LengthOfRelationship__c</name>
+    </fields>
+    <fields>
+        <label>Valeur de durée de vie</label>
+        <name>LifetimeValue__c</name>
+    </fields>
+    <fields>
+        <label>Segment marketing</label>
+        <name>MarketingSegment__c</name>
+        <picklistValues>
+            <masterLabel>Female Investor</masterLabel>
+            <translation><!-- Female Investor --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>High Net Worth</masterLabel>
+            <translation><!-- High Net Worth --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Mass Affluent</masterLabel>
+            <translation><!-- Mass Affluent --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Millennial</masterLabel>
+            <translation><!-- Millennial --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label>Richesse nette</label>
+        <name>NetWorth__c</name>
+    </fields>
+    <fields>
+        <label>Prochaine interaction</label>
+        <name>NextInteraction__c</name>
+    </fields>
+    <fields>
+        <label>Prochaine révision</label>
+        <name>NextReview__c</name>
+    </fields>
+    <fields>
+        <label>Notes importantes</label>
+        <name>Notes__c</name>
+    </fields>
+    <fields>
+        <label>Intérêts personnels</label>
+        <name>PersonalInterests__c</name>
+        <picklistValues>
+            <masterLabel>Biking</masterLabel>
+            <translation><!-- Biking --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>College Basketball</masterLabel>
+            <translation><!-- College Basketball --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Cooking</masterLabel>
+            <translation><!-- Cooking --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Environment</masterLabel>
+            <translation><!-- Environment --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Hiking</masterLabel>
+            <translation><!-- Hiking --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Wine</masterLabel>
+            <translation><!-- Wine --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label>Contact principal</label>
+        <name>PrimaryContact__c</name>
+        <relationshipLabel>Comptes (contact principal)</relationshipLabel>
+    </fields>
+    <fields>
+        <label>Référent externe</label>
+        <name>ReferredByContact__c</name>
+        <relationshipLabel>Mes référents</relationshipLabel>
+    </fields>
+    <fields>
+        <label>Référent interne</label>
+        <name>ReferredByUser__c</name>
+        <relationshipLabel><!-- Accounts --></relationshipLabel>
+    </fields>
+    <fields>
+        <label>Date de début de la relation</label>
+        <name>RelationshipStartDate__c</name>
+    </fields>
+    <fields>
+        <label>Fréquence de révision</label>
+        <name>ReviewFrequency__c</name>
+        <picklistValues>
+            <masterLabel>Annually</masterLabel>
+            <translation><!-- Annually --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Monthly</masterLabel>
+            <translation><!-- Monthly --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Quarterly</masterLabel>
+            <translation><!-- Quarterly --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label>Tolérance au risque</label>
+        <name>RiskTolerance__c</name>
+        <picklistValues>
+            <masterLabel>Aggressive</masterLabel>
+            <translation><!-- Aggressive --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Conservative</masterLabel>
+            <translation><!-- Conservative --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Moderate</masterLabel>
+            <translation><!-- Moderate --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>None</masterLabel>
+            <translation><!-- None --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label>Modèle de service</label>
+        <name>ServiceModel__c</name>
+        <picklistValues>
+            <masterLabel>Tier 1</masterLabel>
+            <translation><!-- Tier 1 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Tier 2</masterLabel>
+            <translation><!-- Tier 2 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Tier 3</masterLabel>
+            <translation><!-- Tier 3 --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label>ID du système source</label>
+        <name>SourceSystemId__c</name>
+    </fields>
+    <fields>
+        <label>Statut</label>
+        <name>Status__c</name>
+        <picklistValues>
+            <masterLabel>Active</masterLabel>
+            <translation><!-- Active --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Closed</masterLabel>
+            <translation><!-- Closed --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Deceased</masterLabel>
+            <translation><!-- Deceased --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Deliquent</masterLabel>
+            <translation><!-- Deliquent --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Dormant</masterLabel>
+            <translation><!-- Dormant --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Inactive</masterLabel>
+            <translation><!-- Inactive --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Onboarding</masterLabel>
+            <translation><!-- Onboarding --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Prospect</masterLabel>
+            <translation><!-- Prospect --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label>Échéance</label>
+        <name>TimeHorizon__c</name>
+        <picklistValues>
+            <masterLabel>Long Term</masterLabel>
+            <translation><!-- Long Term --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Medium Term</masterLabel>
+            <translation><!-- Medium Term --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Short Term</masterLabel>
+            <translation><!-- Short Term --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label>Total Copropriétaire actifs sous gestion</label>
+        <name>TotalAUMJointOwner__c</name>
+    </fields>
+    <fields>
+        <label>Total Propriét. pri. actifs sous gestion</label>
+        <name>TotalAUMPrimaryOwner__c</name>
+    </fields>
+    <fields>
+        <label>Total Copropriétaire dépôts bancaires</label>
+        <name>TotalBankDepositsJointOwner__c</name>
+    </fields>
+    <fields>
+        <label>Total Propriétaire pri. dépôts bancaires</label>
+        <name>TotalBankDepositsPrimaryOwner__c</name>
+    </fields>
+    <fields>
+        <label>Total des dépôts bancaires</label>
+        <name>TotalBankDeposits__c</name>
+    </fields>
+    <fields>
+        <label>Total Copropriétaire comptes financiers</label>
+        <name>TotalFinAcctsJointOwner__c</name>
+    </fields>
+    <fields>
+        <label>Total Propriétaire pri. cptes financiers</label>
+        <name>TotalFinAcctsPrimaryOwner__c</name>
+    </fields>
+    <fields>
+        <label>Total des comptes financiers</label>
+        <name>TotalFinancialAccounts__c</name>
+    </fields>
+    <fields>
+        <label>Total des comptes financiers joints</label>
+        <name>TotalHeldFinAcctsJointOwner__c</name>
+    </fields>
+    <fields>
+        <label>Total Cptes fin. gérés par prop. prin.</label>
+        <name>TotalHeldFinAcctsPrimaryOwner__c</name>
+    </fields>
+    <fields>
+        <label>Total Copropriétaire des assurances</label>
+        <name>TotalInsuranceJointOwner__c</name>
+    </fields>
+    <fields>
+        <label>Total Propriétaire principal assurances</label>
+        <name>TotalInsurancePrimaryOwner__c</name>
+    </fields>
+    <fields>
+        <label>Total des assurances</label>
+        <name>TotalInsurance__c</name>
+    </fields>
+    <fields>
+        <label>Total Copropriétaire des investissements</label>
+        <name>TotalInvestmentsJointOwner__c</name>
+    </fields>
+    <fields>
+        <label>Total Propriétaire prin. investissements</label>
+        <name>TotalInvestmentsPrimaryOwner__c</name>
+    </fields>
+    <fields>
+        <label>Total des investissements</label>
+        <name>TotalInvestments__c</name>
+    </fields>
+    <fields>
+        <label>Total Copropriétaire du passif</label>
+        <name>TotalLiabilitiesJointOwner__c</name>
+    </fields>
+    <fields>
+        <label>Total Propriétaire principal du passif</label>
+        <name>TotalLiabilitiesPrimaryOwner__c</name>
+    </fields>
+    <fields>
+        <label>Total Passif</label>
+        <name>TotalLiabilities__c</name>
+    </fields>
+    <fields>
+        <label>Total Coprop. actifs non financiers</label>
+        <name>TotalNonfinancialAssetsJointOwner__c</name>
+    </fields>
+    <fields>
+        <label>Total Propr. prin. actifs non financiers</label>
+        <name>TotalNonfinancialAssetsPrimaryOwner__c</name>
+    </fields>
+    <fields>
+        <label>Total des actifs non financiers</label>
+        <name>TotalNonfinancialAssets__c</name>
+    </fields>
+    <fields>
+        <label>Nombre comptes financiers - Prop. joint</label>
+        <name>TotalNumberOfFinAccountsJointOwner__c</name>
+    </fields>
+    <fields>
+        <label>Nombre cptes financiers - Prop. princ.</label>
+        <name>TotalNumberOfFinAccountsPrimaryOwner__c</name>
+    </fields>
+    <fields>
+        <label>Nombre total de comptes financiers</label>
+        <name>TotalNumberOfFinAccounts__c</name>
+    </fields>
+    <fields>
+        <label>Encours crédit tot. - Propriétaire joint</label>
+        <name>TotalOutstandingCreditJointOwner__c</name>
+    </fields>
+    <fields>
+        <label>Encours crédit tot. - Propriétaire prin.</label>
+        <name>TotalOutstandingCreditPrimaryOwner__c</name>
+    </fields>
+    <fields>
+        <label>Encours de crédit total</label>
+        <name>TotalOutstandingCredit__c</name>
+    </fields>
+    <fields>
+        <label>Prime totale</label>
+        <name>TotalPremium__c</name>
+    </fields>
+    <fields>
+        <label>Revenu total</label>
+        <name>TotalRevenue__c</name>
+    </fields>
+    <fields>
+        <label>Part du portefeuille</label>
+        <name>WalletShare__c</name>
+    </fields>
+    <layouts>
+        <layout>Account (Business Referral) Layout</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- Financial Summary --></label>
+            <section>Financial Summary</section>
+        </sections>
+        <sections>
+            <label><!-- Referral Information --></label>
+            <section>Referral Information</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Account (Business) Layout</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- Financial Summary --></label>
+            <section>Financial Summary</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Account (Household) Layout</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- Financial Summary --></label>
+            <section>Financial Summary</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Account (Individual) Layout</layout>
+        <sections>
+            <label><!-- Address 1 --></label>
+            <section>Address 1</section>
+        </sections>
+        <sections>
+            <label><!-- Client Services --></label>
+            <section>Client Services</section>
+        </sections>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- Know Your Client --></label>
+            <section>Know Your Client</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Account (Institution) Layout</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- Financial Summary --></label>
+            <section>Financial Summary</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Account (Policyholder) Layout</layout>
+        <sections>
+            <label><!-- Address --></label>
+            <section>Address</section>
+        </sections>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- Financial Interest --></label>
+            <section>Financial Interest</section>
+        </sections>
+        <sections>
+            <label><!-- Policyholder Information --></label>
+            <section>Policyholder Information</section>
+        </sections>
+        <sections>
+            <label><!-- Policyholder Services --></label>
+            <section>Policyholder Services</section>
+        </sections>
+        <sections>
+            <label><!-- System Information --></label>
+            <section>System Information</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Account (Retail Client - Individual) Layout</layout>
+        <sections>
+            <label><!-- Billing/Shipping Address --></label>
+            <section>Billing/Shipping Address</section>
+        </sections>
+        <sections>
+            <label><!-- Client Services --></label>
+            <section>Client Services</section>
+        </sections>
+        <sections>
+            <label><!-- Finance Profile --></label>
+            <section>Finance Profile</section>
+        </sections>
+        <sections>
+            <label><!-- Referral Information --></label>
+            <section>Referral Information</section>
+        </sections>
+        <sections>
+            <label><!-- Relationship Information --></label>
+            <section>Relationship Information</section>
+        </sections>
+    </layouts>
+    <recordTypes>
+        <label>Entreprise</label>
+        <name>IndustriesBusiness</name>
+    </recordTypes>
+    <recordTypes>
+        <label>Foyer</label>
+        <name>IndustriesHousehold</name>
+    </recordTypes>
+    <recordTypes>
+        <label>Individu</label>
+        <name>IndustriesIndividual</name>
+    </recordTypes>
+    <recordTypes>
+        <label>Institution</label>
+        <name>IndustriesInstitution</name>
+    </recordTypes>
+    <validationRules>
+        <errorMessage>Les référents internes doivent être des utilisateurs Salesforce internes.</errorMessage>
+        <name>NonPortalUserReferrer</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage>Le type d&apos;enregistrement Individu ne peut pas être modifié</errorMessage>
+        <name>NotAllowingConversionFromIndividual</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage>Le type d&apos;enregistrement ne peut pas être modifié en Individu.</errorMessage>
+        <name>NotAllowingConversionToIndividual</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage>Saisissez un référent interne ou un référent externe. Vous pouvez répertorier un seul référent pour chaque référence.</errorMessage>
+        <name>SingleReferredByEntryByRecord</name>
+    </validationRules>
+    <webLinks>
+        <label>Ajouter un membre</label>
+        <name>AddMember</name>
+    </webLinks>
+    <webLinks>
+        <label>Ajouter une relation</label>
+        <name>AddRelation</name>
+    </webLinks>
+</CustomObjectTranslation>

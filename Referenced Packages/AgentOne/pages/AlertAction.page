@@ -1,0 +1,32 @@
+<apex:page docType="html-5.0" standardController="AgentOne__Alert__c" extensions="AgentOne.AlertActionController" action="{!processAlertAction}" showHeader="{!isSF1=False}">
+  <script>
+    //override the standard SF back to list function if needed
+    var backtolistele = document.getElementsByClassName("ptBreadcrumb");
+    if(typeof backtolistele != undefined && backtolistele.length == 1) {
+       var alertPredfix = ('{!JSENCODE(HTMLENCODE(Alert__c.Id))}').substring(0,3);
+       backtolistele[0].children[0].href = '/'+alertPredfix;
+    }
+    
+    // This piece of code to to handle navigation inside the iframe or canvas app 
+    // so that the back button functionality will work
+    var anchors = document.getElementsByTagName('a');
+        for (var i = 0; i < anchors.length; i++) {
+            var anchor = anchors[i];
+            anchor.addEventListener('click', function(event) {
+               history.replaceState(null, null, anchor.href);
+           }, false);
+        }
+        
+  </script>
+    <c:ScriptsComponent />   
+    <apex:outputPanel id="actionHeader" rendered="{!actionUI.displayHeader}">       
+        <apex:outputLabel rendered="{!actionUI.displayHeaderText}">{!actionUI.headerText}</apex:outputLabel>
+        <apex:detail rendered="{!actionUI.displayDetail && !isSF1}" subject="{!AgentOne__Alert__c.Id}" relatedList="false" title="true"/>
+    </apex:outputPanel>
+
+    <apex:outputPanel id="actionBody" rendered="{!actionUI.displayBody}">
+        <apex:iframe src="{!actionUI.iFrameUrl}" scrolling="true" id="bodyIFrame" rendered="{!actionUI.displayBodyIFrame}"/> 
+         <apex:include pageName="AgentOne__iGOResendEmail" rendered="{!actionUI.displayBodyComponent}" />
+    </apex:outputPanel>
+  
+</apex:page>

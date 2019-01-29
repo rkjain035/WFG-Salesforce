@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value><!-- Developer Application Config --></value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value><!-- Developer Application Config --></value>
+    </caseValues>
+    <fields>
+        <label>Classe d&apos;implémentation</label>
+        <name>ImplementationClass__c</name>
+    </fields>
+    <gender><!-- Masculine --></gender>
+    <startsWith><!-- Consonant --></startsWith>
+</CustomObjectTranslation>

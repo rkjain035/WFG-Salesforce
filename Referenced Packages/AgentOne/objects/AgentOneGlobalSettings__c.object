@@ -1,0 +1,231 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <customSettingsType>Hierarchy</customSettingsType>
+    <description>AgentOne Global Settings contains global settings for AgentOne.</description>
+    <enableFeeds>false</enableFeeds>
+    <fields>
+        <fullName>Create_Chatter_Post_for_Alerts__c</fullName>
+        <defaultValue>false</defaultValue>
+        <deprecated>false</deprecated>
+        <description>Indicates if a chatter post is created for incoming alert on the corresponding object (insurance case or policy).</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Enable if you want a chatter feed to be posted for incoming alerts on the corresponding object (insurance case or policy).</inlineHelpText>
+        <label>Create Chatter Posts for Alerts</label>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Create_Share_For_Agent_Split__c</fullName>
+        <defaultValue>true</defaultValue>
+        <deprecated>false</deprecated>
+        <description>Indicates if the system should assign share permissions (read only) to the account for the additional writing agents of a case.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Enable if you would like additional writing agents to have read-only access to the parent account when insurance case split agents are created via iGo synchronization.</inlineHelpText>
+        <label>Create Share For Insurance Case Split</label>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Deactivate_Case_X_Days_After_Final_Disp__c</fullName>
+        <defaultValue>30</defaultValue>
+        <deprecated>false</deprecated>
+        <description>A case that reaches final disposition will not immediately be set to &apos;inactive&apos; status.  The number specified here determines the number of days that an insurance case that has reached a final disposition will remain in &apos;active&apos; status.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>A case that reaches final disposition will not immediately be set to &apos;inactive&apos; status.  The number specified here determines the number of days that an insurance case that has reached a final disposition will remain in &apos;active&apos; status.</inlineHelpText>
+        <label>Deactivate Case X Days After Final Disp.</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Disable_Illustrations_Feature__c</fullName>
+        <defaultValue>false</defaultValue>
+        <deprecated>false</deprecated>
+        <description>This option will determine if the Illustrations button will be displayed in AgentOne.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Do not show Illustrations button.</inlineHelpText>
+        <label>Disable Illustration</label>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Disable_Needs_Analysis_Button__c</fullName>
+        <defaultValue>true</defaultValue>
+        <deprecated>false</deprecated>
+        <description>This option will determine if the Needs Analysis button will be displayed AgentOne.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Do not show Needs Analysis button.</inlineHelpText>
+        <label>Disable Needs Analysis</label>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Disable_PHS_Button__c</fullName>
+        <defaultValue>true</defaultValue>
+        <deprecated>false</deprecated>
+        <description>This option will determine if the PHS button will be displayed in AgentOne.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Do not show PHS button.</inlineHelpText>
+        <label>Disable Policy Holder Services</label>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Enable_Mentions_On_Chatter__c</fullName>
+        <defaultValue>false</defaultValue>
+        <deprecated>false</deprecated>
+        <description>Indicates that the agent (owner) of the Insurance Case or Policy objects to be @mentioned on the chatter feed for alerts. This will allow them to see all consolidated chatter feed for alerts on their insurance cases and polices. This option can only be enabled when “Create chatter posts for alerts“ setting is enabled.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Indicates that the agent (owner) of the Insurance Case or Policy objects will be @mentioned on  the chatter feed for alerts. This will allow them to see all consolidated chatter feed for alerts on their insurance cases and polices.</inlineHelpText>
+        <label>Enable @mentions on chatter post</label>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>GlobalTriggerExecutionEnabled__c</fullName>
+        <defaultValue>true</defaultValue>
+        <deprecated>false</deprecated>
+        <description>Indicates if AgentOne triggers will be executed.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>If unchecked, then all AgentOne global triggers will not be executed.</inlineHelpText>
+        <label>Global Trigger Execution Enabled</label>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>IDP__c</fullName>
+        <deprecated>false</deprecated>
+        <encrypted>false</encrypted>
+        <externalId>false</externalId>
+        <inlineHelpText>Value from the &apos;Issuer&apos; field in Setup &gt; Security Controls &gt; Identity Provider.</inlineHelpText>
+        <label>IDP</label>
+        <length>255</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Log_Level__c</fullName>
+        <defaultValue>&quot;INFO&quot;</defaultValue>
+        <deprecated>false</deprecated>
+        <description>System Logging Level indicates the logging level for the organization.  Default level is INFO if no values entered.</description>
+        <encrypted>false</encrypted>
+        <externalId>false</externalId>
+        <inlineHelpText>System logging level for AgentOne. Default level is INFO if no values entered</inlineHelpText>
+        <label>Log Level</label>
+        <length>10</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Namespace__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Namespace for the package.</description>
+        <encrypted>false</encrypted>
+        <externalId>false</externalId>
+        <inlineHelpText>Indicates the production namespace for the AgentOne managed package.</inlineHelpText>
+        <label>Namespace</label>
+        <length>15</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>NumberDaysBeforeBirthdayNotification__c</fullName>
+        <defaultValue>7</defaultValue>
+        <deprecated>false</deprecated>
+        <description>Number of days before a birthday notification is sent to the owner</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Indicates how many days in advance to notify the owner of a contact about the contact&apos;s birthday.</inlineHelpText>
+        <label># days before birthday notification</label>
+        <precision>3</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>NumberDaysBeforePlacementEnd__c</fullName>
+        <defaultValue>7</defaultValue>
+        <deprecated>false</deprecated>
+        <description>The number of days specified here determines how many days in advance to notify the owner of an Insurance Case prior to the Placement End Date.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>The number of days specified here determines how many days in advance to notify the owner of an Insurance Case prior to the Placement End Date.</inlineHelpText>
+        <label># days before placement end date</label>
+        <precision>3</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>PendingCase_Allow_UpdatePlacedCs__c</fullName>
+        <defaultValue>false</defaultValue>
+        <deprecated>false</deprecated>
+        <description>Allow updates to (Active) Insurance Cases, regardless of Final Disposition status.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>AgentOne will accept all updates to an active Insurance Case, regardless of Final Disposition status.  
+        If the Insurance Case is not marked as active, then updates to the Insurance Case will be rejected.</inlineHelpText>
+        <label>Allow Updating Placed Insurance Cases</label>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>PendingCase_ByPass_IdValidationForPI__c</fullName>
+        <defaultValue>false</defaultValue>
+        <deprecated>false</deprecated>
+        <description>All defined matching logic for validating fields on the Primary Insured&apos;s Person or Business Account will be ignored. AgentOne will accept the values received in a pending case sync record and update the Primary Insured&apos;s Person or Business Account record using the values received. </description>
+        <externalId>false</externalId>
+        <inlineHelpText>All defined matching logic for validating fields on the Primary Insured&apos;s will be ignored. AgentOne will accept the values received in a pending case feed and update the Primary Insured&apos;s record. </inlineHelpText>
+        <label>Bypass Pending Case Validation for PI</label>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>PendingCase_FK_Field__c</fullName>
+        <deprecated>false</deprecated>
+        <description>External ID field to use in matching a pending case with the existing Insurance Case record. If nothing is specified, AgentOne will use the External ID 2.</description>
+        <encrypted>false</encrypted>
+        <externalId>false</externalId>
+        <inlineHelpText>External ID field to use in matching a pending case with the existing Insurance Case record. If nothing is specified, AgentOne will use the policy number.</inlineHelpText>
+        <label>Pending Case Foreign Key Field</label>
+        <length>64</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Show_Case_Phase_Chevron__c</fullName>
+        <defaultValue>true</defaultValue>
+        <deprecated>false</deprecated>
+        <description>Show Case Phase Chevron</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Indicates if the &apos;Case Phase&apos; header for iGO iframe will be displayed.</inlineHelpText>
+        <label>Show Case Phase Header</label>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Show_indicator_in_At_a_Glance_section__c</fullName>
+        <defaultValue>true</defaultValue>
+        <deprecated>false</deprecated>
+        <description>Indicates if the &apos;At-a-Glance&apos; header shown for iGO iframe will be displayed.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Indicates if the &apos;At a Glance&apos; header for iGO iframe will be displayed.</inlineHelpText>
+        <label>Show At-a-Glance Header</label>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <label>AgentOne Global Settings</label>
+    <visibility>Public</visibility>
+</CustomObject>

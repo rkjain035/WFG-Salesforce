@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Critère de filtrage Cumul par référence</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Critères de filtrage Cumul par référence</value>
+    </caseValues>
+    <fields>
+        <label>Nom du champ</label>
+        <name>FieldName__c</name>
+    </fields>
+    <fields>
+        <label>Valeur du champ</label>
+        <name>FieldValue__c</name>
+    </fields>
+    <fields>
+        <label>Opérateur</label>
+        <name>Operator__c</name>
+        <picklistValues>
+            <masterLabel>contains</masterLabel>
+            <translation><!-- contains --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>ends with</masterLabel>
+            <translation><!-- ends with --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>equals</masterLabel>
+            <translation><!-- equals --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>greater than</masterLabel>
+            <translation><!-- greater than --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>greater than or equal to</masterLabel>
+            <translation><!-- greater than or equal to --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>less than</masterLabel>
+            <translation><!-- less than --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>less than or equal to</masterLabel>
+            <translation><!-- less than or equal to --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>not contains</masterLabel>
+            <translation><!-- not contains --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>not equal to</masterLabel>
+            <translation><!-- not equal to --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>not like</masterLabel>
+            <translation><!-- not like --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>starts with</masterLabel>
+            <translation><!-- starts with --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label>Configuration parente</label>
+        <name>RollupByLookupConfig__c</name>
+        <relationshipLabel>Critères de filtrage de Cumul par référence</relationshipLabel>
+    </fields>
+    <gender>Masculine</gender>
+    <layouts>
+        <layout>RollupByLookupCriteria Layout</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+    <nameFieldLabel>Nom des critères de filtrage de Cumul pa</nameFieldLabel>
+    <startsWith>Consonant</startsWith>
+</CustomObjectTranslation>

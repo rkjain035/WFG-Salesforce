@@ -1,0 +1,16 @@
+/*
+This file is generated and isn't the actual source code for this
+managed global class.
+This read-only file shows the class's global constructors,
+methods, variables, and properties.
+To enable code to compile, all methods return null.
+*/
+global interface IContactMatchPluginEx {
+    List<List<AgentOne.EntityEntry>> deDupContacts(List<AgentOne.EntityEntry> param0);
+    Boolean equals(AgentOne.EntityEntry param0, AgentOne.EntityEntry param1);
+    Boolean equals(Contact param0, AgentOne.EntityEntry param1);
+    Set<String> getMatchingFields();
+    Boolean isIdentifiable(AgentOne.EntityEntry param0);
+    List<List<AgentOne.EntityEntry>> matchContacts(List<AgentOne.EntityEntry> param0, List<Contact> param1, Map<String,Contact> param2);
+    List<List<AgentOne.EntityEntry>> matchContacts(List<AgentOne.EntityEntry> param0, Map<String,Contact> param1);
+}

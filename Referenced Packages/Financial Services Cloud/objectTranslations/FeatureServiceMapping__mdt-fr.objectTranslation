@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Mappage de service de fonctionnalité</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Mappages de service de fonctionnalité</value>
+    </caseValues>
+    <fields>
+        <label>Nom du service par défaut</label>
+        <name>DefaultServiceName__c</name>
+    </fields>
+    <fields>
+        <label>Nom du service activé</label>
+        <name>EnabledServiceName__c</name>
+    </fields>
+    <fields>
+        <label>Nom de la fonctionnalité</label>
+        <name>FeatureName__c</name>
+    </fields>
+    <fields>
+        <label>Mappage actif</label>
+        <name>IsMappingActive__c</name>
+    </fields>
+    <gender>Masculine</gender>
+    <startsWith>Consonant</startsWith>
+</CustomObjectTranslation>

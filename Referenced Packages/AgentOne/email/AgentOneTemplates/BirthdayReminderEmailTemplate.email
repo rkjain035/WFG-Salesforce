@@ -1,0 +1,7 @@
+Birthday Reminder:
+
+The birthday of {!Contact.Name} falls on {!Contact.Birthdate}.  Please get in touch with the contact.
+
+The contact phone number is {!Contact.Phone}.
+
+The contact email is {!Contact.Email}.

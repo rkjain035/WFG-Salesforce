@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <description>Initial Task Assignment eMail</description>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <letterhead>Release_Planning</letterhead>
+    <name>Initial Task Assignment eMail</name>
+    <style>formalLetter</style>
+    <subject>Please Review {!Org2Feature__c.Feature__c} Feature by {!Org2Feature__c.Feature_Review_Date__c}</subject>
+    <textOnly>Dear {!User.FirstName},
+
+As the Business or IT Owner, you have been assigned to review the {!Org2Feature__c.Feature__c} feature. This feature was made available by Salesforce with the {!Feature__c.Salesforce_Release__c} release on {!Feature__c.Feature_Release_Date__c}. It is part of the Salesforce {!Feature__c.Cloud__c} cloud and {!Feature__c.Product__c} product.
+
+The current status of this feature is {!Org2Feature__c.Status__c}. Please review this feature by {!Org2Feature__c.Feature_Review_Date__c} and determine if it should be considered for implementation in the {!Org2Feature__c.Org__c} instance.
+
+Once you have reviewed the feature, please update the Status and Roadmap fields accordingly. You can link directly to this record via the following URL. {!Org2Feature__c.Link}
+
+
+Thank you,
+
+Operations</textOnly>
+    <type>html</type>
+</EmailTemplate>

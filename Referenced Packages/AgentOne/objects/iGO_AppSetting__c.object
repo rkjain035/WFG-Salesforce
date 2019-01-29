@@ -1,0 +1,349 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <customSettingsType>Hierarchy</customSettingsType>
+    <description>iGO Application Settings allows you to change the settings for the insurance case application and illustration tools integrated with AgentOne.</description>
+    <enableFeeds>false</enableFeeds>
+    <fields>
+        <fullName>Action__c</fullName>
+        <deprecated>false</deprecated>
+        <encrypted>false</encrypted>
+        <externalId>false</externalId>
+        <label>Action</label>
+        <length>20</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Actionable_Alerts_Enabled__c</fullName>
+        <defaultValue>false</defaultValue>
+        <deprecated>false</deprecated>
+        <description>This setting will enable actionable alerts in AgentOne which allow you to perform actions via the alerts received from iGO. Actions such as &apos;Resend Email&apos; or &apos;Sign&apos; will be available from their respective alerts.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Actionable alerts in AgentOne will allow you to perform actions via the alerts received from iGO.</inlineHelpText>
+        <label>Actionable Alerts Enabled</label>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Application_Tool__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Enter registered insurance to for iGO applications.</description>
+        <encrypted>false</encrypted>
+        <externalId>false</externalId>
+        <inlineHelpText>Lookup to iGO application tool from Insurance Tool Registration</inlineHelpText>
+        <label>Application Tool</label>
+        <length>38</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Batch_Size_To_Process_iGO_Cases__c</fullName>
+        <defaultValue>20</defaultValue>
+        <deprecated>false</deprecated>
+        <description>Set the maximum number of records for processing batch transactions to iGO.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Maximum number of records for processing batch transactions to iGO.</inlineHelpText>
+        <label>Batch Size to Process iGO Cases.</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Case_Duplication_Enabled__c</fullName>
+        <defaultValue>false</defaultValue>
+        <deprecated>false</deprecated>
+        <description>This setting controls whether insurance cases can be duplicated in AgentOne and at the same time attempt to have the respective iGO case duplicated.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Allows insurance cases to be duplicated in AgentOne and have the respective iGO case duplicated.
+It is recommended that this setting match the setting in your iGO project otherwise you may experience unexpected results.</inlineHelpText>
+        <label>Case Duplication Enabled</label>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>ChannelName__c</fullName>
+        <deprecated>false</deprecated>
+        <encrypted>false</encrypted>
+        <externalId>false</externalId>
+        <label>Channel Name</label>
+        <length>20</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>CompanyIdentifier__c</fullName>
+        <deprecated>false</deprecated>
+        <encrypted>false</encrypted>
+        <externalId>false</externalId>
+        <inlineHelpText>iGO company ID for your iGO deployment.</inlineHelpText>
+        <label>Company Identifier</label>
+        <length>20</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Delay_Delete_iGO_Cases__c</fullName>
+        <defaultValue>true</defaultValue>
+        <deprecated>false</deprecated>
+        <description>With this option enabled the iGO case will not immediately be deleted when the insurance case is deleted. AgentOne will delay the delete of the iGO case until after the insurance case is deleted from the recycle bin.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Indicates if iGO case will not immediately be deleted when the insurance case is deleted. AgentOne will delay the delete of the iGO case until after the insurance case is deleted from the recycle bin.</inlineHelpText>
+        <label>Delay Delete of iGO Case</label>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Delete_iGO_Case_with_Insurance_Case__c</fullName>
+        <defaultValue>false</defaultValue>
+        <deprecated>false</deprecated>
+        <description>Delete the corresponding iGO case when the AgentOne insurance case is deleted.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Deletes the corresponding iGO case when the AgentOne insurance case is deleted.
+It is recommended that this setting match the setting in your iGO project otherwise you may experience unexpected results.</inlineHelpText>
+        <label>Delete iGO Case with Insurance Case</label>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>ESign_Enabled__c</fullName>
+        <defaultValue>false</defaultValue>
+        <deprecated>false</deprecated>
+        <description>This option will allow the &apos;Sign&apos; action to be performed from a related iGO alert.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Allows the &apos;Sign&apos; action to be performed from a related iGO alert.
+It is recommended that this setting match the setting in your iGO project otherwise you may experience unexpected results.</inlineHelpText>
+        <label>Allow e-Sign from Related Alert</label>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Edit_Email_before_Resend_Enabled__c</fullName>
+        <defaultValue>false</defaultValue>
+        <deprecated>false</deprecated>
+        <description>This settings allows you to edit the email before resending for signatures.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Allows you to edit the email address before resending for signatures.
+It is recommended that this setting match the setting in your iGO project otherwise you may experience unexpected results.</inlineHelpText>
+        <label>Edit Email Before Resend Enabled</label>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>EntitySync_Enabled__c</fullName>
+        <defaultValue>true</defaultValue>
+        <deprecated>false</deprecated>
+        <description>EntitySync Plugin Extension is enabled or not.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Determines whether the EntitySync plugin extension will be enabled. When enabled iGO related synchronization logic will be applied during the synchronization process.</inlineHelpText>
+        <label>EntitySync Enabled</label>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Env__c</fullName>
+        <deprecated>false</deprecated>
+        <encrypted>false</encrypted>
+        <externalId>false</externalId>
+        <label>ENV</label>
+        <length>24</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Groups__c</fullName>
+        <deprecated>false</deprecated>
+        <encrypted>false</encrypted>
+        <externalId>false</externalId>
+        <label>Groups</label>
+        <length>50</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Illustration_Tool__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Enter registered insurance to for iGO illustrations.</description>
+        <encrypted>false</encrypted>
+        <externalId>false</externalId>
+        <inlineHelpText>Enter the name of the iGO illustration tool exactly as it is entered in the name field for the registered insurance tool from Insurance Tool Registration in AgentOne Settings.</inlineHelpText>
+        <label>Illustration Tool</label>
+        <length>38</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>On_Behalf_Of_Enabled__c</fullName>
+        <defaultValue>false</defaultValue>
+        <deprecated>false</deprecated>
+        <description>Indicates if On Behalf Of is enabled or not</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Allows users to start/open applications or run illustrations for insurance cases that are owned by other agent users.
+It is recommended that this setting match the setting in your iGO project otherwise you may experience unexpected results.</inlineHelpText>
+        <label>On Behalf Of Enabled</label>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>OrganizationIdentifier__c</fullName>
+        <deprecated>false</deprecated>
+        <encrypted>false</encrypted>
+        <externalId>false</externalId>
+        <inlineHelpText>Enter the iGO organization ID (aka Product Organization ID in iGO) for your iGO deployment.</inlineHelpText>
+        <label>Organization Identifier</label>
+        <length>20</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Protect_Insurance_Case_Insureds__c</fullName>
+        <defaultValue>true</defaultValue>
+        <deprecated>false</deprecated>
+        <description>Protects the client record associated to insureds so that field values coming back from iGO do not get replaced with blanks when the value is deleted from or not synchronized to iGO.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Protects the client record associated to insureds so that field values coming back from iGO do not get replaced with blanks when the value is deleted from or not synchronized to iGO.</inlineHelpText>
+        <label>Protect Insurance Case Insureds</label>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Protect_Insurance_Case_Participants__c</fullName>
+        <defaultValue>true</defaultValue>
+        <deprecated>false</deprecated>
+        <description>Protects the client record associated to participants so that field values coming back from iGO do not get replaced with blanks when the value is deleted from or not synchronized to iGO.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Protects the client record associated to participants so that field values coming back from iGO do not get replaced with blanks when the value is deleted from or not synchronized to iGO.</inlineHelpText>
+        <label>Protect Insurance Case Participants</label>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Protect_Insurance_Case_Primary_Insured__c</fullName>
+        <defaultValue>true</defaultValue>
+        <deprecated>false</deprecated>
+        <description>Protects the client record associated to primary insureds so that field values coming back from iGO do not get replaced with blanks when the value is deleted from or not synchronized to iGO.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Protects the client record associated to primary insureds so that field values coming back from iGO do not get replaced with blanks when the value is deleted from or not synchronized to iGO.</inlineHelpText>
+        <label>Protect Insurance Case Primary Insured</label>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Re_run_Illustration_Enabled__c</fullName>
+        <defaultValue>false</defaultValue>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <inlineHelpText>Allows the &apos;re-run illustration&apos; action to be performed against existing iGO illustrations.
+It is recommended that this setting match the setting in your iGO project otherwise you may experience unexpected results.</inlineHelpText>
+        <label>Re-run Illustration Enabled</label>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>RedirectURL__c</fullName>
+        <deprecated>false</deprecated>
+        <encrypted>false</encrypted>
+        <externalId>false</externalId>
+        <inlineHelpText>Enter the redirect URL for your iGO deployment.</inlineHelpText>
+        <label>Redirect URL</label>
+        <length>255</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Resend_E_Signature_Enabled__c</fullName>
+        <defaultValue>false</defaultValue>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <inlineHelpText>Allows you to &apos;resend&apos; the signature email to agent(s) or participants on a pending case from the related iGO alert.
+It is recommended that this setting match the setting in your iGO project otherwise you may experience unexpected results.</inlineHelpText>
+        <label>Resend E-Signature Enabled</label>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Restricted_Resend_Email_Domain__c</fullName>
+        <deprecated>false</deprecated>
+        <encrypted>false</encrypted>
+        <externalId>false</externalId>
+        <inlineHelpText>Enter the domain(s) that you would like to restrict from &apos;Resend E-Signature Email&apos;.
+It is recommended that this setting match the setting in your iGO project otherwise you may experience unexpected results.</inlineHelpText>
+        <label>Restricted Resend Email Domain</label>
+        <length>255</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Start_eApp_from_Illustration_Enabled__c</fullName>
+        <defaultValue>false</defaultValue>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <inlineHelpText>Allows the &apos;start an application&apos; action to be performed against existing iGO illustrations.
+It is recommended that this setting match the setting in your iGO project otherwise you may experience unexpected results.</inlineHelpText>
+        <label>Start e-App from Illustration Enabled</label>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>SubCompanyIdentifier__c</fullName>
+        <deprecated>false</deprecated>
+        <encrypted>false</encrypted>
+        <externalId>false</externalId>
+        <inlineHelpText>Enter the iGO sub company ID for your iGO deployment.</inlineHelpText>
+        <label>SubCompany Identifier</label>
+        <length>20</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Webservice_EndPoint__c</fullName>
+        <deprecated>false</deprecated>
+        <encrypted>false</encrypted>
+        <externalId>false</externalId>
+        <inlineHelpText>Enter the target URL to the iGO web service.</inlineHelpText>
+        <label>Webservice EndPoint</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Url</type>
+    </fields>
+    <fields>
+        <fullName>iGO_WebService_Token__c</fullName>
+        <deprecated>false</deprecated>
+        <description>The encoded WebService token for the service</description>
+        <encrypted>false</encrypted>
+        <externalId>false</externalId>
+        <inlineHelpText>Enter the encoded WebService token for the iGO service.</inlineHelpText>
+        <label>WebService Token</label>
+        <length>255</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <label>AgentOne iGO Application Settings</label>
+    <visibility>Public</visibility>
+</CustomObject>

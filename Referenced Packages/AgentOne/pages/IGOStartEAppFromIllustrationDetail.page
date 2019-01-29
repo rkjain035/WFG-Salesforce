@@ -1,0 +1,39 @@
+<apex:page standardController="AgentOne__Illustration__c" extensions="AgentOne.IGOStartEAppFromIllustrationController" showQuickActionVfHeader="False" action="{!startEApp}">
+	<html xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+        <apex:stylesheet value="{!URLFOR($Resource.AgentOne__SLDS, 'assets/styles/salesforce-lightning-design-system-vf.min.css')}" />
+        <apex:stylesheet value="{!URLFOR($Resource.AgentOne__AgentOneSLDS, 'agentone-slds.css')}" />
+
+        <div class="agentone">
+            <div class="slds">
+                <apex:outputPanel rendered="{!ISBLANK(pageMessage) == false}">
+                    <div>
+                      <div aria-hidden="false" aria-labelledby="prompt-heading-id" aria-describedby="prompt-message-wrapper" role="alertdialog" class="slds-modal slds-modal--prompt slds-fade-in-open">
+                        <div class="slds-modal__container slds-modal--prompt" role="document" id="prompt-message-wrapper">
+                          <div class="slds-modal__header slds-theme--warning slds-theme--alert-texture">
+                            <h2 class="slds-text-heading--medium" id="prompt-heading-id">{!$Label.LBL_Warning}</h2>
+                          </div>
+                          <div class="slds-modal__content slds-p-around--medium">
+                            {!pageMessage}
+                          </div>
+                          <div class="slds-modal__footer slds-theme--default">
+                            <button class="slds-button slds-button--neutral" onclick="cancelClick('{!JSENCODE(retUrl)}')">{!$Label.LBL_Ok}</button>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="slds-backdrop slds-backdrop--open"></div>
+                    </div>
+                </apex:outputPanel>
+            </div>
+        </div>
+        <script type="text/javascript">
+            var isSF1 = ((typeof sforce != 'undefined') && (sforce != null));
+            function cancelClick(retUrl) {
+               if (isSF1) {
+                   sforce.one.back();
+               } else {
+                   window.location.href = retUrl;
+               }
+            }
+        </script>
+    </html>
+</apex:page>

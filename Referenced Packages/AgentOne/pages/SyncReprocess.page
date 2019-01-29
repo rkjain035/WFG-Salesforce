@@ -1,0 +1,47 @@
+<apex:page standardController="AgentOne__Sync_Record__c" showQuickActionVfHeader="False" extensions="AgentOne.SyncReprocessController">
+
+<html xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <apex:stylesheet value="{!URLFOR($Resource.AgentOne__SLDS, 'assets/styles/salesforce-lightning-design-system-vf.min.css')}" />
+    <apex:stylesheet value="{!URLFOR($Resource.AgentOne__AgentOneSLDS, 'agentone-slds.css')}" />
+
+    <apex:form >
+        <apex:actionFunction name="retrySync" action="{!retrySync}" status="myStatus" />
+    </apex:form>
+
+
+
+    <div class="agentone">
+        <apex:actionStatus startText="Retrying..." id="myStatus" >
+            <div class="slds-spinner_container">
+                <div class="slds-spinner slds-spinner--small" role="alert">
+                    <span class="slds-assistive-text">Retrying</span>
+                    <div class="slds-spinner__dot-a"></div>
+                    <div class="slds-spinner__dot-b"></div>
+                </div>
+            </div>        
+        </apex:actionStatus>
+
+        <c:LexPrompt PromptType="{!promptType}"
+            PromptHeading="{!promptHeading}"
+            PromptStyle="{!promptStyle}"
+            PromptMessage="{!promptMessage}"
+            CancelHandler="{!cancelHandler}"
+            OKHandler="{!okHandler}"
+            OKLabel="{!okLabel}"
+        ></c:LexPrompt>
+    </div>
+
+    <script type="text/javascript">
+        var isSF1 = ((typeof sforce != 'undefined') && (sforce != null));
+        function openExistingRecord() {
+            if (isSF1) {
+                sforce.one.back();
+            } else {
+                window.parent.location.href = "{!URLFOR($Action.Sync_Record__c.View, Sync_Record__c.Id)}";
+            }
+        }
+
+
+    </script>   
+</html>
+</apex:page>

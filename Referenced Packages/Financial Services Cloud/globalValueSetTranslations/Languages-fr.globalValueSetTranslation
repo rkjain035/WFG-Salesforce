@@ -1,0 +1,531 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GlobalValueSetTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <valueTranslation>
+        <masterLabel>Abkhaz</masterLabel>
+        <translation><!-- Abkhaz --></translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Adyghe</masterLabel>
+        <translation><!-- Adyghe --></translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Afrikaans</masterLabel>
+        <translation><!-- Afrikaans --></translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Akan</masterLabel>
+        <translation><!-- Akan --></translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Albanian</masterLabel>
+        <translation><!-- Albanian --></translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>American Sign Language</masterLabel>
+        <translation><!-- American Sign Language --></translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Amharic</masterLabel>
+        <translation><!-- Amharic --></translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Ancient Greek</masterLabel>
+        <translation><!-- Ancient Greek --></translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Arabic</masterLabel>
+        <translation><!-- Arabic --></translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Aragonese</masterLabel>
+        <translation><!-- Aragonese --></translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Aramaic</masterLabel>
+        <translation><!-- Aramaic --></translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Armenian</masterLabel>
+        <translation><!-- Armenian --></translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Aymara</masterLabel>
+        <translation><!-- Aymara --></translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Balinese</masterLabel>
+        <translation><!-- Balinese --></translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Basque</masterLabel>
+        <translation><!-- Basque --></translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Betawi</masterLabel>
+        <translation><!-- Betawi --></translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Bosnian</masterLabel>
+        <translation><!-- Bosnian --></translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Breton</masterLabel>
+        <translation><!-- Breton --></translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Bulgarian</masterLabel>
+        <translation><!-- Bulgarian --></translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Cantonese</masterLabel>
+        <translation><!-- Cantonese --></translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Catalan</masterLabel>
+        <translation><!-- Catalan --></translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Cherokee</masterLabel>
+        <translation><!-- Cherokee --></translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Chickasaw</masterLabel>
+        <translation><!-- Chickasaw --></translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Chinese</masterLabel>
+        <translation><!-- Chinese --></translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Coptic</masterLabel>
+        <translation><!-- Coptic --></translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Cornish</masterLabel>
+        <translation><!-- Cornish --></translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Corsican</masterLabel>
+        <translation><!-- Corsican --></translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Crimean Tatar</masterLabel>
+        <translation><!-- Crimean Tatar --></translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Croatian</masterLabel>
+        <translation><!-- Croatian --></translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Czech</masterLabel>
+        <translation><!-- Czech --></translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Danish</masterLabel>
+        <translation><!-- Danish --></translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Dawro</masterLabel>
+        <translation><!-- Dawro --></translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Dutch</masterLabel>
+        <translation><!-- Dutch --></translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>English</masterLabel>
+        <translation><!-- English --></translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Esperanto</masterLabel>
+        <translation><!-- Esperanto --></translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Estonian</masterLabel>
+        <translation><!-- Estonian --></translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Ewe</masterLabel>
+        <translation><!-- Ewe --></translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Fiji Hindi</masterLabel>
+        <translation><!-- Fiji Hindi --></translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Filipino</masterLabel>
+        <translation><!-- Filipino --></translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Finnish</masterLabel>
+        <translation><!-- Finnish --></translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>French</masterLabel>
+        <translation><!-- French --></translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Galician</masterLabel>
+        <translation><!-- Galician --></translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Georgian</masterLabel>
+        <translation><!-- Georgian --></translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>German</masterLabel>
+        <translation><!-- German --></translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Greek, Modern</masterLabel>
+        <translation><!-- Greek, Modern --></translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Greenlandic</masterLabel>
+        <translation><!-- Greenlandic --></translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Haitian Creole</masterLabel>
+        <translation><!-- Haitian Creole --></translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Hawaiian</masterLabel>
+        <translation><!-- Hawaiian --></translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Hebrew</masterLabel>
+        <translation><!-- Hebrew --></translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Hindi</masterLabel>
+        <translation><!-- Hindi --></translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Hungarian</masterLabel>
+        <translation><!-- Hungarian --></translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Icelandic</masterLabel>
+        <translation><!-- Icelandic --></translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Indonesian</masterLabel>
+        <translation><!-- Indonesian --></translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Interlingua</masterLabel>
+        <translation><!-- Interlingua --></translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Inuktitut</masterLabel>
+        <translation><!-- Inuktitut --></translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Irish</masterLabel>
+        <translation><!-- Irish --></translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Italian</masterLabel>
+        <translation><!-- Italian --></translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Japanese</masterLabel>
+        <translation><!-- Japanese --></translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Javanese</masterLabel>
+        <translation><!-- Javanese --></translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Kabardian</masterLabel>
+        <translation><!-- Kabardian --></translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Kalasha</masterLabel>
+        <translation><!-- Kalasha --></translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Kannada</masterLabel>
+        <translation><!-- Kannada --></translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Kashubian</masterLabel>
+        <translation><!-- Kashubian --></translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Khmer</masterLabel>
+        <translation><!-- Khmer --></translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Kinyarwanda</masterLabel>
+        <translation><!-- Kinyarwanda --></translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Korean</masterLabel>
+        <translation><!-- Korean --></translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Kurdish/Kurdî</masterLabel>
+        <translation><!-- Kurdish/Kurdî --></translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Ladin</masterLabel>
+        <translation><!-- Ladin --></translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Latgalian</masterLabel>
+        <translation><!-- Latgalian --></translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Latin</masterLabel>
+        <translation><!-- Latin --></translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Lingala</masterLabel>
+        <translation><!-- Lingala --></translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Livonian</masterLabel>
+        <translation><!-- Livonian --></translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Lojban</masterLabel>
+        <translation><!-- Lojban --></translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Low German</masterLabel>
+        <translation><!-- Low German --></translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Lower Sorbian</masterLabel>
+        <translation><!-- Lower Sorbian --></translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Macedonian</masterLabel>
+        <translation><!-- Macedonian --></translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Malay</masterLabel>
+        <translation><!-- Malay --></translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Malayalam</masterLabel>
+        <translation><!-- Malayalam --></translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Mandarin</masterLabel>
+        <translation><!-- Mandarin --></translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Manx</masterLabel>
+        <translation><!-- Manx --></translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Maori</masterLabel>
+        <translation><!-- Maori --></translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Mauritian Creole</masterLabel>
+        <translation><!-- Mauritian Creole --></translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Middle Low German</masterLabel>
+        <translation><!-- Middle Low German --></translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Min Nan</masterLabel>
+        <translation><!-- Min Nan --></translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Mongolian</masterLabel>
+        <translation><!-- Mongolian --></translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Norwegian</masterLabel>
+        <translation><!-- Norwegian --></translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Oriya</masterLabel>
+        <translation><!-- Oriya --></translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Pangasinan</masterLabel>
+        <translation><!-- Pangasinan --></translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Papiamentu</masterLabel>
+        <translation><!-- Papiamentu --></translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Pashto</masterLabel>
+        <translation><!-- Pashto --></translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Persian</masterLabel>
+        <translation><!-- Persian --></translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Pitjantjatjara</masterLabel>
+        <translation><!-- Pitjantjatjara --></translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Polish</masterLabel>
+        <translation><!-- Polish --></translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Portuguese</masterLabel>
+        <translation><!-- Portuguese --></translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Proto-Slavic</masterLabel>
+        <translation><!-- Proto-Slavic --></translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Quenya</masterLabel>
+        <translation><!-- Quenya --></translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Rapa Nui</masterLabel>
+        <translation><!-- Rapa Nui --></translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Romanian</masterLabel>
+        <translation><!-- Romanian --></translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Russian</masterLabel>
+        <translation><!-- Russian --></translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Sanskrit</masterLabel>
+        <translation><!-- Sanskrit --></translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Scots</masterLabel>
+        <translation><!-- Scots --></translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Scottish Gaelic</masterLabel>
+        <translation><!-- Scottish Gaelic --></translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Serbian</masterLabel>
+        <translation><!-- Serbian --></translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Serbo-Croatian</masterLabel>
+        <translation><!-- Serbo-Croatian --></translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Sinhalese</masterLabel>
+        <translation><!-- Sinhalese --></translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Slovak</masterLabel>
+        <translation><!-- Slovak --></translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Slovene</masterLabel>
+        <translation><!-- Slovene --></translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Spanish</masterLabel>
+        <translation><!-- Spanish --></translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Swahili</masterLabel>
+        <translation><!-- Swahili --></translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Swedish</masterLabel>
+        <translation><!-- Swedish --></translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Tagalog</masterLabel>
+        <translation><!-- Tagalog --></translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Tajik</masterLabel>
+        <translation><!-- Tajik --></translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Tamil</masterLabel>
+        <translation><!-- Tamil --></translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Tarantino</masterLabel>
+        <translation><!-- Tarantino --></translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Telugu</masterLabel>
+        <translation><!-- Telugu --></translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Thai</masterLabel>
+        <translation><!-- Thai --></translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Tok Pisin</masterLabel>
+        <translation><!-- Tok Pisin --></translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Turkish</masterLabel>
+        <translation><!-- Turkish --></translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Twi</masterLabel>
+        <translation><!-- Twi --></translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Ukrainian</masterLabel>
+        <translation><!-- Ukrainian --></translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Upper Sorbian</masterLabel>
+        <translation><!-- Upper Sorbian --></translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Urdu</masterLabel>
+        <translation><!-- Urdu --></translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Uzbek</masterLabel>
+        <translation><!-- Uzbek --></translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Venetian</masterLabel>
+        <translation><!-- Venetian --></translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Vietnamese</masterLabel>
+        <translation><!-- Vietnamese --></translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Vilamovian</masterLabel>
+        <translation><!-- Vilamovian --></translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Volapük</masterLabel>
+        <translation><!-- Volapük --></translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Võro</masterLabel>
+        <translation><!-- Võro --></translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Welsh</masterLabel>
+        <translation><!-- Welsh --></translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Xhosa</masterLabel>
+        <translation><!-- Xhosa --></translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Yiddish</masterLabel>
+        <translation><!-- Yiddish --></translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Zazaki</masterLabel>
+        <translation><!-- Zazaki --></translation>
+    </valueTranslation>
+</GlobalValueSetTranslation>

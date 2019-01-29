@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Education</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Education</value>
+    </caseValues>
+    <fields>
+        <label><!-- Contact --></label>
+        <name>Contact__c</name>
+        <relationshipLabel><!-- Education --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Education Level --></label>
+        <name>EducationLevel__c</name>
+        <picklistValues>
+            <masterLabel>Decline to Comment</masterLabel>
+            <translation><!-- Decline to Comment --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Graduate</masterLabel>
+            <translation><!-- Graduate --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>High School</masterLabel>
+            <translation><!-- High School --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Post Graduate</masterLabel>
+            <translation><!-- Post Graduate --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Graduation Date --></label>
+        <name>GraduationDate__c</name>
+    </fields>
+    <fields>
+        <label><!-- Institution --></label>
+        <name>Institution__c</name>
+    </fields>
+    <fields>
+        <label><!-- Source System ID --></label>
+        <name>SourceSystemId__c</name>
+    </fields>
+    <layouts>
+        <layout>Education Layout</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+    <startsWith>Consonant</startsWith>
+    <validationRules>
+        <errorMessage><!-- The year of graduation can&apos;t be in the future. --></errorMessage>
+        <name>YearOfGradCannotBeInFuture</name>
+    </validationRules>
+</CustomObjectTranslation>

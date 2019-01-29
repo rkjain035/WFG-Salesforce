@@ -1,0 +1,359 @@
+<apex:page docType="html-5.0" controller="AgentOne.HomepageController" sidebar="false" applyBodyTag="false" tabStyle="AgentOneHome__tab">
+    <apex:stylesheet value="{!URLFOR($Resource.AgentOne__BS_Grid_CSS)}" />
+    <apex:stylesheet value="{!URLFOR($Resource.AgentOne__NgBS, '/css/visualstrap.css')}" />
+    <apex:stylesheet value="{!URLFOR($Resource.AgentOne__NgBS, '/css/visualstrap-common.css')}" />
+    <apex:includeScript value="{!URLFOR($Resource.AgentOne__AngularJS)}" />
+    <apex:includeScript value="{!URLFOR($Resource.AgentOne__AgentOne, '/jquery/jquery-1.10.2.js')}" />
+    <apex:includeScript value="{!URLFOR($Resource.AgentOne__NgBS, '/js/bootstrap.min.js')}" />
+    <apex:includeScript value="{!URLFOR($Resource.AgentOne__NgBS, '/js/Chart.min.js')}" />
+    <apex:includeScript value="{!URLFOR($Resource.AgentOne__NgBS, '/js/moment.js')}" />
+    <apex:stylesheet value="{!URLFOR($Resource.AgentOne__NgBS_Homepage, '/assets/css/Homepage.css')}" />
+    <!--     <apex:includeScript value="{!URLFOR($Resource.NgBS_Homepage, '/app/homepage.js')}" />     -->
+    <apex:includeScript value="{!URLFOR($Resource.AgentOne__NgBS_Homepage_JS)}" />
+    <!--  Add new scripts and styles for  -->
+    <apex:includeScript value="/lightning/lightning.out.js" />
+    <apex:stylesheet value="{!URLFOR($Resource.AgentOne__SLDS, '/assets/styles/salesforce-lightning-design-system-ltng.min.css')}" />
+    <script type="text/javascript">
+        // Define Visualforce remoting method for ng-controllers to use
+        window.fnGetRecentItems = '{!$RemoteAction.HomepageController.getRecentItems}';
+        window.fnGetNumberCards = '{!$RemoteAction.HomepageController.getNumberCards}';
+        window.fnGetAlertListPanel = '{!$RemoteAction.HomepageController.getAlertListPanel}';
+        window.fnToggleAlertPriority = '{!$RemoteAction.HomepageController.toggleAlertPriority}';
+        window.fnDismissAlert = '{!$RemoteAction.HomepageController.dismissAlert}';
+        window.fnGetTaskListPanel = '{!$RemoteAction.HomepageController.getTaskListPanel}';
+        window.fnCompleteTask = '{!$RemoteAction.HomepageController.completeTask}';
+        window.fnReadCsBarChart = '{!$RemoteAction.HomepageController.readInsuranceCaseChartData}';
+        window.fnGetTileInfo = '{!$RemoteAction.HomepageController.getTileInfo}';
+        window.numberOfTiles = {!tilesCount};
+
+        Chart.defaults.global.scaleShowLabels = true;
+        Chart.defaults.global.responsive = true;
+        Chart.defaults.global.maintainAspectRatio = false;
+
+        function getLightningComponents(componentName, divId) {
+            if (componentName === null || componentName === "") return;
+
+            $Lightning.createComponent(componentName,
+                      {},
+                      divId,
+                      function(cmp) {
+                        console.log("created " + componentName);
+                      });
+        }
+
+        function getQuickStartComponents(componentName, divId) {
+            if (componentName === null || componentName === "") return;
+
+                 $Lightning.createComponent(componentName,
+                      {title:'INSURANCE CASES', subTitle: '{!JSINHTMLENCODE(quickStartCaseSubTitle)}', needsAnalysisPhase: '{!JSINHTMLENCODE(quickStartCaseNeedsPhase)}', illustrationPhase: '{!JSINHTMLENCODE(quickStartIllustrationPhase)}', applicationPhase: '{!JSINHTMLENCODE(quickStartApplicationPhase)}'},
+                      divId,
+                      function(cmp) {
+
+                      });
+        }
+
+
+        // this is new code for custom components
+        $Lightning.use("{!JSINHTMLENCODE(CustomLAppName)}", function() {
+
+            getQuickStartComponents("{!JSINHTMLENCODE(QuickStartComponentName)}", "QuickStartComponentLO_M0");
+            getLightningComponents("{!JSINHTMLENCODE(customComponentLO_L1)}", "customComponentLO_L1");
+            getLightningComponents("{!JSINHTMLENCODE(customComponentLO_L2)}", "customComponentLO_L2");
+            getLightningComponents("{!JSINHTMLENCODE(customComponentLO_M1)}", "customComponentLO_M1");
+            getLightningComponents("{!JSINHTMLENCODE(customComponentLO_M2)}", "customComponentLO_M2");
+            getLightningComponents("{!JSINHTMLENCODE(customComponentLO_M3)}", "customComponentLO_M3");
+            getLightningComponents("{!JSINHTMLENCODE(customComponentLO_M4)}", "customComponentLO_M4");
+            getLightningComponents("{!JSINHTMLENCODE(customComponentLO_R1)}", "customComponentLO_R1");
+            getLightningComponents("{!JSINHTMLENCODE(customComponentLO_R2)}", "customComponentLO_R2");
+            getLightningComponents("{!JSINHTMLENCODE(customComponentLO_B1)}", "customComponentLO_B1");
+
+        });
+    </script>
+    <body >
+
+        <c:visualstrapblock >
+        </c:visualstrapblock>
+        <div ng-app="homepage" ng-controller="HomepageController as homepage">
+            <!--  DISPLAY ERROR MESSAGE IF JSON IS NOT VALID -->
+            <c:visualstrapblock >
+                <apex:outputPanel rendered="{!!jsonIsValid}" >
+                    <apex:messages />
+                </apex:outputPanel>
+            </c:visualstrapblock>
+            <!--  DISPLAY HOMEPAGE  -->
+            <apex:outputPanel rendered="{!jsonIsValid}" >
+                <!-- Homepage main container -->
+                <div class="container-fluid">
+                    <div class="row">
+                        <!-- Left Section -->
+                        <div class="{!leftColumnWidth}">
+                            <apex:dynamicComponent componentValue="{!CustomComponentVF_L1}" />
+                            <div id="customComponentLO_L1" />
+
+                            <c:visualstrapblock >
+                                <apex:outputPanel rendered="{!showRecentItems}">
+                                    <section id="seRecentClients" class="recentclients ng-cloak" ng-controller="RecentItemsCtrl">
+                                        <header>
+                                            <h4>Recent Clients</h4>
+                                        </header>
+                                        <!--  Display this while loading this section  -->
+                                        <div ng-if="!(recentItemsAreLoaded==true)" align="center">
+                                            <img src="{!URLFOR($resource.NgBS_Homepage, 'assets/img/slds_spinner_brand.gif')}" alt="Loading..." height="32" width="32" />
+                                        </div>
+                                        <!-- Repeatable Individual Client -->
+                                        <section class="client {{client.lastName != null ? 'contact' : 'account'}}" ng-repeat="client in recentItems">
+                                            <header>
+                                                <nav>
+                                                    <!-- We removed the href="{{'/' + client.id }}" code because in SF1 this was opening two browsers
+                                                    What this means is that right click to open will not work on SF1 or desktop -->
+                                                    <a href="#" title="{{client.name}}" ng-click="goToRecord(client.id);">
+                                                    {{client.name}}</a>
+                                                </nav>
+                                            </header>
+                                            <span>{{client.recordTypeLabel}} • {{client.timepassed | fromNow}}</span>
+                                        </section>
+                                        <footer>
+                                            <nav>
+                                                <button class="btn btn-link" ng-click="goToURL('/001');">View All</button>
+                                            </nav>
+                                        </footer>
+                                    </section>
+                                </apex:outputPanel>
+                            </c:visualstrapblock>
+
+                            <apex:dynamicComponent componentValue="{!CustomComponentVF_L2}" />
+                            <div id="customComponentLO_L2" />
+                        </div>
+                        <!-- Middle (main) Section -->
+                        <div class="{!middleColumnWidth}">
+                            <apex:outputPanel rendered="{!showQuickStartCase}">
+                                <div id="QuickStartComponentLO_M0" />
+                            </apex:outputPanel>
+                            <apex:dynamicComponent componentValue="{!CustomComponentVF_M1}" />
+                            <div id="customComponentLO_M1" />
+
+                            <c:visualstrapblock >
+                                <!-- Info Cards Section -->
+                                <apex:outputPanel rendered="{!tilesCount>0}">
+                                    <section class="row ng-cloak" ng-controller="NumberCardsCtrl">
+                                        <!--  Display this while loading this section  -->
+                                        <div ng-if="!(numberCardsAreLoaded==true)" align="center">
+                                            <img id="spinner" src="{!URLFOR($resource.NgBS_Homepage, 'assets/img/slds_spinner_brand.gif')}" alt="Loading..." height="32" width="32" />
+                                        </div>
+                                        <section class="col-sm-12 col-md-4" ng-repeat-start="card in numberCards | limitTo:{!tilesCount}">
+                                            <section class="card-counter" ng-style="{'margin-bottom':'10px','border-left-color':card.colorInd}">
+                                                <img alt="icon" height="32" width="32" class="pull-left" src="{{card.iconUrl}}" />
+                                                <div class="title" style="white-space: nowrap;overflow: hidden; text-overflow: ellipsis;">{{card.name}}</div>
+                                                <div class="count" style="white-space: nowrap;overflow: hidden; text-overflow: ellipsis;">{{card.formattedCount }}</div>
+                                                <div class="description" style="white-space: nowrap;overflow: hidden;">
+                                                    <nav>
+                                                        <button class="btn btn-link" ng-click="goToListView(card.objectTypePrefix,card.listViewId,card.tileObject);">
+                                                        {{card.subTitle}}</button>
+                                                    </nav>
+                                                </div>
+                                            </section>
+                                        </section>
+                                        <div ng-repeat-end="ng-repeat-end">
+                                            <!--  Add spacer between rows need to adjust for screen sizes - might not be necessary if we cut the text overflow -->
+                                            <div ng-if="$index == 2">
+                                                <div class="clearfix visible-md"></div>
+                                            </div>
+                                        </div>
+                                    </section>
+                                </apex:outputPanel>
+                            </c:visualstrapblock>
+
+                            <apex:dynamicComponent componentValue="{!CustomComponentVF_M2}" />
+                            <div id="customComponentLO_M2" />
+                            <c:visualstrapblock >
+                                <!--   Alerts Section   -->
+                                <apex:outputPanel rendered="{!showAlerts}">
+                                    <section class="my-alerts ng-cloak" ng-controller="AlertListPanelCtrl">
+                                        <header style="margin-bottom:5px;">
+                                            <div>ALERTS</div>
+                                            <!--  Display this while loading this section  -->
+                                            <div ng-if="!(alertsAreLoaded==true)" align="center">
+                                                <img src="{!URLFOR($resource.NgBS_Homepage, 'assets/img/slds_spinner_brand.gif')}" alt="Loading..." height="32" width="32" />
+                                            </div>
+                                            <div class="dropdown">
+                                                <button class="btn btn-default dropdown-toggle" type="button" data-toggle="dropdown">
+                                                    <h4>{{currentViewName}}
+                                                        <span class="caret"></span>
+                                                    </h4>
+                                                </button>
+                                                <ul class="dropdown-menu">
+                                                    <li ng-repeat="view in listViews">
+                                                        <a href="#" data-ng-click="switchAlertView($index);">{{view.name}}</a>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </header>
+                                        <section class="well">
+                                            <section class="alert-card" ng-repeat="alert in alerts">
+                                                <header>
+                                                    <a href="#" ng-click="toggleAlertPriority($index);" >
+                                                    <img alt="icon" width="22" height="22" class="pull-left" ng-src="{!URLFOR($resource.NgBS_Homepage, 'assets/img/{{alert.alertPriority | toPriorityImage}}')}" />
+                                                    </a>
+                                                    <apex:outputPanel id="alertActions" rendered="{!enableAlertActions}">
+                                                        <button class="btn btn-default pull-right" ng-hide="{{alert.alertActionName == null}}" ng-click="execAlertAction($index);">{{alert.alertActionName}}</button>
+                                                    </apex:outputPanel>
+                                                    <div>{{alert.alertName}}</div>
+                                                </header>
+                                                <section>
+                                                    <nav style="clear:both">
+                                                        <a href="{{'/' + alert.alertTargetId}}" title="{{alert.alertTargetLabel}}" ng-click="goToRecord(alert.alertTargetId);">
+                                                        {{alert.alertTargetLabel}}</a>
+                                                    </nav>
+                                                    <div ng-if="alert.alertTargetPhase != null">
+                                                        <img alt="status" width="65px" height="16px" ng-src="{!URLFOR($resource.NgBS_Homepage, 'assets/img/{{alert.alertTargetPhase | toPhaseImage}}')}" />&nbsp;&nbsp;{{alert.alertTargetPhase}}
+                                                    </div>
+                                                </section>
+                                                <footer>
+                                                    <a href="{{'/' + alert.contactId}}" title="{{alert.contactName}}" ng-click="goToRecord(alert.contactId);">
+                                                    {{alert.contactName}}</a>
+                                                    • {{alert.alertTargetStatus}} • {{alert.alertTargetAmount | currency}} • {{alert.alertCreated | daysFromNow}} <span ng-show="alert.showAlert">•</span>
+                                                    <a href="#" ng-click="dismissAlert($index);" ng-show="alert.showAlert">Dismiss</a>
+                                                </footer>
+                                            </section>
+                                            <!--  this is the footer for the alerts section  -->
+                                            <footer>
+                                                <nav>
+                                                    <button class="btn btn-link" ng-click="goToListView('{!$ObjectType.Alert__c.keyPrefix}',currentViewId,'{!$ObjectType.Alert__c.name}');">View All</button>
+                                                </nav>
+                                            </footer>
+                                        </section>
+                                    </section>
+                                </apex:outputPanel>
+                            </c:visualstrapblock>
+                            <apex:dynamicComponent componentValue="{!CustomComponentVF_M3}" />
+                            <div id="customComponentLO_M3" />
+                            <c:visualstrapblock >
+                                <!-- My Tasks Section -->
+                                <apex:outputPanel rendered="{!showTasks}">
+                                    <section class="my-tasks ng-cloak" ng-controller="TaskListPanelCtrl">
+                                        <header style="margin-bottom:5px;">
+                                            <div>TASKS</div>
+                                            <!--  Display this while loading this section  -->
+                                            <div ng-if="!(tasksAreLoaded==true)" align="center">
+                                                <img id="spinner" src="{!URLFOR($resource.NgBS_Homepage, 'assets/img/slds_spinner_brand.gif')}" alt="Loading..." height="32" width="32" />
+                                            </div>
+                                            <div class="dropdown" style="display:inline-block;">
+                                                <button class="btn btn-default dropdown-toggle" type="button" data-toggle="dropdown">
+                                                    <h4>
+                                                        {{currentViewName}}
+                                                        <span class="caret"></span>
+                                                    </h4>
+                                                </button>
+                                                <ul class="dropdown-menu">
+                                                    <li ng-repeat="view in listViews">
+                                                        <a href="#" data-ng-click="switchTaskView($index);">{{view.name}}</a>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                            <button type="button" class="btn btn-default pull-right" ng-click="createNewRecord('{!$ObjectType.Task.name}', '{!$ObjectType.Task.keyPrefix}', '{!URLFOR($Page.Homepage)}');" ng-disabled="(tasksAreLoaded!=true)">New Task</button>
+                                        </header>
+                                        <section>
+                                            <section class="task-card" ng-repeat="task in tasks">
+                                                <div style="float:left;margin-left:5px;margin-top:1px;">
+                                                    <a href="#" ng-click="completeTask($index);" >
+                                                        <apex:outputPanel styleClass="glyphicon glyphicon-check" ></apex:outputPanel>
+                                                    </a>
+                                                </div>
+                                                <div class="task-title">
+                                                    <nav>
+                                                        <a href="{{'/' + task.taskId}}" title="{{task.subject}}" ng-click="goToRecord(task.taskId);">
+                                                        {{task.subject}}</a>
+                                                    </nav>
+                                                </div>
+                                                <div class="task-desc">{{task.dueDate}}</div>
+                                            </section>
+                                        </section>
+                                        <footer>
+                                            <nav>
+                                                <button class="btn btn-link" ng-click="goToURL('/{!$ObjectType.Task.keyPrefix}');">View All</button>
+                                            </nav>
+                                        </footer>
+                                    </section>
+                                </apex:outputPanel>
+                            </c:visualstrapblock>
+                            <apex:dynamicComponent componentValue="{!CustomComponentVF_M4}" />
+                            <div id="customComponentLO_M4" />
+                        </div>
+                        <div class="{!rightColumnWidth}">
+                            <apex:dynamicComponent componentValue="{!CustomComponentVF_R1}" />
+                            <div id="customComponentLO_R1" />
+                            <c:visualstrapblock >
+                                <!-- Right Section -->
+                                <apex:outputPanel rendered="{!showChart}">
+                                    <section class="casephase-barchart ng-cloak" ng-controller="InsuranceCaseBarChartCtrl">
+                                        <!--  Display this while loading this section  -->
+                                        <div ng-if="!(chartIsLoaded==true)" align="center">
+                                            <img src="{!URLFOR($resource.NgBS_Homepage, 'assets/img/slds_spinner_brand.gif')}" alt="Loading..." height="32" width="32" />
+                                            <div>
+                                                <h4>Insurance Cases</h4>
+                                            </div>
+                                        </div>
+                                        <h4 ng-if="(chartIsLoaded==true)">Insurance Cases ({{chartData.total.value}})</h4>
+                                        <div style='margin-left:20px;margin-right:20px; max-height:200px'>
+                                            <canvas id="myChart" width="200" height="200" style=""></canvas>
+                                        </div>
+                                        <div ng-if="(chartIsLoaded==true)">
+                                            <ul class="list-group">
+                                                <li class="list-group-item csphase-list-item"><span class="pull-right">Total</span> Phase</li>
+                                                <li class="list-group-item csphase-list-item" style="clear:both;">
+                                                    <span class="badge">{{chartData.needsanalysis.value}}</span>
+                                                    <div ng-style="{'width':'16px','height':'16px','background-color':chartData.needsanalysis.color,'border-radius':'50%','display':'inline-block'}"></div>
+                                                    Needs Analysis
+                                                </li>
+                                                <li class="list-group-item csphase-list-item" style="clear:both;">
+                                                    <span class="badge">{{chartData.illustration.value}}</span>
+                                                    <div ng-style="{'width':'16px','height':'16px','background-color':chartData.illustration.color,'border-radius':'50%','display':'inline-block'}"></div>
+                                                    Illustration
+                                                </li>
+                                                <li class="list-group-item csphase-list-item">
+                                                    <span class="badge">{{chartData.application.value}}</span>
+                                                    <div ng-style="{'width':'16px','height':'16px','background-color':chartData.application.color,'border-radius':'50%','display':'inline-block'}"></div>
+                                                    Application
+                                                </li>
+                                                <li class="list-group-item csphase-list-item">
+                                                    <span class="badge">{{chartData.underwriting.value}}</span>
+                                                    <div ng-style="{'width':'16px','height':'16px','background-color':chartData.underwriting.color,'border-radius':'50%','display':'inline-block'}"></div>
+                                                    Underwriting
+                                                </li>
+                                                <li class="list-group-item csphase-list-item">
+                                                    <span class="badge">{{chartData.delivery.value}}</span>
+                                                    <div ng-style="{'width':'16px','height':'16px','background-color':chartData.delivery.color,'border-radius':'50%','display':'inline-block'}"></div>
+                                                    Delivery
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </section>
+                                </apex:outputPanel>
+                            </c:visualstrapblock>
+                            <apex:dynamicComponent componentValue="{!CustomComponentVF_R2}" />
+                            <div id="customComponentLO_R2" />
+                        </div>
+                    </div>
+                    <div class="row">
+                        <apex:dynamicComponent componentValue="{!CustomComponentVF_B1}" />
+                        <div id="customComponentLO_B1" />
+                        <!-- Bottom Section -->
+                    </div>
+                </div>
+                <!--  END OF GRID FLOW -->
+            </apex:outputPanel>
+        </div>
+    </body>
+
+    <script>
+        // This script is provided by salesforce support to handle a known iPad issue
+        // with Apple's UI webkit, reported in the Known Issue here: https://success.salesforce.com/issues_view?id=a1p30000000T2oLAAS
+        var a = navigator.userAgent;
+        if ((a.indexOf('Salesforce') != -1) && (a.indexOf('iPhone') != -1 || a.indexOf('iPad') != -1) && (a.indexOf('Safari') == -1)) {
+            var s = document.createElement('style');
+            s.innerHTML = "html,html body{overflow:scroll;-webkit-overflow-scrolling:touch;index:0;}body{position:absolute;left:0;right:0;top:0;bottom:0;}";
+            document.getElementsByTagName('head')[0].appendChild(s);
+        }
+</script>
+
+</apex:page>

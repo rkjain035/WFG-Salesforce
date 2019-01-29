@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>B2C Lead To Opportunity Mapping</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>B2C Lead To Opportunities Mappings</value>
+    </caseValues>
+    <fields>
+        <label><!-- IsActive --></label>
+        <name>Active__c</name>
+    </fields>
+    <fields>
+        <label><!-- Lead Record Type Namespace --></label>
+        <name>LeadRecordTypeNamespace__c</name>
+    </fields>
+    <fields>
+        <label><!-- Lead Record Type --></label>
+        <name>LeadRecordType__c</name>
+    </fields>
+    <fields>
+        <label><!-- Opportunity Record Type Namespace --></label>
+        <name>OpportunityRecordTypeNamespace__c</name>
+    </fields>
+    <fields>
+        <label><!-- Opportunity Record Type --></label>
+        <name>OpportunityRecordType__c</name>
+    </fields>
+    <startsWith>Consonant</startsWith>
+</CustomObjectTranslation>

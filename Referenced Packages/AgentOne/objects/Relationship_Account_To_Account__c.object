@@ -1,0 +1,233 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <actionOverrides>
+        <actionName>Accept</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Clone</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <content>EditRelationshipForm</content>
+        <skipRecordTypeSelect>false</skipRecordTypeSelect>
+        <type>Visualforce</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>List</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>New</actionName>
+        <content>EditRelationshipForm</content>
+        <skipRecordTypeSelect>false</skipRecordTypeSelect>
+        <type>Visualforce</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Tab</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <allowInChatterGroups>false</allowInChatterGroups>
+    <compactLayoutAssignment>Relationship_Compact_Layout</compactLayoutAssignment>
+    <compactLayouts>
+        <fullName>Relationship_Compact_Layout</fullName>
+        <fields>Name</fields>
+        <fields>Related_From__c</fields>
+        <fields>Related_To_Display__c</fields>
+        <fields>Relationship_Role__c</fields>
+        <label>Relationship Compact Layout</label>
+    </compactLayouts>
+    <deploymentStatus>Deployed</deploymentStatus>
+    <deprecated>false</deprecated>
+    <description>This stores relationships between two Account Records</description>
+    <enableActivities>false</enableActivities>
+    <enableBulkApi>true</enableBulkApi>
+    <enableFeeds>false</enableFeeds>
+    <enableHistory>false</enableHistory>
+    <enableReports>true</enableReports>
+    <enableSearch>true</enableSearch>
+    <enableSharing>true</enableSharing>
+    <enableStreamingApi>true</enableStreamingApi>
+    <externalSharingModel>ControlledByParent</externalSharingModel>
+    <fields>
+        <fullName>Key__c</fullName>
+        <caseSensitive>false</caseSensitive>
+        <deprecated>false</deprecated>
+        <description>This is a system field used to uniquely identify the Role and should not be edited</description>
+        <encrypted>false</encrypted>
+        <externalId>true</externalId>
+        <label>Key</label>
+        <length>255</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>true</unique>
+    </fields>
+    <fields>
+        <fullName>Related_From__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Primary Account of this Relationship</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Primary Account of this Relationship</inlineHelpText>
+        <label>Related From</label>
+        <referenceTo>Account</referenceTo>
+        <relationshipLabel>Relationships</relationshipLabel>
+        <relationshipName>Relationships</relationshipName>
+        <relationshipOrder>0</relationshipOrder>
+        <reparentableMasterDetail>false</reparentableMasterDetail>
+        <trackTrending>false</trackTrending>
+        <type>MasterDetail</type>
+        <writeRequiresMasterRead>false</writeRequiresMasterRead>
+    </fields>
+    <fields>
+        <fullName>Related_To_Display__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <formula>IF( ISBLANK( Related_To__c ), Related_To_Text__c , HYPERLINK(&quot;/&quot;&amp;Related_To__c,  Related_To__r.Name ))</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Related To</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Related_To_Text__c</fullName>
+        <deprecated>false</deprecated>
+        <encrypted>false</encrypted>
+        <externalId>false</externalId>
+        <inlineHelpText>Use to create a new relationship without having to create a new client/prospect, when you don&apos;t need to track more information than just the name</inlineHelpText>
+        <label>Or Related To (Name Only)</label>
+        <length>80</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Related_To__c</fullName>
+        <deleteConstraint>Restrict</deleteConstraint>
+        <deprecated>false</deprecated>
+        <description>Secondary Account of Relationship</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Use to create a new relationship with a new or existing client/prospect, when you want to track more information than just the name or have a record available for future marketing to this individual or business.</inlineHelpText>
+        <label>Related To (New / Existing)</label>
+        <referenceTo>Account</referenceTo>
+        <relationshipLabel>Relationships (Related To)</relationshipLabel>
+        <relationshipName>Related_To</relationshipName>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Relationship_Role__c</fullName>
+        <deleteConstraint>Restrict</deleteConstraint>
+        <deprecated>false</deprecated>
+        <description>Role that describes the Relationship between the 2 accounts</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Role that describes the Relationship between the 2 accounts</inlineHelpText>
+        <label>Relationship Role</label>
+        <lookupFilter>
+            <active>true</active>
+            <filterItems>
+                <field>Relationship_Role__c.Enabled__c</field>
+                <operation>equals</operation>
+                <value>True</value>
+            </filterItems>
+            <isOptional>false</isOptional>
+        </lookupFilter>
+        <referenceTo>Relationship_Role__c</referenceTo>
+        <relationshipLabel>Relationships</relationshipLabel>
+        <relationshipName>Relationships</relationshipName>
+        <required>true</required>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Source__c</fullName>
+        <deprecated>false</deprecated>
+        <description>The source of the relationship record</description>
+        <encrypted>false</encrypted>
+        <externalId>false</externalId>
+        <inlineHelpText>The source of the relationship record</inlineHelpText>
+        <label>Last Updated Source</label>
+        <length>100</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <label>Relationship</label>
+    <listViews>
+        <fullName>All</fullName>
+        <columns>NAME</columns>
+        <columns>Related_From__c</columns>
+        <columns>Related_To__c</columns>
+        <columns>Relationship_Role__c</columns>
+        <columns>LAST_UPDATE</columns>
+        <columns>UPDATEDBY_USER</columns>
+        <filterScope>Everything</filterScope>
+        <label>All</label>
+    </listViews>
+    <nameField>
+        <encrypted>false</encrypted>
+        <label>Relationship</label>
+        <type>Text</type>
+    </nameField>
+    <pluralLabel>Relationships</pluralLabel>
+    <searchLayouts>
+        <customTabListAdditionalFields>Related_From__c</customTabListAdditionalFields>
+        <customTabListAdditionalFields>Related_To__c</customTabListAdditionalFields>
+        <customTabListAdditionalFields>Relationship_Role__c</customTabListAdditionalFields>
+        <customTabListAdditionalFields>UPDATEDBY_USER</customTabListAdditionalFields>
+        <customTabListAdditionalFields>LAST_UPDATE</customTabListAdditionalFields>
+        <excludedStandardButtons>ChangeOwner</excludedStandardButtons>
+        <excludedStandardButtons>Accept</excludedStandardButtons>
+        <lookupDialogsAdditionalFields>Related_From__c</lookupDialogsAdditionalFields>
+        <lookupDialogsAdditionalFields>Related_To__c</lookupDialogsAdditionalFields>
+        <lookupDialogsAdditionalFields>Relationship_Role__c</lookupDialogsAdditionalFields>
+        <lookupDialogsAdditionalFields>UPDATEDBY_USER</lookupDialogsAdditionalFields>
+        <lookupDialogsAdditionalFields>LAST_UPDATE</lookupDialogsAdditionalFields>
+        <lookupPhoneDialogsAdditionalFields>Related_From__c</lookupPhoneDialogsAdditionalFields>
+        <lookupPhoneDialogsAdditionalFields>Related_To__c</lookupPhoneDialogsAdditionalFields>
+        <lookupPhoneDialogsAdditionalFields>Relationship_Role__c</lookupPhoneDialogsAdditionalFields>
+        <lookupPhoneDialogsAdditionalFields>UPDATEDBY_USER</lookupPhoneDialogsAdditionalFields>
+        <lookupPhoneDialogsAdditionalFields>LAST_UPDATE</lookupPhoneDialogsAdditionalFields>
+        <searchFilterFields>NAME</searchFilterFields>
+        <searchFilterFields>Related_From__c</searchFilterFields>
+        <searchFilterFields>Related_To__c</searchFilterFields>
+        <searchFilterFields>Relationship_Role__c</searchFilterFields>
+        <searchFilterFields>UPDATEDBY_USER</searchFilterFields>
+        <searchFilterFields>LAST_UPDATE</searchFilterFields>
+        <searchResultsAdditionalFields>Related_From__c</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>Related_To__c</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>Relationship_Role__c</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>UPDATEDBY_USER</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>LAST_UPDATE</searchResultsAdditionalFields>
+    </searchLayouts>
+    <sharingModel>ControlledByParent</sharingModel>
+    <validationRules>
+        <fullName>Related_to_client_check</fullName>
+        <active>true</active>
+        <description>Check if one of the Related to fields is populated on save.</description>
+        <errorConditionFormula>AND( ISBLANK( Related_To__c ) ,  ISBLANK(Related_To_Text__c)  )</errorConditionFormula>
+        <errorMessage>One of the Related To fields must be populated to create a relationship.</errorMessage>
+    </validationRules>
+</CustomObject>

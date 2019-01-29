@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Charges And Fees</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Charges And Fees</value>
+    </caseValues>
+    <fields>
+        <label><!-- APR Type --></label>
+        <name>APRType__c</name>
+        <picklistValues>
+            <masterLabel>Fixed</masterLabel>
+            <translation><!-- Fixed --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Other</masterLabel>
+            <translation><!-- Other --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Variable</masterLabel>
+            <translation><!-- Variable --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- APR --></label>
+        <name>APR__c</name>
+    </fields>
+    <fields>
+        <label><!-- ATM Fee --></label>
+        <name>ATMFee__c</name>
+    </fields>
+    <fields>
+        <label><!-- Annual Account Charge --></label>
+        <name>AnnualAccountCharge__c</name>
+    </fields>
+    <fields>
+        <label><!-- Annual Membership Fee --></label>
+        <name>AnnualMembershipFee__c</name>
+    </fields>
+    <fields>
+        <label><!-- Balance Transfer APR --></label>
+        <name>BalanceTransferAPR__c</name>
+    </fields>
+    <fields>
+        <label><!-- Cash APR Type --></label>
+        <name>CashAPRType__c</name>
+        <picklistValues>
+            <masterLabel>Fixed</masterLabel>
+            <translation><!-- Fixed --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Other</masterLabel>
+            <translation><!-- Other --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Variable</masterLabel>
+            <translation><!-- Variable --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Cash APR --></label>
+        <name>CashAPR__c</name>
+    </fields>
+    <fields>
+        <label><!-- Cash Advance Fee --></label>
+        <name>CashAdvanceFee__c</name>
+    </fields>
+    <fields>
+        <label><!-- Foreign Transaction Fee --></label>
+        <name>ForeignTransactionFee__c</name>
+    </fields>
+    <fields>
+        <label><!-- Insufficient Funds Fee --></label>
+        <name>InsufficientFundsFee__c</name>
+    </fields>
+    <fields>
+        <label><!-- Interest Rate --></label>
+        <name>InterestRate__c</name>
+    </fields>
+    <fields>
+        <label><!-- Late Payment Fee --></label>
+        <name>LatePaymentFee__c</name>
+    </fields>
+    <fields>
+        <label><!-- Maximum Transaction Fee --></label>
+        <name>MaximumTransactionFee__c</name>
+    </fields>
+    <fields>
+        <label><!-- Monthly Service Fee --></label>
+        <name>MonthlyServiceFee__c</name>
+    </fields>
+    <fields>
+        <label><!-- Overdraft Fees --></label>
+        <name>OverdraftFees__c</name>
+    </fields>
+    <fields>
+        <label><!-- Replacement Card Fee --></label>
+        <name>ReplacementCardFee__c</name>
+    </fields>
+    <fields>
+        <label><!-- Returned Check Fee --></label>
+        <name>ReturnedCheckFee__c</name>
+    </fields>
+    <fields>
+        <label><!-- Source System ID --></label>
+        <name>SourceSystemId__c</name>
+    </fields>
+    <fields>
+        <label><!-- Statement Fee --></label>
+        <name>StatementFee__c</name>
+    </fields>
+    <fields>
+        <label><!-- Stop Payment Fee --></label>
+        <name>StopPaymentFee__c</name>
+    </fields>
+    <recordTypes>
+        <label><!-- Credit --></label>
+        <name>Credit</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Debit --></label>
+        <name>Debit</name>
+    </recordTypes>
+    <startsWith>Consonant</startsWith>
+</CustomObjectTranslation>

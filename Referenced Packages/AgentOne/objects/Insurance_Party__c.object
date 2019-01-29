@@ -1,0 +1,228 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <actionOverrides>
+        <actionName>Accept</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Clone</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>List</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>New</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Tab</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <allowInChatterGroups>false</allowInChatterGroups>
+    <compactLayoutAssignment>AgentOne_Insurance_Case_Party_Compact_Layout</compactLayoutAssignment>
+    <compactLayouts>
+        <fullName>AgentOne_Insurance_Case_Party_Compact_Layout</fullName>
+        <fields>Name</fields>
+        <fields>InsuranceCase__c</fields>
+        <fields>Allocation__c</fields>
+        <fields>Relationship_to_Primary_Insured__c</fields>
+        <label>AgentOne Insurance Case Party Compact Layout</label>
+    </compactLayouts>
+    <deploymentStatus>Deployed</deploymentStatus>
+    <deprecated>false</deprecated>
+    <description>This object is a linked object between Insurance Case and Contacts and Accounts and stores the Persons and Businesses and their role for an Insurance Case.  It is used to define a contact&apos;s role on a case.  For example, &quot;Contact A is the owner on Case B.&quot;</description>
+    <enableActivities>false</enableActivities>
+    <enableBulkApi>true</enableBulkApi>
+    <enableFeeds>false</enableFeeds>
+    <enableHistory>false</enableHistory>
+    <enableReports>false</enableReports>
+    <enableSearch>true</enableSearch>
+    <enableSharing>true</enableSharing>
+    <enableStreamingApi>true</enableStreamingApi>
+    <externalSharingModel>ControlledByParent</externalSharingModel>
+    <fields>
+        <fullName>Allocation__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <label>Allocation</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackTrending>false</trackTrending>
+        <type>Percent</type>
+    </fields>
+    <fields>
+        <fullName>Entity__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <deprecated>false</deprecated>
+        <description>Associated Account</description>
+        <externalId>false</externalId>
+        <label>Business</label>
+        <referenceTo>Account</referenceTo>
+        <relationshipLabel>Participant on Insurance Cases</relationshipLabel>
+        <relationshipName>Parties</relationshipName>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Ext_LastModifiedDate__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Last Modified Date from external application.</description>
+        <encrypted>false</encrypted>
+        <externalId>false</externalId>
+        <inlineHelpText>Last Modified TimeStamp from external system for records sent to AgentOne.</inlineHelpText>
+        <label>Ext. Last Modified TimeStamp</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>DateTime</type>
+    </fields>
+    <fields>
+        <fullName>External_Id__c</fullName>
+        <caseSensitive>false</caseSensitive>
+        <deprecated>false</deprecated>
+        <encrypted>false</encrypted>
+        <externalId>true</externalId>
+        <label>External Id</label>
+        <length>64</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>true</unique>
+    </fields>
+    <fields>
+        <fullName>InsuranceCase__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <label>Insurance Case</label>
+        <referenceTo>InsuranceCase__c</referenceTo>
+        <relationshipLabel>Insurance Case Participants</relationshipLabel>
+        <relationshipName>Insurance_Parties</relationshipName>
+        <relationshipOrder>0</relationshipOrder>
+        <reparentableMasterDetail>false</reparentableMasterDetail>
+        <trackTrending>false</trackTrending>
+        <type>MasterDetail</type>
+        <writeRequiresMasterRead>false</writeRequiresMasterRead>
+    </fields>
+    <fields>
+        <fullName>Insurance_Party__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <deprecated>false</deprecated>
+        <description>Look up to person account to link other active insurance parties (owner, beneficiaries, payors, etc) to the insurance case</description>
+        <externalId>false</externalId>
+        <label>Person</label>
+        <referenceTo>Contact</referenceTo>
+        <relationshipLabel>Participant on Insurance Cases</relationshipLabel>
+        <relationshipName>Insurance_Party</relationshipName>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Relationship_to_Primary_Insured__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Type of relationship to the Primary Insured on the Case</description>
+        <encrypted>false</encrypted>
+        <externalId>false</externalId>
+        <inlineHelpText>Type of relationship to the Primary Insured on the Case</inlineHelpText>
+        <label>Relationship to Primary Insured</label>
+        <length>100</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Type__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Type of relationship to the Insurance Case</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Type of relationship to the Insurance Case</inlineHelpText>
+        <label>Type</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Owner</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Payor</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Primary Beneficiary</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Contingent Beneficiary</fullName>
+                    <default>false</default>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <label>Insurance Case Participant</label>
+    <listViews>
+        <fullName>All</fullName>
+        <filterScope>Everything</filterScope>
+        <label>All</label>
+    </listViews>
+    <nameField>
+        <encrypted>false</encrypted>
+        <label>Party Name</label>
+        <type>Text</type>
+    </nameField>
+    <pluralLabel>Insurance Case Participants</pluralLabel>
+    <searchLayouts>
+        <customTabListAdditionalFields>InsuranceCase__c</customTabListAdditionalFields>
+        <customTabListAdditionalFields>Insurance_Party__c</customTabListAdditionalFields>
+        <customTabListAdditionalFields>Entity__c</customTabListAdditionalFields>
+        <customTabListAdditionalFields>Allocation__c</customTabListAdditionalFields>
+        <customTabListAdditionalFields>Type__c</customTabListAdditionalFields>
+        <customTabListAdditionalFields>Relationship_to_Primary_Insured__c</customTabListAdditionalFields>
+        <lookupDialogsAdditionalFields>InsuranceCase__c</lookupDialogsAdditionalFields>
+        <lookupDialogsAdditionalFields>Insurance_Party__c</lookupDialogsAdditionalFields>
+        <lookupDialogsAdditionalFields>Entity__c</lookupDialogsAdditionalFields>
+        <lookupDialogsAdditionalFields>Allocation__c</lookupDialogsAdditionalFields>
+        <lookupDialogsAdditionalFields>Type__c</lookupDialogsAdditionalFields>
+        <lookupDialogsAdditionalFields>Relationship_to_Primary_Insured__c</lookupDialogsAdditionalFields>
+        <lookupPhoneDialogsAdditionalFields>InsuranceCase__c</lookupPhoneDialogsAdditionalFields>
+        <lookupPhoneDialogsAdditionalFields>Insurance_Party__c</lookupPhoneDialogsAdditionalFields>
+        <lookupPhoneDialogsAdditionalFields>Entity__c</lookupPhoneDialogsAdditionalFields>
+        <lookupPhoneDialogsAdditionalFields>Allocation__c</lookupPhoneDialogsAdditionalFields>
+        <lookupPhoneDialogsAdditionalFields>Type__c</lookupPhoneDialogsAdditionalFields>
+        <lookupPhoneDialogsAdditionalFields>Relationship_to_Primary_Insured__c</lookupPhoneDialogsAdditionalFields>
+        <searchResultsAdditionalFields>InsuranceCase__c</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>Insurance_Party__c</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>Entity__c</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>Allocation__c</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>Type__c</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>Relationship_to_Primary_Insured__c</searchResultsAdditionalFields>
+    </searchLayouts>
+    <sharingModel>ControlledByParent</sharingModel>
+</CustomObject>

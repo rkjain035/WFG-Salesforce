@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fields>
+        <fullName>Insurance_Activity_Type__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <label>Insurance Activity Type</label>
+        <required>false</required>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>First Contact</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Fact Finder</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Proposal Prep</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Product Showing</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Application</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Close Interview</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Ask for Referral</fullName>
+                    <default>false</default>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+</CustomObject>

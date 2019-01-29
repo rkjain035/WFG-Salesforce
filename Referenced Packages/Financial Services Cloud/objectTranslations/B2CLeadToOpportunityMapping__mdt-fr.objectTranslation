@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Mappage d&apos;opportunités avec des pistes B2C</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Mappages des pistes avec des opportunités B2C</value>
+    </caseValues>
+    <fields>
+        <label>Actif</label>
+        <name>Active__c</name>
+    </fields>
+    <fields>
+        <label>Espace de noms type enregistrement piste</label>
+        <name>LeadRecordTypeNamespace__c</name>
+    </fields>
+    <fields>
+        <label>Type d&apos;enregistrement de piste</label>
+        <name>LeadRecordType__c</name>
+    </fields>
+    <fields>
+        <label>Espace noms type enregistrement opport.</label>
+        <name>OpportunityRecordTypeNamespace__c</name>
+    </fields>
+    <fields>
+        <label>Type d&apos;enregistrement d&apos;opportunité</label>
+        <name>OpportunityRecordType__c</name>
+    </fields>
+    <gender>Masculine</gender>
+    <startsWith>Consonant</startsWith>
+</CustomObjectTranslation>

@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Financial Goal</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Financial Goals</value>
+    </caseValues>
+    <fields>
+        <label><!-- Actual Value --></label>
+        <name>ActualValue__c</name>
+    </fields>
+    <fields>
+        <label><!-- Completion Date --></label>
+        <name>CompletionDate__c</name>
+    </fields>
+    <fields>
+        <label><!-- Description --></label>
+        <name>Description__c</name>
+    </fields>
+    <fields>
+        <label><!-- Household --></label>
+        <name>Household__c</name>
+        <relationshipLabel><!-- Household Financial Goals --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Initial Value --></label>
+        <name>InitialValue__c</name>
+    </fields>
+    <fields>
+        <label><!-- Primary Owner --></label>
+        <name>PrimaryOwner__c</name>
+        <relationshipLabel><!-- Client Financial Goals --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Source System ID --></label>
+        <name>SourceSystemId__c</name>
+    </fields>
+    <fields>
+        <label><!-- Status --></label>
+        <name>Status__c</name>
+        <picklistValues>
+            <masterLabel>Completed</masterLabel>
+            <translation><!-- Completed --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>In Progress</masterLabel>
+            <translation><!-- In Progress --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Not Started</masterLabel>
+            <translation><!-- Not Started --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Target Date --></label>
+        <name>TargetDate__c</name>
+    </fields>
+    <fields>
+        <label><!-- Target Value --></label>
+        <name>TargetValue__c</name>
+    </fields>
+    <fields>
+        <label><!-- Type --></label>
+        <name>Type__c</name>
+        <picklistValues>
+            <masterLabel>Education</masterLabel>
+            <translation><!-- Education --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Home Purchase</masterLabel>
+            <translation><!-- Home Purchase --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Other</masterLabel>
+            <translation><!-- Other --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Retirement</masterLabel>
+            <translation><!-- Retirement --></translation>
+        </picklistValues>
+    </fields>
+    <layouts>
+        <layout>Financial Goal Layout</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- Information --></label>
+            <section>Information</section>
+        </sections>
+    </layouts>
+    <startsWith>Consonant</startsWith>
+</CustomObjectTranslation>

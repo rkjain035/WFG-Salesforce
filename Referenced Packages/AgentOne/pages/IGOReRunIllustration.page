@@ -1,0 +1,15 @@
+<apex:page standardController="AgentOne__Illustration__c" extensions="AgentOne.iGOReRunIllustrationController" showQuickActionVfHeader="False" action="{!reRunIllustration}">
+    <apex:includeScript value="/canvas/sdk/js/publisher.js" />
+    <script>
+        function closeAction() {
+        	if( (typeof sforce != 'undefined') && (sforce != null) ) {
+            	Sfdc.canvas.publisher.publish({ name : "publisher.close", payload : { refresh:"true" }});
+            }
+        }
+    </script> 
+    <apex:pageBlock >
+    	<apex:pageMessage summary="{!pageMessage}" severity="warning" strength="3" />
+        <apex:pageMessages />
+    </apex:pageBlock>
+    <button onclick="closeAction()">Close</button>
+</apex:page>

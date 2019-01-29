@@ -1,0 +1,15 @@
+<apex:page docType="html-5.0" controller="AgentOne.iGOResendEmailController"> 
+    <apex:outputPanel id="messagePanel" rendered="{!!resendEnabled}">
+    	   <apex:pageMessage summary="The resend email page cannot be displayed because the resend email setting in iGO Application Settings is OFF." severity="warning" strength="3" />
+     <apex:pageMessages />
+    	
+    </apex:outputPanel>
+    <apex:outputPanel id="actionBody" rendered="{!resendEnabled}">
+         <c:importvisualstrap />
+          <c:visualstrapblock > 
+        <apex:form style="width:100%;" > 
+            <c:iGOCaseResendESigEmail iGOCaseId="{!iGOCaseId}" id="idResendComp"/>
+        </apex:form> 
+         </c:visualstrapblock> 
+    </apex:outputPanel>
+</apex:page>

@@ -1,0 +1,334 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <actionOverrides>
+        <actionName>Accept</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Clone</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>List</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>New</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Tab</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <allowInChatterGroups>false</allowInChatterGroups>
+    <compactLayoutAssignment>AgentOne_Case_Requirement_Compact_Layout</compactLayoutAssignment>
+    <compactLayouts>
+        <fullName>AgentOne_Case_Requirement_Compact_Layout</fullName>
+        <fields>Name</fields>
+        <fields>RequirementDetails__c</fields>
+        <fields>Requirement_Due_Date__c</fields>
+        <fields>Requirement_Party_Name__c</fields>
+        <label>AgentOne Case Requirement Compact Layout</label>
+    </compactLayouts>
+    <deploymentStatus>Deployed</deploymentStatus>
+    <deprecated>false</deprecated>
+    <description>Requirements are associated to an Insurance Case.  It is typically generated for cases in Underwriting Phase and received from Pending Case Feeds.</description>
+    <enableActivities>false</enableActivities>
+    <enableBulkApi>true</enableBulkApi>
+    <enableEnhancedLookup>true</enableEnhancedLookup>
+    <enableFeeds>false</enableFeeds>
+    <enableHistory>false</enableHistory>
+    <enableReports>true</enableReports>
+    <enableSearch>true</enableSearch>
+    <enableSharing>true</enableSharing>
+    <enableStreamingApi>true</enableStreamingApi>
+    <externalSharingModel>ControlledByParent</externalSharingModel>
+    <fields>
+        <fullName>DateRequirementReceived__c</fullName>
+        <deprecated>false</deprecated>
+        <encrypted>false</encrypted>
+        <externalId>false</externalId>
+        <label>Date Requirement Received</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>DateRequirementRequested__c</fullName>
+        <deprecated>false</deprecated>
+        <encrypted>false</encrypted>
+        <externalId>false</externalId>
+        <label>Date Requirement Requested</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>Ext_LastModifiedDate__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Last Modified Date from external application.</description>
+        <encrypted>false</encrypted>
+        <externalId>false</externalId>
+        <inlineHelpText>Last Modified TimeStamp from external system for records sent to AgentOne.</inlineHelpText>
+        <label>Ext. Last Modified TimeStamp</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>DateTime</type>
+    </fields>
+    <fields>
+        <fullName>External_Id__c</fullName>
+        <caseSensitive>false</caseSensitive>
+        <deprecated>false</deprecated>
+        <encrypted>false</encrypted>
+        <externalId>true</externalId>
+        <label>External Id</label>
+        <length>64</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>true</unique>
+    </fields>
+    <fields>
+        <fullName>FollowUpDate__c</fullName>
+        <deprecated>false</deprecated>
+        <encrypted>false</encrypted>
+        <externalId>false</externalId>
+        <label>Follow Up Date</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>FormID__c</fullName>
+        <deprecated>false</deprecated>
+        <encrypted>false</encrypted>
+        <externalId>false</externalId>
+        <label>Form ID</label>
+        <length>100</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>InsuranceCase__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <label>Insurance Case</label>
+        <referenceTo>InsuranceCase__c</referenceTo>
+        <relationshipLabel>Requirements</relationshipLabel>
+        <relationshipName>RequirementsInsuranceCase</relationshipName>
+        <relationshipOrder>0</relationshipOrder>
+        <reparentableMasterDetail>false</reparentableMasterDetail>
+        <trackTrending>false</trackTrending>
+        <type>MasterDetail</type>
+        <writeRequiresMasterRead>false</writeRequiresMasterRead>
+    </fields>
+    <fields>
+        <fullName>RequirementCode__c</fullName>
+        <deprecated>false</deprecated>
+        <encrypted>false</encrypted>
+        <externalId>false</externalId>
+        <label>Requirement Code</label>
+        <length>50</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>RequirementComments__c</fullName>
+        <deprecated>false</deprecated>
+        <encrypted>false</encrypted>
+        <externalId>false</externalId>
+        <label>Requirement Comments</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>TextArea</type>
+    </fields>
+    <fields>
+        <fullName>RequirementDetails__c</fullName>
+        <deprecated>false</deprecated>
+        <encrypted>false</encrypted>
+        <externalId>false</externalId>
+        <label>Requirement Details</label>
+        <length>255</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>RequirementInfoUniqueID__c</fullName>
+        <deprecated>false</deprecated>
+        <encrypted>false</encrypted>
+        <externalId>false</externalId>
+        <label>Requirement Info Unique ID</label>
+        <length>64</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>RequirementStatusDate__c</fullName>
+        <deprecated>false</deprecated>
+        <encrypted>false</encrypted>
+        <externalId>false</externalId>
+        <label>Requirement Status Date</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>RequirementStatus__c</fullName>
+        <deprecated>false</deprecated>
+        <encrypted>false</encrypted>
+        <externalId>false</externalId>
+        <label>Requirement Status</label>
+        <length>30</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Requirement_Due_Date__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Requirement Due Date represents the date by which the requirement needs to be fulfilled.</description>
+        <encrypted>false</encrypted>
+        <externalId>false</externalId>
+        <inlineHelpText>Requirement Due Date represents the date by which the requirement needs to be fulfilled.</inlineHelpText>
+        <label>Requirement Due Date</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>Requirement_Party_Name__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Name of the user associated with the requirement.</description>
+        <encrypted>false</encrypted>
+        <externalId>false</externalId>
+        <inlineHelpText>Name of the user associated with the requirement.</inlineHelpText>
+        <label>Requirement Party Name</label>
+        <length>80</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>ResponsiblePartyType__c</fullName>
+        <deprecated>false</deprecated>
+        <encrypted>false</encrypted>
+        <externalId>false</externalId>
+        <label>Responsible Party Type</label>
+        <length>30</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <label>Case Requirement</label>
+    <listViews>
+        <fullName>All</fullName>
+        <columns>NAME</columns>
+        <columns>RequirementDetails__c</columns>
+        <columns>RequirementStatus__c</columns>
+        <columns>RequirementStatusDate__c</columns>
+        <columns>DateRequirementRequested__c</columns>
+        <columns>DateRequirementReceived__c</columns>
+        <columns>FollowUpDate__c</columns>
+        <columns>Requirement_Due_Date__c</columns>
+        <columns>Requirement_Party_Name__c</columns>
+        <columns>ResponsiblePartyType__c</columns>
+        <filterScope>Everything</filterScope>
+        <label>All Requirements</label>
+    </listViews>
+    <listViews>
+        <fullName>Follow_Up_Date_within_the_Next_7_Days</fullName>
+        <columns>NAME</columns>
+        <columns>RequirementDetails__c</columns>
+        <columns>RequirementStatus__c</columns>
+        <columns>RequirementStatusDate__c</columns>
+        <columns>DateRequirementRequested__c</columns>
+        <columns>DateRequirementReceived__c</columns>
+        <columns>FollowUpDate__c</columns>
+        <columns>Requirement_Due_Date__c</columns>
+        <columns>Requirement_Party_Name__c</columns>
+        <columns>ResponsiblePartyType__c</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>FollowUpDate__c</field>
+            <operation>equals</operation>
+            <value>NEXT_N_DAYS:7</value>
+        </filters>
+        <label>Follow Up Date within the Next 7 Days</label>
+    </listViews>
+    <listViews>
+        <fullName>Follow_Up_Next_7_Days</fullName>
+        <columns>NAME</columns>
+        <columns>RequirementDetails__c</columns>
+        <columns>RequirementStatus__c</columns>
+        <columns>RequirementStatusDate__c</columns>
+        <columns>DateRequirementRequested__c</columns>
+        <columns>DateRequirementReceived__c</columns>
+        <columns>FollowUpDate__c</columns>
+        <columns>Requirement_Due_Date__c</columns>
+        <columns>Requirement_Party_Name__c</columns>
+        <columns>ResponsiblePartyType__c</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>FollowUpDate__c</field>
+            <operation>equals</operation>
+            <value>NEXT_N_DAYS:7</value>
+        </filters>
+        <label>Follow Up Date within the Next 7 Days</label>
+    </listViews>
+    <nameField>
+        <encrypted>false</encrypted>
+        <label>Requirements Name</label>
+        <type>Text</type>
+    </nameField>
+    <pluralLabel>Case Requirements</pluralLabel>
+    <searchLayouts>
+        <customTabListAdditionalFields>InsuranceCase__c</customTabListAdditionalFields>
+        <customTabListAdditionalFields>RequirementDetails__c</customTabListAdditionalFields>
+        <customTabListAdditionalFields>RequirementStatus__c</customTabListAdditionalFields>
+        <customTabListAdditionalFields>RequirementStatusDate__c</customTabListAdditionalFields>
+        <customTabListAdditionalFields>DateRequirementRequested__c</customTabListAdditionalFields>
+        <customTabListAdditionalFields>DateRequirementReceived__c</customTabListAdditionalFields>
+        <customTabListAdditionalFields>FollowUpDate__c</customTabListAdditionalFields>
+        <customTabListAdditionalFields>ResponsiblePartyType__c</customTabListAdditionalFields>
+        <searchResultsAdditionalFields>InsuranceCase__c</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>RequirementDetails__c</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>RequirementStatus__c</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>RequirementStatusDate__c</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>DateRequirementRequested__c</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>DateRequirementReceived__c</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>FollowUpDate__c</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>ResponsiblePartyType__c</searchResultsAdditionalFields>
+    </searchLayouts>
+    <sharingModel>ControlledByParent</sharingModel>
+</CustomObject>

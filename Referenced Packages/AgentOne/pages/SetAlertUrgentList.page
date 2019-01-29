@@ -1,0 +1,13 @@
+<apex:page standardController="AgentOne__Alert__c" extensions="AgentOne.SetAlertUrgentCtrl" recordSetVar="alert" showQuickActionVfHeader="False" action="{!confirm}">
+    <html xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+        <apex:stylesheet value="{!URLFOR($Resource.AgentOne__SLDS, 'assets/styles/salesforce-lightning-design-system-vf.min.css')}" />
+        <apex:stylesheet value="{!URLFOR($Resource.AgentOne__AgentOneSLDS, 'agentone-slds.css')}" />
+
+        <div class="agentone">
+            <div class="slds">
+                <c:ConfirmationModal pageController="{!this}"/>
+            </div>
+        </div>
+
+    </html>
+</apex:page>

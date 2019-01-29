@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value><!-- ET4AE Configuration --></value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value><!-- ET4AE Configuration --></value>
+    </caseValues>
+    <fields>
+        <label>Assistant de configuration terminé</label>
+        <name>Configuration_Wizard_Completed__c</name>
+    </fields>
+    <fields>
+        <help><!-- Automatically delete parent and child tracking data records when using Tracking Data Cleanup Tool. To avoid Apex governor limits on batch delete jobs, disable cascade-delete. --></help>
+        <label>Activer la suppression en cascade</label>
+        <name>Enable_Cascading_Delete__c</name>
+    </fields>
+    <fields>
+        <label>Point de terminaison</label>
+        <name>Endpoint__c</name>
+    </fields>
+    <fields>
+        <label>Environnement</label>
+        <name>Environment__c</name>
+    </fields>
+    <fields>
+        <label>Evénement de plate-forme JB activé</label>
+        <name>JBPlatformEventEnable__c</name>
+    </fields>
+    <fields>
+        <label>Mode QA</label>
+        <name>QA_Mode__c</name>
+    </fields>
+    <fields>
+        <label>Paramètre du site distant ajouté</label>
+        <name>Remote_Site_Setting_Added__c</name>
+    </fields>
+    <fields>
+        <label>SessionId</label>
+        <name>SessionId__c</name>
+    </fields>
+    <fields>
+        <label>ID de pile</label>
+        <name>StackId__c</name>
+    </fields>
+    <fields>
+        <label>ID de locataire</label>
+        <name>TenantId__c</name>
+    </fields>
+    <fields>
+        <help><!-- Enter the number of records to delete per batch. Delete up to 2000 records per batch. --></help>
+        <label>Taille lot nettoyage données de suivi</label>
+        <name>Tracking_Data_Clean_Up_Batch_Size__c</name>
+    </fields>
+    <gender><!-- Masculine --></gender>
+    <startsWith><!-- Consonant --></startsWith>
+</CustomObjectTranslation>

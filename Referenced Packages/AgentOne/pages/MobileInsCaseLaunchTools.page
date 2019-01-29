@@ -1,0 +1,58 @@
+<apex:page cache="false" standardController="AgentOne__InsuranceCase__c"  extensions="AgentOne.CaseAtGlanceController"
+standardStylesheets="false" docType="html-5.0" id="headerPage" applybodyTag="false" tabStyle="AgentOne__InsuranceCase__c">
+
+     <html xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+      <head>
+
+         <script type="text/javascript">
+          // this session Id is used by the streaming API to update information
+          var sessionId = '{!JSENCODE($Api.Session_ID)}';
+         </script>
+
+        <script src="{!URLFOR($Resource.svg4everybody_zip, 'svg4everybody.legacy.js')}"></script>
+        <script>svg4everybody(); </script>
+
+        <apex:includeScript value="{!URLFOR($Resource.AgentOne__AngularJS)}" />
+
+        <apex:stylesheet value="{!URLFOR($Resource.AgentOne__SLDS, 'assets/styles/salesforce-lightning-design-system-vf.min.css')}" />
+
+      </head>
+
+         <!-- REQUIRED SLDS WRAPPER -->
+         <div class="agentone">
+         <div class="slds" >
+
+             <!-- MAIN SECTION -->
+                <main class="slds-box slds-box slds-box--small slds-theme--shade">
+
+                <!-- GRID COL -->
+                <section>
+                      <div id="typeOfSearchLabel" class="slds-text-heading--small">{!$Label.AO_LBL_CreateInsuranceCaseFromContact}</div>
+                </section>
+
+            </main>
+            <!-- MAIN End -->
+
+                   <!-- GRID COL  - APPLICATION BUTTONS -->
+            	<section class="slds-clearfix slds-m-top--small slds-m-bottom--large">
+                	 <!--  Parent container will control whether this component is displayed or not  -->
+                 		<c:CaseButtons entityId="{!AgentOne__InsuranceCase__c.Id}" entityName="InsuranceCase" source="InsuranceCase" />
+
+                </section>
+
+
+      	<!--  we need some buffer here  -->
+      		<p>&nbsp;</p>
+      		<br/>
+            <br/>
+            <br/>
+            <br/>
+
+         </div>
+         </div>
+         <!-- END REQUIRED SLDS WRAPPER -->
+
+
+
+  </html>
+</apex:page>

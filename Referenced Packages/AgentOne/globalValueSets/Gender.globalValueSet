@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GlobalValueSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <customValue>
+        <fullName>Female</fullName>
+        <default>false</default>
+    </customValue>
+    <customValue>
+        <fullName>Male</fullName>
+        <default>false</default>
+    </customValue>
+    <description>This global picklist should be used when creating new &apos;gender&apos; picklist so same field values are shared across all objects.</description>
+    <masterLabel>Gender</masterLabel>
+    <sorted>false</sorted>
+</GlobalValueSet>

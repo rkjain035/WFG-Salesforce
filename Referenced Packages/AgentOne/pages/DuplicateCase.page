@@ -1,0 +1,112 @@
+<apex:page standardcontroller="AgentOne__InsuranceCase__c" extensions="AgentOne.DuplicateCaseController" showQuickActionVfHeader="False" >
+
+    <!-- // COMMENT THIS OUT AS THIS IS NOT USED ANYMORE
+<apex:page standardcontroller="InsuranceCase__c" extensions="DuplicateCaseController" showQuickActionVfHeader="False" >
+
+<script type='text/javascript' src='/canvas/sdk/js/publisher.js'/>
+
+<apex:form >
+<script>
+// GLOBAL functions
+  var caseId = "{!JSENCODE(HTMLENCODE(InsuranceCase__c.id))}";
+  var externalId = "{!JSENCODE(HTMLENCODE(externalId))}";
+  var newCaseId;
+  
+function addLoadEvent(func){
+  var oldonload = window.onload;
+  if (typeof window.onload != 'function'){
+     window.onload = func;
+  }else{
+     window.onload = function(){
+        if(oldonload){
+           oldonload();
+        }
+        func();
+      }
+   }
+}
+    
+function closeAction() {
+    if ( (typeof sforce != 'undefined') && (sforce != null) ) {
+        Sfdc.canvas.publisher.publish({ name : "publisher.close", payload : { refresh:"true" }});
+    }
+}
+
+function getPermissionStatus() {
+    // call the remote action
+    Visualforce.remoting.Manager.invokeAction(
+        '{!$RemoteAction.DuplicateCaseController.getDuplicationStatus}', 
+        caseId,
+        function(result, event) {
+           // call insert
+           if (result == '') {
+               createNewCase();
+            } else {
+               document.getElementById('pageMessage').innerHTML = result;
+           }
+           
+        }, 
+        {escape: true}
+        );
+}
+
+
+function createNewCase() {
+    // call the remote action
+    document.getElementById('pageMessage').innerHTML = "{!$Label.LBL_CSTOOL_CreateCase}";
+        
+    Visualforce.remoting.Manager.invokeAction(
+        '{!$RemoteAction.DuplicateCaseController.duplicateCase}', 
+        caseId,        
+        function(result, event) {
+            // if 
+            if (result != null) {
+                newCaseId = result.Id;
+                document.getElementById('pageMessage').innerHTML = "Requesting duplication, please wait";
+                requestDuplication();
+            } else {
+                document.getElementById('pageMessage').innerHTML = "{!$Label.Msg_DuplicateCase_GeneralError }";
+            }           
+        }, 
+        {escape: true}
+        );
+}
+
+function requestDuplication() {
+     Visualforce.remoting.Manager.invokeAction(
+        '{!$RemoteAction.DuplicateCaseController.callDuplicateCasesWebService}', 
+        newCaseId, externalId,         
+        function(result, event) {
+            // if 
+            if (result != null) {            
+              if (result.exitCode == 1) {              
+                  sforce.one.navigateToSObject(newCaseId);
+                } 
+                
+             document.getElementById('pageMessage').innerHTML = result.errorMessage;
+            }           
+        }, 
+        {escape: true}
+        );
+    
+}
+
+
+// this starts off the initialization   
+addLoadEvent(function(){
+   if (typeof sforce !== "undefined" && sforce !== null) {
+       getPermissionStatus();   
+   }
+});
+
+
+</script>    
+
+    <div id="pageMessage">{!$Label.Msg_DuplicateCase_Wait}</div>
+    <br></br>    
+    <apex:commandbutton value="Return to Case" id="returnButton" onclick="closeAction()"/>
+
+    
+  </apex:form> 
+  //-->
+</apex:page>

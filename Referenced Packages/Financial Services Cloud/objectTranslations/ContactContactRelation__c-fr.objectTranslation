@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Relation de contact à contact</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Relations de contact à contact</value>
+    </caseValues>
+    <fields>
+        <label>Actif</label>
+        <name>Active__c</name>
+    </fields>
+    <fields>
+        <label>Contact</label>
+        <name>Contact__c</name>
+        <relationshipLabel>Contacts associés</relationshipLabel>
+    </fields>
+    <fields>
+        <label>Date de fin</label>
+        <name>EndDate__c</name>
+    </fields>
+    <fields>
+        <label>ID externe</label>
+        <name>ExternalId__c</name>
+    </fields>
+    <fields>
+        <label>Relation inverse</label>
+        <name>InverseRelationship__c</name>
+        <relationshipLabel>Relations contact à contact</relationshipLabel>
+    </fields>
+    <fields>
+        <label>Contact associé</label>
+        <name>RelatedContact__c</name>
+        <relationshipLabel><!-- Contact Contact Relations (Related Contact) --></relationshipLabel>
+    </fields>
+    <fields>
+        <label>Rôle associé</label>
+        <name>Role__c</name>
+        <relationshipLabel><!-- Contact Contact Relations --></relationshipLabel>
+    </fields>
+    <fields>
+        <label>ID du système source</label>
+        <name>SourceSystemId__c</name>
+    </fields>
+    <fields>
+        <label>Date de début</label>
+        <name>StartDate__c</name>
+    </fields>
+    <gender>Feminine</gender>
+    <layouts>
+        <layout>Contact Contact Relation Layout</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+    <nameFieldLabel>Nom de la relation du contact</nameFieldLabel>
+    <startsWith>Consonant</startsWith>
+    <validationRules>
+        <errorMessage>Cet enregistrement ne peut pas être modifié. Pour mettre à jour les informations sur la relation, vous pouvez désactiver cet enregistrement et en créer un nouveau.</errorMessage>
+        <name>CCRCanOnlyBeDeactivated</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage>Une relation de contact à contact ne peut pas être créée comme inactive.</errorMessage>
+        <name>CannotCreateInactiveRecord</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage>Contact et Contact associé doivent être des entités distinctes.</errorMessage>
+        <name>ContactAndRelatedContactCannotBeSame</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage>Un enregistrement inactif ne peut pas être modifié. Pour mettre à jour les informations sur la relation, vous pouvez créer un autre enregistrement.</errorMessage>
+        <name>InactiveCCRCannotBeEdited</name>
+    </validationRules>
+</CustomObjectTranslation>

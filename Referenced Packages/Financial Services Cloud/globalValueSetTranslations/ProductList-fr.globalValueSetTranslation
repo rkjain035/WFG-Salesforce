@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GlobalValueSetTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <valueTranslation>
+        <masterLabel>Checking Account</masterLabel>
+        <translation><!-- Checking Account --></translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Credit Card</masterLabel>
+        <translation><!-- Credit Card --></translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Day to Day Banking</masterLabel>
+        <translation><!-- Day to Day Banking --></translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Education</masterLabel>
+        <translation><!-- Education --></translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>HELOC</masterLabel>
+        <translation><!-- HELOC --></translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Investments</masterLabel>
+        <translation><!-- Investments --></translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Manage Debt</masterLabel>
+        <translation><!-- Manage Debt --></translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Manage Money</masterLabel>
+        <translation><!-- Manage Money --></translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Mortgage</masterLabel>
+        <translation><!-- Mortgage --></translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Personal Loan</masterLabel>
+        <translation><!-- Personal Loan --></translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Property Purchase</masterLabel>
+        <translation><!-- Property Purchase --></translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Savings Account</masterLabel>
+        <translation><!-- Savings Account --></translation>
+    </valueTranslation>
+</GlobalValueSetTranslation>

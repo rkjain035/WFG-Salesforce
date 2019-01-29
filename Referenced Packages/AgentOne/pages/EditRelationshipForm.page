@@ -1,0 +1,77 @@
+<apex:page standardController="AgentOne__Relationship_Account_To_Account__c" extensions="AgentOne.EditRelationshipFormController" showQuickActionVfHeader="False">
+    <html xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+        <apex:stylesheet value="{!URLFOR($Resource.AgentOne__SLDS, 'assets/styles/salesforce-lightning-design-system-vf.min.css')}" />
+        <apex:stylesheet value="{!URLFOR($Resource.AgentOne__AgentOneSLDS, 'agentone-slds.css')}" />
+        <apex:form id="theForm">
+            <div class="agentone">
+                <div class="slds">
+                    <div class="slds-modal__header">
+                        <h2 id="header43" class="slds-text-heading--medium">Create Relationship</h2>
+                    </div>
+                    <apex:pageMessage rendered="{!showErrorMessage}" summary="{!errorMessage}" severity="error"/>
+                    <p class="slds-m-top--small">{!$Label.MSG_Relationship_Form_Desc}</p>
+                    <div class="slds-grid">
+                        <div class="slds-size--1-of-2">
+                            
+                            <div class="slds-m-around--medium">
+                                <div class="slds-m-around--medium slds-container--small">
+                                    <div class="slds-form-element slds-m-top--x-small">
+                                        <apex:outputPanel rendered="{!isCreate}">
+                                            <c:LexInputField id="relatedFromField" SObject="{!currentRelationship}" Field="{!$ObjectType.AgentOne__Relationship_Account_To_Account__c.fields.AgentOne__Related_From__c.name}"></c:LexInputField>
+                                        </apex:outputPanel>
+                                        <apex:outputPanel rendered="{!!isCreate}">
+                                            <div class="slds-form-element">
+                                                <span class="slds-form-element__label">Related From</span>
+                                                <div class="slds-form-element__control slds-has-divider--bottom">
+                                                    <span class="slds-form-element__static">{!relatedFromText}</span>
+                                                </div>
+                                            </div>
+                                        </apex:outputPanel>
+                                    </div>
+                                </div>
+                                <div class="slds-m-around--medium slds-container--small">
+                                    <div class="slds-form-element slds-m-top--x-small">
+                                        <c:LexInputField SObject="{!currentRelationship}" Field="{!$ObjectType.AgentOne__Relationship_Account_To_Account__c.fields.AgentOne__Related_To__c.name}"></c:LexInputField>
+                                    </div>
+                                </div>
+                                <div class="slds-m-around--medium slds-container--small">
+                                    <div class="slds-form-element slds-m-top--x-small">
+                                        <c:LexInputField SObject="{!currentRelationship}" Field="{!$ObjectType.AgentOne__Relationship_Account_To_Account__c.fields.AgentOne__Related_To_Text__c.name}"></c:LexInputField>
+                                    </div>
+                                </div>
+                                <div class="slds-m-around--medium slds-container--small">
+                                    <div class="slds-form-element slds-m-top--x-small">
+                                        <c:LexInputField SObject="{!currentRelationship}" Field="{!$ObjectType.AgentOne__Relationship_Account_To_Account__c.fields.AgentOne__Relationship_Role__c.name}"></c:LexInputField>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="slds-m-top--medium slds-modal__footer">
+                                <apex:outputPanel rendered="{!isSF1}">
+                                    <button class="slds-button slds-button--neutral" onclick="cancelClick()">{!$Label.agentone__lbl_cancel}</button>
+                                </apex:outputPanel>
+                                <apex:outputPanel rendered="{!!isSF1}">
+                                    <apex:commandButton id="lexCancelButton" action="{!cancel}" value="Cancel" immediate="true" styleClass="slds-button slds-button--neutral" />
+                                </apex:outputPanel>
+                                <apex:commandButton id="lexSaveButton" action="{!save}" value="Save" styleClass="slds-button slds-button--brand" />
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </apex:form>
+
+        <script type="text/javascript">
+            function cancelClick() {
+               sforce.one.back();
+            }
+
+            // function stopRKey(evt) {
+            //    var evt = (evt) ? evt : ((event) ? event : null);
+            //    var node = (evt.target) ? evt.target : ((evt.srcElement) ? evt.srcElement : null);
+            //    if ((evt.keyCode == 13) && (node.type=="text")) {return false;}
+            // }
+
+            // document.onkeypress = stopRKey; 
+        </script>
+    </html>
+</apex:page>

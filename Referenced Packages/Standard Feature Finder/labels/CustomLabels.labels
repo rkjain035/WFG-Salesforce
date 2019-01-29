@@ -1,0 +1,397 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomLabels xmlns="http://soap.sforce.com/2006/04/metadata">
+    <labels>
+        <fullName>FB_InstallContext</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>FB_InstallContext</shortDescription>
+        <value>Install Context</value>
+    </labels>
+    <labels>
+        <fullName>SFF_ADDFilterLogic</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>SFF_ADDFilterLogic</shortDescription>
+        <value>Add filter logic</value>
+    </labels>
+    <labels>
+        <fullName>SFF_AddFilter</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>SFF_AddFilter</shortDescription>
+        <value>Add filter</value>
+    </labels>
+    <labels>
+        <fullName>SFF_AllReleases</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>SFF_AllReleases</shortDescription>
+        <value>All releases</value>
+    </labels>
+    <labels>
+        <fullName>SFF_Apply</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>SFF_Apply</shortDescription>
+        <value>Apply</value>
+    </labels>
+    <labels>
+        <fullName>SFF_Cancel</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>SFF_Cancel</shortDescription>
+        <value>Cancel</value>
+    </labels>
+    <labels>
+        <fullName>SFF_Close</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>SFF_Close</shortDescription>
+        <value>Close</value>
+    </labels>
+    <labels>
+        <fullName>SFF_Delete</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>SFF_Delete</shortDescription>
+        <value>Delete</value>
+    </labels>
+    <labels>
+        <fullName>SFF_Description</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>SFF_Description</shortDescription>
+        <value>DESCRIPTION</value>
+    </labels>
+    <labels>
+        <fullName>SFF_Done</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>SFF_Done</shortDescription>
+        <value>Done</value>
+    </labels>
+    <labels>
+        <fullName>SFF_EndPoint</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>SFF_EndPoint</shortDescription>
+        <value>https://cloudservices.my.salesforce.com/services/oauth2/token</value>
+    </labels>
+    <labels>
+        <fullName>SFF_Equals</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>SFF_Equals</shortDescription>
+        <value>Equals</value>
+    </labels>
+    <labels>
+        <fullName>SFF_Error01</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>SFF_Error01</shortDescription>
+        <value>Check the spelling in your filter logic.</value>
+    </labels>
+    <labels>
+        <fullName>SFF_Error02</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>SFF_Error02</shortDescription>
+        <value>Filters could not be applied. Please fix the validation errors below.</value>
+    </labels>
+    <labels>
+        <fullName>SFF_Error03</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>SFF_Error03</shortDescription>
+        <value>Filter Logic governs how and when filters apply. Use AND and OR operators to fine tune your results</value>
+    </labels>
+    <labels>
+        <fullName>SFF_Export</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>SFF_Export</shortDescription>
+        <value>Export</value>
+    </labels>
+    <labels>
+        <fullName>SFF_Feature</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>SFF_Feature</shortDescription>
+        <value>FEATURE</value>
+    </labels>
+    <labels>
+        <fullName>SFF_Field</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>SFF_Field</shortDescription>
+        <value>Field</value>
+    </labels>
+    <labels>
+        <fullName>SFF_FilterList</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>SFF_FilterList</shortDescription>
+        <value>Filter List</value>
+    </labels>
+    <labels>
+        <fullName>SFF_FilterLogic</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>SFF_FilterLogic</shortDescription>
+        <value>Filter Logic</value>
+    </labels>
+    <labels>
+        <fullName>SFF_FilterName</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>SFF_FilterName</shortDescription>
+        <value>Filter Name</value>
+    </labels>
+    <labels>
+        <fullName>SFF_Json_Response_Test</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>SFF_Json_Response_Test</shortDescription>
+        <value>{ 
+&quot;totalSize&quot;: 9, 
+&quot;done&quot;: true, 
+&quot;records&quot;: [ 
+{ 
+&quot;attributes&quot;: { 
+&quot;type&quot;: &quot;Release__c&quot;, 
+&quot;url&quot;: &quot;/services/data/v35.0/sobjects/Release__c/a0158000009P22wAAC&quot; 
+}, 
+&quot;Number_of_features__c&quot;: 421, 
+&quot;icon_url__c&quot;: &quot;https://c.na35.content.force.com/servlet/servlet.ImageServer?id=0155800000044Zm&amp;oid=00D58000000dSux&amp;lastMod=1469791158000&quot;, 
+&quot;Name&quot;: &quot;Summer 16&quot;, 
+&quot;Release_Notes_URL_PDF__c&quot;: &quot;https://resources.docs.salesforce.com/202/latest/en-us/sfdc/pdf/salesforce_summer16_release_notes.pdf&quot;, 
+&quot;isLatest__c&quot;: true 
+} 
+] 
+}</value>
+    </labels>
+    <labels>
+        <fullName>SFF_Matching</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>SFF_Matching</shortDescription>
+        <value>Matching all of these filters</value>
+    </labels>
+    <labels>
+        <fullName>SFF_MultipleReleases</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>SFF_MultipleReleases</shortDescription>
+        <value>Multiple Releases</value>
+    </labels>
+    <labels>
+        <fullName>SFF_NotEquals</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>SFF_NotEquals</shortDescription>
+        <value>Not equals</value>
+    </labels>
+    <labels>
+        <fullName>SFF_Operator</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>SFF_Operator</shortDescription>
+        <value>Operator</value>
+    </labels>
+    <labels>
+        <fullName>SFF_Org</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>SFF_Org</shortDescription>
+        <value>Release_Org</value>
+    </labels>
+    <labels>
+        <fullName>SFF_Product</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>SFF_Product</shortDescription>
+        <value>Product</value>
+    </labels>
+    <labels>
+        <fullName>SFF_ProductUpper</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>SFF_ProductUpper</shortDescription>
+        <value>PRODUCT</value>
+    </labels>
+    <labels>
+        <fullName>SFF_ReleaseDocument</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>SFF_ReleaseDocument</shortDescription>
+        <value>Release document</value>
+    </labels>
+    <labels>
+        <fullName>SFF_ReleaseUpper</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>SFF_ReleaseUpper</shortDescription>
+        <value>RELEASE</value>
+    </labels>
+    <labels>
+        <fullName>SFF_Remove</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>SFF_Remove</shortDescription>
+        <value>Remove</value>
+    </labels>
+    <labels>
+        <fullName>SFF_RemoveAll</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>SFF_RemoveAll</shortDescription>
+        <value>Remove All</value>
+    </labels>
+    <labels>
+        <fullName>SFF_Resources</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>SFF_Resources</shortDescription>
+        <value>RESOURCES</value>
+    </labels>
+    <labels>
+        <fullName>SFF_Response_Export_Test</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>SFF_Response_Export_Test</shortDescription>
+        <value>{&quot;totalSize&quot;:1,&quot;done&quot;:true,&quot;records&quot;:[{&quot;attributes&quot;:{&quot;type&quot;:&quot;Feature__c&quot;,&quot;url&quot;:&quot;/services/data/v35.0/sobjects/Feature__c/a0058000005qzwQAAQ&quot;},&quot;Name&quot;:&quot;Feat.3240&quot;,&quot;Product__c&quot;:&quot;Lightning Experience&quot;,&quot;UI_Impact__c&quot;:&quot;Both&quot;,&quot;Release__r&quot;:{&quot;attributes&quot;:{&quot;type&quot;:&quot;Release__c&quot;,&quot;url&quot;:&quot;/services/data/v35.0/sobjects/Release__c/a015800000A8S9KAAV&quot;},&quot;Release_Notes_URL_PDF__c&quot;:&quot;https://resources.docs.salesforce.com/204/latest/en-us/sfdc/pdf/salesforce_winter17_release_notes.pdf&quot;,&quot;Name&quot;:&quot;Winter 17&quot;},&quot;Description_Notes__c&quot;:&quot;Using the Salesforce API or Apex, you can now send single emails to 5,000 external email addresses per day based on Greenwich Mean Time (GMT). You can also send mass email to 5,000 external email addresses per day per org. The&quot;,&quot;Sub_Product__c&quot;:&quot;Email&quot;,&quot;Feature__c&quot;:&quot;Daily Org Limits for Sending Emails with the API Have Increased&quot;}]}</value>
+    </labels>
+    <labels>
+        <fullName>SFF_Save</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>SFF_Save</shortDescription>
+        <value>Save</value>
+    </labels>
+    <labels>
+        <fullName>SFF_SaveNewFilter</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>SFF_SaveNewFilter</shortDescription>
+        <value>Save New filter</value>
+    </labels>
+    <labels>
+        <fullName>SFF_SavedFilter</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>SFF_SavedFilter</shortDescription>
+        <value>Saved filters</value>
+    </labels>
+    <labels>
+        <fullName>SFF_ShowMe</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>SFF_ShowMe</shortDescription>
+        <value>Show me</value>
+    </labels>
+    <labels>
+        <fullName>SFF_ShowMeSavedFilters</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>SFF_ShowMeSavedFilters</shortDescription>
+        <value>Show Saved Filters</value>
+    </labels>
+    <labels>
+        <fullName>SFF_SubProduct</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>SFF_SubProduct</shortDescription>
+        <value>Sub Product</value>
+    </labels>
+    <labels>
+        <fullName>SFF_SubProductUpper</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>SFF_SubProductUpper</shortDescription>
+        <value>SUB PRODUCT</value>
+    </labels>
+    <labels>
+        <fullName>SFF_TheURL</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>SFF_TheURL</shortDescription>
+        <value>https://cloudservices.my.salesforce.com/services/data/v35.0/query/</value>
+    </labels>
+    <labels>
+        <fullName>SFF_Title</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>SFF_Title</shortDescription>
+        <value>STANDARD FEATURE FINDER</value>
+    </labels>
+    <labels>
+        <fullName>SFF_TooManyRows</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>SFF_TooManyRows</shortDescription>
+        <value>(Your search generated too many results and was limited to the first 500 query rows. Please refine your query )</value>
+    </labels>
+    <labels>
+        <fullName>SFF_UIImpact</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>SFF_UIImpact</shortDescription>
+        <value>UI impact</value>
+    </labels>
+    <labels>
+        <fullName>SFF_UIImpactUpper</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>SFF_UIImpactUpper</shortDescription>
+        <value>UI IMPACT</value>
+    </labels>
+    <labels>
+        <fullName>SFF_Undefined</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>SFF_Undefined</shortDescription>
+        <value>undefined</value>
+    </labels>
+    <labels>
+        <fullName>SFF_UseFilter</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>SFF_UseFilter</shortDescription>
+        <value>Filter to view multiple releases</value>
+    </labels>
+    <labels>
+        <fullName>SFF_Value</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>SFF_Value</shortDescription>
+        <value>Value</value>
+    </labels>
+    <labels>
+        <fullName>SFF_ViewMore</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>SFF_ViewMore</shortDescription>
+        <value>View More</value>
+    </labels>
+    <labels>
+        <fullName>SF_FilterMissed</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>SF-FilterMissed</shortDescription>
+        <value>You need to have one filter at least</value>
+    </labels>
+    <labels>
+        <fullName>SF_Regex01</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>SF-Regex01</shortDescription>
+        <value>^([ \s]*([1-9]|[(][ \s]*[1-9][ \s]+(\b(AND|OR)\b)[ \s]+[1-9][ \s]*[)])[ \s]*)([ \s]+(\b(AND|OR)\b)[ \s]+([1-9]|([(][ \s]*[1-9][ \s]+(\b(AND|OR)\b)[ \s]+[1-9][ \s]*[)]))+)*[ \s]*$</value>
+    </labels>
+    <labels>
+        <fullName>SSF_MultipleReleases</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>SSF_MultipleReleases</shortDescription>
+        <value>Multiple Releases</value>
+    </labels>
+</CustomLabels>

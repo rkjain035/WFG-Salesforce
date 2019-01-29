@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fields>
+        <label><!-- Expectations --></label>
+        <name>Expectations__c</name>
+    </fields>
+    <fields>
+        <label><!-- Household --></label>
+        <name>Household__c</name>
+        <relationshipLabel><!-- Activities --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Next Steps --></label>
+        <name>NextSteps__c</name>
+    </fields>
+    <fields>
+        <label><!-- Objectives --></label>
+        <name>Objectives__c</name>
+    </fields>
+    <fields>
+        <label><!-- Regarding --></label>
+        <name>Regarding__c</name>
+    </fields>
+    <layouts>
+        <layout>Wealth Events</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+    <recordTypes>
+        <label>Événement de conseiller</label>
+        <name>AdvisorEvent</name>
+    </recordTypes>
+    <recordTypes>
+        <label>Événement d&apos;associé client</label>
+        <name>ClientAssociateEvent</name>
+    </recordTypes>
+</CustomObjectTranslation>

@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fields>
+        <fullName>Expectations__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Notes about client&apos;s expectations</description>
+        <encrypted>true</encrypted>
+        <externalId>false</externalId>
+        <label>Expectations</label>
+        <required>false</required>
+        <type>TextArea</type>
+    </fields>
+    <fields>
+        <fullName>Household__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <deprecated>false</deprecated>
+        <description>Household associated with the task</description>
+        <externalId>false</externalId>
+        <label>Household</label>
+        <referenceTo>Account</referenceTo>
+        <relationshipLabel>Activities</relationshipLabel>
+        <relationshipName>Activities</relationshipName>
+        <required>false</required>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>NextSteps__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Notes about follow-up activities</description>
+        <encrypted>true</encrypted>
+        <externalId>false</externalId>
+        <label>Next Steps</label>
+        <required>false</required>
+        <type>TextArea</type>
+    </fields>
+    <fields>
+        <fullName>Objectives__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Notes about client&apos;s objectives</description>
+        <encrypted>true</encrypted>
+        <externalId>false</externalId>
+        <label>Objectives</label>
+        <required>false</required>
+        <type>TextArea</type>
+    </fields>
+    <fields>
+        <fullName>Regarding__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Nature of interaction with the client</description>
+        <externalId>false</externalId>
+        <label>Regarding</label>
+        <required>false</required>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Prospecting</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Onboarding</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Client Retention</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Service</fullName>
+                    <default>false</default>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+</CustomObject>

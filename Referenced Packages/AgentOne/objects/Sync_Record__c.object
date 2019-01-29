@@ -1,0 +1,824 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <actionOverrides>
+        <actionName>Accept</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Clone</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>List</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>New</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Tab</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <allowInChatterGroups>false</allowInChatterGroups>
+    <compactLayoutAssignment>SYSTEM</compactLayoutAssignment>
+    <deploymentStatus>Deployed</deploymentStatus>
+    <deprecated>false</deprecated>
+    <description>Acts as the Staging Table for receiving Sync requests to AgentOne objects.  All requests to update AgentOne will be received at Sync Object.</description>
+    <enableActivities>true</enableActivities>
+    <enableBulkApi>true</enableBulkApi>
+    <enableFeeds>false</enableFeeds>
+    <enableHistory>false</enableHistory>
+    <enableReports>true</enableReports>
+    <enableSearch>true</enableSearch>
+    <enableSharing>true</enableSharing>
+    <enableStreamingApi>true</enableStreamingApi>
+    <externalSharingModel>ReadWrite</externalSharingModel>
+    <fields>
+        <fullName>Agent_Number__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Agent Number on the Sync update request</description>
+        <encrypted>false</encrypted>
+        <externalId>false</externalId>
+        <inlineHelpText>Agent Number on the Sync update request</inlineHelpText>
+        <label>Agent Number</label>
+        <length>80</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Appointment_Code__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Agent Appointment Code</description>
+        <encrypted>false</encrypted>
+        <externalId>false</externalId>
+        <inlineHelpText>Agent Appointment Code on the sync update request</inlineHelpText>
+        <label>Appointment Code</label>
+        <length>64</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Batch__c</fullName>
+        <deprecated>false</deprecated>
+        <description>The field is populated only for the Background sync records and is used to track all the records for the same batch.</description>
+        <encrypted>false</encrypted>
+        <externalId>false</externalId>
+        <inlineHelpText>The field is populated only for the Background sync records and is used to track all the records for the same batch.</inlineHelpText>
+        <label>Process Job</label>
+        <length>50</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Carrier_Code__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Carrier Code for Policy in sync request</description>
+        <encrypted>false</encrypted>
+        <externalId>false</externalId>
+        <inlineHelpText>Carrier Code for Policy in sync request</inlineHelpText>
+        <label>Carrier Code</label>
+        <length>64</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Command__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Such as insert, update, upsert or archive. Default is upsert</description>
+        <encrypted>false</encrypted>
+        <externalId>false</externalId>
+        <inlineHelpText>Such as insert, update, upsert or archive. Default is upsert</inlineHelpText>
+        <label>Command</label>
+        <length>20</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Creation_Time_Stamp__c</fullName>
+        <deprecated>false</deprecated>
+        <description>TimeStamp with Date and Time</description>
+        <externalId>false</externalId>
+        <formula>TEXT(  CreatedDate  )</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Creation Time Stamp</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Data__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Actual data in JSON/XML format sent to AgentOne from external system.</description>
+        <encrypted>false</encrypted>
+        <externalId>false</externalId>
+        <inlineHelpText>Actual data in JSON/XML format sent to AgentOne from external system.</inlineHelpText>
+        <label>Source Data</label>
+        <length>131072</length>
+        <trackTrending>false</trackTrending>
+        <type>LongTextArea</type>
+        <visibleLines>10</visibleLines>
+    </fields>
+    <fields>
+        <fullName>Entity_Id__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Unique Salesforce Record Id that was updated.</description>
+        <encrypted>false</encrypted>
+        <externalId>false</externalId>
+        <inlineHelpText>Unique Salesforce Record Id that was updated.</inlineHelpText>
+        <label>Salesforce Record Id</label>
+        <length>40</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Entity_Type__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Type of the data, such as ‘InsuranceCase’, ‘PendingCase’, ‘InforcePolicy’, ‘Alert’ that the update request is for.</description>
+        <encrypted>false</encrypted>
+        <externalId>false</externalId>
+        <inlineHelpText>Type of the data, such as ‘InsuranceCase’, ‘PendingCase’, ‘InforcePolicy’, ‘Alert’ that the update request is for.</inlineHelpText>
+        <label>Entity Type</label>
+        <length>25</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Error_Message__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Error or Warning if the sync update request did not succeed.</description>
+        <encrypted>false</encrypted>
+        <externalId>false</externalId>
+        <inlineHelpText>Error or Warning if the sync update request did not succeed.  This will be blank if sync request succeeded.</inlineHelpText>
+        <label>Error Message</label>
+        <length>131072</length>
+        <trackTrending>false</trackTrending>
+        <type>LongTextArea</type>
+        <visibleLines>10</visibleLines>
+    </fields>
+    <fields>
+        <fullName>Exit_Code__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Sync processing result.  Anything less than 1 is failed, greater than 1 is warning, 1 is success.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Anything less than 1 is failed, greater than 1 is warning, 1 means success.</inlineHelpText>
+        <label>Exit Code</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Ext_LastModifiedDate__c</fullName>
+        <deprecated>false</deprecated>
+        <encrypted>false</encrypted>
+        <externalId>false</externalId>
+        <label>External Last Modified Date</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>DateTime</type>
+    </fields>
+    <fields>
+        <fullName>External_Id2__c</fullName>
+        <deprecated>false</deprecated>
+        <description>A unique Id on the Sync update request that can be used to identify a case in Underwriting phase or later.</description>
+        <encrypted>false</encrypted>
+        <externalId>false</externalId>
+        <inlineHelpText>A unique Id on the Sync update request that can be used to identify a case in Underwriting phase or later.</inlineHelpText>
+        <label>External Id 2</label>
+        <length>60</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>External_Id__c</fullName>
+        <deprecated>false</deprecated>
+        <description>A unique Id on the Sync update request that can be used to identify a case.   If case is linked to iGO, this would be the iGO Client Id.</description>
+        <encrypted>false</encrypted>
+        <externalId>false</externalId>
+        <inlineHelpText>A unique Id on the Sync update request that can be used to identify a case.  If case is linked to iGO, this would be the iGO Client Id.</inlineHelpText>
+        <label>External Id</label>
+        <length>150</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Hashed_Tax_ID__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Hashed Tax ID of the Agent in the Sync update request</description>
+        <encrypted>false</encrypted>
+        <externalId>false</externalId>
+        <inlineHelpText>Hashed Tax ID of the Agent in the Sync update request</inlineHelpText>
+        <label>Agent Hashed Tax ID</label>
+        <length>200</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Keyword_1__c</fullName>
+        <deprecated>false</deprecated>
+        <encrypted>false</encrypted>
+        <externalId>false</externalId>
+        <label>Keyword 1</label>
+        <length>255</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Keyword_2__c</fullName>
+        <deprecated>false</deprecated>
+        <encrypted>false</encrypted>
+        <externalId>false</externalId>
+        <label>Keyword 2</label>
+        <length>255</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Log_Status__c</fullName>
+        <defaultValue>false</defaultValue>
+        <deprecated>false</deprecated>
+        <description>Indicates if the sync record has been output to the log (Exception__c) table</description>
+        <externalId>false</externalId>
+        <label>Log Status</label>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Parameter_1__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Additional Parameter 1</description>
+        <encrypted>false</encrypted>
+        <externalId>false</externalId>
+        <label>Parameter 1</label>
+        <length>255</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Parameter_2__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Additional Parameter 2</description>
+        <encrypted>false</encrypted>
+        <externalId>false</externalId>
+        <label>Parameter 2</label>
+        <length>255</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Policy_Number__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Unique Policy Number on an Insurance Case on the Sync update request.</description>
+        <encrypted>false</encrypted>
+        <externalId>false</externalId>
+        <inlineHelpText>Unique Policy Number on an Insurance Case on the Sync update request.</inlineHelpText>
+        <label>Policy Number</label>
+        <length>60</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Policy_Status__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Policy Status on the Sync request</description>
+        <encrypted>false</encrypted>
+        <externalId>false</externalId>
+        <inlineHelpText>Policy Status on the Sync request</inlineHelpText>
+        <label>Policy Status</label>
+        <length>255</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>PrimaryInsured_Name__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Name of Primary Insured on the Sync request</description>
+        <encrypted>false</encrypted>
+        <externalId>false</externalId>
+        <inlineHelpText>Name of Primary Insured on the Sync request</inlineHelpText>
+        <label>Primary Insured Name</label>
+        <length>150</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Process_Mode__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Process Mode: Realtime or Batch</description>
+        <externalId>false</externalId>
+        <label>Process Mode</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Real time</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Background</fullName>
+                    <default>false</default>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Retry_Count__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Number of retries</description>
+        <externalId>false</externalId>
+        <label>Retry Count</label>
+        <precision>2</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Source__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Source system for the Sync update request</description>
+        <encrypted>false</encrypted>
+        <externalId>false</externalId>
+        <inlineHelpText>Source system for the Sync update request</inlineHelpText>
+        <label>Source</label>
+        <length>50</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Status__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Status of the record for batch process mode.  Ready means record in batch is available to be processed.  Done means it is finished processing.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Ready means record in batch is available to be processed.  Done means it is finished processing.</inlineHelpText>
+        <label>Status</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Ready</fullName>
+                    <default>true</default>
+                </value>
+                <value>
+                    <fullName>Processing</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Done</fullName>
+                    <default>false</default>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Tags__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Tags - key fields to search by</description>
+        <encrypted>false</encrypted>
+        <externalId>true</externalId>
+        <inlineHelpText>Tags - key fields to search by</inlineHelpText>
+        <label>Tags</label>
+        <length>255</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>TransData__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Actual data in JSON/XML format after transformation from custom Syncmapper entries or from custom plugin logic.</description>
+        <encrypted>false</encrypted>
+        <externalId>false</externalId>
+        <inlineHelpText>Actual data in JSON/XML format after transformation from custom Syncmapper entries or from custom plugin logic.</inlineHelpText>
+        <label>Data</label>
+        <length>131072</length>
+        <trackTrending>false</trackTrending>
+        <type>LongTextArea</type>
+        <visibleLines>10</visibleLines>
+    </fields>
+    <fields>
+        <fullName>Transaction_Id__c</fullName>
+        <deprecated>false</deprecated>
+        <encrypted>false</encrypted>
+        <externalId>true</externalId>
+        <label>Message Tracking Id</label>
+        <length>200</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <label>Sync Record</label>
+    <listViews>
+        <fullName>All</fullName>
+        <columns>NAME</columns>
+        <columns>Entity_Type__c</columns>
+        <columns>Entity_Id__c</columns>
+        <columns>Exit_Code__c</columns>
+        <columns>Command__c</columns>
+        <columns>Parameter_1__c</columns>
+        <columns>Transaction_Id__c</columns>
+        <columns>Agent_Number__c</columns>
+        <columns>PrimaryInsured_Name__c</columns>
+        <columns>Policy_Status__c</columns>
+        <columns>Policy_Number__c</columns>
+        <columns>External_Id__c</columns>
+        <columns>External_Id2__c</columns>
+        <columns>Creation_Time_Stamp__c</columns>
+        <filterScope>Everything</filterScope>
+        <label>All</label>
+    </listViews>
+    <listViews>
+        <fullName>All_Failed_Warnings</fullName>
+        <booleanFilter>1 OR 2</booleanFilter>
+        <columns>NAME</columns>
+        <columns>Entity_Type__c</columns>
+        <columns>Entity_Id__c</columns>
+        <columns>Exit_Code__c</columns>
+        <columns>Command__c</columns>
+        <columns>Parameter_1__c</columns>
+        <columns>Transaction_Id__c</columns>
+        <columns>Agent_Number__c</columns>
+        <columns>PrimaryInsured_Name__c</columns>
+        <columns>Policy_Status__c</columns>
+        <columns>Policy_Number__c</columns>
+        <columns>External_Id__c</columns>
+        <columns>External_Id2__c</columns>
+        <columns>Creation_Time_Stamp__c</columns>
+        <columns>Error_Message__c</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>Exit_Code__c</field>
+            <operation>greaterThan</operation>
+            <value>1</value>
+        </filters>
+        <filters>
+            <field>Exit_Code__c</field>
+            <operation>lessThan</operation>
+            <value>1</value>
+        </filters>
+        <label>All - Failed &amp; Warnings</label>
+    </listViews>
+    <listViews>
+        <fullName>All_Inforce_Policy</fullName>
+        <columns>NAME</columns>
+        <columns>Entity_Type__c</columns>
+        <columns>Entity_Id__c</columns>
+        <columns>Exit_Code__c</columns>
+        <columns>Command__c</columns>
+        <columns>Parameter_1__c</columns>
+        <columns>Transaction_Id__c</columns>
+        <columns>Agent_Number__c</columns>
+        <columns>PrimaryInsured_Name__c</columns>
+        <columns>Policy_Status__c</columns>
+        <columns>Policy_Number__c</columns>
+        <columns>External_Id__c</columns>
+        <columns>External_Id2__c</columns>
+        <columns>Creation_Time_Stamp__c</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>Source__c</field>
+            <operation>equals</operation>
+            <value>InforcePolicyFeed</value>
+        </filters>
+        <label>All - Inforce Policy</label>
+    </listViews>
+    <listViews>
+        <fullName>All_Pending_Case</fullName>
+        <columns>NAME</columns>
+        <columns>Entity_Type__c</columns>
+        <columns>Entity_Id__c</columns>
+        <columns>Exit_Code__c</columns>
+        <columns>Command__c</columns>
+        <columns>Parameter_1__c</columns>
+        <columns>Transaction_Id__c</columns>
+        <columns>Agent_Number__c</columns>
+        <columns>PrimaryInsured_Name__c</columns>
+        <columns>Policy_Status__c</columns>
+        <columns>Policy_Number__c</columns>
+        <columns>External_Id__c</columns>
+        <columns>External_Id2__c</columns>
+        <columns>Creation_Time_Stamp__c</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>Source__c</field>
+            <operation>equals</operation>
+            <value>PendingCaseFeed</value>
+        </filters>
+        <label>All - Pending Case</label>
+    </listViews>
+    <listViews>
+        <fullName>All_iGO</fullName>
+        <columns>NAME</columns>
+        <columns>Entity_Type__c</columns>
+        <columns>Entity_Id__c</columns>
+        <columns>Exit_Code__c</columns>
+        <columns>Command__c</columns>
+        <columns>Parameter_1__c</columns>
+        <columns>Transaction_Id__c</columns>
+        <columns>Agent_Number__c</columns>
+        <columns>PrimaryInsured_Name__c</columns>
+        <columns>Policy_Status__c</columns>
+        <columns>Policy_Number__c</columns>
+        <columns>External_Id__c</columns>
+        <columns>External_Id2__c</columns>
+        <columns>Creation_Time_Stamp__c</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>Source__c</field>
+            <operation>equals</operation>
+            <value>iGO</value>
+        </filters>
+        <label>All - iGO</label>
+    </listViews>
+    <listViews>
+        <fullName>Inforce_Policy_Failed_Warnings</fullName>
+        <booleanFilter>(1 AND 2) OR (1 AND 3)</booleanFilter>
+        <columns>NAME</columns>
+        <columns>Entity_Type__c</columns>
+        <columns>Entity_Id__c</columns>
+        <columns>Exit_Code__c</columns>
+        <columns>Command__c</columns>
+        <columns>Parameter_1__c</columns>
+        <columns>Transaction_Id__c</columns>
+        <columns>Agent_Number__c</columns>
+        <columns>PrimaryInsured_Name__c</columns>
+        <columns>Policy_Status__c</columns>
+        <columns>Policy_Number__c</columns>
+        <columns>External_Id__c</columns>
+        <columns>External_Id2__c</columns>
+        <columns>Creation_Time_Stamp__c</columns>
+        <columns>Error_Message__c</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>Source__c</field>
+            <operation>equals</operation>
+            <value>InforcePolicyFeed</value>
+        </filters>
+        <filters>
+            <field>Exit_Code__c</field>
+            <operation>greaterThan</operation>
+            <value>1</value>
+        </filters>
+        <filters>
+            <field>Exit_Code__c</field>
+            <operation>lessThan</operation>
+            <value>1</value>
+        </filters>
+        <label>Inforce Policy - Failed &amp; Warnings</label>
+    </listViews>
+    <listViews>
+        <fullName>Pending_Case_Alerts_Failed_Warnings</fullName>
+        <booleanFilter>(1 AND 2 AND 4) OR (1 AND 3 AND 4)</booleanFilter>
+        <columns>NAME</columns>
+        <columns>Entity_Type__c</columns>
+        <columns>Entity_Id__c</columns>
+        <columns>Exit_Code__c</columns>
+        <columns>Command__c</columns>
+        <columns>Parameter_1__c</columns>
+        <columns>Transaction_Id__c</columns>
+        <columns>Agent_Number__c</columns>
+        <columns>PrimaryInsured_Name__c</columns>
+        <columns>Policy_Status__c</columns>
+        <columns>Policy_Number__c</columns>
+        <columns>External_Id__c</columns>
+        <columns>External_Id2__c</columns>
+        <columns>Creation_Time_Stamp__c</columns>
+        <columns>Error_Message__c</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>Source__c</field>
+            <operation>equals</operation>
+            <value>PendingCaseFeed</value>
+        </filters>
+        <filters>
+            <field>Exit_Code__c</field>
+            <operation>lessThan</operation>
+            <value>1</value>
+        </filters>
+        <filters>
+            <field>Exit_Code__c</field>
+            <operation>greaterThan</operation>
+            <value>1</value>
+        </filters>
+        <filters>
+            <field>Entity_Type__c</field>
+            <operation>equals</operation>
+            <value>Alert</value>
+        </filters>
+        <label>Pending Case Alerts - Failed &amp; Warnings</label>
+    </listViews>
+    <listViews>
+        <fullName>Pending_Case_Failed_Warnings</fullName>
+        <booleanFilter>(1 AND 2) OR (1 AND 3)</booleanFilter>
+        <columns>NAME</columns>
+        <columns>Entity_Type__c</columns>
+        <columns>Entity_Id__c</columns>
+        <columns>Exit_Code__c</columns>
+        <columns>Command__c</columns>
+        <columns>Parameter_1__c</columns>
+        <columns>Transaction_Id__c</columns>
+        <columns>Agent_Number__c</columns>
+        <columns>PrimaryInsured_Name__c</columns>
+        <columns>Policy_Status__c</columns>
+        <columns>Policy_Number__c</columns>
+        <columns>External_Id__c</columns>
+        <columns>External_Id2__c</columns>
+        <columns>Creation_Time_Stamp__c</columns>
+        <columns>Error_Message__c</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>Source__c</field>
+            <operation>equals</operation>
+            <value>PendingCaseFeed</value>
+        </filters>
+        <filters>
+            <field>Exit_Code__c</field>
+            <operation>lessThan</operation>
+            <value>1</value>
+        </filters>
+        <filters>
+            <field>Exit_Code__c</field>
+            <operation>greaterThan</operation>
+            <value>1</value>
+        </filters>
+        <label>Pending Case - Failed &amp; Warnings</label>
+    </listViews>
+    <listViews>
+        <fullName>iGO_Alerts_Failed_Warnings</fullName>
+        <booleanFilter>(1 AND 2 AND 4) OR (1 AND 3 AND 4)</booleanFilter>
+        <columns>NAME</columns>
+        <columns>Entity_Type__c</columns>
+        <columns>Entity_Id__c</columns>
+        <columns>Exit_Code__c</columns>
+        <columns>Command__c</columns>
+        <columns>Parameter_1__c</columns>
+        <columns>Transaction_Id__c</columns>
+        <columns>Creation_Time_Stamp__c</columns>
+        <columns>Error_Message__c</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>Entity_Type__c</field>
+            <operation>equals</operation>
+            <value>alert</value>
+        </filters>
+        <filters>
+            <field>Exit_Code__c</field>
+            <operation>lessThan</operation>
+            <value>1</value>
+        </filters>
+        <filters>
+            <field>Exit_Code__c</field>
+            <operation>greaterThan</operation>
+            <value>1</value>
+        </filters>
+        <filters>
+            <field>Source__c</field>
+            <operation>equals</operation>
+            <value>iGO</value>
+        </filters>
+        <label>iGO Alerts - Failed &amp; Warnings</label>
+    </listViews>
+    <listViews>
+        <fullName>iGO_Failed_Warnings</fullName>
+        <booleanFilter>(1 AND 2) OR (1 AND 3)</booleanFilter>
+        <columns>NAME</columns>
+        <columns>Entity_Type__c</columns>
+        <columns>Entity_Id__c</columns>
+        <columns>Exit_Code__c</columns>
+        <columns>Command__c</columns>
+        <columns>Parameter_1__c</columns>
+        <columns>Transaction_Id__c</columns>
+        <columns>Agent_Number__c</columns>
+        <columns>PrimaryInsured_Name__c</columns>
+        <columns>Policy_Status__c</columns>
+        <columns>Policy_Number__c</columns>
+        <columns>External_Id__c</columns>
+        <columns>External_Id2__c</columns>
+        <columns>Creation_Time_Stamp__c</columns>
+        <columns>Error_Message__c</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>Source__c</field>
+            <operation>equals</operation>
+            <value>iGO</value>
+        </filters>
+        <filters>
+            <field>Exit_Code__c</field>
+            <operation>lessThan</operation>
+            <value>1</value>
+        </filters>
+        <filters>
+            <field>Exit_Code__c</field>
+            <operation>greaterThan</operation>
+            <value>1</value>
+        </filters>
+        <label>iGO - Failed &amp; Warnings</label>
+    </listViews>
+    <nameField>
+        <displayFormat>SYNC-{00000000}</displayFormat>
+        <label>Sync Record Name</label>
+        <type>AutoNumber</type>
+    </nameField>
+    <pluralLabel>Sync Records</pluralLabel>
+    <searchLayouts>
+        <customTabListAdditionalFields>Entity_Type__c</customTabListAdditionalFields>
+        <customTabListAdditionalFields>Entity_Id__c</customTabListAdditionalFields>
+        <customTabListAdditionalFields>Exit_Code__c</customTabListAdditionalFields>
+        <customTabListAdditionalFields>Parameter_1__c</customTabListAdditionalFields>
+        <customTabListAdditionalFields>PrimaryInsured_Name__c</customTabListAdditionalFields>
+        <customTabListAdditionalFields>Policy_Number__c</customTabListAdditionalFields>
+        <customTabListAdditionalFields>External_Id__c</customTabListAdditionalFields>
+        <customTabListAdditionalFields>External_Id2__c</customTabListAdditionalFields>
+        <customTabListAdditionalFields>Creation_Time_Stamp__c</customTabListAdditionalFields>
+        <searchResultsAdditionalFields>Entity_Type__c</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>Entity_Id__c</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>Exit_Code__c</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>Parameter_1__c</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>PrimaryInsured_Name__c</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>Policy_Number__c</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>External_Id__c</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>External_Id2__c</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>Creation_Time_Stamp__c</searchResultsAdditionalFields>
+    </searchLayouts>
+    <sharingModel>ReadWrite</sharingModel>
+    <webLinks>
+        <fullName>Retry_Sync</fullName>
+        <availability>online</availability>
+        <displayType>button</displayType>
+        <height>600</height>
+        <linkType>page</linkType>
+        <masterLabel>Retry Sync</masterLabel>
+        <openType>sidebar</openType>
+        <page>SyncReprocess</page>
+        <protected>false</protected>
+    </webLinks>
+</CustomObject>

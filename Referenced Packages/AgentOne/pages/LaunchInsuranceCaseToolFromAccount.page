@@ -1,0 +1,6 @@
+<apex:page standardController="Account" docType="html-5.0" extensions="AgentOne.LaunchInsuranceCaseToolFromAccController">
+<script>
+var launchPage = "{!$Page.LaunchInsuranceCaseTool}" + "?en=Account&enId={!Account.Id}";
+window.location.replace(launchPage);
+</script>
+</apex:page>

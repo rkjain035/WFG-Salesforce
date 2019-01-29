@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <columns>
+        <field>InsuranceCase__c$Name</field>
+    </columns>
+    <columns>
+        <field>InsuranceCase__c$PrimaryInsured_Name__c</field>
+    </columns>
+    <columns>
+        <field>InsuranceCase__c$Status__c</field>
+    </columns>
+    <columns>
+        <field>InsuranceCase__c$Product_Name__c</field>
+    </columns>
+    <columns>
+        <field>InsuranceCase__c$CoverageAmount__c</field>
+    </columns>
+    <columns>
+        <field>InsuranceCase__c$UnderwritersName__c</field>
+    </columns>
+    <columns>
+        <field>InsuranceCase__c$DaysSinceCasePhaseUpdated__c</field>
+    </columns>
+    <columns>
+        <field>InsuranceCase__c$CasePhaseLastChangeDate__c</field>
+    </columns>
+    <description>This report returns all insurances cases in &quot;Needs Analysis&quot; phase grouped by Agent</description>
+    <filter>
+        <criteriaItems>
+            <column>InsuranceCase__c$IsActive__c</column>
+            <isUnlocked>false</isUnlocked>
+            <operator>equals</operator>
+            <value>1</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>InsuranceCase__c$Phase__c</column>
+            <isUnlocked>false</isUnlocked>
+            <operator>equals</operator>
+            <value>Needs Analysis</value>
+        </criteriaItems>
+        <language>en_US</language>
+    </filter>
+    <format>Summary</format>
+    <groupingsDown>
+        <dateGranularity>Day</dateGranularity>
+        <field>InsuranceCase__c$Agent_Owner__c</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsDown>
+    <name>Insurances Cases in Needs Analysis Phase</name>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>Insurance_Cases__c</reportType>
+    <scope>organization</scope>
+    <showDetails>true</showDetails>
+    <timeFrameFilter>
+        <dateColumn>InsuranceCase__c$CreatedDate</dateColumn>
+        <interval>INTERVAL_CUSTOM</interval>
+    </timeFrameFilter>
+</Report>

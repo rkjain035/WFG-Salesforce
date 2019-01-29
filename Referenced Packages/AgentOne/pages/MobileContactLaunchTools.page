@@ -1,0 +1,43 @@
+<apex:page cache="false" standardController="Account"  standardStylesheets="false" docType="html-5.0" id="headerPage" applybodyTag="false" tabStyle="Account">
+
+    <!-- HTML attributes for SVG use -->
+    <html xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <head>
+
+      <!-- Include scripts for SLDS and Angular -->
+      <apex:stylesheet value="{!URLFOR($Resource.AgentOne__SLDS, 'assets/styles/salesforce-lightning-design-system-vf.min.css')}" />
+
+        <style>
+          .headingAction {
+              color : #626668;
+          }
+      </style>
+
+    </head>
+
+         <!-- REQUIRED SLDS WRAPPER -->
+         <div class="agentone">
+         <div class="slds" >
+
+             <!-- MAIN SECTION -->
+            <main class="slds-box slds-box slds-box--small slds-theme--shade">
+
+              <!-- TOP GRID -->
+              <div class="slds-float-left">
+                <!-- GRID COL -->
+                <p id="headerLabel" class="slds-text-heading--label headingAction">{!$Label.AO_LBL_CreateInsuranceCaseFromContact}</p>
+              </div>
+
+            </main>
+
+               <!-- GRID COL  - APPLICATION BUTTONS -->
+            <section class="slds-clearfix ">
+                <!--  Parent container will control whether this component is displayed or not  -->
+                <c:ContactButtons entityId="{!Account.Id}" entityName="Account" source="Person"/>
+            </section>
+
+      </div>
+      </div>
+
+    </html>
+</apex:page>

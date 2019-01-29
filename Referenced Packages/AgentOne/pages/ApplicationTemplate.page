@@ -1,0 +1,246 @@
+<apex:page controller="AgentOne.ApplicationTemplateController" tabStyle="AgentOne__InsuranceCase__c" sidebar="true" action="{!loadApplication}" showHeader="{! showHeaderIndicator }">
+
+    <style type="text/css">
+       a.headerLink {text-decoration: none; }
+       a.headerLink:hover {text-decoration: underline;}
+
+        // This is for the community builder 
+        // currently setting it to white
+        body {
+            background-color: white;
+        }
+
+    </style>
+
+
+<script>
+// This script is used to prevent the iGo iframe from scrolling up whenever a dropdown value is selected.  The technique used is to scroll the window back to the original position whenever
+// an iGo scroll is detected.  Unfortunately, we cannot exactly tell when the iGo iframe initiates a scroll.  Instead, we disable all scrolling except when:
+// - the mouse button is down - this allows scrolling using the scrollbar
+// - the wheel mouse is used
+// - one of the following keys are pressed - Spacebar, Page Up, Page Down, Up Arrow, Down Arrow, Home, End
+// When iGo initiates a scroll, the mouse button should be in the Up position, which is the state where all scrolling is blocked (except for the exceptions listed above)
+// The scrolling prevention was not enabled for Safari because the screen jumping was not very usable.  This code was not necessary for IE.
+
+
+// Global variables for preventing scrolling by the iGo iframe
+var _scrollPosY = window.pageYOffset; // Init value of scroll Y position
+var _scrollPosX = window.pageXOffset;
+var _scrollEnabled = false;
+var _scrollUserTriggered = false; // Flag when the user scrolls via wheelmouse, up/down/pageup/pagedown/home/end
+var _isOpera = !!window.opera || navigator.userAgent.indexOf(' OPR/') >= 0;    // Opera 8.0+ (UA detection to detect Blink/v8-powered Opera)
+var _isFirefox = typeof InstallTrigger !== 'undefined';   // Firefox 1.0+
+var _isSafari = Object.prototype.toString.call(window.HTMLElement).indexOf('Constructor') > 0;    // At least Safari 3+: "[object HTMLElementConstructor]"
+var _isChrome = !!window.chrome && !_isOpera;              // Chrome 1+
+var _isIE = /*@cc_on!@*/false || !!document.documentMode; // At least IE6
+var _isMobileDevice = (/iPhone|iPod|iPad|Android|BlackBerry/).test(navigator.userAgent);
+var limitBrowserScrolling = "{!limitBrowserScrolling}";
+
+
+
+// these are functions that should be executed after the canvas is loaded
+function setupApplicationTemplatePage()  {
+
+    // We will check if we need to modify the canvas scrolling
+    if (limitBrowserScrolling == "true") {
+        startCanvasScrollPrevention();
+    }
+
+    openAppropriateWindows();
+
+}
+
+
+function openAppropriateWindows()  {
+    if (_isMobileDevice) {
+        if({!isSF1NativeApp})
+        return;
+    }
+
+    // if we are supposed to open this in a new window
+    // then we will instead open the existing case in a new window - which kind of simulates opening this in a new window
+    if ( {!openAdditionalWindow} )  {
+
+        //if it is from SF1, open case in SF1 browser
+        if (_isMobileDevice && (typeof sforce != 'undefined') && (sforce != null) ) {
+            // Update to fix Knowledge # 000269064 - 
+            // new URL format for lightning experience and salesforce mobile app
+            // previously https://agentone-dev16-dev-ed.lightning.force.com/one/one.app#/sObject/a0VB0000000oykRMAQ/view
+            // var caseWindow = window.open('/one/one.app#/sObject/' + '{!JSINHTMLENCODE(newId)}' + '/view', '', '');
+            //
+            // now https://agentone-dev16-dev-ed.lightning.force.com/lightning/r/InsuranceCase__c/a0VB0000000oykRMAQ/view
+            // 
+            var caseWindow = window.open('/lightning/r/' + '{!$ObjectType.InsuranceCase__c.name}' + '/' + '{!JSINHTMLENCODE(newId)}' + '/view', '', '');  
+            caseWindow.blur();
+            window.focus();
+        } else {
+            var caseWindow = window.open('/' + '{!JSINHTMLENCODE(newId)}', '', 'alwaysLowered=true');
+            caseWindow.blur();
+            window.focus();
+        }
+    }
+
+}
+
+
+
+
+// Attaches the event handlers for prevention of scrolling by the iGo iframe
+function startCanvasScrollPrevention() {
+    // If not one of (Chrome, Firefox, Safari), then quit without attaching scrolling prevention code.  (IE doesn't even need this code)
+    if (!(_isChrome || _isFirefox || _isSafari )) {
+        return;
+    }
+    // If this is a mobile device, then quit.  Attaching this workaround to the touch events of a mobile device result in choppy and unusable jumping of the screen.
+    if (_isMobileDevice) {
+        return;
+    }
+
+    // Remember the current scrolling positions
+    _scrollPosY = window.pageYOffset;
+    _scrollPosX = window.pageXOffset;
+
+    // Attach scrolling related events
+    window.onscroll = scrollOnScroll;
+    window.document.onmouseup = scrollOnMouseUp;
+    window.document.onmousedown = scrollOnMouseDown;
+    //window.document.ontouchend = scrollOnMouseUp;
+    //window.document.ontouchstart = scrollOnMouseDown;
+    window.onmousewheel = scrollOnMouseWheel;
+    if (_isFirefox ) { window.addEventListener('DOMMouseScroll', scrollOnMouseWheel, false); } // This is for FireFox
+    window.onkeydown = scrollOnKeyDown;
+}
+
+// Disable scrolling when the mouse button is up.  In this state is when the iGo frame could attempt to scroll because the drowpdown value is selected.  This event does not trigger when clicking within the iframe.
+function scrollOnMouseUp(e) {
+    _scrollEnabled = false;
+}
+// Enable scrolling when the mouse button is down.  This handles scrolling when the user uses the scrollbar.
+function scrollOnMouseDown(e) {
+    _scrollEnabled = true;
+}
+// Enable scrolling when the wheel mouse is used.
+function scrollOnMouseWheel(e) {
+    _scrollUserTriggered = true;
+
+    // If at the bottom of the page, and the user is scrolling down, then the page isn't scrolling and we should set the trigger flag to false (i.e. the page didn't move)
+    var delta = (e.wheelDelta != null) ? e.wheelDelta : e.detail;
+    if ((delta != null) && (delta < 0)) { // Negative delta means the user is scrolling down
+        if ((window.innerHeight + window.scrollY) >= document.body.offsetHeight) { // If true, we are at the bottom of the page
+            _scrollUserTriggered = false;
+        }
+    }
+}
+// Enable scrolling when keyboard keys that trigger scrolling are pressed
+function scrollOnKeyDown(e) {
+    switch (e.keyCode) {
+        case 32: // Spacebar
+        case 33: // Page Up
+        case 34: // Page Down
+        case 38: // Up Arrow
+        case 40: // Down Arrow
+        case 36: // Home
+        case 35: // End
+            _scrollUserTriggered = true;
+            break;
+        default:
+            break;
+    }
+}
+
+// Scrolling event where if scrolling is disabled and the user did not initiate the scroll (i.e. the iframe triggers a scroll), the page is scrolled back to the original position.
+function scrollOnScroll(e) {
+    // If the current scroll position is the same as the last one, then just exit.  No need to call the scrollTo method again.
+    if ((_scrollPosY == window.pageYOffset) && (_scrollPosX == window.pageXOffset)) {
+        return;
+    }
+
+    // Scroll back if scrolling is NOT enabled and this is NOT a user initiated scroll
+    if ((!_scrollEnabled) && (!_scrollUserTriggered)) {
+        window.scrollTo(_scrollPosX , _scrollPosY); // Scroll back to the original position.  Note that this will trigger another scroll event.
+    }
+
+    // If this is a user scroll triggered, then reset the flag
+    // Note: the user clicking on the scrollbar is not detected as a user scroll
+    if (_scrollUserTriggered) {
+        _scrollUserTriggered = false;
+        if (!_isFirefox) {
+            _scrollUserTriggered = false;
+        } else { // Firefox - delay setting the value.  Firefox needs this delay to scroll with the wheel.  Other scrolling like page up does not move much though this delay helps a bit.
+            setTimeout( function() { _scrollUserTriggered = false; }, 100);
+        }
+    }
+
+    // Remember the current scroll position
+    _scrollPosY = window.pageYOffset;
+    _scrollPosX = window.pageXOffset;
+}
+
+// For debug/test purposes only
+function WriteToDebugDiv(value) {
+    var divDebug = document.getElementById("DivDebug");
+    divDebug.innerHTML += " | " + value;
+}
+
+</script>
+
+
+
+    <apex:outputPanel id="errorPanel" rendered="{!displayError}">
+       <apex:pageBlock >
+            <apex:pageMessage summary="{!dispatcherErrorMessage}" severity="warning" strength="3" >
+            </apex:pageMessage>
+        </apex:pageBlock>
+     </apex:outputPanel>
+
+    <!-- BEGIN OF AGENTONE HEADER -->
+    <apex:form style="width:100%;" >
+      <div class="bPageTitle">
+        <div class="ptBody">
+          <div class="content">
+            <img src="{!URLFOR($Resource.InsuranceCase_eApp_Icon)}" alt="Insurance Case" class="pageTitleIcon" title="Insurance Case" width="32" height="32"/>
+            <h1 class="pageType">
+              {!$ObjectType.InsuranceCase__c.Label}
+              <span class="titleSeparatingColon">:</span>
+            </h1>
+            <h2 class="pageDescription">
+              <apex:outputLink value="/{!JSINHTMLENCODE(newId)}" styleClass="headerLink">
+                {!HTMLENCODE(newName)}
+              </apex:outputLink>
+            </h2>
+            <div class="blank">&nbsp;</div>
+          </div>
+        </div>
+        <div class="ptBreadcrumb">
+            &nbsp;&#171;&nbsp;
+           <apex:commandLink value="{!returnTo}" action="{!returnToOriginatingPage}"></apex:commandLink>
+        </div>
+      </div>
+  </apex:form>
+
+    <apex:outputPanel rendered="{!displayheader}">
+    
+      <apex:include id="atAGlance" pageName="AgentOne__CaseAtGlance" rendered="{!displayheader && accessAllowed}" />
+
+
+      <apex:pageBlock mode="maindetail" rendered="{!accessAllowed == false}">
+        <div class="blank">&nbsp;</div>
+         <div class="content">{!accessErrorMessage}</div>
+        <apex:pageMessages />
+      </apex:pageBlock>
+
+    </apex:outputPanel>
+
+
+
+
+
+    <!-- BEGIN OF CANVAS CONTAINER  -->
+
+
+  <apex:form style="width:100%;" >
+     <apex:outputPanel >
+        <apex:canvasApp scrolling="{!canvasScrolling}" applicationName="{!tool.AgentOne__URL__c}" namespacePrefix="" width="{!tool.AgentOne__Width__c}" maxHeight="infinite" height="{!tool.AgentOne__Height__c}" parameters="{!canvasParameter}" rendered="{!accessAllowed}"  onCanvasAppLoad="setupApplicationTemplatePage" />
+    </apex:outputPanel>
+   </apex:form>
+</apex:page>

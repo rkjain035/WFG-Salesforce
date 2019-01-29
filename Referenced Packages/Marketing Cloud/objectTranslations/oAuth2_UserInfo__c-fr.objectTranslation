@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value><!-- ET4AE oAuth2 User Information --></value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value><!-- ET4AE oAuth2 User Information --></value>
+    </caseValues>
+    <fields>
+        <help><!-- Default BusinessUnitId for this user --></help>
+        <label>DefaultMID</label>
+        <name>DefaultMID__c</name>
+    </fields>
+    <fields>
+        <label>Date/heure d&apos;expiration</label>
+        <name>Expiration_Date_Time__c</name>
+    </fields>
+    <fields>
+        <label>ID de membre</label>
+        <name>MemberID__c</name>
+    </fields>
+    <fields>
+        <label>Jeton d’accès</label>
+        <name>access_token__c</name>
+    </fields>
+    <fields>
+        <label>Jeton d’accès B</label>
+        <name>access_token_b__c</name>
+    </fields>
+    <fields>
+        <label>Jeton d’accès C</label>
+        <name>access_token_c__c</name>
+    </fields>
+    <fields>
+        <label>Expire dans</label>
+        <name>expires_in__c</name>
+    </fields>
+    <fields>
+        <label>URL d’instance</label>
+        <name>instance_url__c</name>
+    </fields>
+    <fields>
+        <label>Délivré à</label>
+        <name>issued_at__c</name>
+    </fields>
+    <fields>
+        <label>Jeton hérité</label>
+        <name>legacy_token__c</name>
+    </fields>
+    <fields>
+        <label>Jeton hérité B</label>
+        <name>legacy_token_b__c</name>
+    </fields>
+    <fields>
+        <label>Jeton d’actualisation</label>
+        <name>refresh_token__c</name>
+    </fields>
+    <fields>
+        <label>Jeton d’actualisation B</label>
+        <name>refresh_token_b__c</name>
+    </fields>
+    <fields>
+        <label>Jeton d’actualisation C</label>
+        <name>refresh_token_c__c</name>
+    </fields>
+    <fields>
+        <label>État</label>
+        <name>state__c</name>
+    </fields>
+    <gender><!-- Masculine --></gender>
+    <startsWith><!-- Consonant --></startsWith>
+</CustomObjectTranslation>

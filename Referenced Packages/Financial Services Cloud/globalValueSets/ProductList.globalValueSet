@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GlobalValueSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <customValue>
+        <fullName>Mortgage</fullName>
+        <default>false</default>
+    </customValue>
+    <customValue>
+        <fullName>Personal Loan</fullName>
+        <default>false</default>
+    </customValue>
+    <customValue>
+        <fullName>Credit Card</fullName>
+        <default>false</default>
+    </customValue>
+    <customValue>
+        <fullName>Savings Account</fullName>
+        <default>false</default>
+    </customValue>
+    <customValue>
+        <fullName>Checking Account</fullName>
+        <default>false</default>
+    </customValue>
+    <customValue>
+        <fullName>HELOC</fullName>
+        <default>false</default>
+    </customValue>
+    <customValue>
+        <fullName>Day to Day Banking</fullName>
+        <default>false</default>
+    </customValue>
+    <customValue>
+        <fullName>Manage Money</fullName>
+        <default>false</default>
+    </customValue>
+    <customValue>
+        <fullName>Property Purchase</fullName>
+        <default>false</default>
+    </customValue>
+    <customValue>
+        <fullName>Investments</fullName>
+        <default>false</default>
+    </customValue>
+    <customValue>
+        <fullName>Education</fullName>
+        <default>false</default>
+    </customValue>
+    <customValue>
+        <fullName>Manage Debt</fullName>
+        <default>false</default>
+    </customValue>
+    <masterLabel>Product List</masterLabel>
+    <sorted>false</sorted>
+</GlobalValueSet>

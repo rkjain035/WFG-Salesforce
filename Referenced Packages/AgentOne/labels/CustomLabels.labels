@@ -1,0 +1,2335 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomLabels xmlns="http://soap.sforce.com/2006/04/metadata">
+    <labels>
+        <fullName>AO_DeviceNotSupportedByIgo</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>This device is not supported by iGo.</shortDescription>
+        <value>This device is not supported by iGo.</value>
+    </labels>
+    <labels>
+        <fullName>AO_LBL_AddIllustration</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>AO_LBL_AddIllustration</shortDescription>
+        <value>Add Illustration</value>
+    </labels>
+    <labels>
+        <fullName>AO_LBL_CaseComplete</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Case Status Complete</shortDescription>
+        <value>Complete</value>
+    </labels>
+    <labels>
+        <fullName>AO_LBL_CaseIllustration</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Case Illustration</shortDescription>
+        <value>Illustration</value>
+    </labels>
+    <labels>
+        <fullName>AO_LBL_CaseInProgress</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Case Status In Progress</shortDescription>
+        <value>In Progress</value>
+    </labels>
+    <labels>
+        <fullName>AO_LBL_CaseNotStarted</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Case Status Not Started</shortDescription>
+        <value>Not Started</value>
+    </labels>
+    <labels>
+        <fullName>AO_LBL_CasePresumedComplete</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Case Status Presumed Complete</shortDescription>
+        <value>Presumed Complete</value>
+    </labels>
+    <labels>
+        <fullName>AO_LBL_CaseeApp</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Case eApp</shortDescription>
+        <value>Application</value>
+    </labels>
+    <labels>
+        <fullName>AO_LBL_CreateIllustrationFromContact</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Create Illustration from Contact</shortDescription>
+        <value>Run Illustration</value>
+    </labels>
+    <labels>
+        <fullName>AO_LBL_CreateInsuranceCaseFromContact</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Create New Insurance Case</shortDescription>
+        <value>+ CREATE NEW INSURANCE CASE</value>
+    </labels>
+    <labels>
+        <fullName>AO_LBL_CreateNeedsAnalysisFromContact</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Create Needs Analysis from Contact</shortDescription>
+        <value>Evaluate Needs</value>
+    </labels>
+    <labels>
+        <fullName>AO_LBL_Illustration</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Case eApp</shortDescription>
+        <value>Illustration</value>
+    </labels>
+    <labels>
+        <fullName>AO_LBL_InsuranceCaseAtAGlance</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>AO InsuranceCase At A Glance</shortDescription>
+        <value>At a Glance</value>
+    </labels>
+    <labels>
+        <fullName>AO_LBL_NeedsAnalysis</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Case eApp</shortDescription>
+        <value>Needs Analysis</value>
+    </labels>
+    <labels>
+        <fullName>AO_LBL_OpenApplication</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>AO_LBL_OpenApplication</shortDescription>
+        <value>Open Application</value>
+    </labels>
+    <labels>
+        <fullName>AO_LBL_OpenNeedsAnalysis</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>AO_LBL_OpenNeedsAnalysis</shortDescription>
+        <value>Open Needs Analysis</value>
+    </labels>
+    <labels>
+        <fullName>AO_LBL_PendingCase</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Pending Case</shortDescription>
+        <value>Underwriting</value>
+    </labels>
+    <labels>
+        <fullName>AO_LBL_PlusAdd</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>+ Add</shortDescription>
+        <value>+ Add</value>
+    </labels>
+    <labels>
+        <fullName>AO_LBL_PolicyDelivery</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Policy Delivery</shortDescription>
+        <value>Delivery</value>
+    </labels>
+    <labels>
+        <fullName>AO_LBL_StartIllustration</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>New Illustration</shortDescription>
+        <value>New Illustration</value>
+    </labels>
+    <labels>
+        <fullName>AO_LBL_StartNeedsAnalysis</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Start Needs Analysis</shortDescription>
+        <value>Start Needs Analysis</value>
+    </labels>
+    <labels>
+        <fullName>AO_LBL_StarteApp</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>New e-App</shortDescription>
+        <value>Start Application</value>
+    </labels>
+    <labels>
+        <fullName>AO_MSG_ActivateOnUnderwritingCase</fullName>
+        <categories>text</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>AO_TXT_Urgent</shortDescription>
+        <value>The selected Insurance Case(s) is/are in &apos;underwriting&apos; phase.</value>
+    </labels>
+    <labels>
+        <fullName>AO_MSG_AlertChatterBody</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>AO MSG AlertChatterBody</shortDescription>
+        <value>Alert from {0}:{1}.  The Status of the Case is {2} and the primary insured on the Case is {3}.</value>
+    </labels>
+    <labels>
+        <fullName>AO_MSG_BirthdayAlertBody</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Birthday Alert Body</shortDescription>
+        <value>It is {0}&apos;&apos;s Birthday on {1}. #Birthday</value>
+    </labels>
+    <labels>
+        <fullName>AO_MSG_BirthdayAlertBodyWithPhone</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>AO_MSG_BirthdayAlertBodyWithPhone</shortDescription>
+        <value>It is {0}&apos;&apos;s Birthday on {1}. Please call {2} at {3}. #Birthday</value>
+    </labels>
+    <labels>
+        <fullName>AO_MSG_CaseAccessNotAllowedFromContact</fullName>
+        <categories>text</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Access to the eApp is not allowed from the Contact.</shortDescription>
+        <value>An insurance case cannot be started for a person account you do not own. If you feel that you should have the ability to start an insurance case for another user&apos;s accounts, please see your system administrator.</value>
+    </labels>
+    <labels>
+        <fullName>AO_MSG_ErrorCreatingCase</fullName>
+        <categories>text</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>An error was encountered creating the insurance case.</shortDescription>
+        <value>The insurance case could not be created. Details of the error are: {0}</value>
+    </labels>
+    <labels>
+        <fullName>AO_MSG_IllustrationHasBeenArchived</fullName>
+        <categories>text</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Illustration has been archived.</shortDescription>
+        <value>Illustration has been archived.</value>
+    </labels>
+    <labels>
+        <fullName>AO_MSG_IllustrationInTransferStatus</fullName>
+        <categories>text</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Illustration is in transfer status.</shortDescription>
+        <value>Illustration cannot be viewed at this time: In Transfer Status.</value>
+    </labels>
+    <labels>
+        <fullName>AO_MSG_PleaseSelectInsuranceCase</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Please Select an Insurance Case</shortDescription>
+        <value>Please Select an Insurance Case</value>
+    </labels>
+    <labels>
+        <fullName>AO_MSG_eAppHasBeenArchived</fullName>
+        <categories>text</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>e-App has been archived.</shortDescription>
+        <value>e-App has been archived.</value>
+    </labels>
+    <labels>
+        <fullName>AO_MSG_eAppInTransferStatus</fullName>
+        <categories>text</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>e-App is in transfer status.</shortDescription>
+        <value>e-App cannot be viewed at this time: In Transfer Status.</value>
+    </labels>
+    <labels>
+        <fullName>AO_Start_eApp</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>AO_Start_eApp</shortDescription>
+        <value>Start a new Insurance Case</value>
+    </labels>
+    <labels>
+        <fullName>AO_TXT_BirthdayReminder</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Birthday Reminder</shortDescription>
+        <value>Birthday Reminder</value>
+    </labels>
+    <labels>
+        <fullName>AlertNameLabel</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Alert Name Label</shortDescription>
+        <value>Alert Type Name</value>
+    </labels>
+    <labels>
+        <fullName>AlertRuleLabel</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Alert Rule Label</shortDescription>
+        <value>Alert Rule</value>
+    </labels>
+    <labels>
+        <fullName>AlertRulesUser</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Alert Rules by User</shortDescription>
+        <value>Alert Rules</value>
+    </labels>
+    <labels>
+        <fullName>CancelButtonLabel</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Cancel Button Label</shortDescription>
+        <value>Cancel</value>
+    </labels>
+    <labels>
+        <fullName>Error_Msg_UserIsInDifferentSubCompany</fullName>
+        <categories>text</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>User is in a different Sub Company.</shortDescription>
+        <value>This client is owned by a user associated to the GAID {0}. You are attempting to transfer the client and it&apos;s associated cases to a user that is assigned to a different Channel.</value>
+    </labels>
+    <labels>
+        <fullName>Error_Tool_IsNotAccessible</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>The insurance tool is not accessible.</shortDescription>
+        <value>The insurance tool {0}, is no longer configured to be accessible.  If this is unexpected, please contact your System Administrator.</value>
+    </labels>
+    <labels>
+        <fullName>LABEL_NAMESPACE</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Namespace__AgentOne</shortDescription>
+        <value>Namespace__AgentOne</value>
+    </labels>
+    <labels>
+        <fullName>LBL_AdmHome_ColName</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Name</shortDescription>
+        <value>Name</value>
+    </labels>
+    <labels>
+        <fullName>LBL_AdmHome_ColObject</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Object</shortDescription>
+        <value>Object</value>
+    </labels>
+    <labels>
+        <fullName>LBL_AdmHome_Description</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>bbb</shortDescription>
+        <value>AgentOne Settings allows an administrative user to configure global settings or create and manage insurance tools that interact with AgentOne objects such as accounts, insurance cases, policies, and illustrations. Here an administrative user can use the AgentOne Customization Framework to customize the default prefill mappings, create customized synchronization mappings, or custom field mappings.</value>
+    </labels>
+    <labels>
+        <fullName>LBL_AdmHome_SubTitle</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>AgentOne Settings</shortDescription>
+        <value>AgentOne Settings</value>
+    </labels>
+    <labels>
+        <fullName>LBL_AdmHome_Title</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Home</shortDescription>
+        <value>Home</value>
+    </labels>
+    <labels>
+        <fullName>LBL_Assigned_Text</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Assigned With Colon</shortDescription>
+        <value>Assigned:</value>
+    </labels>
+    <labels>
+        <fullName>LBL_BACK_TO_LIST</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Back to List</shortDescription>
+        <value>Back to List: {0}</value>
+    </labels>
+    <labels>
+        <fullName>LBL_CSTOOL_CreateCase</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Create Insurance Case</shortDescription>
+        <value>Create Insurance Case</value>
+    </labels>
+    <labels>
+        <fullName>LBL_CSTOOL_CreateCase_Apply</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Create Insurance Case - Application</shortDescription>
+        <value>Create Insurance Case - Application</value>
+    </labels>
+    <labels>
+        <fullName>LBL_CSTOOL_CreateCase_Illustrate</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Create Insurance Case - Illustration</shortDescription>
+        <value>Create Insurance Case - Illustration</value>
+    </labels>
+    <labels>
+        <fullName>LBL_CSTOOL_InsuranceTool</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Insurance Tool</shortDescription>
+        <value>Insurance Tool</value>
+    </labels>
+    <labels>
+        <fullName>LBL_CSTOOL_Launch</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Launch</shortDescription>
+        <value>Launch</value>
+    </labels>
+    <labels>
+        <fullName>LBL_CSTOOL_Save</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Save</shortDescription>
+        <value>Save</value>
+    </labels>
+    <labels>
+        <fullName>LBL_CSTOOL_Save2</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Save &amp; Add Details</shortDescription>
+        <value>Save &amp; Add Details</value>
+    </labels>
+    <labels>
+        <fullName>LBL_CanNotRetrieveCase</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>LBL_CanNotRetrieveCase</shortDescription>
+        <value>Could not retrieve insurance case.</value>
+    </labels>
+    <labels>
+        <fullName>LBL_Cancel</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Cancel Button Label</shortDescription>
+        <value>Cancel</value>
+    </labels>
+    <labels>
+        <fullName>LBL_Confirmation</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>LBL_Confirmation</shortDescription>
+        <value>Confirmation</value>
+    </labels>
+    <labels>
+        <fullName>LBL_Continue</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Continue Button Label</shortDescription>
+        <value>Continue</value>
+    </labels>
+    <labels>
+        <fullName>LBL_Error</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>LBL_Error</shortDescription>
+        <value>Error</value>
+    </labels>
+    <labels>
+        <fullName>LBL_Info</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>LBL_Info</shortDescription>
+        <value>Info</value>
+    </labels>
+    <labels>
+        <fullName>LBL_Most_Recently_Used</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Most Recently Used</shortDescription>
+        <value>Most Recently Used</value>
+    </labels>
+    <labels>
+        <fullName>LBL_Notification</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>LBL_Notification</shortDescription>
+        <value>Notification</value>
+    </labels>
+    <labels>
+        <fullName>LBL_Number_Of_Items</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Number Of Items</shortDescription>
+        <value>{0} items</value>
+    </labels>
+    <labels>
+        <fullName>LBL_OLI_LU_POLSTAT_1</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Inforce</shortDescription>
+        <value>Inforce</value>
+    </labels>
+    <labels>
+        <fullName>LBL_OLI_LU_POLSTAT_111</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Rescinded</shortDescription>
+        <value>Rescinded</value>
+    </labels>
+    <labels>
+        <fullName>LBL_OLI_LU_POLSTAT_27</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Declined</shortDescription>
+        <value>Declined</value>
+    </labels>
+    <labels>
+        <fullName>LBL_OLI_LU_POLSTAT_39</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Canceled</shortDescription>
+        <value>Canceled</value>
+    </labels>
+    <labels>
+        <fullName>LBL_OLI_LU_POLSTAT_51</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Not Placed</shortDescription>
+        <value>Not Placed</value>
+    </labels>
+    <labels>
+        <fullName>LBL_OLI_LU_POLSTAT_7</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Not taken</shortDescription>
+        <value>Not taken</value>
+    </labels>
+    <labels>
+        <fullName>LBL_Ok</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Ok Button Label</shortDescription>
+        <value>OK</value>
+    </labels>
+    <labels>
+        <fullName>LBL_Open</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Open Button Label</shortDescription>
+        <value>Open</value>
+    </labels>
+    <labels>
+        <fullName>LBL_Open_Service_Request</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Open Service Request</shortDescription>
+        <value>Open Service Request</value>
+    </labels>
+    <labels>
+        <fullName>LBL_RecordFormat_NotSupported</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Record Format Not Supported</shortDescription>
+        <value>The field is not valid for the selected entity.</value>
+    </labels>
+    <labels>
+        <fullName>LBL_Requested_Text</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Requested</shortDescription>
+        <value>Requested</value>
+    </labels>
+    <labels>
+        <fullName>LBL_Resend_Btn_Resend</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Resend</shortDescription>
+        <value>Resend Email</value>
+    </labels>
+    <labels>
+        <fullName>LBL_Resend_Col_Email</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Email</shortDescription>
+        <value>Email</value>
+    </labels>
+    <labels>
+        <fullName>LBL_Resend_Col_ExpirationDate</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Expiration Date</shortDescription>
+        <value>Expiration Date</value>
+    </labels>
+    <labels>
+        <fullName>LBL_Resend_Col_Name</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Name</shortDescription>
+        <value>Name</value>
+    </labels>
+    <labels>
+        <fullName>LBL_Resend_Col_Role</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Role</shortDescription>
+        <value>Role</value>
+    </labels>
+    <labels>
+        <fullName>LBL_Resend_Col_Status</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Status</shortDescription>
+        <value>E-Signature Status</value>
+    </labels>
+    <labels>
+        <fullName>LBL_Resend_Header_Instruction</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Instruction</shortDescription>
+        <value>Check the box corresponding to the individual(s) you wish to resend emails to. You may adjust the email address as nesessary, then click Resend Email. Note: Updates to the email addresses will only be saved if the notification is sent.</value>
+    </labels>
+    <labels>
+        <fullName>LBL_Resend_Header_Result</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Result</shortDescription>
+        <value>The e-Signature notification email has been sent to the following recipients:</value>
+    </labels>
+    <labels>
+        <fullName>LBL_Resend_Label_CustomText</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Custom Text</shortDescription>
+        <value>Custom Text</value>
+    </labels>
+    <labels>
+        <fullName>LBL_Resend_Label_To</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>To</shortDescription>
+        <value>To:</value>
+    </labels>
+    <labels>
+        <fullName>LBL_Save</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Save Button Label</shortDescription>
+        <value>Save</value>
+    </labels>
+    <labels>
+        <fullName>LBL_Select</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Select Button Label</shortDescription>
+        <value>Select</value>
+    </labels>
+    <labels>
+        <fullName>LBL_Select_Policy</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Select Policy</shortDescription>
+        <value>Select Policy</value>
+    </labels>
+    <labels>
+        <fullName>LBL_Select_Policy_Request</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Select Service Request</shortDescription>
+        <value>Select Service Request</value>
+    </labels>
+    <labels>
+        <fullName>LBL_Service_Request_Name_Template</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Service Request Name Template</shortDescription>
+        <value>Service Request for {0}</value>
+    </labels>
+    <labels>
+        <fullName>LBL_Sort_FieldName</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Sort field Name</shortDescription>
+        <value>Sorted by {0}</value>
+    </labels>
+    <labels>
+        <fullName>LBL_Start</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Start Button Label</shortDescription>
+        <value>Start</value>
+    </labels>
+    <labels>
+        <fullName>LBL_Start_Service_Request</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Start Service Request</shortDescription>
+        <value>Start Service Request</value>
+    </labels>
+    <labels>
+        <fullName>LBL_Success</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>LBL_Success</shortDescription>
+        <value>Success</value>
+    </labels>
+    <labels>
+        <fullName>LBL_Warning</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>LBL_Warning</shortDescription>
+        <value>Warning</value>
+    </labels>
+    <labels>
+        <fullName>Log_Account_DeleteWithCase</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Try to delete a PersonAccount with Insurance Case attach to it.</shortDescription>
+        <value>This record cannot be deleted because it exists as a primary insured on at least one insurance case.</value>
+    </labels>
+    <labels>
+        <fullName>Log_Api_CreateFailed</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>The sobject cannot be created.</shortDescription>
+        <value>The {0} sObject cannot be created.</value>
+    </labels>
+    <labels>
+        <fullName>Log_Api_ExecTransFuncFailed</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>8202 - The execution of custom transformation function failed.</shortDescription>
+        <value>The execution of custom transformation function {0} failed.</value>
+    </labels>
+    <labels>
+        <fullName>Log_Api_FailedCsChildForNoName</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Code: 3208. {0} Child object name, {1} Case name, {2} case Id.</shortDescription>
+        <value>The {0} Name was empty for Insurance Case named {1} with id {2} and the child {0} record was not created.</value>
+    </labels>
+    <labels>
+        <fullName>Log_Api_FailedDelForNullId</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>The sObject cannot be deleted because the ID is null.</shortDescription>
+        <value>The {0} sObject cannot be deleted because the ID is null.</value>
+    </labels>
+    <labels>
+        <fullName>Log_Api_FailedForAppNotExist</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>The insurance application cannot be updated.</shortDescription>
+        <value>The insurance application (Id:{0}) cannot be updated because it does not exist or you do not have access to it.</value>
+    </labels>
+    <labels>
+        <fullName>Log_Api_FailedForCsDiffAgent</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>The insurance case object cannot be updated.</shortDescription>
+        <value>The insurance case object (Id:{0}) cannot be updated because it is owned by a different user (from:{1}, to:{2}).</value>
+    </labels>
+    <labels>
+        <fullName>Log_Api_FailedForCsEmptyTag</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>The insurance application cannot be updated.</shortDescription>
+        <value>A child case with an empty tag &quot;&quot; was found in the Insurance Case request for Insurance Case ID {0}.  This additional case will not be created.</value>
+    </labels>
+    <labels>
+        <fullName>Log_Api_FailedForCsLocked</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>The insurance case object cannot be updated.</shortDescription>
+        <value>The insurance case object (Id:{0}) cannot be updated because it is in Application phase and status indicates it is in submitted status.</value>
+    </labels>
+    <labels>
+        <fullName>Log_Api_FailedForCsNotExist</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>The insurance case object cannot be updated.</shortDescription>
+        <value>The insurance case object (Id:{0}) cannot be updated because it does not exist or you have no access to it.</value>
+    </labels>
+    <labels>
+        <fullName>Log_Api_FailedForCsWrongPhase</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>The insurance case object cannot be updated.</shortDescription>
+        <value>The insurance case object (Id:{0}) cannot be updated by {1} because it is already in {2} phase.</value>
+    </labels>
+    <labels>
+        <fullName>Log_Api_FailedForPolicyNotExist</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>The policy request object cannot be updated.</shortDescription>
+        <value>The policy request object (Id:{0}) cannot be updated because policy (#:{1}) does not exist or you have no access to it.</value>
+    </labels>
+    <labels>
+        <fullName>Log_Api_InvalidCountryName</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>8203 - Invalid country name.</shortDescription>
+        <value>Invalid country name ({0}:{1}).</value>
+    </labels>
+    <labels>
+        <fullName>Log_Api_InvalidStateCountryMatch</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>8205 - Invalid state/country match.</shortDescription>
+        <value>A Invalid state/country match for the address field ({0}:{1} - {2}).</value>
+    </labels>
+    <labels>
+        <fullName>Log_Api_InvalidStateName</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>8204 - Invalid state name.</shortDescription>
+        <value>Invalid state name ({0}:{1}).</value>
+    </labels>
+    <labels>
+        <fullName>Log_Api_NotProcessedForDup</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>The insurance case object cannot be updated.</shortDescription>
+        <value>This entity record (Id:{0} - {1}) will not be processed because there are duplicate(s) in the same batch. The last duplicate entity in the batch will be processed.</value>
+    </labels>
+    <labels>
+        <fullName>Log_Api_PrimaryInsuredFailedUpdate</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>8205.</shortDescription>
+        <value>Primary insured cannot be updated. {0}</value>
+    </labels>
+    <labels>
+        <fullName>Log_Api_UpdateFailed</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>The sobject cannot be updated.</shortDescription>
+        <value>The sObject (Id:{0} - {1}) cannot be updated.</value>
+    </labels>
+    <labels>
+        <fullName>Log_Api_WarningForPolicyNotProcessed</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>The policy request object contains more than one policy.</shortDescription>
+        <value>The policy request object (Id:{0}) contains more than one policy.  At this time we can only process policy (#:{1}).  The additional policies (#:{2}) will not have service requests attached.</value>
+    </labels>
+    <labels>
+        <fullName>Log_Api_WarningForPolicyNumberMissing</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>The policy request does not have a policy number.</shortDescription>
+        <value>The policy request object (Id:{0}) does not have a policy number.</value>
+    </labels>
+    <labels>
+        <fullName>Log_Api_WarningSyncCaseAfterApplicationPhase</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Application Sync after Pending Case sync - Out of Order.</shortDescription>
+        <value>A Completed status application sync has been received for a case past application phase.  Some application fields were updated.  It is possible that the associated Insured was updated.</value>
+    </labels>
+    <labels>
+        <fullName>Log_Api_WarningSyncCaseAfterCaseIsLocked</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Application Sync after Case is Locked.</shortDescription>
+        <value>An application sync has been received for a case that is locked.</value>
+    </labels>
+    <labels>
+        <fullName>Log_CaseNote_DataMissing</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Log_CaseNote_DataMissing</shortDescription>
+        <value>Pending case notes data is missing or not in base64 format.</value>
+    </labels>
+    <labels>
+        <fullName>Log_CaseNote_ModifyDateMissing</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Log_CaseNote_ModifyDateMissing</shortDescription>
+        <value>Pending case notes Last Modified date is missing.</value>
+    </labels>
+    <labels>
+        <fullName>Log_Case_DeleteAlertFailed</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Log_Case_DeleteAlertFailed</shortDescription>
+        <value>The related child insurance case {0} could not be deleted when the primary insurance case was deleted and should be manually deleted.</value>
+    </labels>
+    <labels>
+        <fullName>Log_Case_DeleteChildFailed</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Log_Case_DeleteChildFailed</shortDescription>
+        <value>The alert {0} could not be deleted when the insurance case was deleted and should be manually deleted.</value>
+    </labels>
+    <labels>
+        <fullName>Log_Case_UndeleteAlertFailed</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Log_Case_UndeleteAlertFailed</shortDescription>
+        <value>The alert {0} could not be restored for the primary insurance case and should be restored manually.</value>
+    </labels>
+    <labels>
+        <fullName>Log_Case_UndeleteChildFailed</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Log_Case_UndeleteChildFailed</shortDescription>
+        <value>The insurance case {0} could not be restored for the primary insurance case and should be restored manually.</value>
+    </labels>
+    <labels>
+        <fullName>Log_CreateAlertFailed</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Log_CreateAlertFailed</shortDescription>
+        <value>The alert Id - {0} (External ID={1}) associated to Parent Case/Policy Id - {2} cannot be created because it already exists.</value>
+    </labels>
+    <labels>
+        <fullName>Log_IGo_DeleteCaseFailed</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>There is an error in deleting iGO case ({0}).</shortDescription>
+        <value>There is an error in deleting iGO case ({0}).</value>
+    </labels>
+    <labels>
+        <fullName>Log_IGo_VPS_Exception</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Log_IGo_VPS_Exception</shortDescription>
+        <value>﻿﻿An exception occurred while attempting to call the iGO VelocityPlatformServices web service.</value>
+    </labels>
+    <labels>
+        <fullName>Log_OS_CanNotIdentify</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Current OS/Resolution not supported</shortDescription>
+        <value>Your current operating system is not supported by &apos;&apos;{0}&apos;&apos;. You must be running  &apos;&apos;{1}&apos;&apos; or later to run &apos;&apos;{0}&apos;&apos;.</value>
+    </labels>
+    <labels>
+        <fullName>Log_OS_Or_Resolution_CanNotIdentify</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Current OS/Resolution not supported</shortDescription>
+        <value>Error:The selected insurance tool is not supported by the current Operating System.  The selected insurance tool supports &apos;&apos;{0}&apos;&apos; or greater and a resolution of &apos;&apos;{1}&apos;&apos; or greater.
+If you believe that you should be able to load this insurance tool from your OS and device, please contact your System Administrator.</value>
+    </labels>
+    <labels>
+        <fullName>Log_Ofm_FieldMappingError</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>There were error(s) in mapping field in the FieldMapper.</shortDescription>
+        <value>There were error(s) encountered in mapping field ({0}.{1}-&gt;{2}.{3} on {4}) in the AgentOne FieldMapper.</value>
+    </labels>
+    <labels>
+        <fullName>Log_Ofm_GeneralError</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>There are error(s)  in the AgentOne FieldMapper.</shortDescription>
+        <value>There were error(s) encountered in the AgentOne FieldMapper.</value>
+    </labels>
+    <labels>
+        <fullName>Log_PCase_InactivateCase</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Log_PCase_InactivateCase</shortDescription>
+        <value>This case can no longer be updated, because it is inactive and reached final disposition of &apos;&apos;{0}&apos;&apos;.</value>
+    </labels>
+    <labels>
+        <fullName>Log_PCase_NoteDataMissing</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Log_PCase_NoteDataMissing</shortDescription>
+        <value>Pending case notes data is missing or not in base64 format.</value>
+    </labels>
+    <labels>
+        <fullName>Log_PCase_PartyRecordRefError</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Log_PCase_PartyRecordRefError</shortDescription>
+        <value>The party record for {0} was created without the associated client because there is not enough information for the creation of the client record.  The minimum fields for creating the party record is based on the Contact matching logic defined for the Organization.</value>
+    </labels>
+    <labels>
+        <fullName>Log_PCase_PrimaryInsuredChanged</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Log_PCase_PrimaryInsuredChanged</shortDescription>
+        <value>The Pending case with Insurance Case ID - {0} was found but the data provided for the Insured did not uniquely match for the Insured on that Insurance Case in AgentOne. To avoid overwriting pertinent data, this update request will not be processed and no changes are made.  Please review the Insured record provided and the Contact matching logic to ensure it meets the minimum fields required.</value>
+    </labels>
+    <labels>
+        <fullName>Log_PCase_PrimaryInsuredNotMatched</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Log_PCase_PrimaryInsuredChanged</shortDescription>
+        <value>Insurance Case was updated but the Person Account that this Insurance Case was linked to - {0} with ID {1} - was not updated because the info found in the Sync record for this Person did not match based on the defined matching logic.</value>
+    </labels>
+    <labels>
+        <fullName>Log_PCase_Rejected</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Log_PCase_Rejected</shortDescription>
+        <value>This case can no longer be updated, because it has been Placed Inforce.</value>
+    </labels>
+    <labels>
+        <fullName>Log_PolicyAgent_AgentNumberMissing</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Log_PolicyAgent_AgentNumberMissing</shortDescription>
+        <value>The agent number is missing for agent {0}. The agent was added to the policy without an agent number and no AgentOne user can be identified.</value>
+    </labels>
+    <labels>
+        <fullName>Log_PolicyInsured_NameMissing</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Log_PolicyInsured_NameMissing</shortDescription>
+        <value>The name is missing for insured. The insured record was not added to the policy.</value>
+    </labels>
+    <labels>
+        <fullName>Log_PolicyNote_DataMissing</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Log_PolicyNote_DataMissing</shortDescription>
+        <value>Policy notes data is missing or not in base64 format.</value>
+    </labels>
+    <labels>
+        <fullName>Log_PolicyNote_ModifyDateMissing</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Log_PolicyNote_ModifyDateMissing</shortDescription>
+        <value>Policy notes Last Modified date is Missing.</value>
+    </labels>
+    <labels>
+        <fullName>Log_PolicyParty_NameMissing</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Log_PolicyParty_NameMissing</shortDescription>
+        <value>The name is missing for party {0}. The party record was not added to the policy.</value>
+    </labels>
+    <labels>
+        <fullName>Log_PolicyPayment_RequiredFieldMissing</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Log_PolicyPayment_RequiredFieldMissing</shortDescription>
+        <value>Payment History is missing required field {0}, it cannot be processed and will be skipped.</value>
+    </labels>
+    <labels>
+        <fullName>Log_Prefill_WarningPhoneTransformFailed</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>The Phone Prefill transform failed on a field.</shortDescription>
+        <value>The value: {0} in the field: {1} for {2} Object with id: {3} does not have the correct format entered for transform: {4}.</value>
+    </labels>
+    <labels>
+        <fullName>Log_Prefill_WarningTransformFailed</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>The prefill transform failed.</shortDescription>
+        <value>The execution of prefill transform {0} failed on field {1}.</value>
+    </labels>
+    <labels>
+        <fullName>Log_ReRunIllu_Cannot_Save_RequestXML</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Log ReRunIllu Cannot Save RequestXML</shortDescription>
+        <value>The request XML for the illustration with the ID {0} could not be saved to the ‘AgentOne iGO’ documents folder. The illustration will still be saved and accessible from AgentOne but if the user attempts to re-run the illustration it will fail and result in an error.</value>
+    </labels>
+    <labels>
+        <fullName>Log_ReRunIllu_GeneralError</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Log ReRunIllu GeneralError</shortDescription>
+        <value>An exception occurred while attempting to call the iGO re-run illustration service.</value>
+    </labels>
+    <labels>
+        <fullName>Log_ReRunIllu_RequestId_Missing</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Log ReRunIllu RequestId Missing</shortDescription>
+        <value>Re-run for illustration {0} failed because the requestXML ID for this illustration is blank.</value>
+    </labels>
+    <labels>
+        <fullName>Log_ReRunIllu_Request_Missing</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Log ReRunIllu Request Missing</shortDescription>
+        <value>Re-run for illustration {0} failed because the requestXML for this illustration cannot be found.</value>
+    </labels>
+    <labels>
+        <fullName>Log_RelationshipRole_InvalidKey</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Log_RelationshipRole_InvalidKey</shortDescription>
+        <value>Invalid key for relationship role object.</value>
+    </labels>
+    <labels>
+        <fullName>Log_Relationship_InvalidKey</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Log_Relationship_InvalidKey</shortDescription>
+        <value>Invalid key for relationship object.</value>
+    </labels>
+    <labels>
+        <fullName>Log_Relationship_NULL</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Log_Relationship_NULL</shortDescription>
+        <value>Cannot handle NULL Relationship.</value>
+    </labels>
+    <labels>
+        <fullName>Log_Relationship_ReciprocalDeleteFail</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Log_Relationship_ReciprocalDeleteFail</shortDescription>
+        <value>One or more Relationship record(s) failed to delete.</value>
+    </labels>
+    <labels>
+        <fullName>Log_Relationship_ReciprocalUpsertFail</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Log_Relationship_ReciprocalUpsertFail</shortDescription>
+        <value>One or more Relationship record(s) failed to insert/update.</value>
+    </labels>
+    <labels>
+        <fullName>Log_Relationship_Unsupported_Type</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Log_Relationship_Unsupported _Type</shortDescription>
+        <value>Not supported Relationship type, currently only Support Account to Account type.</value>
+    </labels>
+    <labels>
+        <fullName>Log_Relationship_UpsertFail</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Log_Relationship_UpsertFail</shortDescription>
+        <value>One or more Relationship record(s) failed to insert/update for {0} with id {1}.</value>
+    </labels>
+    <labels>
+        <fullName>Log_ResendESig_CannotStart</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Log_ResendESig_CannotStart</shortDescription>
+        <value>Resend cannot be started at this time. If this is unexpected, please contact your System Administrator.</value>
+    </labels>
+    <labels>
+        <fullName>Log_Resolution_CanNotIdentify</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Current OS/Resolution not supported</shortDescription>
+        <value>The current resolution of your browser or screen is set to display at &apos;&apos;{0}&apos;&apos;, which is below the minimum required resolution of &apos;&apos;{1}&apos;&apos; for &apos;&apos;{2}&apos;&apos;. You may continue with your current settings, but &apos;&apos;{2}&apos;&apos; may not display properly.</value>
+    </labels>
+    <labels>
+        <fullName>Log_Sync_AttachmentErrorPrefix</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Log_Sync_AttachmentErrorPrefix</shortDescription>
+        <value>Attachment Sync Error:</value>
+    </labels>
+    <labels>
+        <fullName>Log_Sync_AttachmentFailed</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>The attachment failed to sync.</shortDescription>
+        <value>The attachment {0} for the Salesforce record {1} cannot be attached by the synchronization process, please see the error log for more details.</value>
+    </labels>
+    <labels>
+        <fullName>Log_Sync_AttachmentInvalidParent</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Log_Sync_AttachmentInvalidParent</shortDescription>
+        <value>Parent entity does not exist or is not supported.</value>
+    </labels>
+    <labels>
+        <fullName>Log_Sync_DuplicateCaseInBatch</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>The sync record failed due to duplicate case.</shortDescription>
+        <value>This sync request was not processed because a newer Sync request – {0} was found.</value>
+    </labels>
+    <labels>
+        <fullName>Log_Sync_ExecApiPluginFailed</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>The execution of service API plugin failed.</shortDescription>
+        <value>The execution of service api plugin {0} failed.</value>
+    </labels>
+    <labels>
+        <fullName>Log_Sync_ExecSyncPluginFailed</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>The execution of custom sync plugin failed.</shortDescription>
+        <value>The execution of custom sync plugin {0} failed.</value>
+    </labels>
+    <labels>
+        <fullName>Log_Sync_FailedPendingCaseSyncMissingPrimaryInsured</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Missing Primary Insured.</shortDescription>
+        <value>The pending case received with {0}, has no primary insured.</value>
+    </labels>
+    <labels>
+        <fullName>Log_Sync_FailedPolicySyncDuplicatePolicyInBatch</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Duplicate Policy In Batch.</shortDescription>
+        <value>The inforce policy received with the policy number {0} was already processed in the sync and will be skipped.</value>
+    </labels>
+    <labels>
+        <fullName>Log_Sync_FailedPolicySyncErrorPrimaryInsured</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Error Processing Primary Insured.</shortDescription>
+        <value>The inforce policy received with the policy number {0} encountered an error processing the primary insured.</value>
+    </labels>
+    <labels>
+        <fullName>Log_Sync_FailedPolicySyncMissingAgentInformation</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Missing Agent Information.</shortDescription>
+        <value>The inforce policy received with the policy number {0} cannot be associated to an existing AgentOne user and could not be added to AgentOne.</value>
+    </labels>
+    <labels>
+        <fullName>Log_Sync_FailedPolicySyncMissingPolicyNumber</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Missing Policy Number.</shortDescription>
+        <value>The policy number is missing for the given policy.</value>
+    </labels>
+    <labels>
+        <fullName>Log_Sync_FailedPolicySyncMissingPrimaryInsured</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Missing Primary Insured.</shortDescription>
+        <value>The inforce policy received with the policy number {0}, has no primary insured.</value>
+    </labels>
+    <labels>
+        <fullName>Log_Sync_FailedProcessMapper</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Failed to process synchronization mapper.</shortDescription>
+        <value>Failed to process synchronization mapper.</value>
+    </labels>
+    <labels>
+        <fullName>Log_Sync_FailedProcessSyncPlugins</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Failed to process sync plugins.</shortDescription>
+        <value>Failed to process sync plugins.</value>
+    </labels>
+    <labels>
+        <fullName>Log_Sync_InvalidCommand</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>The sync command is not supported..</shortDescription>
+        <value>The sync command {0} is not supported.</value>
+    </labels>
+    <labels>
+        <fullName>Log_Sync_InvalidMapping</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Invalid Sync Mapping.</shortDescription>
+        <value>SyncMapper entry with Key - {0} is invalid.  {1} - Please ask your AgentOne admin to fix the issue and retry the sync.</value>
+    </labels>
+    <labels>
+        <fullName>Log_Sync_SyncAlertSuccess</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>The sync succeeded.</shortDescription>
+        <value>The alert Id - {0} (External ID={1}) was successfully processed.</value>
+    </labels>
+    <labels>
+        <fullName>Log_Sync_SyncCommissionSuccess</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>The sync succeeded.</shortDescription>
+        <value>The Sync Record with Commission Statement ID - {0} was successfully processed.</value>
+    </labels>
+    <labels>
+        <fullName>Log_Sync_SyncFailed</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>The sync record failed.</shortDescription>
+        <value>The sync record failed.</value>
+    </labels>
+    <labels>
+        <fullName>Log_Sync_SyncICaseFailed</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>The sync record failed.</shortDescription>
+        <value>Insurance Case failed to sync but it is possible that the associated Insured was updated.</value>
+    </labels>
+    <labels>
+        <fullName>Log_Sync_SyncICaseSuccess</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>The sync succeeded.</shortDescription>
+        <value>The Sync Record with Insurance Case ID - {0} associated to iGO Client ID - {1} was successfully processed.</value>
+    </labels>
+    <labels>
+        <fullName>Log_Sync_SyncIllustrationSuccess</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>The sync succeeded.</shortDescription>
+        <value>The Sync Record with Illustration ID - {0} was successfully processed.</value>
+    </labels>
+    <labels>
+        <fullName>Log_Sync_SyncInforcePolicyFailed</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>The sync record failed.</shortDescription>
+        <value>Inforce Policy failed to sync but it is possible that the associated accounts were updated.</value>
+    </labels>
+    <labels>
+        <fullName>Log_Sync_SyncInforcePolicySuccess</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>The sync succeeded.</shortDescription>
+        <value>The Sync Record with Inforce Policy Number - {0} was successfully processed.</value>
+    </labels>
+    <labels>
+        <fullName>Log_Sync_SyncPendingCaseSuccess</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>The sync succeeded.</shortDescription>
+        <value>The Sync Record with Insurance Case ID - {0} was successfully processed.</value>
+    </labels>
+    <labels>
+        <fullName>Log_Sync_SyncSucceed</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>The sync record succeeded.</shortDescription>
+        <value>The sync record succeeded.</value>
+    </labels>
+    <labels>
+        <fullName>Log_Sync_SyncWarning</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>The sync record completed with warning.</shortDescription>
+        <value>The sync record completed with warning.</value>
+    </labels>
+    <labels>
+        <fullName>Log_Sync_WarningInSync</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>There are warning(s) in the sync process.</shortDescription>
+        <value>There are warning(s) in the sync process.</value>
+    </labels>
+    <labels>
+        <fullName>Log_Sync_WarningPartyEntityProcessingFailed</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>There are related entities that could not be processed.</shortDescription>
+        <value>A related entity of type {0} on the Insurance Party node could not be processed. Detailed error:{1}.</value>
+    </labels>
+    <labels>
+        <fullName>Log_Sync_WarningPolicySyncInvalidStatus</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Invalid Status on Insert.</shortDescription>
+        <value>The inforce policy with the policy number {0} was received with an invalid status, {1}.  The policy will be created with the invalid status..</value>
+    </labels>
+    <labels>
+        <fullName>Log_Sync_WarningPolicySyncInvalidStatusSkip</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Missing Policy Owner Information.</shortDescription>
+        <value>The inforce policy with the policy number {0} was received with an invalid status, {1}.  The policy status will not be updated.</value>
+    </labels>
+    <labels>
+        <fullName>Log_Sync_WarningPolicySyncMissingPolicyOwner</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Missing Policy Owner Information.</shortDescription>
+        <value>The inforce policy with the policy number {0} does not have a policy owner specified.</value>
+    </labels>
+    <labels>
+        <fullName>Log_Tool_IsNotAccessible</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>The insurance tool is not accessible.</shortDescription>
+        <value>You are attempting to launch an application using an insurance tool which you do not have access to. Please see your administrator for assistance.</value>
+    </labels>
+    <labels>
+        <fullName>Log_Tool_PreConfigOnInstall</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Log_Tool_PreConfigOnInstall</shortDescription>
+        <value>The insurance tools could not be created in the AgentOne Insurance Tools Registration custom setting during the installation. Refer to your documentation on how to create them manually.</value>
+    </labels>
+    <labels>
+        <fullName>Log_Tool_WrongConfiguration</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>The configuration of the  insurance tool is wrong.</shortDescription>
+        <value>The custom permission {0} does not exist. Please see your administrator for assistance.</value>
+    </labels>
+    <labels>
+        <fullName>Log_WarningIIFTransformedFailed</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>The IIF transform failed.</shortDescription>
+        <value>The execution of IIF transform failed on field {0} with args {1}.</value>
+    </labels>
+    <labels>
+        <fullName>MSG_Action_Already_Start</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>MSG_Action_Already_Start</shortDescription>
+        <value>The {0} has already been {1}.</value>
+    </labels>
+    <labels>
+        <fullName>MSG_AlertChatterPolicyBody</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>MSG_AlertChatterPolicyBody</shortDescription>
+        <value>Alert from {0}:{1}. The Status of the Policy is {2} and the policy owner on the policy is {3}.</value>
+    </labels>
+    <labels>
+        <fullName>MSG_AlertMissingSource</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>MSG_AlertMissingSource</shortDescription>
+        <value>A new Alert Type was received but it was not created because the Source was not provided. Please ensure all Alerts have a Source.</value>
+    </labels>
+    <labels>
+        <fullName>MSG_AlertNoneToDismiss</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>MSG_AlertNoneToDismiss</shortDescription>
+        <value>No alerts were dismissed because there were none found for the given record.</value>
+    </labels>
+    <labels>
+        <fullName>MSG_CaseNote_Body</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>MSG_CaseNote_Body</shortDescription>
+        <value>The alert {0} with the description &quot;{1}&quot; was deleted on {2} by {3}.</value>
+    </labels>
+    <labels>
+        <fullName>MSG_CaseNote_Title</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>MSG_CaseNote_Title</shortDescription>
+        <value>Alert {0} Deleted</value>
+    </labels>
+    <labels>
+        <fullName>MSG_CommissionErr_AgentOneUserNotFound</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Agent does not exist on AgentOne.</shortDescription>
+        <value>The Commission Statement received with the statement Id  {0} cannot be associated to an existing AgentOne user and could not be added to AgentOne.</value>
+    </labels>
+    <labels>
+        <fullName>MSG_CommissionErr_DeleteExistingRecordFailure</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Fail to Delete Existing Commission Record</shortDescription>
+        <value>The commission/commission detail could not be updated because the original record cannot be deleted.</value>
+    </labels>
+    <labels>
+        <fullName>MSG_CommissionErr_MissingField</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Mandatory field is missing.</shortDescription>
+        <value>There is an error creating/updating commission statement. The mandatory field {0} is missing.</value>
+    </labels>
+    <labels>
+        <fullName>MSG_ConfirmRecordDelete</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Confirm Record Delete</shortDescription>
+        <value>Are you sure?</value>
+    </labels>
+    <labels>
+        <fullName>MSG_Decrypt_Error</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>MSG_Decrypt_Error_webservice</shortDescription>
+        <value>Web Service Error decrypting token - Please get the Administrator to validate web service tokens are correct.</value>
+    </labels>
+    <labels>
+        <fullName>MSG_Disallow_Delete_CaseDelivery</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>MSG_Disallow_Delete_CaseDelivery</shortDescription>
+        <value>This insurance case is in the &quot;Delivery&quot; or &quot;Underwriting&quot; phase and and cannot be deleted.</value>
+    </labels>
+    <labels>
+        <fullName>MSG_Disallow_Delete_ChildCase</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>MSG_Disallow_Delete_ChildCase</shortDescription>
+        <value>This insurance case is an additional or alternate case related to a multi-product application and cannot be deleted. If you would like to have this insurance case deleted you must open the application and remove the product associated to this insurance case.</value>
+    </labels>
+    <labels>
+        <fullName>MSG_Disallow_Delete_CsLocked</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>The insurance case object cannot be updated.</shortDescription>
+        <value>This insurance case cannot be deleted because it has previously been locked and is either pending signatures or has been submitted.</value>
+    </labels>
+    <labels>
+        <fullName>MSG_DuplicateCase_AO_Spinner</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>MSG_DuplicateCase_AO_Spinner</shortDescription>
+        <value>Duplicating in AgentOne...</value>
+    </labels>
+    <labels>
+        <fullName>MSG_DuplicateCase_Confirm</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>MSG_DuplicateCase_Confirm</shortDescription>
+        <value>Are you sure you would like to make a copy of the current insurance case? &lt;br&gt;
+            Note that the copy can take a few minutes. &lt;br&gt;&lt;br&gt;
+            Important:&lt;br&gt;
+            This feature is only recommended if the primary insured on the new case is the same as the original case. 
+            Any changes made to the primary insured on the new case will synchronize back to the AgentOne client record for {0}.</value>
+    </labels>
+    <labels>
+        <fullName>MSG_DuplicateCase_Spinner</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>MSG_DuplicateCase_Spinner</shortDescription>
+        <value>Duplicating in iGO...</value>
+    </labels>
+    <labels>
+        <fullName>MSG_DuplicateIllus_Confirm</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>MSG_DuplicateIllus_Confirm</shortDescription>
+        <value>Are you sure you would like to run a revised illustration for the current case?</value>
+    </labels>
+    <labels>
+        <fullName>MSG_DuplicateIllus_Spinner</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>MSG_DuplicateIllus_Spinner</shortDescription>
+        <value>Creating Revised Illustration...</value>
+    </labels>
+    <labels>
+        <fullName>MSG_Encrypt_Error</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>MSG_Encrypt_Error_webservice</shortDescription>
+        <value>Web Service Error encrypting token - Please get the Administrator to validate web service tokens are correct.</value>
+    </labels>
+    <labels>
+        <fullName>MSG_Err_Duplicate_Record</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Duplicate value</shortDescription>
+        <value>The relationship you are trying to create already exists. You cannot create a duplicate relationship, please make sure either the related from, related to, or relationship role is changed.</value>
+    </labels>
+    <labels>
+        <fullName>MSG_Err_InvalidData</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Error: Invalid data. &lt;br&gt; Review all error messages below to correct your data.</shortDescription>
+        <value>Error: Invalid data. &lt;br&gt; Review all error messages below to correct your data.</value>
+    </labels>
+    <labels>
+        <fullName>MSG_Err_Invalid_Res_Height</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Value exceeds 100%</shortDescription>
+        <value>The value entered for Height is not entered in as a percent (%) or pixel (px). Please enter the value as a percent or pixel.</value>
+    </labels>
+    <labels>
+        <fullName>MSG_Err_Invalid_Res_Width</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Value exceeds 100%</shortDescription>
+        <value>The value entered for Width does not match the expected format.  Please enter the value as a  percentage (%)</value>
+    </labels>
+    <labels>
+        <fullName>MSG_Err_Missing_Related_To_Field</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>MSG_Err_Missing_Related_To_Field</shortDescription>
+        <value>One of the Related To fields must be populated to create a relationship.</value>
+    </labels>
+    <labels>
+        <fullName>MSG_Err_MustEnterValue</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Error: You must enter a value</shortDescription>
+        <value>&lt;strong&gt;Error: &lt;/strong&gt; You must enter a value</value>
+    </labels>
+    <labels>
+        <fullName>MSG_Err_NotAgentOneUser</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Current login user is not an AgentOne user.</shortDescription>
+        <value>You don not have access to AgentOne application.</value>
+    </labels>
+    <labels>
+        <fullName>MSG_Err_Value_Exceeds_100</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Value exceeds 100%</shortDescription>
+        <value>The value entered for {0} exceeds 100%, please enter a value between 0% - 100%</value>
+    </labels>
+    <labels>
+        <fullName>MSG_IlluNote_Body</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>MSG_IlluNote_Body</shortDescription>
+        <value>The illustration record was created with the illustration file attached but the link to the file could not be created. In order to open the attached illustration file you will need to open the illustration record, go to Notes and Attachments then either click View from the Action column or open the attachment record and click ‘View file’.</value>
+    </labels>
+    <labels>
+        <fullName>MSG_IlluNote_Title</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>MSG_IlluNote_Title</shortDescription>
+        <value>Missing link to view attached illustration</value>
+    </labels>
+    <labels>
+        <fullName>MSG_List_Action_Select_More</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>MSG_List_Action_Select_More</shortDescription>
+        <value>Please make sure only one record is selected.</value>
+    </labels>
+    <labels>
+        <fullName>MSG_List_Action_Select_None</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>MSG_List_Action_Select_None</shortDescription>
+        <value>Please select a record for this action.</value>
+    </labels>
+    <labels>
+        <fullName>MSG_Number_Not_In_Range_Min</fullName>
+        <categories>Error Message</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>MSG_Number_Not_In_Range_Min</shortDescription>
+        <value>{0} must be greater than {1}.</value>
+    </labels>
+    <labels>
+        <fullName>MSG_ReRunIllu_Fail</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>MSG ReRunIllu Fail</shortDescription>
+        <value>The illustration failed to run from the existing illustration. Please try again, if it fails with each attempt contact your system administrator.</value>
+    </labels>
+    <labels>
+        <fullName>MSG_ReRunIllu_MismatchOwner</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>MSG ReRunIllu MismatchOwner</shortDescription>
+        <value>The Illustration cannot be re-run for this insurance case because you are not the owner of the insurance case that this illustration belongs to.</value>
+    </labels>
+    <labels>
+        <fullName>MSG_ReRunIllu_SelectMore</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>MSG ReRunIllu SelectMore</shortDescription>
+        <value>You cannot re-run multiple illustrations in one step. Please make sure that only one illustration is selected.</value>
+    </labels>
+    <labels>
+        <fullName>MSG_ReRunIllu_SelectNone</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>MSG ReRunIllu SelectNone</shortDescription>
+        <value>You must select an existing illustration in order to perform the \‘Re-run\’.</value>
+    </labels>
+    <labels>
+        <fullName>MSG_ReRunIllu_Setting</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>MSG ReRunIllu Setting</shortDescription>
+        <value>The re-run illustration option in the \&apos;AgentOne iGO Application Settings\&apos; is currently disabled. Please contact your system administrator to have the option enabled or to have this button removed.</value>
+    </labels>
+    <labels>
+        <fullName>MSG_ReRunIllu_Success</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>MSG ReRunIllu Success</shortDescription>
+        <value>A new illustration has been run for the selected illustration record.</value>
+    </labels>
+    <labels>
+        <fullName>MSG_Relationship_Form_Desc</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>MSG_Relationship_Form_Desc</shortDescription>
+        <value>To create a relationship for an existing client and another person you will need to select the existing client in the &quot;Related From&quot; field then specify whom the client is related to and the type of relationship via the &quot;Relationship Role&quot; field. Note that you can either select an existing client or create a new client, or, if you choose to specify a person without creating a client you can enter the person&apos;s name in the &quot;Name Only&quot; field.</value>
+    </labels>
+    <labels>
+        <fullName>MSG_StartEAppIllu_AlreadyStart</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>MSG_StartEAppIllu_AlreadyStart</shortDescription>
+        <value>A new e-App cannot be started for this insurance case because an e-App has already been started. Click the \&apos;Open Application\&apos; button from the insurance case to open the existing e-App.</value>
+    </labels>
+    <labels>
+        <fullName>MSG_StartEAppIllu_ErrorReadPDF</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>MSG_StartEAppIllu_ErrorReadPDF</shortDescription>
+        <value>The attached illustration PDF cannot be read. AgentOne cannot start an e-App from the selected illustration.</value>
+    </labels>
+    <labels>
+        <fullName>MSG_StartEAppIllu_NoIlluRecord</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>MSG_StartEAppIllu_NoIlluRecord</shortDescription>
+        <value>The selected illustration cannot be retrieved. AgentOne cannot start an e-App from the selected illustration.</value>
+    </labels>
+    <labels>
+        <fullName>MSG_StartEAppIllu_OwnerMismatch</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>MSG_StartEAppIllu_OwnerMismatch</shortDescription>
+        <value>A new e-App cannot be started for this insurance case because you are not the owner of the insurance case that this illustration belongs to.</value>
+    </labels>
+    <labels>
+        <fullName>MSG_StartEAppIllu_SelectMore</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>MSG_StartEAppIllu_SelectMore</shortDescription>
+        <value>There are multiple illustrations selected. Please make sure you have only one illustration selected when choosing to start an e-App from an existing illustration.</value>
+    </labels>
+    <labels>
+        <fullName>MSG_StartEAppIllu_SelectNone</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>MSG_StartEAppIllu_SelectNone</shortDescription>
+        <value>There are no illustrations selected. Please select an illustration then try again.</value>
+    </labels>
+    <labels>
+        <fullName>MSG_StartEAppIllu_Setting</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>MSG_StartEAppIllu_Setting</shortDescription>
+        <value>The global setting allowing you to start an e-App from an illustration is currently disabled. Please ask your AgentOne administrator to enable the option via the AgentOne iGO Application Settings.</value>
+    </labels>
+    <labels>
+        <fullName>MSG_Value_Not_A_Whole_Number</fullName>
+        <categories>Error Message</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>MSG_Value_Not_A_Whole_Number</shortDescription>
+        <value>{0} should be a whole number.</value>
+    </labels>
+    <labels>
+        <fullName>Msg_AlertInsuranceCaseMissing</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Msg_AlertInsuranceCaseMissing</shortDescription>
+        <value>The alert cannot be created because the insurance case with the ID {0} cannot be found for this carrier.</value>
+    </labels>
+    <labels>
+        <fullName>Msg_AlertOwnerMissing</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Msg_AlertOwnerMissing</shortDescription>
+        <value>The alert record cannot be created, in order to save an alert there must be at least one of the following to determine the alert owner (policy number, insurance case, contact, or agent number).</value>
+    </labels>
+    <labels>
+        <fullName>Msg_AlertPendingCaseMissing</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Msg_AlertPendingCaseMissing</shortDescription>
+        <value>The alert cannot be created because the insurance case with the policy number {0} cannot be found for this carrier.</value>
+    </labels>
+    <labels>
+        <fullName>Msg_AlertPolicyMissing</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Msg_AlertPolicyMissing</shortDescription>
+        <value>The alert cannot be created because the policy with the policy number {0} cannot be found for this carrier.</value>
+    </labels>
+    <labels>
+        <fullName>Msg_Case_Activate_Notification</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Msg_Case_Activate_Notification</shortDescription>
+        <value>The insurance case cannot be {0} because it is in Underwriting phase</value>
+    </labels>
+    <labels>
+        <fullName>Msg_Case_ReadOnlyClient</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Msg_Case_ReadOnlyClient</shortDescription>
+        <value>The insurance case cannot be created because you have insufficient rights. You must have Full Access to the client in order to create an insurance case.</value>
+    </labels>
+    <labels>
+        <fullName>Msg_Confirmation_Notification</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Msg_Confirmation_Notification</shortDescription>
+        <value>Are you sure you want to {0} the {1} - {2}?</value>
+    </labels>
+    <labels>
+        <fullName>Msg_DuplicateCase_DoesNotExist</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>ERR1 – CaseID does not exist</shortDescription>
+        <value>CaseID does not exist.</value>
+    </labels>
+    <labels>
+        <fullName>Msg_DuplicateCase_GeneralError</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Duplicate Case General Error</shortDescription>
+        <value>An error was encountered, the record could not be duplicated. Please contact your System Administrator.</value>
+    </labels>
+    <labels>
+        <fullName>Msg_DuplicateCase_InActiveCase</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Duplicate Case Not Allowed on Inactive Cases</shortDescription>
+        <value>Inactive cases cannot be duplicated.  Please contact your System Administrator.</value>
+    </labels>
+    <labels>
+        <fullName>Msg_DuplicateCase_PermissionError</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Duplicate Case General Permission Error</shortDescription>
+        <value>You do not have the required privileges to duplicate this case.  Please contact your system administrator for more details.</value>
+    </labels>
+    <labels>
+        <fullName>Msg_DuplicateCase_PermissionOrgNotAllowed</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Duplicate Case Not Allowed on Org</shortDescription>
+        <value>Case Duplication has been disabled by your System Administrator.  If this is unexpected, please contact your System Administrator.</value>
+    </labels>
+    <labels>
+        <fullName>Msg_DuplicateCase_Permission_IGO_NoEApp</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Duplicate Case No eApp</shortDescription>
+        <value>Case must have an iGO e-App associated with it.</value>
+    </labels>
+    <labels>
+        <fullName>Msg_DuplicateCase_Permission_IGO_NotApplicationPhase</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Duplicate Case Not Application Phase</shortDescription>
+        <value>Case must be in an Application or Illustration phase.</value>
+    </labels>
+    <labels>
+        <fullName>Msg_DuplicateCase_Permission_IGO_NotOwner</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Duplicate Case Not Owner</shortDescription>
+        <value>User must be the owner of the case or have on behalf of enabled.</value>
+    </labels>
+    <labels>
+        <fullName>Msg_DuplicateCase_Permission_IGO_NotPrimarycase</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Duplicate Case Not Primary Case</shortDescription>
+        <value>Case must not be a child case (additional product in a multi-product application).</value>
+    </labels>
+    <labels>
+        <fullName>Msg_DuplicateCase_RequestIdNotValid</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>ERR2 – RequestID does not exist</shortDescription>
+        <value>RequestID does not exist.</value>
+    </labels>
+    <labels>
+        <fullName>Msg_DuplicateCase_Validation</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>ERR0 – Case does not meet standards</shortDescription>
+        <value>CaseId does not meet expected standards.</value>
+    </labels>
+    <labels>
+        <fullName>Msg_DuplicateCase_Wait</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Duplicate Case Wait</shortDescription>
+        <value>Duplicating Case, please wait.</value>
+    </labels>
+    <labels>
+        <fullName>Msg_DuplicateCase_WaitForSync</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Waiting for Case To sync</shortDescription>
+        <value>Waiting for the new case to synchronize back from iGO. Once synchronization is complete the Insurance Tool buttons should be available.</value>
+    </labels>
+    <labels>
+        <fullName>Msg_DuplicateIllus_GeneralError</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Duplicate Ilustration General Error</shortDescription>
+        <value>An error was encountered, the Illustration could not be created. Please contact your System Administrator.</value>
+    </labels>
+    <labels>
+        <fullName>Msg_ESign_FailedToInitiate</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Msg_ESign_FailedToInitiate</shortDescription>
+        <value>Can not initiate the E Signature Web Service Request.</value>
+    </labels>
+    <labels>
+        <fullName>Msg_ESign_Permission_IGO_NoEApp</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>ESign No eApp</shortDescription>
+        <value>Case must have an iGO e-App associated with it.</value>
+    </labels>
+    <labels>
+        <fullName>Msg_File_Import_Empty</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Msg_File_Import_Empty</shortDescription>
+        <value>Please select a file.</value>
+    </labels>
+    <labels>
+        <fullName>Msg_File_Import_InvalidType</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Msg_File_Import_InvalidType</shortDescription>
+        <value>The file uploaded has an invalid type.</value>
+    </labels>
+    <labels>
+        <fullName>Msg_File_Import_Results</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Msg_File_Import_Results</shortDescription>
+        <value>The {0} file has been imported. There are {1} successful upsert(s) and {2} error(s). All records have been saved to a separate CSV file identifying the failures and can be downloaded by clicking</value>
+    </labels>
+    <labels>
+        <fullName>Msg_File_Import_SizeTooLarge</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Msg_File_Import_SizeTooLarge</shortDescription>
+        <value>The maximum size that can be imported is: {0}.  The current file size is {1} please split your file into smaller files for import.</value>
+    </labels>
+    <labels>
+        <fullName>Msg_Have_Alert</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Msg_Have_Alert</shortDescription>
+        <value>You have {0} active alert.</value>
+    </labels>
+    <labels>
+        <fullName>Msg_Have_Alerts</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Msg_Have_Alerts</shortDescription>
+        <value>You have {0} active alerts.</value>
+    </labels>
+    <labels>
+        <fullName>Msg_HomePage_Invalid_Configuration</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Home Page Invalid Configuration</shortDescription>
+        <value>There was an error loading the home page configuration file.  Please contact your system administrator.</value>
+    </labels>
+    <labels>
+        <fullName>Msg_IGOAction_Permission_NotSameGAID</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>iGO Action Permission Not Same GAID</shortDescription>
+        <value>This case is owned by a user associated to the GAID {0}. You cannot {1} the case that is assigned to a different Channel.</value>
+    </labels>
+    <labels>
+        <fullName>Msg_IGOWebService_ActionError</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Msg_IGOWebService_ActionError</shortDescription>
+        <value>Cannot {0} case {1} because: {2}</value>
+    </labels>
+    <labels>
+        <fullName>Msg_IGOWebService_SettingError</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Msg_IGOWebService_SettingError</shortDescription>
+        <value>Cannot {0} because the AgentOne iGO Application setting {1} is currently off.</value>
+    </labels>
+    <labels>
+        <fullName>Msg_Insurance_Tool_Browser_Not_Supported</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Insurance Tool - Browser Not Supported</shortDescription>
+        <value>{0} is not currently supported with the Internet Explorer browser.  To access {1}, please utilize an alternative internet browser such as Google Chrome.  If needed, contact your system administrator for installation guidance.</value>
+    </labels>
+    <labels>
+        <fullName>Msg_No_Alert</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Msg_No_Alert</shortDescription>
+        <value>You have 0 active alerts.</value>
+    </labels>
+    <labels>
+        <fullName>Msg_Policy_Request_Disable</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Msg_Policy_Request_Disable</shortDescription>
+        <value>Policy Holder Service is currently disabled, please ask an administrative user to make sure that Policy Holder Service is enabled from AgentOne Global Settings.</value>
+    </labels>
+    <labels>
+        <fullName>Msg_Policy_Request_Inactive_Policy</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Msg_Policy_Request_Inactive_Policy</shortDescription>
+        <value>The selected policy is inactive, you must select an active policy.</value>
+    </labels>
+    <labels>
+        <fullName>Msg_Policy_Request_Inactive_Policy_For_Client</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Msg_Policy_Request_Inactive_Policy_For_Client</shortDescription>
+        <value>There are no active policies associated to the current client.</value>
+    </labels>
+    <labels>
+        <fullName>Msg_Policy_Request_On_Behalf_Of</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Msg_Policy_Request_On_Behalf_Of</shortDescription>
+        <value>In order to start a service request for a policy where you are not the owner you must have the &apos;on-behalf of&apos; feature enabled. Please check with your administrative user to confirm &apos;on-behalf of&apos; is enabled.</value>
+    </labels>
+    <labels>
+        <fullName>Msg_Records_Exported</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Msg_Records_Exported</shortDescription>
+        <value>The selected records have been successfully exported to {0}.</value>
+    </labels>
+    <labels>
+        <fullName>Msg_RelationshipTitle</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Msg_RelationshipTitle</shortDescription>
+        <value>&lt;Will be auto populated&gt;</value>
+    </labels>
+    <labels>
+        <fullName>Msg_RequirementFormSearch</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Msg_RequirementFormSearch</shortDescription>
+        <value>Search by Form</value>
+    </labels>
+    <labels>
+        <fullName>Msg_ResendEmail_AllFailed</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Msg_ResendEmail_AllFailed</shortDescription>
+        <value>Resend Email was not successful at this time. If this is unexpected, please contact your System Administrator.</value>
+    </labels>
+    <labels>
+        <fullName>Msg_Resend_Invalid_Email</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Msg_Resend_Invalid_Email</shortDescription>
+        <value>There is at least one recipient selected with an invalid email address. You must correct the email address for any recipients that have been marked with an asterisks.</value>
+    </labels>
+    <labels>
+        <fullName>Msg_Resend_Invalid_EmailOrDomain</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Msg_Resend_Invalid_EmailOrDomain</shortDescription>
+        <value>There is at least one recipient selected where the domain is unsupported or the email address is invalid. You must correct the email address for any recipients that have been marked with an asterisks.</value>
+    </labels>
+    <labels>
+        <fullName>Msg_Resend_No_Recipient</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Msg_Resend_No_Recipient</shortDescription>
+        <value>There are no recipients selected, you must select at least one recipient before attempting to resend.</value>
+    </labels>
+    <labels>
+        <fullName>Msg_SettingAccessDenied</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Msg_SettingAccessDenied</shortDescription>
+        <value>You are attempting to open a page that is only available to administrative users, the page cannot be displayed. If you believe you should have access, please contact your administrator regarding access to the AgentOne Administration app.</value>
+    </labels>
+    <labels>
+        <fullName>Msg_SettingValidation_APINotExists</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Msg_SettingValidation_APINotExists</shortDescription>
+        <value>Error: A field with the provided name does not exist for the selected entity on {0}.</value>
+    </labels>
+    <labels>
+        <fullName>Msg_SettingValidation_DeleteSysRecord</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Msg_SettingValidation_DeleteSysRecord</shortDescription>
+        <value>Error: You are attempting to delete one of the predefined AgentOne settings. The predefined Source Application records cannot be deleted.</value>
+    </labels>
+    <labels>
+        <fullName>Msg_SettingValidation_DuplicateAppCfgEntry</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Msg_SettingValidation_DuplicateNVMEntry</shortDescription>
+        <value>Error: An existing record with the same values for Name and Key already exists in the system.</value>
+    </labels>
+    <labels>
+        <fullName>Msg_SettingValidation_DuplicateEntry</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Msg_SettingValidation_DuplicateEntry</shortDescription>
+        <value>Error: A record with the same values already exists.</value>
+    </labels>
+    <labels>
+        <fullName>Msg_SettingValidation_DuplicateNVMEntry</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Msg_SettingValidation_DuplicateNVMEntry</shortDescription>
+        <value>Error: An existing record with the same values for External Application, Field Name and Value already exists in the system.</value>
+    </labels>
+    <labels>
+        <fullName>Msg_SettingValidation_EditSysRecord</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Msg_SettingValidation_EditSysRecord</shortDescription>
+        <value>Error: You are attempting to change the name on one of the predefined AgentOne settings. Only the &apos;Display Name&apos; can be changed on the predefined Source Application records.</value>
+    </labels>
+    <labels>
+        <fullName>Msg_SettingValidation_FieldInUse</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Msg_SettingValidation_FieldInUse</shortDescription>
+        <value>The {0} record cannot be deleted. There are {1} row(s) referencing this record.</value>
+    </labels>
+    <labels>
+        <fullName>Msg_SettingValidation_InvalidId</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Msg_SettingValidation_InvalidId</shortDescription>
+        <value>The value entered for the &quot;{0}&quot; does not exist. Please enter the ID for an existing &quot;{1}&quot;.</value>
+    </labels>
+    <labels>
+        <fullName>Msg_SettingValidation_InvalidPhase</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Msg_SettingValidation_InvalidPhase</shortDescription>
+        <value>The value entered for the &apos;Phase&apos; is not supported. Currently the only supported values for the &apos;Phase&apos; field are &quot;application&quot; , &quot;illustration&quot; and &quot;needs analysis&quot;.</value>
+    </labels>
+    <labels>
+        <fullName>Msg_SettingValidation_MissingRequired</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Msg_SettingValidation_MissingRequired</shortDescription>
+        <value>Error: You must enter a value for the {0}.</value>
+    </labels>
+    <labels>
+        <fullName>Msg_SettingValidation_NotInDependentList</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Msg_SettingValidation_NotInDependentList</shortDescription>
+        <value>Error: The {0} entered does not exist as in the {1}.</value>
+    </labels>
+    <labels>
+        <fullName>Msg_SettingValidation_NotInEntityFieldList</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Msg_SettingValidation_NotInEntityFieldList</shortDescription>
+        <value>Error: The field name entered does not exist in the Entity Field List, please make sure the field is registered with AgentOne by adding it to the Entity Field List.</value>
+    </labels>
+    <labels>
+        <fullName>Msg_SettingValidation_NotInInsuranceTool</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Msg_SettingValidation_NotInInsuranceTool</shortDescription>
+        <value>The value entered for the &apos;Tool Name&apos; does not exist as a registered insurance tool in Insurance Tool Registration from AgentOne Settings. Please enter the name of a registered insurance tool.</value>
+    </labels>
+    <labels>
+        <fullName>Msg_SettingValidation_ToolInUse</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Msg_SettingValidation_ToolInUse</shortDescription>
+        <value>The {0} record cannot be deleted. It is being referenced by {1} row(s) in Insurance Tool Product Configuration.</value>
+    </labels>
+    <labels>
+        <fullName>Msg_SettingValidation_UnsupportValue</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Msg_SettingValidation_UnsupportValue</shortDescription>
+        <value>Error: The value entered on {0} is not supported.</value>
+    </labels>
+    <labels>
+        <fullName>Msg_VPS_Invalid_Response</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>.</shortDescription>
+        <value>AgentOne has received an invalid or unrecognizable response from iGO and cannot process the response.</value>
+    </labels>
+    <labels>
+        <fullName>Msg_eSign_Alert</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Your e-Signature is needed at this time.</shortDescription>
+        <value>Alert from {0}: {1} :  The status of the Case is {2} and the primary insured on the Case is {3} {4}.</value>
+    </labels>
+    <labels>
+        <fullName>Msg_eSign_Alert_ErrorAgentNotOwner</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>ERR3 – Agent does not own the case</shortDescription>
+        <value>The logged in user is not the owner of the case. AgentOne is unable to log into the signature page for this insurance case.</value>
+    </labels>
+    <labels>
+        <fullName>Msg_eSign_Alert_ErrorCaseDoesNotExist</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>ERR1 – CaseID does not exist</shortDescription>
+        <value>The insurance case ID does not exist. AgentOne is unable to load the signature page for this insurance case. Please contact your administrator for assistance.</value>
+    </labels>
+    <labels>
+        <fullName>Msg_eSign_Alert_ErrorCaseStatus</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>ERR4 – Case Status is not eligible for Agent eSign</shortDescription>
+        <value>The associated case status is not currently set to &apos;Pending Awaiting Signature&apos;. AgentOne is unable to load the signature page for this insurance case.</value>
+    </labels>
+    <labels>
+        <fullName>Msg_eSign_Alert_ErrorExpirationDate</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>ERR5 - Agent email expired</shortDescription>
+        <value>The signature email has expired for the associated case, all signature emails must be resent. AgentOne is unable to load the signature page for this insurance case.</value>
+    </labels>
+    <labels>
+        <fullName>Msg_eSign_Alert_ErrorNotClickWrap</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>ERR6 - Agent Signature Method is not ClickWrap</shortDescription>
+        <value>The signature method for the associated case is not &apos;ClickWrap&apos;, this case is not eligible for agent eSignature. AgentOne is unable to load the signature page for this insurance case.</value>
+    </labels>
+    <labels>
+        <fullName>Msg_eSign_Alert_ErrorRequestIdDoesNotExist</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>ERR2 – RequestID does not exist</shortDescription>
+        <value>The logged in user cannot be identified. AgentOne is unable to load the signature page for this insurance case.</value>
+    </labels>
+    <labels>
+        <fullName>Msg_eSign_Alert_ErrorValidation</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>ERR0 – CaseId does not meet expected standards</shortDescription>
+        <value>The insurance case ID cannot be identified. AgentOne is unable to load the signature page for this insurance case. Please contact your administrator for assistance.</value>
+    </labels>
+    <labels>
+        <fullName>OpenButtonLabel</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Open Button Label</shortDescription>
+        <value>Open</value>
+    </labels>
+    <labels>
+        <fullName>Phase_Value_Description</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Case Phase Value Description</shortDescription>
+        <value>This is the period or stage in a sequence of development where the Insurance Case is already at.</value>
+    </labels>
+    <labels>
+        <fullName>PickList_Label_Blank_Text</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Text to be displayed for blank picklist option</shortDescription>
+        <value>--blank--</value>
+    </labels>
+    <labels>
+        <fullName>SaveButtonLabel</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Save Button Label</shortDescription>
+        <value>Save</value>
+    </labels>
+    <labels>
+        <fullName>SelectButtonLabel</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Select Button Label</shortDescription>
+        <value>Select</value>
+    </labels>
+    <labels>
+        <fullName>TXT_AgentOne_Alert</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>AgentOne Alert</shortDescription>
+        <value>AgentOne Alert</value>
+    </labels>
+    <labels>
+        <fullName>TXT_CaseFor_Template</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Default Insurance Case Name</shortDescription>
+        <value>Case for {0}</value>
+    </labels>
+    <labels>
+        <fullName>TXT_CaseStatus_Archived</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Archived</shortDescription>
+        <value>Archived</value>
+    </labels>
+    <labels>
+        <fullName>TXT_CaseStatus_Locked</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Locked - Ready for Signatures</shortDescription>
+        <value>Locked - Ready for Signatures</value>
+    </labels>
+    <labels>
+        <fullName>TXT_CaseStatus_New</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>New</shortDescription>
+        <value>New</value>
+    </labels>
+    <labels>
+        <fullName>TXT_CaseStatus_Started</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Started</shortDescription>
+        <value>Started</value>
+    </labels>
+    <labels>
+        <fullName>TXT_EditPage_AddHeader</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Add Page Title Format String.</shortDescription>
+        <value>Add {0}</value>
+    </labels>
+    <labels>
+        <fullName>TXT_EditPage_CreateHeader</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Edit Page Title Format String.</shortDescription>
+        <value>Create {0}</value>
+    </labels>
+    <labels>
+        <fullName>TXT_EditPage_EditHeader</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Edit Page Title Format String.</shortDescription>
+        <value>Edit {0}</value>
+    </labels>
+    <labels>
+        <fullName>TXT_EditPage_Header</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Edit Page Title Format String.</shortDescription>
+        <value>Edit {0}</value>
+    </labels>
+    <labels>
+        <fullName>TXT_Help_for_this_Page</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Help for this Page</shortDescription>
+        <value>Help for this Page</value>
+    </labels>
+    <labels>
+        <fullName>TXT_Help_for_this_Page_NewWindow</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Help for this Page (New Window)</shortDescription>
+        <value>Help for this Page (New Window)</value>
+    </labels>
+    <labels>
+        <fullName>Txt_Review_Page_Errors</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Review the errors on this page.</shortDescription>
+        <value>Review the errors on this page.</value>
+    </labels>
+</CustomLabels>

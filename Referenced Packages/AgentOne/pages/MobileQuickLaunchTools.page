@@ -1,0 +1,35 @@
+<apex:page cache="false" standardController="AgentOne__InsuranceCase__c" extensions="AgentOne.CaseButtonComponentController"> 
+    <style>
+        .flat-button-top {
+              position: relative;                                          
+              width: 230px;                            
+              height: 40px;
+              border: 0;
+              font-size: 18px;
+              color: white;
+              text-align: center;
+              text-shadow: 0 1px 2px rgba(0, 0, 0, 0.25);
+              background: #306EFF;                            
+              cursor: pointer;            
+              -moz-border-radius: 10px;
+              border-radius: 10px;                
+        }        
+    </style>         
+    <!-- ******* This outputpanel will be rendered if the insurance case has no eApp associated with it 
+    <apex:outputPanel rendered="{!IF(isIpad==true, true, false)}">   
+        <table style="width:100%">
+          <tr style="text-align: center; height: 60px;">
+            <td colspan="2"><input type="submit" value="Launch Insurance Tools" class="flat-button-top"/></td>      
+          </tr>
+        </table>        
+        <c:CaseButtons source="insCaseMobileCreate" entityId="{!InsuranceCase__c.Id}" entityName="InsuranceCase" targetWin="_self"/>
+    </apex:outputPanel> 
+             
+    <!-- ******* This outputpanel will only be rendered if the device is not an iPad 
+    <apex:outputPanel rendered="{!isIpad==false}">
+        <div style="background:#FFFF99; padding: 22px; font-weight:bold; font-size:14px; color:red; text-align:center; ">
+            {!$Label.AO_DeviceNotSupportedByIgo}
+        </div>
+    </apex:outputPanel> 
+	// -->            
+</apex:page>

@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fields>
+        <label>Date/heure de conversion</label>
+        <name>ConversionDateTime__c</name>
+    </fields>
+    <fields>
+        <label>Créé par moi</label>
+        <name>CreatedByMe__c</name>
+    </fields>
+    <fields>
+        <label>Créé à partir d&apos;une piste</label>
+        <name>CreatedFromLead__c</name>
+    </fields>
+    <fields>
+        <label>Employeur</label>
+        <name>Employer__c</name>
+    </fields>
+    <fields>
+        <label>Intérêt exprimé</label>
+        <name>ExpressedInterest__c</name>
+    </fields>
+    <fields>
+        <label>Foyer</label>
+        <name>Household__c</name>
+        <relationshipLabel>Référents du foyer</relationshipLabel>
+    </fields>
+    <fields>
+        <label>Valeur potentielle</label>
+        <name>PotentialValue__c</name>
+    </fields>
+    <fields>
+        <label>Référent externe</label>
+        <name>ReferredByContact__c</name>
+        <relationshipLabel>Référents clients</relationshipLabel>
+    </fields>
+    <fields>
+        <label>Référent interne</label>
+        <name>ReferredByUser__c</name>
+        <relationshipLabel><!-- Leads --></relationshipLabel>
+    </fields>
+    <fields>
+        <label>Score du référent</label>
+        <name>ReferrerScore__c</name>
+    </fields>
+    <fields>
+        <label>Compte associé</label>
+        <name>RelatedAccount__c</name>
+        <relationshipLabel>Pistes associées</relationshipLabel>
+    </fields>
+    <layouts>
+        <layout>Lead (General) Layout</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- Referral Information --></label>
+            <section>Referral Information</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Lead (Referral) Layout</layout>
+        <sections>
+            <label><!-- Referral Information --></label>
+            <section>Referral Information</section>
+        </sections>
+    </layouts>
+    <recordTypes>
+        <label>Référent commercial</label>
+        <name>BusinessReferral</name>
+    </recordTypes>
+    <recordTypes>
+        <label>Général</label>
+        <name>General</name>
+    </recordTypes>
+    <recordTypes>
+        <label>Référent personnel</label>
+        <name>Referral</name>
+    </recordTypes>
+    <recordTypes>
+        <label>Plan de retraite</label>
+        <name>RetirementPlanning</name>
+    </recordTypes>
+    <validationRules>
+        <errorMessage>Les référents internes doivent être des utilisateurs Salesforce internes.</errorMessage>
+        <name>NonPortalUserReferrer</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage>Saisissez un référent interne ou un référent externe. Vous pouvez répertorier un seul référent pour chaque référence.</errorMessage>
+        <name>SingleReferredByEntryByRecord</name>
+    </validationRules>
+</CustomObjectTranslation>

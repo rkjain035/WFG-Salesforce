@@ -1,0 +1,59 @@
+<apex:page applyBodyTag="false" standardStylesheets="false" showHeader="{!shouldShowHeader}"
+    title="Advanced Search Page for Sync Object" 
+    controller="AgentOne.SyncSearchPage_Controller">
+    
+    <apex:includeLightning />
+
+    <style>
+        html, body {
+            margin: 0;
+            padding: 0;
+        }
+        #lightningComponent {
+          
+        }
+    </style>
+
+    <div id="content">
+        <div id="lightningComponent" />
+    </div>
+
+    <script>
+        
+        var v_userContext = "{!$User.UITheme }";
+        var v_namespace = "{!namespace}";
+        var v_displayMode = "{!displayMode}";
+        var v_recordId1 = "{!recordId1}";
+        var v_recordId2 = "{!recordId2}";
+
+
+        $Lightning.use(v_namespace + ":LO_SyncSearchApp", function() {
+            $Lightning.createComponent(v_namespace + ":SyncSearch",
+                {
+                    "containerType" : "visualforce",
+                    "displayMode" : v_displayMode,
+                    "recordId1" : v_recordId1,
+                    "recordId2" : v_recordId2
+                },
+                "lightningComponent",
+                function(cmp) {
+                    $A.eventService.addHandler({
+                        event: 'force:navigateToURL',
+                        handler: function(event) {
+                            if (v_userContext === 'Theme4t' || v_userContext== 'Theme4d') {
+                                // The visualforce page is in S1 or Lightning Experience
+                                sforce.one.navigateToURL(event.getParams().url);
+                            } else if (v_userContext === 'Theme3') {
+                                // The visualforce page is runnin Classic
+                                window.open(event.getParams().url);
+                            } else {
+                                console.log("Unsupported theme");
+                            }
+                        }
+                    });
+                });
+        });
+
+    </script>
+
+</apex:page>

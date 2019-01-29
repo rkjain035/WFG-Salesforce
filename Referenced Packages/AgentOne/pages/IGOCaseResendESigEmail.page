@@ -1,0 +1,194 @@
+<apex:page docType="html-5.0" standardController="AgentOne__InsuranceCase__c" extensions="AgentOne.IGOCaseResendESigEmailController" tabStyle="AgentOne__InsuranceCase__c" sidebar="true">
+     <apex:stylesheet value="{!URLFOR($Resource.AgentOne__SLDS, 'assets/styles/salesforce-lightning-design-system-vf.min.css')}" />
+
+    <style type="text/css">
+       a.headerLink {text-decoration: none; }
+       a.headerLink:hover {text-decoration: underline;}
+       .enabled-button-panel {
+            border: 1px solid rgb(183, 205, 230);
+            text-align: center;
+            width: 40%;
+            height: 100%;
+            background-color: rgb(242, 246, 250);
+            margin: 0 auto;
+        }
+        .disabled-button-panel {
+            color: #CED0D3;
+            filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f6f6f6', endColorstr='#e3e3e3',GradientType=0 );
+            background-color: linear-gradient(to bottom, rgba(242,246,250,1) 0%,rgba(239,241,242,1) 64%,rgba(207,213,218,1) 100%);
+            border: 1px solid rgb(207, 213, 218);
+            text-align: center;
+            width: 40%;
+            height: 100%;
+            margin: 0 auto;
+        }
+        .enabled-button-font {
+            text-align: center;
+            font-size: 14px;
+            font-family: Arial,Helvetica,sans-serif;
+            color: rgb(35, 111, 189);
+            font-weight: bold;
+        }
+        .disabled-button-font {
+            text-align: center;
+            font-size: 14px;
+            font-family: Arial,Helvetica,sans-serif;
+            color: #CED0D3;
+            font-weight: bold;
+        }
+        .flat-button-top {
+              position: relative;
+              width: 230px;
+              height: 40px;
+              border: 0;
+              font-size: 18px;
+              color: white;
+              text-align: center;
+              text-shadow: 0 1px 2px rgba(0, 0, 0, 0.25);
+              background: #306EFF;
+              cursor: pointer;
+              -moz-border-radius: 10px;
+              border-radius: 10px;
+        }
+
+    </style>
+    <c:ScriptsComponent />
+   <apex:stylesheet value="{!URLFOR($Resource.AgentOne__AgentOne, '/css/ao_case_igobuttons.css')}"/>
+   <apex:outputPanel id="errorPanel" rendered="{!displayError}">
+       <apex:pageBlock >
+            <apex:pageMessage summary="{!errorMessage}" severity="warning" strength="3" >
+            </apex:pageMessage>
+        </apex:pageBlock>
+   </apex:outputPanel>
+
+        <!-- BEGIN OF AGENTONE HEADER TITLE-->
+        <apex:outputPanel rendered="{!showHeaderTitlePanel}">
+        <div class="bPageTitle">
+        <div class="ptBody">
+          <div class="content">
+            <img src="{!URLFOR($Resource.InsuranceCase_eApp_Icon)}" alt="Insurance Case" class="pageTitleIcon" title="Insurance Case" width="32" height="32"/>
+            <h1 class="pageType">
+              {!$ObjectType.InsuranceCase__c.Label}
+              <span class="titleSeparatingColon">:</span>
+            </h1>
+            <h2 class="pageDescription">
+              <apex:outputLink value="/{!AgentOne__InsuranceCase__c.Id}" styleClass="headerLink">
+                {!AgentOne__InsuranceCase__c.Name}
+              </apex:outputLink>
+            </h2>
+            <div class="blank">&nbsp;</div>
+          </div>
+        </div>
+        <div class="ptBreadcrumb">
+            &nbsp;&#171;&nbsp;
+           <apex:outputLink value="{!URLFOR($Action.InsuranceCase__c.View, id)}" id="theLink">{!returnTo}</apex:outputLink>
+        </div>
+      </div>
+      </apex:outputPanel>
+    <apex:form style="width:100%;" >
+    <!-- BEGIN OF THE BUTTON -->
+    <apex:outputPanel rendered="{!IF(OR(enabledResendButton == false, showButtonPanel == false), false, true)}">
+        <div>
+            <table style="width:100%">
+            <tbody><tr>
+            <td style="width: 33.7%; font-family: Arial; font-weight: bold; color: #4a5a56; font-size:91%; text-align:right">Submit</td>
+            <td style="width: 66.3%">
+            <apex:outputLink style="font-family: Arial; text-decoration: underline; color:#000; padding-left:2em" target="_parent" value="{!URLFOR('/apex/IGOCaseResendESigEmail', null, [Id=AgentOne__InsuranceCase__c.id, previousPage='FromCaseLayout'])}">
+              {!HTMLENCODE('Resend Email')}
+            </apex:outputLink>
+            </td></tr></tbody>
+          </table>
+        </div>
+    </apex:outputPanel>
+
+    <!-- BEGIN OF AGENTONE HEADER AT A GLANCE-->
+    <apex:outputPanel rendered="{!showAtAGlancePanel}">
+          <div class="agentone">
+          <div class="slds">
+            <table>
+
+              <tr>
+
+              <td width="28%" class="slds-text-align--left">
+                <div class="slds-form-element">
+                  <label class="slds-form-element__label" for="name">{!$ObjectType.InsuranceCase__c.Fields.Contact__c.Label}</label>
+                  <div class="slds-form-element__control">
+                    <apex:outputLink target="_top" value="/{!AgentOne__InsuranceCase__c.AgentOne__Contact__c}">{!AgentOne__InsuranceCase__c.Contact__r.name}</apex:outputLink>
+                  </div>
+                </div>
+              </td>
+
+              <td width="28%" class="slds-text-align--left">
+                <div class="slds-form-element">
+                  <label class="slds-form-element__label" for="name">{!$ObjectType.InsuranceCase__c.Fields.Status__c.Label}</label>
+                  <div class="slds-form-element__control">
+                  	<apex:outputfield value="{!AgentOne__InsuranceCase__c.AgentOne__Status__c}" />
+                  	</div>
+                </div>
+              </td>
+
+              <td width="28%" class="slds-text-align--left">
+                <div class="slds-form-element">
+                  <label class="slds-form-element__label" for="name">{!$ObjectType.InsuranceCase__c.Fields.CoverageAmount__c.Label}</label>
+                  <div class="slds-form-element__control">
+                    <apex:outputField value="{!AgentOne__InsuranceCase__c.AgentOne__CoverageAmount__c}" styleClass="mlsx plsx" id="caseAmt"/>
+                  </div>
+                </div>
+              </td>
+
+              <td width="16%" class="slds-text-align--left">
+                <div class="slds-form-element">
+                  <label class="slds-form-element__label" for="name">{!$ObjectType.InsuranceCase__c.Fields.Product_Name__c.Label}</label>
+                  <div class="slds-form-element__control">
+                      	<!--  Made this section configurable  -->
+                    	 <apex:outputLink target="_top" value="/{!AgentOne__InsuranceCase__c.AgentOne__InsuranceProduct__c}" rendered="{!displayProductHyperlink}">{!AgentOne__InsuranceCase__c.AgentOne__Product_Name__c}</apex:outputLink>
+                   		<apex:outputField rendered="{!!displayProductHyperlink}"  value="{!AgentOne__InsuranceCase__c.AgentOne__Product_Name__c}"  id="caseProduct"/>
+                </div>
+                </div>
+              </td>
+
+                </tr>
+            </table>
+
+          <apex:outputPanel rendered="{!$Setup.AgentOneGlobalSettings__c.Show_indicator_in_At_a_Glance_section__c == true}">
+
+          	<c:CasePhase casePhasesFileName="{!AgentOne__InsuranceCase__c.AgentOne__PhaseImageFileName__c}"></c:CasePhase>
+
+          </apex:outputPanel>
+
+		</div>
+    </div>
+
+    </apex:outputPanel>
+
+    <!-- BEGIN OF SF1 BACK LINK  -->
+    <apex:outputPanel rendered="{!showSF1BackLinkPanel}">
+        <div class="bPageTitle">
+        <div class="ptBreadcrumb">
+            &nbsp;&#171;&nbsp;
+           <apex:commandLink value="{!returnTo}" action="{!returnToOriginatingPage}"/>
+        </div>
+        </div>
+    </apex:outputPanel>
+  </apex:form>
+    <!-- BEGIN OF COMPONENT CONTAINER  -->
+     <apex:outputPanel rendered="{!showComponentPanel}">
+        <!-- Put the VF COMPONENT HERE -->
+        <apex:include pageName="AgentOne__iGOResendEmail" />
+    </apex:outputPanel>
+
+    <!-- The place holder for extra needed fields for controller, the Standard controller will only includes the fields that referenced on the page.
+         So, we can save a query in the controller.
+         Those fields are used to determine if we want to enable/disable the Resend button.-->
+    <apex:outputPanel rendered="false">
+        {!InsuranceCase__c.Contact__c}
+        {!InsuranceCase__c.Contact__r.OwnerId}
+        {!InsuranceCase__c.Phase__c}
+        {!InsuranceCase__c.Transfer_Status__c}
+        {!InsuranceCase__c.Status_Code__c}
+        {!InsuranceCase__c.Source__c}
+        {!InsuranceCase__c.Is_e_App_Archived__c}
+        {!InsuranceCase__c.IsActive__c}
+        {!AgentOne__InsuranceCase__c.AgentOne__Status__c}
+    </apex:outputPanel>
+</apex:page>

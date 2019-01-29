@@ -1,0 +1,5 @@
+<apex:page cache="false" standardController="Contact" standardStylesheets="false" docType="html-5.0" id="headerPage" tabStyle="Contact">
+    <apex:form >
+        <c:CaseButtons source="contact" entityId="{!Contact.Id}" entityName="Contact"/>      
+    </apex:form>
+</apex:page>

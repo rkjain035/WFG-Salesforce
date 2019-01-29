@@ -1,0 +1,57 @@
+<apex:page showHeader="false" sidebar="false" controller="AgentOne.FileUploadController" standardStylesheets="false" applyBodyTag="false" applyHtmlTag="false" docType="html-5.0">
+    <html xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" lang="en">
+
+    <apex:stylesheet value="{!URLFOR($Resource.AgentOne__SLDS, 'assets/styles/salesforce-lightning-design-system-vf.min.css')}" />
+
+    <div class="agentone">
+    <div class="slds">
+
+
+        <apex:form >
+
+           <article class="slds-post">
+                <header class="slds-post__header slds-media slds-media--center">
+
+                    <div class="slds-media__figure">
+                        <span class="slds-icon_container">
+                            <svg aria-hidden="true" class="slds-button__icon slds-button__icon--left">
+                                <use xlink:href="{!URLFOR($Resource.SLDS, '/assets/icons/utility-sprite/svg/symbols.svg#upload')}"></use>
+                            </svg>
+                        </span>
+
+                    </div>
+
+                    <div class="slds-media__body">
+                        <div class="slds-grid slds-grid--align-spread slds-has-flexi-truncate">
+                            <p>
+                                <apex:inputFile value="{!fileContent}" filename="{!fileName}" id="file-upload-input-01" accept=".csv"  />
+                            </p>
+                        </div>
+                    </div>
+
+                </header>
+
+                <div class="slds-post__content slds-text-longform slds-m-top--small">
+                    <p>{!importResult}&nbsp;<apex:outputLink rendered="{!ISBLANK(importResultDocId) == false}" value="{!URLFOR($Action.Document.Download, importResultDocId)}" target="_blank">here</apex:outputLink>
+                    </p>
+                </div>
+
+                <footer class="slds-post__footer">
+                    <ul class="slds-post__footer-actions-list slds-list--horizontal">
+                        <li class="slds-col slds-item slds-m-right--medium">
+                            <apex:commandButton styleClass="slds-button slds-button--brand" action="{!importSettings}" value="Import" rendered="{!showImportButton}"/>
+                        </li>
+                    </ul>
+                </footer>
+            </article>
+
+
+
+            </apex:form>
+
+
+        <!-- END OF SLDS -->
+    </div>
+    </div>
+    </html>
+</apex:page>

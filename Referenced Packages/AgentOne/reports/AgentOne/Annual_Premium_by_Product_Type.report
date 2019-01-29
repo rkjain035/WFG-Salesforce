@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <columns>
+        <field>InsuranceCase__c$PrimaryInsured_Name__c</field>
+    </columns>
+    <columns>
+        <field>InsuranceCase__c$Name__c</field>
+    </columns>
+    <columns>
+        <aggregateTypes>Sum</aggregateTypes>
+        <field>InsuranceCase__c$AnnualPremium__c</field>
+    </columns>
+    <columns>
+        <field>InsuranceCase__c$CoverageAmount__c</field>
+    </columns>
+    <columns>
+        <field>InsuranceCase__c$DaysSinceCasePhaseUpdated__c</field>
+    </columns>
+    <columns>
+        <field>InsuranceCase__c$PolicyNumber__c</field>
+    </columns>
+    <columns>
+        <field>InsuranceCase__c$Status__c</field>
+    </columns>
+    <columns>
+        <field>InsuranceCase__c$InsuranceProduct__c</field>
+    </columns>
+    <columns>
+        <field>InsuranceCase__c$LastModifiedDate</field>
+    </columns>
+    <description>Active insurance cases with annual premium, grouped by product type</description>
+    <filter>
+        <criteriaItems>
+            <column>InsuranceCase__c$IsActive__c</column>
+            <isUnlocked>false</isUnlocked>
+            <operator>equals</operator>
+            <value>1</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>InsuranceCase__c$AnnualPremium__c</column>
+            <isUnlocked>false</isUnlocked>
+            <operator>greaterThan</operator>
+            <value>USD 0</value>
+        </criteriaItems>
+        <language>en_US</language>
+    </filter>
+    <format>Summary</format>
+    <groupingsDown>
+        <dateGranularity>Day</dateGranularity>
+        <field>InsuranceCase__c$Product_Type__c</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsDown>
+    <name>Annual Premium by Product Type</name>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>Insurance_Cases__c</reportType>
+    <scope>organization</scope>
+    <showDetails>true</showDetails>
+    <sortColumn>InsuranceCase__c$PrimaryInsured_Name__c</sortColumn>
+    <sortOrder>Asc</sortOrder>
+    <timeFrameFilter>
+        <dateColumn>InsuranceCase__c$CreatedDate</dateColumn>
+        <interval>INTERVAL_CURY</interval>
+    </timeFrameFilter>
+</Report>

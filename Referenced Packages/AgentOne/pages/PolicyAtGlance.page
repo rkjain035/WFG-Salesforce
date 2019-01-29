@@ -1,0 +1,220 @@
+<apex:page cache="false" standardController="AgentOne__Inforce_Policy__c" extensions="AgentOne.PolicyAtGlanceController" standardStylesheets="false" applyBodyTag="false" tabStyle="AgentOne__Inforce_Policy__c">
+
+  <html xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <head>
+      <apex:stylesheet value="{!URLFOR($Resource.AgentOne__SLDS, 'assets/styles/salesforce-lightning-design-system-vf.min.css')}" />
+      <script type="text/javascript">
+        // This is duplicated code - perhaps there's a way to modularize it
+        var openDispatcherUrl = '{!URLFOR($Page.ApplicationToolsDispatcher)}';
+        var containerEntityId = '{!JSENCODE(HTMLENCODE(policy.id))}';
+        var containerEntityName = '{!JSENCODE(HTMLENCODE(objectTypeName))}';
+        var toolname = '{!JSENCODE(HTMLENCODE(toolName))}';
+        var toolphase = 'policy';
+        var toolopennewwindow = {!openInNewWindow};
+        var serviceid = '{!JSENCODE(HTMLENCODE(serviceId))}';
+        var specs = '{!JSENCODE(HTMLENCODE(toolSpecs))}';
+        var isSF1 = ((typeof sforce != 'undefined') && (sforce != null));
+
+        function openApplication() {
+            var url = openDispatcherUrl;
+            var idStringLabel = 'id';
+
+            if (serviceid === '') {
+              idStringLabel = 'policyid';
+              url = '{!URLFOR($Page.OpenServiceRequest)}';
+            } else {
+              // need to pass serviceId if it is NOT null
+              containerEntityId = serviceid;
+            }
+
+            // check if it is on mobile device
+            if (url.indexOf('?') == -1)
+                url = url + '?&'+ idStringLabel +'=' + containerEntityId + '&entity=' + containerEntityName + '&tool=' + toolname + '&phase=' + toolphase;
+                // + '&en=' + containerEntityName + '&p=' + toolphase +'&serviceid=' + serviceid;
+            else    // sforce one added ?isdtp=1 to the url
+                url = url + '&'+ idStringLabel + '=' + containerEntityId + '&entity=' + containerEntityName + '&tool=' + toolname + '&phase=' + toolphase;
+                // + '&en=' + containerEntityName + '&p=' + toolphase + '&serviceid=' + serviceid;
+
+
+            // need to add checks for mobile
+            sendToPage(url, isSF1);
+        };
+
+        function startServiceRequest() {
+          var url = '{!URLFOR($Page.PolicyRequest)}';
+          var idStringLabel = 'policyid';
+
+          // check if it is on mobile device
+          if (url.indexOf('?') == -1)
+              url = url + '?&'+ idStringLabel +'=' + containerEntityId + '&entity=' + containerEntityName + '&tool=' + toolname + '&phase=' + toolphase;
+              // + '&en=' + containerEntityName + '&p=' + toolphase +'&serviceid=' + serviceid;
+          else    // sforce one added ?isdtp=1 to the url
+              url = url + '&'+ idStringLabel + '=' + containerEntityId + '&entity=' + containerEntityName + '&tool=' + toolname + '&phase=' + toolphase;
+              // + '&en=' + containerEntityName + '&p=' + toolphase + '&serviceid=' + serviceid;
+          sendToPage(url, isSF1);
+        };
+
+        function sendToPage(url, isSF1) {
+          if (isSF1) {
+                url = url + '&device=iPad';
+                sforce.one.navigateToURL(url);
+            } else {
+
+                // check if we need to open this in a new window
+                if (toolopennewwindow) {
+                    var toolWin = window.open(url, toolname, specs);
+                    toolWin.focus();
+                } else {
+                    window.parent.location = url;
+                }
+            } // end of (isSF1)
+        }
+
+        function navigateToUrl(targetLocation) {
+           if (isSF1) {
+               sforce.one.navigateToSObject(targetLocation);
+           } else {
+               window.parent.location = '/'+ targetLocation;
+           }
+        };
+
+      </script>
+      </head>
+
+      <apex:form >
+
+      <div class="agentone">
+      <div class="slds">
+
+        <main class="slds-box slds-box slds-theme--shade">
+
+          <apex:outputPanel styleClass="slds-clearfix slds-m-bottom--small" layout="block" id="panTable" rendered="{!displayHeaderText}">
+
+            <div class="slds-float--left">
+              <h1 id="typeOfSearchLabel" class="slds-text-heading--medium">At a Glance</h1>
+            </div>
+
+            <section class="slds-col slds-float--right">
+                <apex:outputPanel styleClass="slds-col slds-no-flex slds-grid slds-align-bottom" rendered="{!displayActionButtons}">
+                    <apex:commandButton styleClass="slds-button slds-button--neutral" disabled="{!IF(disableStartButton, 'true','false')}" onclick="startServiceRequest()"
+                      value="Start Service Request" />
+                    <apex:commandButton styleClass="slds-button slds-button--neutral" disabled="{!IF(disableOpenButton, 'true','false')}" action="{!openServiceRequest}" oncomplete="openApplication()"  reRender="reRenderedPanelToSetVariable" value="Open Service Request" />
+                </apex:outputPanel>
+            </section>
+
+          </apex:outputPanel>
+
+
+        <apex:outputPanel rendered="{!!isIE}" >
+          <div class="slds-grid slds-has-flexi-truncate">
+          <div class="slds-col slds-size--1-of-5">
+             <div class="slds-form-element slds-has-flexi-truncate">
+                  <span class="slds-form-element__label slds-truncate">{!$ObjectType.Inforce_Policy__c.Fields.Inforce_Policy_Owner__c.Label}</span>
+                  <div class="slds-form-element__control slds-truncate">
+                    <a href="#" title="{!policy.Inforce_Policy_Owner__r.Name}" onclick="navigateToUrl('{!JSENCODE(policy.Inforce_Policy_Owner__c)}');">{!policy.Inforce_Policy_Owner__r.Name}</a>
+                  </div>
+                </div>
+          </div>
+          <div class="slds-col slds-size--1-of-5">
+             <div class="slds-form-element slds-has-flexi-truncate">
+                  <span class="slds-form-element__label slds-truncate">{!$ObjectType.Inforce_Policy__c.Fields.Status__c.Label}</span>
+                  <div class="slds-form-element__control slds-truncate">
+                   <span class="slds-form_element__static slds-truncate">{!policy.Status__c}</span></div>
+              </div>
+          </div>
+
+          <div class="slds-col slds-size--1-of-5">
+            <div class="slds-form-element slds-has-flexi-truncate">
+                  <span class="slds-form-element__label slds-truncate">{!$ObjectType.Inforce_Policy__c.Fields.CoverageAmount__c.Label}</span>
+                  <div class="slds-form-element__control slds-truncate">
+                 <apex:outputField value="{!policy.AgentOne__CoverageAmount__c}" styleClass="mlsx plsx" id="policyCoverageAmount"/></div>
+                </div>
+            </div>
+
+          <div class="slds-col slds-size--1-of-5">
+              <div class="slds-form-element slds-has-flexi-truncate">
+                  <span class="slds-form-element__label slds-truncate">{!$ObjectType.Inforce_Policy__c.Fields.Product_Name__c.Label}</span>
+                  <div class="slds-form-element__control slds-truncate">
+                       <apex:outputPanel rendered="{!displayProductHyperlink}">
+                      <a href="#" title="{!policy.AgentOne__Product_Name__c}" onclick="navigateToUrl('{!JSENCODE(policy.InsuranceProduct__c)}');">{!policy.AgentOne__Product_Name__c}</a>&#160;
+                     </apex:outputPanel>
+                     <apex:outputField rendered="{!!displayProductHyperlink}"  value="{!policy.AgentOne__Product_Name__c}"  id="policyProduct"/>
+                  </div>
+                </div>
+          </div>
+          <div class="slds-col slds-size--1-of-5">
+              <div class="slds-form-element slds-has-flexi-truncate">
+                  <span class="slds-form-element__label slds-truncate">{!$ObjectType.Inforce_Policy__c.Fields.PolicyNumber__c.Label}</span>
+                  <div class="slds-form-element__control slds-truncate">
+                    <apex:outputField value="{!policy.AgentOne__PolicyNumber__c}" id="policyNumber"/>
+                  </div>
+                </div>
+          </div>
+
+        </div>
+        </apex:outputPanel>
+
+          <apex:outputPanel rendered="{!isIE}" >
+
+          <table>
+              <tr>
+
+              <td width="20%" class="slds-text-align--left">
+                <div class="slds-form-element slds-has-flexi-truncate">
+                  <label class="slds-form-element__label slds-truncate" for="col1">{!$ObjectType.Inforce_Policy__c.Fields.Inforce_Policy_Owner__c.Label}</label>
+                  <div class="slds-form-element__control slds-truncate">
+                    <a href="#" title="{!policy.Inforce_Policy_Owner__r.Name}" onclick="navigateToUrl('{!JSENCODE(policy.Inforce_Policy_Owner__c)}');">{!policy.Inforce_Policy_Owner__r.Name}</a>
+                  </div>
+                </div>
+              </td>
+
+              <td width="20%" class="slds-text-align--left">
+                <div class="slds-form-element slds-has-flexi-truncate">
+                  <label class="slds-form-element__label slds-truncate" for="col2">{!$ObjectType.Inforce_Policy__c.Fields.Status__c.Label}</label>
+                  <div class="slds-form-element__control slds-truncate">{!policy.Status__c}</div>
+                </div>
+              </td>
+
+              <td width="20%" class="slds-text-align--left">
+                <div class="slds-form-element slds-has-flexi-truncate">
+                  <label class="slds-form-element__label slds-truncate" for="col3">{!$ObjectType.Inforce_Policy__c.Fields.CoverageAmount__c.Label}</label>
+                  <div class="slds-form-element__control slds-truncate">
+                    <apex:outputField value="{!policy.AgentOne__CoverageAmount__c}" styleClass="mlsx plsx" id="policyCoverageAmountIE"/>
+                  </div>
+                </div>
+              </td>
+
+        <!--  &nbps; only works in pure HTML - can use &#160; hexadecimal notation instead -->
+              <td width="20%" class="slds-text-align--left">
+                <div class="slds-form-element slds-has-flexi-truncate">
+                  <label class="slds-form-element__label slds-truncate" for="col4">{!$ObjectType.Inforce_Policy__c.Fields.Product_Name__c.Label}</label>
+                  <div class="slds-form-element__control slds-truncate">
+                     <apex:outputPanel rendered="{!displayProductHyperlink}">
+                      <a href="#" title="{!policy.AgentOne__Product_Name__c}" onclick="navigateToUrl('{!JSENCODE(policy.InsuranceProduct__c)}');">{!policy.AgentOne__Product_Name__c}</a>&#160;
+                     </apex:outputPanel>
+                     <apex:outputField rendered="{!!displayProductHyperlink}" value="{!policy.AgentOne__Product_Name__c}"  id="policyProductIE"/>
+                  </div>
+                </div>
+              </td>
+
+              <td width="20%" class="slds-text-align--left">
+                <div class="slds-form-element slds-has-flexi-truncate">
+                  <label class="slds-form-element__label slds-truncate" for="col5">{!$ObjectType.Inforce_Policy__c.Fields.PolicyNumber__c.Label}</label>
+                  <div class="slds-form-element__control slds-truncate">
+                    <apex:outputField value="{!policy.AgentOne__PolicyNumber__c}"  id="policyNumberIE"/>
+                  </div>
+                </div>
+              </td>
+
+              </tr>
+            </table>
+          </apex:outputPanel>
+
+
+          </main> <!-- end of page-header -->
+          <apex:outputPanel id="reRenderedPanelToSetVariable"><script type="text/javascript"> serviceid = '{!serviceId}';</script></apex:outputPanel>
+          </div>
+        </div> <!-- end of slds -->
+      </apex:form>
+    </html>
+</apex:page>

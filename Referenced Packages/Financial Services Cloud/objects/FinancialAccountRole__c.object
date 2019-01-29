@@ -1,0 +1,563 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <actionOverrides>
+        <actionName>Accept</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Clone</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>List</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>New</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Tab</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <allowInChatterGroups>false</allowInChatterGroups>
+    <compactLayoutAssignment>SYSTEM</compactLayoutAssignment>
+    <deploymentStatus>Deployed</deploymentStatus>
+    <deprecated>false</deprecated>
+    <description>Represents the role occupied by a person or organizational entity that is involved with a financial account, such as a beneficiary or trustee.</description>
+    <enableActivities>false</enableActivities>
+    <enableBulkApi>true</enableBulkApi>
+    <enableFeeds>false</enableFeeds>
+    <enableHistory>true</enableHistory>
+    <enableReports>false</enableReports>
+    <enableSearch>true</enableSearch>
+    <enableSharing>true</enableSharing>
+    <enableStreamingApi>true</enableStreamingApi>
+    <externalSharingModel>ControlledByParent</externalSharingModel>
+    <fields>
+        <fullName>Active__c</fullName>
+        <defaultValue>true</defaultValue>
+        <deprecated>false</deprecated>
+        <description>Indicates whether the organizational entity or person currently occupies this role.</description>
+        <externalId>false</externalId>
+        <label>Active</label>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Editable__c</fullName>
+        <defaultValue>true</defaultValue>
+        <deprecated>false</deprecated>
+        <description>Indicates whether this field is read-only or editable.</description>
+        <externalId>false</externalId>
+        <label>Editable</label>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>EndDate__c</fullName>
+        <deprecated>false</deprecated>
+        <description>End date when the organizational entity or person relinquished this role.</description>
+        <encrypted>false</encrypted>
+        <externalId>false</externalId>
+        <label>End Date</label>
+        <required>false</required>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>FinancialAccount__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Financial account that this role is related to.</description>
+        <externalId>false</externalId>
+        <label>Financial Account</label>
+        <referenceTo>FinancialAccount__c</referenceTo>
+        <relationshipLabel>Financial Account Roles</relationshipLabel>
+        <relationshipName>FinancialAccountRoles</relationshipName>
+        <relationshipOrder>0</relationshipOrder>
+        <reparentableMasterDetail>false</reparentableMasterDetail>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>MasterDetail</type>
+        <writeRequiresMasterRead>false</writeRequiresMasterRead>
+    </fields>
+    <fields>
+        <fullName>RelatedAccount__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <deprecated>false</deprecated>
+        <description>Name of the organizational entity that is involved with the financial account.</description>
+        <externalId>false</externalId>
+        <label>Related Account</label>
+        <referenceTo>Account</referenceTo>
+        <relationshipLabel>Financial Account Roles</relationshipLabel>
+        <relationshipName>FinancialAccountRoles</relationshipName>
+        <required>false</required>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>RelatedContact__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <deprecated>false</deprecated>
+        <description>Name of the person who is involved with the financial account.</description>
+        <externalId>false</externalId>
+        <label>Related Contact</label>
+        <referenceTo>Contact</referenceTo>
+        <relationshipLabel>Financial Account Roles</relationshipLabel>
+        <relationshipName>FinancialAccountRoles</relationshipName>
+        <required>false</required>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Role__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Role that describes how the organizational entity or person is involved with the financial account.</description>
+        <externalId>false</externalId>
+        <label>Role</label>
+        <required>false</required>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Accountant</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Additional Owner</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Administrator</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Advisor</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Annuitant</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Appoint / Remove Authority</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Authorized Agent</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Authorized Agent / Beneficial Owner</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Authorized Individual</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Authorized Signer</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Beneficial Owner</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Beneficiary</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Business Manager</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Committee Member</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Conservator</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Control Person</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Corporation</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Cosigner</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Custodian</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Deceased Grantor</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Decedent</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Discretionary</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Foundation</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Full Authority</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Grantor</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Guardian</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Insured</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Interested Party</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Minor Primary Owner</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Original Depositor</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Other</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Power of Attorney</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Proprietor</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>TOD Beneficiary</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Trustee</fullName>
+                    <default>false</default>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>SourceSystemId__c</fullName>
+        <deprecated>false</deprecated>
+        <encrypted>false</encrypted>
+        <externalId>true</externalId>
+        <label>Source System ID</label>
+        <length>100</length>
+        <required>false</required>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>StartDate__c</fullName>
+        <defaultValue>today()</defaultValue>
+        <deprecated>false</deprecated>
+        <description>Start date when the organizational entity or person assumed this role.</description>
+        <encrypted>false</encrypted>
+        <externalId>false</externalId>
+        <label>Start Date</label>
+        <required>false</required>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <label>Financial Account Role</label>
+    <nameField>
+        <displayFormat>FAR-{000000000}</displayFormat>
+        <label>Role Number</label>
+        <trackHistory>true</trackHistory>
+        <type>AutoNumber</type>
+    </nameField>
+    <pluralLabel>Financial Account Roles</pluralLabel>
+    <recordTypeTrackHistory>true</recordTypeTrackHistory>
+    <recordTypes>
+        <fullName>AccountRole</fullName>
+        <active>true</active>
+        <description>Role occupied by an organizational entity, such as a corporation or LLC</description>
+        <label>Account Role</label>
+        <picklistValues>
+            <picklist>Role__c</picklist>
+            <values>
+                <fullName>Accountant</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Additional Owner</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Administrator</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Advisor</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Annuitant</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Appoint %2F Remove Authority</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Authorized Agent</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Authorized Agent %2F Beneficial Owner</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Authorized Individual</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Authorized Signer</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Beneficiary</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Business Manager</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Committee Member</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Conservator</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Control Person</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Corporation</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Cosigner</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Custodian</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Deceased Grantor</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Decedent</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Discretionary</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Foundation</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Full Authority</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Grantor</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Guardian</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Insured</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Interested Party</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Minor Primary Owner</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Original Depositor</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Other</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Power of Attorney</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Proprietor</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>TOD Beneficiary</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Trustee</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+    </recordTypes>
+    <recordTypes>
+        <fullName>ContactRole</fullName>
+        <active>true</active>
+        <description>Role occupied by a person</description>
+        <label>Contact Role</label>
+        <picklistValues>
+            <picklist>Role__c</picklist>
+            <values>
+                <fullName>Accountant</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Beneficial Owner</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Beneficiary</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Business Manager</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Grantor</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Trustee</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+    </recordTypes>
+    <searchLayouts/>
+    <sharingModel>ControlledByParent</sharingModel>
+    <validationRules>
+        <fullName>CannotCreateInactiveRecord</fullName>
+        <active>true</active>
+        <description>Ensures that a record cannot be created as Inactive</description>
+        <errorConditionFormula>ISBLANK(EndDate__c) &amp;&amp; NOT(Active__c)</errorConditionFormula>
+        <errorMessage>A Financial Account Role cannot be created as Inactive</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>FARCannotBeModified</fullName>
+        <active>true</active>
+        <errorConditionFormula>AND(OR(ISCHANGED(RelatedAccount__c),ISCHANGED(RelatedContact__c),ISCHANGED(FinancialAccount__c),ISCHANGED(Role__c)),NOT(ISNEW()))</errorConditionFormula>
+        <errorMessage>This record cannot be edited. To update role information, you can deactivate this record and create a new one.</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>InactiveFARCannotBeEdited</fullName>
+        <active>true</active>
+        <errorConditionFormula>AND(PRIORVALUE(Active__c) == false,NOT(ISNEW()))</errorConditionFormula>
+        <errorMessage>Inactive record cannot be edited. To update FAR, you can create a new one.</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>InactiveRecordCannotBeReactivated</fullName>
+        <active>true</active>
+        <description>Ensures that inactive records cannot be reactivated.</description>
+        <errorConditionFormula>1!=1</errorConditionFormula>
+        <errorMessage>Inactive Financial Roles cannot be reactivated.</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>OwnershipRolesCannotBeDeactivated</fullName>
+        <active>true</active>
+        <description>Enforces that changes to primary roles cannot be deactivated.</description>
+        <errorConditionFormula>(Editable__c == false) &amp;&amp;
+        (ISCHANGED( Active__c ))</errorConditionFormula>
+        <errorMessage>This record cannot be deactivated because ownership can be updated on the financial account only.</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>OwnershipRolesCannotBeModified</fullName>
+        <active>true</active>
+        <description>Enforces that changes to Related Contact, Related Account, Role fields are not allowed when fields are non editable.</description>
+        <errorConditionFormula>1!=1</errorConditionFormula>
+        <errorMessage>This record cannot be modified because ownership can be specified on the financial account only.</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>RelatedAccountOrContactRequired</fullName>
+        <active>true</active>
+        <description>Enforce selection of the correct lookup relationship: either a Related Account or Related Contact.</description>
+        <errorConditionFormula>ISBLANK(RelatedContact__c) &amp;&amp; ISBLANK( RelatedAccount__c)</errorConditionFormula>
+        <errorMessage>Either Related Account or Related Contact is required.</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>RoleIsMandatory</fullName>
+        <active>true</active>
+        <description>Enforces that the Role__c field is mandatory when a FinancialAccountRole__c object is created.</description>
+        <errorConditionFormula>ISBLANK(TEXT(Role__c))</errorConditionFormula>
+        <errorMessage>Role is required.</errorMessage>
+    </validationRules>
+</CustomObject>

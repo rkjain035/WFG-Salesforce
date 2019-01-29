@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Événement de vie</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Événements de vie</value>
+    </caseValues>
+    <fields>
+        <label>Client</label>
+        <name>Client__c</name>
+        <relationshipLabel>Événements de vie</relationshipLabel>
+    </fields>
+    <fields>
+        <label>Note de discussion</label>
+        <name>DiscussionNote__c</name>
+    </fields>
+    <fields>
+        <label>Date de l&apos;événement</label>
+        <name>EventDate__c</name>
+    </fields>
+    <fields>
+        <label>Type d&apos;événement</label>
+        <name>EventType__c</name>
+        <picklistValues>
+            <masterLabel>College</masterLabel>
+            <translation><!-- College --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>New Baby</masterLabel>
+            <translation><!-- New Baby --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>New Business</masterLabel>
+            <translation><!-- New Business --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>New Home</masterLabel>
+            <translation><!-- New Home --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>New Job</masterLabel>
+            <translation><!-- New Job --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Retirement</masterLabel>
+            <translation><!-- Retirement --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label>Objectif financier</label>
+        <name>FinancialGoal__c</name>
+        <relationshipLabel>Événements de vie</relationshipLabel>
+    </fields>
+    <fields>
+        <label>Type d&apos;objectif</label>
+        <name>GoalType__c</name>
+        <picklistValues>
+            <masterLabel>Saving for College</masterLabel>
+            <translation><!-- Saving for College --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Saving for Retirement</masterLabel>
+            <translation><!-- Saving for Retirement --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label>ID du système source</label>
+        <name>SourceSystemId__c</name>
+    </fields>
+    <gender>Masculine</gender>
+    <nameFieldLabel>Nom de l&apos;événement de vie</nameFieldLabel>
+    <startsWith>Vowel</startsWith>
+</CustomObjectTranslation>

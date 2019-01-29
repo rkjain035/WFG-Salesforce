@@ -1,0 +1,2964 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomLabels xmlns="http://soap.sforce.com/2006/04/metadata">
+    <labels>
+        <fullName>Button_Label_Add_Account</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Add Account button in visualization component</shortDescription>
+        <value>+ Add Account</value>
+    </labels>
+    <labels>
+        <fullName>Button_Label_Add_Contact</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Add Contact button in visualization component</shortDescription>
+        <value>+ Add Contact</value>
+    </labels>
+    <labels>
+        <fullName>Button_Label_Add_Group</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>New Group button in visualization component</shortDescription>
+        <value>+ Add Group</value>
+    </labels>
+    <labels>
+        <fullName>Button_Label_Add_Member</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Add Member button in visualization component</shortDescription>
+        <value>+ Add Member</value>
+    </labels>
+    <labels>
+        <fullName>Button_Label_Add_Relationship</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Add Relationship button in visualization component</shortDescription>
+        <value>+ Add Relationship</value>
+    </labels>
+    <labels>
+        <fullName>Button_Label_Back</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Back button</shortDescription>
+        <value>Back</value>
+    </labels>
+    <labels>
+        <fullName>Button_Label_Cancel</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Cancel button</shortDescription>
+        <value>Cancel</value>
+    </labels>
+    <labels>
+        <fullName>Button_Label_Delete</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Used for delete option in modal.</shortDescription>
+        <value>Delete</value>
+    </labels>
+    <labels>
+        <fullName>Button_Label_Disabled</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Disabled button</shortDescription>
+        <value>Disabled</value>
+    </labels>
+    <labels>
+        <fullName>Button_Label_Edit</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Edit button</shortDescription>
+        <value>Edit</value>
+    </labels>
+    <labels>
+        <fullName>Button_Label_Enabled</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Enabled button</shortDescription>
+        <value>Enabled</value>
+    </labels>
+    <labels>
+        <fullName>Button_Label_Hide_Group_Members</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Collapse component to hide group members</shortDescription>
+        <value>Hide group members</value>
+    </labels>
+    <labels>
+        <fullName>Button_Label_More_Info</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Used for tooltip button.</shortDescription>
+        <value>More Information</value>
+    </labels>
+    <labels>
+        <fullName>Button_Label_New</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>New button</shortDescription>
+        <value>New</value>
+    </labels>
+    <labels>
+        <fullName>Button_Label_New_Row</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Used for new row.</shortDescription>
+        <value>Add Row</value>
+    </labels>
+    <labels>
+        <fullName>Button_Label_Next</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Next button</shortDescription>
+        <value>Next</value>
+    </labels>
+    <labels>
+        <fullName>Button_Label_Remove</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Used for remove option in modal.</shortDescription>
+        <value>Remove</value>
+    </labels>
+    <labels>
+        <fullName>Button_Label_Save</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Save button</shortDescription>
+        <value>Save</value>
+    </labels>
+    <labels>
+        <fullName>Button_Label_SaveAndNew</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Save &amp; New button</shortDescription>
+        <value>Save &amp; New</value>
+    </labels>
+    <labels>
+        <fullName>Button_Label_SaveAndNext</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Save &amp; Next button</shortDescription>
+        <value>Save &amp; Next</value>
+    </labels>
+    <labels>
+        <fullName>Button_Label_ShowHide_Group_Members</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Assistive text for toggling visibility of group members</shortDescription>
+        <value>Show/Hide Group Members</value>
+    </labels>
+    <labels>
+        <fullName>Button_Label_Show_Group_Members</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Expand component to display group members</shortDescription>
+        <value>Show group members</value>
+    </labels>
+    <labels>
+        <fullName>Detail_Dialog_Household_Member_Remove</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Remove membership dialog text on Relationships tab of profiles</shortDescription>
+        <value>When you remove a member, you remove the member&apos;s related accounts from this relationship group.</value>
+    </labels>
+    <labels>
+        <fullName>Detail_Dialog_Household_Relationship_Delete</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Delete relationship dialog text on Relationships tab of profiles</shortDescription>
+        <value>When you delete a relationship, you delete the member&apos;s relationship to this group from Salesforce.</value>
+    </labels>
+    <labels>
+        <fullName>Entity_Client_Lowercase</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Lowercase, singular &quot;client&quot;</shortDescription>
+        <value>client</value>
+    </labels>
+    <labels>
+        <fullName>Entity_Client_Uppercase</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Uppercase, singular &quot;Client&quot;</shortDescription>
+        <value>Client</value>
+    </labels>
+    <labels>
+        <fullName>Entity_Clients_Lowercase</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Lowercase, plural &quot;clients&quot;</shortDescription>
+        <value>clients</value>
+    </labels>
+    <labels>
+        <fullName>Entity_Clients_Uppercase</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Uppercase, plural &quot;Clients&quot;</shortDescription>
+        <value>Clients</value>
+    </labels>
+    <labels>
+        <fullName>Entity_Household_Lowercase</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Lowercase, singular &quot;household&quot;</shortDescription>
+        <value>household</value>
+    </labels>
+    <labels>
+        <fullName>Entity_Household_Uppercase</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Uppercase, singular &quot;Household&quot;</shortDescription>
+        <value>Household</value>
+    </labels>
+    <labels>
+        <fullName>Entity_Households_Lowercase</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Lowercase, plural &quot;households&quot;</shortDescription>
+        <value>households</value>
+    </labels>
+    <labels>
+        <fullName>Entity_Households_Uppercase</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Uppercase, plural &quot;Households&quot;</shortDescription>
+        <value>Households</value>
+    </labels>
+    <labels>
+        <fullName>Header_Component_Assigned_Referrals</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>List of referrals (by name) assigned to a user</shortDescription>
+        <value>Referrals Assigned to Me ({0})</value>
+    </labels>
+    <labels>
+        <fullName>Header_Component_Cases</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Cases component header on Home page</shortDescription>
+        <value>Cases</value>
+    </labels>
+    <labels>
+        <fullName>Header_Component_Create_Individual</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Individual Client component header</shortDescription>
+        <value>Create Individual</value>
+    </labels>
+    <labels>
+        <fullName>Header_Component_Leads</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Leads component header on Home page</shortDescription>
+        <value>Leads ({0})</value>
+    </labels>
+    <labels>
+        <fullName>Header_Component_Opportunities</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Opportunities component header on Home page</shortDescription>
+        <value>Opportunities ({0})</value>
+    </labels>
+    <labels>
+        <fullName>Header_Component_Tasks</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Tasks component header on Home page</shortDescription>
+        <value>Tasks ({0})</value>
+    </labels>
+    <labels>
+        <fullName>Header_Dialog_Client_Create</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Header for new client dialog box</shortDescription>
+        <value>Create Client</value>
+    </labels>
+    <labels>
+        <fullName>Header_Dialog_Create</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Prefix for headers in new record dialog boxes, such as Create client</shortDescription>
+        <value>Create</value>
+    </labels>
+    <labels>
+        <fullName>Header_Dialog_Edit</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Prefix for headers in edit record dialog boxes, such as Edit client</shortDescription>
+        <value>Edit</value>
+    </labels>
+    <labels>
+        <fullName>Header_Dialog_Household_Member_Create</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>New member dialog box on Relationships tab of client and household profiles</shortDescription>
+        <value>Create Household Member</value>
+    </labels>
+    <labels>
+        <fullName>Header_Dialog_Household_Member_Edit</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Edit membership dialog box on Relationships tab of client and household profiles</shortDescription>
+        <value>Edit Household Membership</value>
+    </labels>
+    <labels>
+        <fullName>Header_Dialog_Household_Member_Remove</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Remove membership dialog header on Relationships tab of profiles</shortDescription>
+        <value>Remove member from group?</value>
+    </labels>
+    <labels>
+        <fullName>Header_Dialog_Household_Relationship_Delete</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Delete relationship dialog header on Relationships tab of profiles</shortDescription>
+        <value>Delete relationship?</value>
+    </labels>
+    <labels>
+        <fullName>Header_Page_Client</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Page header on client profile</shortDescription>
+        <value>Client</value>
+    </labels>
+    <labels>
+        <fullName>Header_Page_Household</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Page header on household profile</shortDescription>
+        <value>Household</value>
+    </labels>
+    <labels>
+        <fullName>Header_Page_Households</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Page header on Households list</shortDescription>
+        <value>Households</value>
+    </labels>
+    <labels>
+        <fullName>Header_Panel_Financial_Summary</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Summary panel header on Financials tab of client and household profiles</shortDescription>
+        <value>Financial Summary</value>
+    </labels>
+    <labels>
+        <fullName>Header_Panel_Goals_Summary</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Summary panel header on Goals tab of client and household profiles</shortDescription>
+        <value>Goals Summary</value>
+    </labels>
+    <labels>
+        <fullName>Header_Panel_Group_Create</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Header for Create Relationship Group panel.</shortDescription>
+        <value>Create Relationship Group: {0}</value>
+    </labels>
+    <labels>
+        <fullName>Header_Panel_Group_Edit</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Header for Edit Relationship Group panel.</shortDescription>
+        <value>Edit {0}</value>
+    </labels>
+    <labels>
+        <fullName>Header_Panel_Group_New</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Header for new relationship group panel.</shortDescription>
+        <value>New Relationship Group</value>
+    </labels>
+    <labels>
+        <fullName>Header_Panel_Household_Summary</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Summary panel header on Relationships tab of client and household profiles</shortDescription>
+        <value>Household Summary</value>
+    </labels>
+    <labels>
+        <fullName>Header_Panel_Individual_Create</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Header for Create Individual panel.</shortDescription>
+        <value>New Account: {0}</value>
+    </labels>
+    <labels>
+        <fullName>Header_Panel_Individual_New</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Header for new individual panel.</shortDescription>
+        <value>New Individual</value>
+    </labels>
+    <labels>
+        <fullName>Header_Section_Assets_Liabilities</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Assets and Liabilities header on Financials tab of client and household profiles</shortDescription>
+        <value>Assets and Liabilities</value>
+    </labels>
+    <labels>
+        <fullName>Header_Section_Bank_Accounts</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Bank Accounts header on Financials tab of client and household profiles</shortDescription>
+        <value>Bank Accounts</value>
+    </labels>
+    <labels>
+        <fullName>Header_Section_Financial_Account_Roles</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Financial Account Roles header on Financials tab of client profile</shortDescription>
+        <value>Financial Account Roles</value>
+    </labels>
+    <labels>
+        <fullName>Header_Section_Group_Name</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Group name section header on the visualization component</shortDescription>
+        <value>{0} ({1})</value>
+    </labels>
+    <labels>
+        <fullName>Header_Section_Household_Members</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Household Members header on Relationships tab of client and household profiles</shortDescription>
+        <value>Group Members</value>
+    </labels>
+    <labels>
+        <fullName>Header_Section_Insurance_Policies</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Insurance Policies header on Financials tab of client and household profiles</shortDescription>
+        <value>Insurance Policies</value>
+    </labels>
+    <labels>
+        <fullName>Header_Section_Investment_Accounts</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Investment Accounts on Financials tab of client and household profiles</shortDescription>
+        <value>Investment Accounts</value>
+    </labels>
+    <labels>
+        <fullName>Header_Section_Primary_Group</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Primary Group header on Relationships tab of client and household profiles</shortDescription>
+        <value>Primary Group</value>
+    </labels>
+    <labels>
+        <fullName>Header_Section_Related_Accounts</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Related Accounts section header on Relationships tab of household profiles</shortDescription>
+        <value>Related Accounts</value>
+    </labels>
+    <labels>
+        <fullName>Header_Section_Related_Contacts</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Related Contacts header on Relationships tab of client and household profiles</shortDescription>
+        <value>Related Contacts</value>
+    </labels>
+    <labels>
+        <fullName>Header_Section_Related_Groups</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Related Groups section header in the visualization component</shortDescription>
+        <value>Related Groups</value>
+    </labels>
+    <labels>
+        <fullName>Header_Wizard_New_Client</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Enter client information header in the new client setup dialog.</shortDescription>
+        <value>Enter Your Client&apos;s Information</value>
+    </labels>
+    <labels>
+        <fullName>Header_Wizard_New_Client_Group</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Enter group information header in the new client setup dialog.</shortDescription>
+        <value>Enter Your Client&apos;s Group Information</value>
+    </labels>
+    <labels>
+        <fullName>Label_Account_Field_Set</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Name of the field set to display summary fields from account.</shortDescription>
+        <value>Field Set for Account</value>
+    </labels>
+    <labels>
+        <fullName>Label_Account_Field_Set_Description</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Description for Account Field Set.</shortDescription>
+        <value>Name of the field set to display summary fields from account.</value>
+    </labels>
+    <labels>
+        <fullName>Label_Action_Dropdown_ListView_Table</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Assistive text for action dropdown to allow edits and deletes in List View Table</shortDescription>
+        <value>Actions</value>
+    </labels>
+    <labels>
+        <fullName>Label_All_Options_Selected</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Indicates all options selected</shortDescription>
+        <value>All Options Selected</value>
+    </labels>
+    <labels>
+        <fullName>Label_All_Users_Submit</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Bypasses CRUD and Field Level Security checks on the Lead object.</shortDescription>
+        <value>Let All Users Submit Form</value>
+    </labels>
+    <labels>
+        <fullName>Label_All_Users_Submit_Description</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Description for All Users Submit Form.</shortDescription>
+        <value>Bypasses CRUD and Field Level Security checks on the Lead object.</value>
+    </labels>
+    <labels>
+        <fullName>Label_Client_Name_Assets_Liabilities</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Custom label for client name in Assets and Liabilities section of Financials tab</shortDescription>
+        <value>Client Name</value>
+    </labels>
+    <labels>
+        <fullName>Label_Client_Name_Bank_Accounts</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Custom label for client name in Bank Accounts section of Financials tab</shortDescription>
+        <value>Client Name</value>
+    </labels>
+    <labels>
+        <fullName>Label_Client_Name_Insurance_Policies</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Custom label for client name in Insurance Policies section of Financials tab</shortDescription>
+        <value>Client Name</value>
+    </labels>
+    <labels>
+        <fullName>Label_Client_Name_Investment_Accounts</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Custom label for client name in Investment Accounts section of Financials tab</shortDescription>
+        <value>Client Name</value>
+    </labels>
+    <labels>
+        <fullName>Label_Client_Permanent_Address</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Custom label for permanent address section on client profile</shortDescription>
+        <value>Permanent Address</value>
+    </labels>
+    <labels>
+        <fullName>Label_Client_Permanent_City</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Custom label for permanent address city field on client profile</shortDescription>
+        <value>Permanent City</value>
+    </labels>
+    <labels>
+        <fullName>Label_Client_Permanent_Country</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Custom label for permanent address country field on client profile</shortDescription>
+        <value>Permanent Country</value>
+    </labels>
+    <labels>
+        <fullName>Label_Client_Permanent_Postal_Code</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Custom label for permanent address postal code field on client profile</shortDescription>
+        <value>Permanent Zip/Postal Code</value>
+    </labels>
+    <labels>
+        <fullName>Label_Client_Permanent_State</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Custom label for permanent address state field on client profile</shortDescription>
+        <value>Permanent State/Province</value>
+    </labels>
+    <labels>
+        <fullName>Label_Client_Permanent_Street</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Custom label for permanent address street field on client profile</shortDescription>
+        <value>Permanent Street</value>
+    </labels>
+    <labels>
+        <fullName>Label_Client_Primary_Address_Permanent</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Custom label for primary address field (permanent address) on client profile</shortDescription>
+        <value>Primary Address (Permanent)</value>
+    </labels>
+    <labels>
+        <fullName>Label_Client_Primary_Address_Seasonal</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Custom label for primary address field (seasonal address) on client profile</shortDescription>
+        <value>Primary Address (Seasonal)</value>
+    </labels>
+    <labels>
+        <fullName>Label_Client_Referral_Summary_All_Time</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Custom label for all time field on Referrals tab.</shortDescription>
+        <value>All Time</value>
+    </labels>
+    <labels>
+        <fullName>Label_Client_Referral_Summary_Average_Conversion_Rate</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Custom label for average conversion rate of referrers on Referrals tab.</shortDescription>
+        <value>Average Conversion Rate of Referrers</value>
+    </labels>
+    <labels>
+        <fullName>Label_Client_Referral_Summary_Converted</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Custom label for converted referrals field on Referrals tab.</shortDescription>
+        <value>Referrals Converted</value>
+    </labels>
+    <labels>
+        <fullName>Label_Client_Referral_Summary_MTD</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Custom label for MTD field on Referrals tab.</shortDescription>
+        <value>MTD</value>
+    </labels>
+    <labels>
+        <fullName>Label_Client_Referral_Summary_Made</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Custom label for referrals made</shortDescription>
+        <value>Referrals Made</value>
+    </labels>
+    <labels>
+        <fullName>Label_Client_Referral_Summary_Membership</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Custom label for average membership of converted referrals on Referrals tab.</shortDescription>
+        <value>Average Membership of Converted Referrals</value>
+    </labels>
+    <labels>
+        <fullName>Label_Client_Referral_Summary_QTD</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Custom label for YTD field on Referrals tab.</shortDescription>
+        <value>QTD</value>
+    </labels>
+    <labels>
+        <fullName>Label_Client_Referral_Summary_Received</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Custom label for received referrals field on Referrals tab.</shortDescription>
+        <value>Referrals Received</value>
+    </labels>
+    <labels>
+        <fullName>Label_Client_Referral_Summary_Referrals</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Custom label for referrals from client field on Referrals tab.</shortDescription>
+        <value>Referrals</value>
+    </labels>
+    <labels>
+        <fullName>Label_Client_Referral_Summary_Rejected</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Custom label for rejected referrals field on Referrals tab.</shortDescription>
+        <value>Referrals Rejected</value>
+    </labels>
+    <labels>
+        <fullName>Label_Client_Referral_Summary_Revenue</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Custom label for revenue from referrals field on Referrals tab.</shortDescription>
+        <value>Revenue Generated</value>
+    </labels>
+    <labels>
+        <fullName>Label_Client_Referral_Summary_Score</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Custom label for referrer score field on Referrals tab.</shortDescription>
+        <value>Referrer Score</value>
+    </labels>
+    <labels>
+        <fullName>Label_Client_Referral_Summary_Title</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Summary of referrals made by a banker; includes Referrer Score in some views.</shortDescription>
+        <value>Referrer Summary</value>
+    </labels>
+    <labels>
+        <fullName>Label_Client_Referral_Summary_YTD</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Custom label to be displayed for owner&apos;s name field.</shortDescription>
+        <value>YTD</value>
+    </labels>
+    <labels>
+        <fullName>Label_Client_Related_Contact_Name</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Custom label for contact name in Related Accounts section of Relationships tab</shortDescription>
+        <value>Related Contact</value>
+    </labels>
+    <labels>
+        <fullName>Label_Client_Related_Contact_Role</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Custom label for contact&apos;s role in Related Contacts section of Relationships tab</shortDescription>
+        <value>Role</value>
+    </labels>
+    <labels>
+        <fullName>Label_Client_Seasonal_Address</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Custom label for seasonal address section on client profile</shortDescription>
+        <value>Seasonal Address</value>
+    </labels>
+    <labels>
+        <fullName>Label_Client_Seasonal_City</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Custom label for seasonal address city field on client profile</shortDescription>
+        <value>Seasonal City</value>
+    </labels>
+    <labels>
+        <fullName>Label_Client_Seasonal_Country</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Custom label for seasonal address country field on client profile</shortDescription>
+        <value>Seasonal Country</value>
+    </labels>
+    <labels>
+        <fullName>Label_Client_Seasonal_Postal_Code</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Custom label for seasonal address postal code field on client profile</shortDescription>
+        <value>Seasonal Zip/Postal Code</value>
+    </labels>
+    <labels>
+        <fullName>Label_Client_Seasonal_State</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Custom label for seasonal address state field on client profile</shortDescription>
+        <value>Seasonal State/Province</value>
+    </labels>
+    <labels>
+        <fullName>Label_Client_Seasonal_Street</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Custom label for seasonal address street field on client profile</shortDescription>
+        <value>Seasonal Street</value>
+    </labels>
+    <labels>
+        <fullName>Label_Collapse_Arrow_Assistive</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Assistive text when collapsing the expandArrowIcon.</shortDescription>
+        <value>Collapse row</value>
+    </labels>
+    <labels>
+        <fullName>Label_Dialog_Client_Create_Field_Household</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Custom label for household field when creating a client</shortDescription>
+        <value>Household</value>
+    </labels>
+    <labels>
+        <fullName>Label_Dialog_Client_Create_Field_Primary_Member</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Custom label for primary member field when creating a client</shortDescription>
+        <value>Primary Member</value>
+    </labels>
+    <labels>
+        <fullName>Label_Dialog_Client_Create_Field_RollUp_Summary</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Custom label for roll-up summary field when creating a client</shortDescription>
+        <value>Include in Household Roll-Up Summary</value>
+    </labels>
+    <labels>
+        <fullName>Label_Display_View_All_Link</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Label for Display View All Link</shortDescription>
+        <value>Display View All Link</value>
+    </labels>
+    <labels>
+        <fullName>Label_Expand_Arrow_Assistive</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Assistive text when expanding the expandArrowIcon.</shortDescription>
+        <value>Expand row</value>
+    </labels>
+    <labels>
+        <fullName>Label_Field_Set</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Name of the field set used to render this component.</shortDescription>
+        <value>Fieldset</value>
+    </labels>
+    <labels>
+        <fullName>Label_Field_Set_Addresses</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Custom label for Addresses field set on client profile</shortDescription>
+        <value>Addresses</value>
+    </labels>
+    <labels>
+        <fullName>Label_Field_Set_Client_Header</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Custom label for field set on client profile&apos;s page header</shortDescription>
+        <value>Client Header</value>
+    </labels>
+    <labels>
+        <fullName>Label_Field_Set_Client_Info</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Custom label for Client Information field set on client profile</shortDescription>
+        <value>Client Information</value>
+    </labels>
+    <labels>
+        <fullName>Label_Field_Set_Client_Services</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Custom label for Client Services field set on client and household profiles</shortDescription>
+        <value>Client Services</value>
+    </labels>
+    <labels>
+        <fullName>Label_Field_Set_Description</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Description of field set name</shortDescription>
+        <value>Name of the field set used to render this component.</value>
+    </labels>
+    <labels>
+        <fullName>Label_Field_Set_Employment_Info</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Custom label for Employment Information field set on client profile</shortDescription>
+        <value>Employment Information</value>
+    </labels>
+    <labels>
+        <fullName>Label_Field_Set_Financial_Accounts_Summary</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Custom label for field set on client and household profiles&apos; Financials tabs</shortDescription>
+        <value>Financial Accounts Summary</value>
+    </labels>
+    <labels>
+        <fullName>Label_Field_Set_Financial_Summary</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Custom label for Financial Summary field set on client and household profiles</shortDescription>
+        <value>Financial Summary</value>
+    </labels>
+    <labels>
+        <fullName>Label_Field_Set_Group_Members</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Name of the field set for group members.</shortDescription>
+        <value>Field Set for Group Members</value>
+    </labels>
+    <labels>
+        <fullName>Label_Field_Set_Household_Header</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Custom label for field set on household profile&apos;s page header</shortDescription>
+        <value>Household Header</value>
+    </labels>
+    <labels>
+        <fullName>Label_Field_Set_Household_Info</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Custom label for field set on household profile&apos;s Details tab</shortDescription>
+        <value>Household Information</value>
+    </labels>
+    <labels>
+        <fullName>Label_Field_Set_Household_Info_Create_Client</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Custom label for Household Information field set when creating a client</shortDescription>
+        <value>Household Information</value>
+    </labels>
+    <labels>
+        <fullName>Label_Field_Set_Household_Info_Create_Household_Member</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Custom label for Household Information field set when adding a household member</shortDescription>
+        <value>Household Information</value>
+    </labels>
+    <labels>
+        <fullName>Label_Field_Set_Household_Info_Edit_Membership</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Custom label for Household Information field set when editing a household member</shortDescription>
+        <value>Household Information</value>
+    </labels>
+    <labels>
+        <fullName>Label_Field_Set_Household_Summary</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Custom label for field set on client and household profiles&apos; Relationships tabs</shortDescription>
+        <value>Household Summary</value>
+    </labels>
+    <labels>
+        <fullName>Label_Field_Set_Know_Your_Client</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Custom label for Know Your Client field set on client and household profiles</shortDescription>
+        <value>Know Your Client</value>
+    </labels>
+    <labels>
+        <fullName>Label_Field_Set_Mailing_Address</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Custom label for Mailing Address field set when adding or editing a client</shortDescription>
+        <value>Mailing Address</value>
+    </labels>
+    <labels>
+        <fullName>Label_Field_Set_Member_Info_Create_Household_Member</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Custom label for Member Information field set when adding a household member</shortDescription>
+        <value>Member Information</value>
+    </labels>
+    <labels>
+        <fullName>Label_Field_Set_Other_Address</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Custom label for Other Address field set when adding or editing a client</shortDescription>
+        <value>Other Address</value>
+    </labels>
+    <labels>
+        <fullName>Label_Field_Set_Permanent_Address</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Custom label for Permanent Address field set when adding or editing a client</shortDescription>
+        <value>Permanent Address</value>
+    </labels>
+    <labels>
+        <fullName>Label_Field_Set_Phone_and_Email</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Custom label for Phone and Email field set on client profile</shortDescription>
+        <value>Phone and Email</value>
+    </labels>
+    <labels>
+        <fullName>Label_Field_Set_Referral_Form</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Form for creating a referral.</shortDescription>
+        <value>New Referral</value>
+    </labels>
+    <labels>
+        <fullName>Label_Field_Set_Referrals_Expressed_Interest</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>List of referrals&apos; expressed interest.</shortDescription>
+        <value>Expressed Interests</value>
+    </labels>
+    <labels>
+        <fullName>Label_Field_Set_Referrals_Made</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Related list of referrals made by an individual.</shortDescription>
+        <value>Referrals Made</value>
+    </labels>
+    <labels>
+        <fullName>Label_Field_Set_Relationship_Groups</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Custom label for relationship groups field set on client profile</shortDescription>
+        <value>Relationship Groups</value>
+    </labels>
+    <labels>
+        <fullName>Label_Field_Set_Seasonal_Address</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Custom label for Seasonal Address field set on client profile</shortDescription>
+        <value>Seasonal Address</value>
+    </labels>
+    <labels>
+        <fullName>Label_Field_Set_System_Info</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Custom label for System Information field set on client profile</shortDescription>
+        <value>System Information</value>
+    </labels>
+    <labels>
+        <fullName>Label_Financial_Account_Field_Set</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Name of the field set to display financial account details.</shortDescription>
+        <value>Field Set for Financial Account</value>
+    </labels>
+    <labels>
+        <fullName>Label_Financial_Account_Field_Set_Description</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Description for Financial Account Field Set.</shortDescription>
+        <value>Name of the field set to display financial account details.</value>
+    </labels>
+    <labels>
+        <fullName>Label_Financial_Account_Record_Types</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Comma separated list of financial account record types to display.</shortDescription>
+        <value>Financial Account Record Types</value>
+    </labels>
+    <labels>
+        <fullName>Label_Financial_Account_Record_Types_Description</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Description for Financial Account Record Types.</shortDescription>
+        <value>Comma separated list of financial account record types to display.</value>
+    </labels>
+    <labels>
+        <fullName>Label_Financial_Account_Role_Field_Set</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Name of the field set to display financial account role details.</shortDescription>
+        <value>Field Set for Financial Account Role</value>
+    </labels>
+    <labels>
+        <fullName>Label_Financial_Account_Role_Field_Set_Description</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Description for Financial Account Role Field Set.</shortDescription>
+        <value>Name of the field set to display financial account role details.</value>
+    </labels>
+    <labels>
+        <fullName>Label_Financial_Account_Roles</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Comma separated list of financial account roles to display.</shortDescription>
+        <value>Financial Account Roles</value>
+    </labels>
+    <labels>
+        <fullName>Label_Financial_Account_Roles_Description</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Description for Financial Account Roles.</shortDescription>
+        <value>Comma separated list of financial account roles to display.</value>
+    </labels>
+    <labels>
+        <fullName>Label_Financial_Holding_Field_Set</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Name of the field set to display financial holding details.</shortDescription>
+        <value>Field Set for Financial Holding</value>
+    </labels>
+    <labels>
+        <fullName>Label_Financial_Holding_Field_Set_Description</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Description for Financial Holding Field Set.</shortDescription>
+        <value>Name of the field set to display financial holding details.</value>
+    </labels>
+    <labels>
+        <fullName>Label_First_Step_Description</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Show contact details first</shortDescription>
+        <value>Display contact details as the first step of the wizard.</value>
+    </labels>
+    <labels>
+        <fullName>Label_Goal_Detail_Description</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Description of the client goal progress doughnut chart for screen readers.</shortDescription>
+        <value>The client has achieved {0} percent of their goal.</value>
+    </labels>
+    <labels>
+        <fullName>Label_Group_Account_Name</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Custom label for account name column on relationship group setup dialog</shortDescription>
+        <value>Account Name</value>
+    </labels>
+    <labels>
+        <fullName>Label_Group_Activities_Objects_Rollup</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Custom label for activities &amp; objects to roll up on relationship group setup</shortDescription>
+        <value>Activities &amp; Objects to Roll Up</value>
+    </labels>
+    <labels>
+        <fullName>Label_Group_Add_To_Group</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Custom label for add to group column on relationship group setup dialog</shortDescription>
+        <value>Add to Group</value>
+    </labels>
+    <labels>
+        <fullName>Label_Group_Contact_Name</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Custom label for contact name column on relationship group setup dialog</shortDescription>
+        <value>Contact Name</value>
+    </labels>
+    <labels>
+        <fullName>Label_Group_Member_Name</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Custom label for member name column on relationship group setup dialog</shortDescription>
+        <value>Member Name</value>
+    </labels>
+    <labels>
+        <fullName>Label_Group_Member_Role</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Custom label for member role column on relationship group setup dialog</shortDescription>
+        <value>Member Role</value>
+    </labels>
+    <labels>
+        <fullName>Label_Group_Primary_Group</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Custom label for primary group column on relationship group setup dialog</shortDescription>
+        <value>Primary Group</value>
+    </labels>
+    <labels>
+        <fullName>Label_Group_Primary_Member</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Custom label for primary member column on relationship group setup dialog</shortDescription>
+        <value>Primary Member</value>
+    </labels>
+    <labels>
+        <fullName>Label_Group_Related_Member</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Custom label for related member column on relationship group setup dialog</shortDescription>
+        <value>Related Member</value>
+    </labels>
+    <labels>
+        <fullName>Label_Group_Related_Role</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Custom label for related role column on relationship group setup dialog</shortDescription>
+        <value>Related Role</value>
+    </labels>
+    <labels>
+        <fullName>Label_Group_Role_In_Group</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Custom label for role in group column on relationship group setup dialog</shortDescription>
+        <value>Role in Group</value>
+    </labels>
+    <labels>
+        <fullName>Label_Group_Setup_Accounts</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>The second section header in the group setup dialog</shortDescription>
+        <value>Do the Members Have Relationships with Other Accounts?</value>
+    </labels>
+    <labels>
+        <fullName>Label_Group_Setup_Contacts</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>The third section header in the group setup dialog</shortDescription>
+        <value>Do the Members Have Relationships with Other People?</value>
+    </labels>
+    <labels>
+        <fullName>Label_Group_Setup_Members</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>The first section header in the group setup dialog</shortDescription>
+        <value>Who Are the Members of This Group?</value>
+    </labels>
+    <labels>
+        <fullName>Label_Groups_Members_Details</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Custom label for group members and details component on Relationships tab</shortDescription>
+        <value>Group Members and Details</value>
+    </labels>
+    <labels>
+        <fullName>Label_Household_Goal_Primary_Owner</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Custom label for primary owner field on Goals tab of household profile</shortDescription>
+        <value>Primary Owner</value>
+    </labels>
+    <labels>
+        <fullName>Label_Household_Member_Age</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Field for household member&apos;s age on Relationships tab</shortDescription>
+        <value>Age</value>
+    </labels>
+    <labels>
+        <fullName>Label_Household_Member_Email</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Field for household member&apos;s email on Relationships tab</shortDescription>
+        <value>Email</value>
+    </labels>
+    <labels>
+        <fullName>Label_Household_Member_Field_Household</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Custom label for household field when adding a household member</shortDescription>
+        <value>Existing Household</value>
+    </labels>
+    <labels>
+        <fullName>Label_Household_Member_Field_Name</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Custom label for member&apos;s name field when adding or editing a household member</shortDescription>
+        <value>Name</value>
+    </labels>
+    <labels>
+        <fullName>Label_Household_Member_Field_Primary_Member</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Custom label for primary member field when adding or editing a household member</shortDescription>
+        <value>Primary Member</value>
+    </labels>
+    <labels>
+        <fullName>Label_Household_Member_Field_RollUp_Summary</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Custom label for roll-up summary field when adding or editing a household member</shortDescription>
+        <value>Include in Household Roll-Up Summary</value>
+    </labels>
+    <labels>
+        <fullName>Label_Household_Member_Last_Interaction</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Field for household member&apos;s last interaction on Relationships tab</shortDescription>
+        <value>Last Interaction</value>
+    </labels>
+    <labels>
+        <fullName>Label_Household_Member_Mobile</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Field for household member&apos;s mobile number on Relationships tab</shortDescription>
+        <value>Mobile</value>
+    </labels>
+    <labels>
+        <fullName>Label_Household_Member_Next_Interaction</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Field for household member&apos;s next interaction on Relationships tab</shortDescription>
+        <value>Next Interaction</value>
+    </labels>
+    <labels>
+        <fullName>Label_Household_Member_Phone</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Field for household member&apos;s phone number on Relationships tab</shortDescription>
+        <value>Phone</value>
+    </labels>
+    <labels>
+        <fullName>Label_Household_Member_Roles</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Field for household member&apos;s roles on Relationships tab</shortDescription>
+        <value>Roles</value>
+    </labels>
+    <labels>
+        <fullName>Label_Household_Membership_Edit_Field_Household</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Custom label for household field when editing a household member</shortDescription>
+        <value>Household</value>
+    </labels>
+    <labels>
+        <fullName>Label_Household_Related_Account_Name</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Custom label for account name in Related Accounts section of Relationships tab</shortDescription>
+        <value>Related Account</value>
+    </labels>
+    <labels>
+        <fullName>Label_Household_Related_Account_Role</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Custom label for account&apos;s role in Related Contacts section of Relationships tab</shortDescription>
+        <value>Role</value>
+    </labels>
+    <labels>
+        <fullName>Label_Household_Related_Contact_Name</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Custom label for contact name in Related Contacts section of Relationships tab</shortDescription>
+        <value>Related Contact</value>
+    </labels>
+    <labels>
+        <fullName>Label_Household_Related_Contact_Related_To</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Custom label for related member in Related Contacts section of Relationships tab</shortDescription>
+        <value>Related to</value>
+    </labels>
+    <labels>
+        <fullName>Label_Household_Related_Contact_Role</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Custom label for contact&apos;s role in Related Contacts section of Relationships tab</shortDescription>
+        <value>Role</value>
+    </labels>
+    <labels>
+        <fullName>Label_Icon_Style</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Component icon name.</shortDescription>
+        <value>Icon Style</value>
+    </labels>
+    <labels>
+        <fullName>Label_Icon_Style_Description</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Descriptiom for Icon Style</shortDescription>
+        <value>Component icon name.</value>
+    </labels>
+    <labels>
+        <fullName>Label_Invalid_Individual</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Denotes that the individual is constructed improperly</shortDescription>
+        <value>Some data isn&apos;t ready yet. Check back soon.</value>
+    </labels>
+    <labels>
+        <fullName>Label_Lead_Field_Set</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Fieldset name for lead</shortDescription>
+        <value>Lead Field Set Name for Create Referral Form</value>
+    </labels>
+    <labels>
+        <fullName>Label_Leads</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Plural label for leads object.</shortDescription>
+        <value>Leads</value>
+    </labels>
+    <labels>
+        <fullName>Label_Link_Pagination_First</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Custom label for navigating to first page of list view items</shortDescription>
+        <value>First</value>
+    </labels>
+    <labels>
+        <fullName>Label_Link_Pagination_Last</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Custom label for navigating to last page of list view items</shortDescription>
+        <value>Last</value>
+    </labels>
+    <labels>
+        <fullName>Label_Link_Pagination_Next</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Custom label for navigating to next page of list view items</shortDescription>
+        <value>Next</value>
+    </labels>
+    <labels>
+        <fullName>Label_Link_Pagination_Previous</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Custom label for navigating to previous page of list view items</shortDescription>
+        <value>Previous</value>
+    </labels>
+    <labels>
+        <fullName>Label_Loading_Alternative_Text</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Custom label for loading alternative text</shortDescription>
+        <value>Loading</value>
+    </labels>
+    <labels>
+        <fullName>Label_Member_Activity_Counts</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Custom label for a group member&apos;s activity count on the Relationships tab</shortDescription>
+        <value>{0} {1}</value>
+    </labels>
+    <labels>
+        <fullName>Label_Member_Fields</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Custom label for member fields on the Relationships tab</shortDescription>
+        <value>{0}:</value>
+    </labels>
+    <labels>
+        <fullName>Label_MenuButton_Select_Period</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Alternative text of the dropdown menu button to select a period.</shortDescription>
+        <value>Select Period</value>
+    </labels>
+    <labels>
+        <fullName>Label_New_Client</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Custom label for New Client</shortDescription>
+        <value>New Client</value>
+    </labels>
+    <labels>
+        <fullName>Label_New_Client_Create_Household_Member</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Custom label for New Client option when adding a household member</shortDescription>
+        <value>New Client</value>
+    </labels>
+    <labels>
+        <fullName>Label_New_Household_Create_Client</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Custom label for New Household option when creating a client</shortDescription>
+        <value>New Household</value>
+    </labels>
+    <labels>
+        <fullName>Label_New_Household_Create_Household_Member</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Custom label for New Household option when adding a household member</shortDescription>
+        <value>New Household</value>
+    </labels>
+    <labels>
+        <fullName>Label_New_Household_Edit_Household_Member</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Custom label for New Household option when editing a household member</shortDescription>
+        <value>New Household</value>
+    </labels>
+    <labels>
+        <fullName>Label_Not_Applicable</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Text for not applicable</shortDescription>
+        <value>[not applicable]</value>
+    </labels>
+    <labels>
+        <fullName>Label_Number_Records</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Number of records to show in the component.</shortDescription>
+        <value>Number of Records</value>
+    </labels>
+    <labels>
+        <fullName>Label_Of_My_Top_Referrers_Dashboard</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Assistive text after &quot;View more&quot; link for &quot;My Top Referrers Dashboard&quot;</shortDescription>
+        <value>My Top Referrers Dashboard</value>
+    </labels>
+    <labels>
+        <fullName>Label_Open_Referrals_Im_Assigned</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Assistive text for &quot;View All&quot; link for &quot;Open Referrals I&apos;m Assigned&quot; list view.</shortDescription>
+        <value>Open Referrals I&apos;m Assigned</value>
+    </labels>
+    <labels>
+        <fullName>Label_Opportunities</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Plural label for opportunities object.</shortDescription>
+        <value>Opportunities</value>
+    </labels>
+    <labels>
+        <fullName>Label_Options_Selected</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Indicates number of options selected</shortDescription>
+        <value>{0} Options Selected</value>
+    </labels>
+    <labels>
+        <fullName>Label_Panel_Group_New</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Custom label for selecting a record type on new relationship group panel.</shortDescription>
+        <value>Select a record type</value>
+    </labels>
+    <labels>
+        <fullName>Label_RMD_Days_Away</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Custom label for number of days away from RMD in the RMD component</shortDescription>
+        <value>Days Away: {0}</value>
+    </labels>
+    <labels>
+        <fullName>Label_RMD_Month</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Month Label for RMD Card</shortDescription>
+        <value>{0} month(s)</value>
+    </labels>
+    <labels>
+        <fullName>Label_RMD_Year</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Year Label for RMD Card</shortDescription>
+        <value>{0} years</value>
+    </labels>
+    <labels>
+        <fullName>Label_Read_Only</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Don&apos;t allow referrals to be edited.</shortDescription>
+        <value>Read Only</value>
+    </labels>
+    <labels>
+        <fullName>Label_Read_Only_Description</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Description for Read Only field.</shortDescription>
+        <value>Don&apos;t allow referrals to be edited.</value>
+    </labels>
+    <labels>
+        <fullName>Label_Referral_Field_Set</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Name of the field set to display referral details.</shortDescription>
+        <value>Field Set for Referral</value>
+    </labels>
+    <labels>
+        <fullName>Label_Referral_Field_Set_Description</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Description for Referral Field Set.</shortDescription>
+        <value>Name of the field set to display referral details.</value>
+    </labels>
+    <labels>
+        <fullName>Label_Referral_Performance_Chart</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Label for Chart listing referrals made by an individual.</shortDescription>
+        <value>Referral Performance</value>
+    </labels>
+    <labels>
+        <fullName>Label_Referral_Performance_Chart_Empty</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Label for referral performance chart empty state.</shortDescription>
+        <value>Add a referral, then come back here to view the performance of referrals you&apos;ve created.</value>
+    </labels>
+    <labels>
+        <fullName>Label_Referral_Record_Type</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>The record type of the referral created.</shortDescription>
+        <value>Referral Record Type</value>
+    </labels>
+    <labels>
+        <fullName>Label_Referral_Record_Type_Description</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Description for the record type picklist on the Create Referral form.</shortDescription>
+        <value>The record type of the referral created.</value>
+    </labels>
+    <labels>
+        <fullName>Label_Referrals</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Referrals</shortDescription>
+        <value>Referrals</value>
+    </labels>
+    <labels>
+        <fullName>Label_Referrals_Converted</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Label for Referrals Converted</shortDescription>
+        <value>Referrals Converted</value>
+    </labels>
+    <labels>
+        <fullName>Label_Referrals_Converted_Household_Average</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Average referrals converted per household.</shortDescription>
+        <value>Referrals Converted, Average per Household</value>
+    </labels>
+    <labels>
+        <fullName>Label_Referrals_I_Am_Assigned</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>As a Banker, Summary of referrals assigned to a user.</shortDescription>
+        <value>Referrals Assigned to Me</value>
+    </labels>
+    <labels>
+        <fullName>Label_Referrals_Received</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Label for Referrals Received</shortDescription>
+        <value>Referrals Received</value>
+    </labels>
+    <labels>
+        <fullName>Label_Referrals_Rejected</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Label for Referrals Rejected</shortDescription>
+        <value>Referrals Rejected</value>
+    </labels>
+    <labels>
+        <fullName>Label_Referrer_Average_Conversion_Rate</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Average referrals converted.</shortDescription>
+        <value>Referrer Average Conversion Rate</value>
+    </labels>
+    <labels>
+        <fullName>Label_Referrer_Score</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>The referrer score.</shortDescription>
+        <value>Referrer Score</value>
+    </labels>
+    <labels>
+        <fullName>Label_Referrers_Summary_Converted</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Label for Converted in referrer summary</shortDescription>
+        <value>Converted</value>
+    </labels>
+    <labels>
+        <fullName>Label_Referrers_Summary_Converted_Amount</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Referrals Converted in certain period.</shortDescription>
+        <value>{0} Referrals Converted</value>
+    </labels>
+    <labels>
+        <fullName>Label_Referrers_Summary_Made</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Label for Made in referrer summary</shortDescription>
+        <value>Made</value>
+    </labels>
+    <labels>
+        <fullName>Label_Referrers_Summary_Made_Amount</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Referrals Made in certain period.</shortDescription>
+        <value>{0} Referrals Made</value>
+    </labels>
+    <labels>
+        <fullName>Label_Referrers_Summary_Open</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Label for Open in referrer summary</shortDescription>
+        <value>Open</value>
+    </labels>
+    <labels>
+        <fullName>Label_Referrers_Summary_Rejected</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Label for Rejected in referrer summary</shortDescription>
+        <value>Rejected</value>
+    </labels>
+    <labels>
+        <fullName>Label_Referrers_Summary_Revenue</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Label for Revenue in referrer summary</shortDescription>
+        <value>Revenue</value>
+    </labels>
+    <labels>
+        <fullName>Label_Referrers_Summary_Revenue_Amount</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Revenues generated within certain period.</shortDescription>
+        <value>{0} Revenue Generated</value>
+    </labels>
+    <labels>
+        <fullName>Label_Revenue_Generated</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Label for Revenue Generated</shortDescription>
+        <value>Revenue Generated</value>
+    </labels>
+    <labels>
+        <fullName>Label_Select_Period_All_Time</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Custom label for All Time field on drop down menu of the card.</shortDescription>
+        <value>All-Time</value>
+    </labels>
+    <labels>
+        <fullName>Label_Select_Period_MTD</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Custom label for MTD field on drop down menu of the card.</shortDescription>
+        <value>Month-To-Date</value>
+    </labels>
+    <labels>
+        <fullName>Label_Select_Period_QTD</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Custom label for QTD field on drop down menu of the card.</shortDescription>
+        <value>Quarter-To-Date</value>
+    </labels>
+    <labels>
+        <fullName>Label_Select_Period_YTD</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Custom label for YTD field on drop down menu of the card.</shortDescription>
+        <value>Year-To-Date</value>
+    </labels>
+    <labels>
+        <fullName>Label_Selected_Summary_Period_View</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Label for displaying selected period view</shortDescription>
+        <value>{0} View</value>
+    </labels>
+    <labels>
+        <fullName>Label_Selected_Summary_Sorted_By</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Label for Displaying different Sorting selection Views</shortDescription>
+        <value>Sorted By {0}</value>
+    </labels>
+    <labels>
+        <fullName>Label_ShowHide_Members_ListView_Table</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Assistive text for Show/Hide members in List View Table</shortDescription>
+        <value>Show/Hide members</value>
+    </labels>
+    <labels>
+        <fullName>Label_Show_Contact_Details</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Show contact details first</shortDescription>
+        <value>Show Contact Details First</value>
+    </labels>
+    <labels>
+        <fullName>Label_Show_Contact_Section</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Show contact section first</shortDescription>
+        <value>Show Contact Section First</value>
+    </labels>
+    <labels>
+        <fullName>Label_Show_Related_Accounts</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Show Related Accounts checkbox on Relationship Map component</shortDescription>
+        <value>Show Related Accounts</value>
+    </labels>
+    <labels>
+        <fullName>Label_Show_Related_Accounts_Description</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Description for Show Related Accounts checkbox on Relationship Map component</shortDescription>
+        <value>Displays Related Accounts on the Relationship Map and Group Builder</value>
+    </labels>
+    <labels>
+        <fullName>Label_Show_Related_Contacts</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Show Related Contacts checkbox on Relationship Map component</shortDescription>
+        <value>Show Related Contacts</value>
+    </labels>
+    <labels>
+        <fullName>Label_Show_Related_Contacts_Description</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Description for Show Related Contacts checkbox on Relationship Map component</shortDescription>
+        <value>Displays Related Contacts on the Relationship Map and Group Builder</value>
+    </labels>
+    <labels>
+        <fullName>Label_Sort_Criteria</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Criteria for sorting referrers.</shortDescription>
+        <value>Sort Criteria</value>
+    </labels>
+    <labels>
+        <fullName>Label_Sort_Criteria_Description</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Description for Sort Criteria</shortDescription>
+        <value>Choose a criteria for sorting referrers.</value>
+    </labels>
+    <labels>
+        <fullName>Label_Star_Rating</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Describes the rating from hot to cold</shortDescription>
+        <value>This rating is {0}</value>
+    </labels>
+    <labels>
+        <fullName>Label_Summary</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Label for the word &quot;Summary&quot; in Referrals Assigned to me - Summary component.</shortDescription>
+        <value>Summary</value>
+    </labels>
+    <labels>
+        <fullName>Label_Tasks</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Plural label for tasks object.</shortDescription>
+        <value>Tasks</value>
+    </labels>
+    <labels>
+        <fullName>Label_Text_List_View_Items_Count_Separator</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Custom label for symbol displayed with count of list view items on current page</shortDescription>
+        <value>-</value>
+    </labels>
+    <labels>
+        <fullName>Label_Text_List_View_Items_Count_Total</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Custom label for &quot;of&quot; preceding count of total list view items</shortDescription>
+        <value>of</value>
+    </labels>
+    <labels>
+        <fullName>Label_Timeline</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>The default timeline for the chart.</shortDescription>
+        <value>Timeline</value>
+    </labels>
+    <labels>
+        <fullName>Label_Timeline_Description</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Description for default timeline in referral made chart.</shortDescription>
+        <value>The default timeline for the chart.</value>
+    </labels>
+    <labels>
+        <fullName>Label_Title</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>An alternative title to display as the component header.</shortDescription>
+        <value>Title</value>
+    </labels>
+    <labels>
+        <fullName>Label_Title_Description</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>An alternative title description to display as the component header.</shortDescription>
+        <value>An alternative title, to display as the component header.</value>
+    </labels>
+    <labels>
+        <fullName>Label_Tooltip_Visibility</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Boolean for showing or hiding tooltip.</shortDescription>
+        <value>Show/Hide Tooltip</value>
+    </labels>
+    <labels>
+        <fullName>Label_Top_Expressed_Interest</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>As a Banker, Most of my Referrals Expressed Interest.</shortDescription>
+        <value>Top Expressed Interest</value>
+    </labels>
+    <labels>
+        <fullName>Label_Top_Referrer</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>The User that most of my Referrals Are coming from</shortDescription>
+        <value>Top Referrer</value>
+    </labels>
+    <labels>
+        <fullName>Label_Top_Referrer_Type</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>The User Type that most of my Referrals Are coming from</shortDescription>
+        <value>Top Referrer Type</value>
+    </labels>
+    <labels>
+        <fullName>Label_Top_Referrers_Summary_External</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>External Referrers that have brought business to us.</shortDescription>
+        <value>External Referrers</value>
+    </labels>
+    <labels>
+        <fullName>Label_Top_Referrers_Summary_Internal</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Internal Referrers (Employees) that have brought business to us.</shortDescription>
+        <value>Internal Referrers</value>
+    </labels>
+    <labels>
+        <fullName>Label_Top_Referrers_Summary_Title</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>As a Banker, Ranked list of (Top) individuals who&apos;ve made referrals to a banker.</shortDescription>
+        <value>My Top Referrers</value>
+    </labels>
+    <labels>
+        <fullName>Label_Upcoming_Birthdays_Next_7_Days</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Assistive text after &quot;View All&quot; link for &quot;Upcoming Birthdays&quot; list view.</shortDescription>
+        <value>Birthdays in the next 7 days</value>
+    </labels>
+    <labels>
+        <fullName>Label_Upcoming_RMDs_Next_7_Days</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Assistive text for &quot;View All&quot; link for &quot;Upcoming RMDs (Next 7 Days)&quot; list view.</shortDescription>
+        <value>Upcoming Required Minimum Distributions in the next 7 days</value>
+    </labels>
+    <labels>
+        <fullName>Label_View_More_Link_Visibility</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Boolean for showing or hiding View More.</shortDescription>
+        <value>Show/Hide View More Link</value>
+    </labels>
+    <labels>
+        <fullName>Label_Visualization_Primary_Group</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Custom label for primary group label used in the Visualization component</shortDescription>
+        <value>Primary Group</value>
+    </labels>
+    <labels>
+        <fullName>Label_Visualization_Primary_Member</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Custom label for primary member label used in the Visualization component</shortDescription>
+        <value>Primary Member</value>
+    </labels>
+    <labels>
+        <fullName>Link_Calls</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Calls link on Relationships tab of client and household profiles</shortDescription>
+        <value>Calls</value>
+    </labels>
+    <labels>
+        <fullName>Link_Emails</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Emails link on Relationships tab of client and household profiles</shortDescription>
+        <value>Emails</value>
+    </labels>
+    <labels>
+        <fullName>Link_Events</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Events link on Relationships tab of client and household profiles</shortDescription>
+        <value>Events</value>
+    </labels>
+    <labels>
+        <fullName>Link_Tasks</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Tasks link on Relationships tab of client and household profiles</shortDescription>
+        <value>Tasks</value>
+    </labels>
+    <labels>
+        <fullName>Link_View_All</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>View All link</shortDescription>
+        <value>View All</value>
+    </labels>
+    <labels>
+        <fullName>Link_View_More</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>View more link</shortDescription>
+        <value>View more</value>
+    </labels>
+    <labels>
+        <fullName>Menu_Item_Group_Edit</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Menu item in relationship groups section of client profiles.</shortDescription>
+        <value>Edit Group</value>
+    </labels>
+    <labels>
+        <fullName>Menu_Item_Household_Membership_Delete</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Menu item in Household Members section of client and household profiles</shortDescription>
+        <value>Delete Relationship</value>
+    </labels>
+    <labels>
+        <fullName>Menu_Item_Household_Membership_Edit</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Menu item in Household Members section of client and household profiles</shortDescription>
+        <value>Edit Relationship</value>
+    </labels>
+    <labels>
+        <fullName>Menu_Item_Household_Membership_Remove</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Menu item in Household Members section of client and household profiles</shortDescription>
+        <value>Remove Member</value>
+    </labels>
+    <labels>
+        <fullName>Menu_Item_Relationship_Remove</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Menu item for Relationships tab of client and relationship group profiles</shortDescription>
+        <value>Remove Relationship</value>
+    </labels>
+    <labels>
+        <fullName>Msg_Action_Variable_Create</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>&quot;Create&quot; action verb used in system messages</shortDescription>
+        <value>Create</value>
+    </labels>
+    <labels>
+        <fullName>Msg_Action_Variable_Delete</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>&quot;Delete&quot; action verb used in system messages</shortDescription>
+        <value>Delete</value>
+    </labels>
+    <labels>
+        <fullName>Msg_Action_Variable_Read</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>&quot;Read&quot; action verb used in system messages</shortDescription>
+        <value>Read</value>
+    </labels>
+    <labels>
+        <fullName>Msg_Action_Variable_Update</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>&quot;Update&quot; action verb used in system messages</shortDescription>
+        <value>Update</value>
+    </labels>
+    <labels>
+        <fullName>Msg_Cannot_Complete_Actions</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Error message when a user accesses a field without the appropriate permission</shortDescription>
+        <value>To complete this action, ask your Salesforce admin to give you access to the required fields:</value>
+    </labels>
+    <labels>
+        <fullName>Msg_Community_User_Greeting</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>User greeting for a community user.</shortDescription>
+        <value>Aloha</value>
+    </labels>
+    <labels>
+        <fullName>Msg_Component_Has_NoAccess</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Error message when user has no access to the UI component</shortDescription>
+        <value>To access this component, ask your Salesforce admin for the required Financial Services Cloud permission set license.</value>
+    </labels>
+    <labels>
+        <fullName>Msg_Component_ObjectAccess_Invalid</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Error message when user has no access to the object used in the component</shortDescription>
+        <value>You don’t have access to this functionality.</value>
+    </labels>
+    <labels>
+        <fullName>Msg_Confirm_Remove</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Message when alert is being removed.</shortDescription>
+        <value>Are you sure you want to remove this?</value>
+    </labels>
+    <labels>
+        <fullName>Msg_Error_ACR_Account_Invalid</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Error message when a person is entered as the account in an ACR.</shortDescription>
+        <value>Can&apos;t choose a person as the account in this relationship.</value>
+    </labels>
+    <labels>
+        <fullName>Msg_Error_Add_Member_Household_Invalid</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Error message when the selected account is not a household</shortDescription>
+        <value>The selected account must be a household, not an individual or business account.</value>
+    </labels>
+    <labels>
+        <fullName>Msg_Error_Alerts_Cannot_Load</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Error thrown when when errors failed to load</shortDescription>
+        <value>Can&apos;t load alerts. Refresh your page or ask your Salesforce admin for help.</value>
+    </labels>
+    <labels>
+        <fullName>Msg_Error_Alerts_Cannot_Remove</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Error message when user cannot  deactivate an alert</shortDescription>
+        <value>Can&apos;t remove alert. Refresh your page or ask your Salesforce admin for help.</value>
+    </labels>
+    <labels>
+        <fullName>Msg_Error_Cannot_Access_Fields</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Error message when a user accesses object fields without appropriate permission</shortDescription>
+        <value>To complete this action, ask your Salesforce admin for {0} access to {1} on {2}.</value>
+    </labels>
+    <labels>
+        <fullName>Msg_Error_Changing_Record_Types</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Error message when record type is modified once created.</shortDescription>
+        <value>This record type can&apos;t be changed.</value>
+    </labels>
+    <labels>
+        <fullName>Msg_Error_Company_Name_Invalid</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Error message when the company name doesn&apos;t match the B2C lead&apos;s name.</shortDescription>
+        <value>For the selected record type, Company must be the same as the lead name, {0} {1}</value>
+    </labels>
+    <labels>
+        <fullName>Msg_Error_Component_Deprecated</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Error message when component is deprecated.</shortDescription>
+        <value>This component has been deprecated. Ask your Salesforce administrator for help.</value>
+    </labels>
+    <labels>
+        <fullName>Msg_Error_Component_Invalid</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Error message when a component is configured incorrectly</shortDescription>
+        <value>You can add this component to the {0} page only.</value>
+    </labels>
+    <labels>
+        <fullName>Msg_Error_Contact_Invalid_Record_Type</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Error message when a Contact of Individual Record Type is created</shortDescription>
+        <value>A contact record cannot be created with an Individual record type.</value>
+    </labels>
+    <labels>
+        <fullName>Msg_Error_FieldSets_Cannot_Load</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Error thrown when loading field sets that are not configured.</shortDescription>
+        <value>Can&apos;t load information. Ask your Salesforce admin to configure field sets.</value>
+    </labels>
+    <labels>
+        <fullName>Msg_Error_Field_Value_Null</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Error message when the required value for a field has been cleared</shortDescription>
+        <value>The value of {0} can’t be null. Restore it to the original value.</value>
+    </labels>
+    <labels>
+        <fullName>Msg_Error_File_Size</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>The file should not be bigger than maximum allowed size.</shortDescription>
+        <value>File size cannot exceed {0} bytes. Selected file size: {1}</value>
+    </labels>
+    <labels>
+        <fullName>Msg_Error_Filter_Criteria_Invalid</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>{0} isn&apos;t valid. Check your filter criteria.</shortDescription>
+        <value>Error message when filter criteria are invalid on client or household list views</value>
+    </labels>
+    <labels>
+        <fullName>Msg_Error_FinancialAccountRoleList_InvalidFieldSet</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Validation error message for fieldset</shortDescription>
+        <value>Enter a field set that is related to this object</value>
+    </labels>
+    <labels>
+        <fullName>Msg_Error_FinancialAccountRoleList_InvalidRecordTypes</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Validation error message for record types</shortDescription>
+        <value>Enter a relevant record type for this object</value>
+    </labels>
+    <labels>
+        <fullName>Msg_Error_FinancialAccountRoleList_InvalidRoles</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Validation error message for roles</shortDescription>
+        <value>Enter a relevant role for this object</value>
+    </labels>
+    <labels>
+        <fullName>Msg_Error_FinancialAccountRole_Delete</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Error message when a FAR corresponding to a FA&apos;s Primary Owner is deleted</shortDescription>
+        <value>You can’t delete a Financial Account Role with an active primary owner. To delete it, assign a new primary owner for the Financial Account.</value>
+    </labels>
+    <labels>
+        <fullName>Msg_Error_General</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Error message when a general error occurs</shortDescription>
+        <value>Something&apos;s not quite right. Try your action again, and if the issue continues, contact your administrator for help.</value>
+    </labels>
+    <labels>
+        <fullName>Msg_Error_Group_Account_Duplicate</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>The error message when a duplicate account is selected.</shortDescription>
+        <value>The selected account already has a relationship with this member.</value>
+    </labels>
+    <labels>
+        <fullName>Msg_Error_Group_Acr_No_Delete</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Error message when trying to delete a group ACR record</shortDescription>
+        <value>Can’t delete AccountContactRelation records. Instead, you can deactivate it.</value>
+    </labels>
+    <labels>
+        <fullName>Msg_Error_Group_Business_Primary_Invalid</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Error message when a business is a primary group or primary member in an ACR.</shortDescription>
+        <value>Can&apos;t choose a business as a primary group or primary member.</value>
+    </labels>
+    <labels>
+        <fullName>Msg_Error_Group_Cannot_Include_Business</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Error message when including a business in more than one group.</shortDescription>
+        <value>Can&apos;t include a business in more than one group.</value>
+    </labels>
+    <labels>
+        <fullName>Msg_Error_Group_Member_Duplicate</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>The error message when a duplicate member is selected.</shortDescription>
+        <value>The selected member already has a relationship with this group.</value>
+    </labels>
+    <labels>
+        <fullName>Msg_Error_Group_Record_Type_Not_Unique</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Error message when the Group record type is not unique</shortDescription>
+        <value>There is more than one Group record type for Account. The record type must be unique. Contact your administrator for help.</value>
+    </labels>
+    <labels>
+        <fullName>Msg_Error_Household_Existing_Membership</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Error message when adding a household member who already belongs to a household</shortDescription>
+        <value>We can&apos;t add this person to this household because the person already belongs to a household.</value>
+    </labels>
+    <labels>
+        <fullName>Msg_Error_Household_Primary_Member</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Error message when designating a second primary household member</shortDescription>
+        <value>We can&apos;t designate this person as primary. Someone else is already the primary household member.</value>
+    </labels>
+    <labels>
+        <fullName>Msg_Error_Inactive_RollupRule</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Error message when user tries to run rollups for an inactive rollup rule.</shortDescription>
+        <value>Rollup Rules: {0} not Active. Activate to run recalculation.</value>
+    </labels>
+    <labels>
+        <fullName>Msg_Error_IncludeInGroup_Invalid</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Error message when include in group is selected for a group account in an ACR.</shortDescription>
+        <value>Can&apos;t include a group in a group.</value>
+    </labels>
+    <labels>
+        <fullName>Msg_Error_Individual_Multiple_Contact</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Error message when an Individual is being associated with multiple contacts</shortDescription>
+        <value>The selected account has an Individual record type and can&apos;t have additional contacts associated with it.</value>
+    </labels>
+    <labels>
+        <fullName>Msg_Error_Insufficient_Permission_Set_Privileges</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Error message when user do not have permission set to perform operation</shortDescription>
+        <value>To complete this action, ask your Salesforce admin for the required Financial Services Cloud permission set license.</value>
+    </labels>
+    <labels>
+        <fullName>Msg_Error_Insufficient_Privileges</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Error message when user has insufficient level of access</shortDescription>
+        <value>You don&apos;t have the level of access required to complete this action. Please contact your administrator for help.</value>
+    </labels>
+    <labels>
+        <fullName>Msg_Error_Invalid_Attribute</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Message for invalid argument for a method call</shortDescription>
+        <value>Invalid input argument {0}</value>
+    </labels>
+    <labels>
+        <fullName>Msg_Error_Invalid_Group_Record_Type</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Error message when the Group record type is not found</shortDescription>
+        <value>Your account record type is missing, a duplicate, or invalid. Ask your admin to check the group record type configurations in Setup.</value>
+    </labels>
+    <labels>
+        <fullName>Msg_Error_Invalid_Household_Member_Account</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Error message when a non-Person Account is added to the household</shortDescription>
+        <value>Only person accounts can be added as members of a household.</value>
+    </labels>
+    <labels>
+        <fullName>Msg_Error_Invalid_Person_Account_Record_Type</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Error message when the Person Account record type is not found</shortDescription>
+        <value>The Person Account record type isn&apos;t available. Contact your administrator for help.</value>
+    </labels>
+    <labels>
+        <fullName>Msg_Error_Invalid_Query</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Message for invalid query</shortDescription>
+        <value>Invalid query {0}</value>
+    </labels>
+    <labels>
+        <fullName>Msg_Error_Invalid_Record_Type</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Error message when the Individual record type is not found</shortDescription>
+        <value>Your account record type is missing, a duplicate, or invalid. Ask your admin to check the individual record type configurations in Setup.</value>
+    </labels>
+    <labels>
+        <fullName>Msg_Error_Invalid_Referral_Record_Type</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Error message when the Referral record type is not found</shortDescription>
+        <value>Hmm, that didn’t work. Let your Salesforce admin know that there&apos;s an invalid lead record type on the referral mapping.</value>
+    </labels>
+    <labels>
+        <fullName>Msg_Error_Invalid_Report</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Error message when an invalid report is selected from Client/Household List</shortDescription>
+        <value>Can&apos;t access this report. View it in Reports.</value>
+    </labels>
+    <labels>
+        <fullName>Msg_Error_Invalid_RollupRules</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Error message when user tries to run rollups with invalid IDs.</shortDescription>
+        <value>Rollup Rules: Some records or IDs don&apos;t meet our criteria. Review your records and IDs and try again.</value>
+    </labels>
+    <labels>
+        <fullName>Msg_Error_Invalid_Use_Of_Individual_RT</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Invalid use of Individual Record Type</shortDescription>
+        <value>You can&apos;t create an account or contact using an Individual record type because your org has enabled Person accounts. Create the account or contact using a different record type instead.</value>
+    </labels>
+    <labels>
+        <fullName>Msg_Error_Inverse_Role_Needed</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Error message when the inverse reciprocal role record is not existing.</shortDescription>
+        <value>We can&apos;t save this record because the selected role is missing required information. Ask your administrator to define its inverse role.</value>
+    </labels>
+    <labels>
+        <fullName>Msg_Error_Lead_Conversion</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Error message when lead can&apos;t be converted to individual</shortDescription>
+        <value>This lead couldn&apos;t be converted to an Individual. Please try again.</value>
+    </labels>
+    <labels>
+        <fullName>Msg_Error_Lead_Convert_Account_Record_Type_Invalid</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Error message when converting a B2C lead and the account record type is invalid</shortDescription>
+        <value>Select an Individual record type.</value>
+    </labels>
+    <labels>
+        <fullName>Msg_Error_Lead_Convert_ContactType_Invalid</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Error message on lead conversion when invalid contact type is selected</shortDescription>
+        <value>Select an individual contact for an individual account.</value>
+    </labels>
+    <labels>
+        <fullName>Msg_Error_Lead_Convert_Contact_Invalid</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Error message on lead conversion when existing contact is selected</shortDescription>
+        <value>Select Create New Contact to create an individual account.</value>
+    </labels>
+    <labels>
+        <fullName>Msg_Error_Lead_Convert_ExpressedInterest_Invalid</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Error message on expressed interest lead conversion to a new account</shortDescription>
+        <value>We can&apos;t convert the lead to an unrelated account. Choose a related account.</value>
+    </labels>
+    <labels>
+        <fullName>Msg_Error_Lead_Convert_Individual_Invalid</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Error msg on lead conversion when account/contact is from different individual</shortDescription>
+        <value>The account and contact must be associated with the same individual.</value>
+    </labels>
+    <labels>
+        <fullName>Msg_Error_Lead_Convert_MixedType_Invalid</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Error msg on lead conversion when invalid account or contact type is selected</shortDescription>
+        <value>Select a contact that’s not associated with an individual, or select an individual account.</value>
+    </labels>
+    <labels>
+        <fullName>Msg_Error_Lead_Record_Type_Not_Unique</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Error message when Lead record types are not unique</shortDescription>
+        <value>Duplicates found for Lead Record Type: {0}.</value>
+    </labels>
+    <labels>
+        <fullName>Msg_Error_Multi_Group_Migration</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Error message when multiple relationship groups for contacts is being enabled</shortDescription>
+        <value>We&apos;re enabling multiple relationship groups for contacts. Try again in a few minutes.</value>
+    </labels>
+    <labels>
+        <fullName>Msg_Error_One_Primary_Group_For_Contact</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Error message when enabling more than one primary group for a contact.</shortDescription>
+        <value>A contact can have only one primary group.</value>
+    </labels>
+    <labels>
+        <fullName>Msg_Error_Operation_Entity</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Error message about an unsuccessful operation on an entity</shortDescription>
+        <value>We could not {0} this {1}. Please try again.</value>
+    </labels>
+    <labels>
+        <fullName>Msg_Error_Page_Not_Configured</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Error message when page is configured incorrectly.</shortDescription>
+        <value>This page isn&apos;t configured. Ask your Salesforce administrator for help.</value>
+    </labels>
+    <labels>
+        <fullName>Msg_Error_RBLConfig_Delete_Active_Rule</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Error message when deleting a RBLFC record with active RBLC parent</shortDescription>
+        <value>Deactivate the configuration to delete a record.</value>
+    </labels>
+    <labels>
+        <fullName>Msg_Error_RBLConfig_Duplicate_Rule</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Error message when creating a duplicate RBLC object</shortDescription>
+        <value>The combination of {0}, {1}, and {2} must be unique across your active configurations.</value>
+    </labels>
+    <labels>
+        <fullName>Msg_Error_RBLConfig_Edit_Active_Rule</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Error message when editing an active RBLC object</shortDescription>
+        <value>Deactivate the configuration to modify a field.</value>
+    </labels>
+    <labels>
+        <fullName>Msg_Error_RBLConfig_Invalid_Field</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Error message when an RBLC field to roll up from/to is invalid</shortDescription>
+        <value>Enter a valid field name for {0}.</value>
+    </labels>
+    <labels>
+        <fullName>Msg_Error_RBLConfig_Invalid_Lookup_Field</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Error message when an RBLC lookup field is invalid</shortDescription>
+        <value>Enter a valid lookup field that belongs to {0}.</value>
+    </labels>
+    <labels>
+        <fullName>Msg_Error_RBLConfig_Invalid_Object</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Error message when an RBLC from/to object is invalid</shortDescription>
+        <value>Enter a valid object name.</value>
+    </labels>
+    <labels>
+        <fullName>Msg_Error_RBLConfig_Invalid_Operation</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Error message when an RBLC operation is invalid</shortDescription>
+        <value>Select a valid operator for the {0} field type.</value>
+    </labels>
+    <labels>
+        <fullName>Msg_Error_RBLConfig_Invalid_Record_Type</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Error message when an RBLC from/to record type is invalid</shortDescription>
+        <value>Enter a valid record type related to {0}.</value>
+    </labels>
+    <labels>
+        <fullName>Msg_Error_RBLConfig_Maximum_Active_Rules</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Error message when an RBLC active limit is reached</shortDescription>
+        <value>You&apos;&apos;ve reached the maximum of {0} active configuration items.</value>
+    </labels>
+    <labels>
+        <fullName>Msg_Error_RBLConfig_Where_Clause_Formatting</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Error message when creating a RBLC with improperly formatted Where Clause</shortDescription>
+        <value>This expression isn&apos;t correctly formatted.</value>
+    </labels>
+    <labels>
+        <fullName>Msg_Error_RBLConfig_Where_Clause_Numbers</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Error message when creating a RBLC Where Clause field unreferenced filters</shortDescription>
+        <value>The where clause references undefined filter criteria: {0}.</value>
+    </labels>
+    <labels>
+        <fullName>Msg_Error_RBLFilterCriteria_Delete_With_Active_Config</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Error message when deleting a RBLFC record with active RBLC parent</shortDescription>
+        <value>Deactivate the parent configuration to delete a record.</value>
+    </labels>
+    <labels>
+        <fullName>Msg_Error_RBLFilterCriteria_Edit_With_Active_Config</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Error message when editing a RBLFC record with active RBLC parent</shortDescription>
+        <value>Deactivate the parent configuration to modify a field.</value>
+    </labels>
+    <labels>
+        <fullName>Msg_Error_RBLFilterCriteria_Invalid_Operation</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Error message when an RBLFC operation is invalid</shortDescription>
+        <value>Select a supported operator.</value>
+    </labels>
+    <labels>
+        <fullName>Msg_Error_RBLFilterCriteria_Invalid_RBLConfig</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Error message when an RBLFC config is invalid</shortDescription>
+        <value>Select a valid parent configuration.</value>
+    </labels>
+    <labels>
+        <fullName>Msg_Error_Record_Type_Not_Unique</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Error message when the Individual record type is not unique</shortDescription>
+        <value>There is more than one Individual record type for Account or Contact. The record type must be unique. Contact your administrator for help.</value>
+    </labels>
+    <labels>
+        <fullName>Msg_Error_Referral_Record_Type_Not_Unique</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Error message when the Referral record type is not unique</shortDescription>
+        <value>Hmm, that didn’t work. Let your Salesforce admin know that the lead record type on the referral mapping is already in use.</value>
+    </labels>
+    <labels>
+        <fullName>Msg_Error_RelationshipSummary_Component_Deprecated</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Error message when relationship summary is deprecated.</shortDescription>
+        <value>This summary information has been moved into the group members section on this page. Ask your Salesforce admin for help with removing this message.</value>
+    </labels>
+    <labels>
+        <fullName>Msg_Error_Remove_Member_Household</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Error message when a household member can&apos;t be removed</shortDescription>
+        <value>We couldn&apos;t remove this household member.</value>
+    </labels>
+    <labels>
+        <fullName>Msg_Error_Required_Field_Missing</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Error message when a required field is missing</shortDescription>
+        <value>{0} is required.</value>
+    </labels>
+    <labels>
+        <fullName>Msg_Error_Required_Fields</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Error message when missing required fields while adding a household member</shortDescription>
+        <value>These required fields must be completed: {0}</value>
+    </labels>
+    <labels>
+        <fullName>Msg_Error_RollupRecal_Running</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Error message when a Rollup recal job is already running.</shortDescription>
+        <value>You can&apos;t run a recalculation while another recalculation is in progress. Try again later.</value>
+    </labels>
+    <labels>
+        <fullName>Msg_Error_RollupRules_NotSelected</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Error message when no rollup rules are selected for running.</shortDescription>
+        <value>Select at least one rollup rule.</value>
+    </labels>
+    <labels>
+        <fullName>Msg_Error_Service_Not_Found</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Error message service is not found for a feature</shortDescription>
+        <value>Service not found for feature {0}</value>
+    </labels>
+    <labels>
+        <fullName>Msg_Help_Average_Conversion_Rate</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Custom label for average conversion rate help on Referrals tab.</shortDescription>
+        <value>A referrer’s average conversion rate.</value>
+    </labels>
+    <labels>
+        <fullName>Msg_Help_Referrer_Score</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Custom label for referrer score help on Referrals tab.</shortDescription>
+        <value>A value of 0 to 100. A high score reflects a high rate of referral conversion.</value>
+    </labels>
+    <labels>
+        <fullName>Msg_Help_Top_Referrers</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Custom label for Top Referrers help on Referrals tab.</shortDescription>
+        <value>See your Top Referrers by Revenue, Referrals Made, or Referrals Converted.</value>
+    </labels>
+    <labels>
+        <fullName>Msg_Info_List_Display_Limit</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Message when the items in a list view exceed the number that we can display</shortDescription>
+        <value>(We can display the first {0} items only.)</value>
+    </labels>
+    <labels>
+        <fullName>Msg_Info_List_Empty</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Message when a list view has no records</shortDescription>
+        <value>No items to display. Try adjusting filters or try a different list view.</value>
+    </labels>
+    <labels>
+        <fullName>Msg_Success_Client_Created</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Message confirms client was created</shortDescription>
+        <value>Client created.</value>
+    </labels>
+    <labels>
+        <fullName>Msg_Success_Client_Updated</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Message confirms client has been updated</shortDescription>
+        <value>Client updated.</value>
+    </labels>
+    <labels>
+        <fullName>Msg_Success_Member_Removed</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Message confirms membership has been removed</shortDescription>
+        <value>Member was removed.</value>
+    </labels>
+    <labels>
+        <fullName>Msg_Success_Referral_Created</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Message confirms referral was created</shortDescription>
+        <value>Referral was created.</value>
+    </labels>
+    <labels>
+        <fullName>Msg_Success_Relationship_Deleted</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Message confirms relationship has been deleted</shortDescription>
+        <value>Relationship was deleted.</value>
+    </labels>
+    <labels>
+        <fullName>Msg_Success_Task_Updated</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Message confirms task updated</shortDescription>
+        <value>Task updated.</value>
+    </labels>
+    <labels>
+        <fullName>Msg_Text_Lookup_NoResults</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Error message when no results are available</shortDescription>
+        <value>No results found</value>
+    </labels>
+    <labels>
+        <fullName>Not_Valid_Field_Error</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>This field is not valid for object</shortDescription>
+        <value>Specify valid field name(s) that exists in {0}.</value>
+    </labels>
+    <labels>
+        <fullName>Not_Valid_Object_Error</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>This object is not a valid in your organization</shortDescription>
+        <value>Object name must be valid for your organization.</value>
+    </labels>
+    <labels>
+        <fullName>Pill_Primary</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Indicator of primary household member on client and household profiles</shortDescription>
+        <value>Primary</value>
+    </labels>
+    <labels>
+        <fullName>Tab_Activity</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Activity tab on client and household profiles</shortDescription>
+        <value>Activity</value>
+    </labels>
+    <labels>
+        <fullName>Tab_Collaborate</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Collaborate tab on client and household profiles</shortDescription>
+        <value>Collaborate</value>
+    </labels>
+    <labels>
+        <fullName>Tab_Details</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Details tab on client and household profiles</shortDescription>
+        <value>Details</value>
+    </labels>
+    <labels>
+        <fullName>Tab_Financials</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Financials tab on client and household profiles</shortDescription>
+        <value>Financials</value>
+    </labels>
+    <labels>
+        <fullName>Tab_Goals</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Goals tab on client and household profiles</shortDescription>
+        <value>Goals</value>
+    </labels>
+    <labels>
+        <fullName>Tab_More</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>More tab on client and household profiles</shortDescription>
+        <value>More</value>
+    </labels>
+    <labels>
+        <fullName>Tab_Related</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Related tab on client and household profiles</shortDescription>
+        <value>Related</value>
+    </labels>
+    <labels>
+        <fullName>Tab_Relationships</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Relationships tab on client and household profiles</shortDescription>
+        <value>Relationships</value>
+    </labels>
+    <labels>
+        <fullName>Tab_Tear_Sheet</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Tear Sheet tab on client and household profiles</shortDescription>
+        <value>Tear Sheet</value>
+    </labels>
+    <labels>
+        <fullName>Text_Birthdays</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Birthday card header</shortDescription>
+        <value>Birthdays ({0})</value>
+    </labels>
+    <labels>
+        <fullName>Text_External_Referrer</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Text for External Referrer for Referrals Assigned To Me Summary Card.</shortDescription>
+        <value>External</value>
+    </labels>
+    <labels>
+        <fullName>Text_Financials_Owner_Joint</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Indicates joint ownership</shortDescription>
+        <value>Joint</value>
+    </labels>
+    <labels>
+        <fullName>Text_Financials_Owner_Primary</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Indicates primary ownership</shortDescription>
+        <value>Primary</value>
+    </labels>
+    <labels>
+        <fullName>Text_No_Leads</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Message when the Home page Leads component has no items to show.</shortDescription>
+        <value>No leads to show.</value>
+    </labels>
+    <labels>
+        <fullName>Text_No_Opportunities</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Message when the Home page Opportunities component has no items to show.</shortDescription>
+        <value>No opportunities to show.</value>
+    </labels>
+    <labels>
+        <fullName>Text_No_Option_Selected</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Label For None</shortDescription>
+        <value>None</value>
+    </labels>
+    <labels>
+        <fullName>Text_No_Referrals</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Message for empty Referrals List</shortDescription>
+        <value>No referrals.</value>
+    </labels>
+    <labels>
+        <fullName>Text_No_Tasks</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Message when the Home page Tasks component has no items to show.</shortDescription>
+        <value>No tasks to show.</value>
+    </labels>
+    <labels>
+        <fullName>Text_No_Upcoming_Birthdays</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Message for empty upcoming Birthday List</shortDescription>
+        <value>No upcoming birthdays.</value>
+    </labels>
+    <labels>
+        <fullName>Text_No_Upcoming_RMD</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Message for empty upcoming RMD List</shortDescription>
+        <value>No upcoming RMDs.</value>
+    </labels>
+    <labels>
+        <fullName>Text_Owner_Name</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Custom label to be displayed for owner&apos;s name field.</shortDescription>
+        <value>Owner Name</value>
+    </labels>
+    <labels>
+        <fullName>Text_Panel_Group_New</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Text for selecting a record type in the New Relationship Group panel.</shortDescription>
+        <value>Select a record type</value>
+    </labels>
+    <labels>
+        <fullName>Text_RMD</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>RMD card header</shortDescription>
+        <value>Upcoming RMDs ({0})</value>
+    </labels>
+    <labels>
+        <fullName>Text_Turning_Age</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Turning age prefix for Birthday card</shortDescription>
+        <value>Turning {0}</value>
+    </labels>
+    <labels>
+        <fullName>Text_Upload_File</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>File Name</shortDescription>
+        <value>Attachment</value>
+    </labels>
+    <labels>
+        <fullName>Wizard_Step_Account_Details</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Wizard step for individual details.</shortDescription>
+        <value>Account Details</value>
+    </labels>
+    <labels>
+        <fullName>Wizard_Step_Contact_Details</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Wizard step for individual details.</shortDescription>
+        <value>Contact Details</value>
+    </labels>
+    <labels>
+        <fullName>Wizard_Step_Group_Details</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Wizard step for relationship group details.</shortDescription>
+        <value>Details</value>
+    </labels>
+    <labels>
+        <fullName>Wizard_Step_Group_Members_Relationships</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Wizard step for relationship group members and relationships.</shortDescription>
+        <value>Members &amp; Relationships</value>
+    </labels>
+    <labels>
+        <fullName>Wizard_Step_Individual_Details</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Wizard step for individual details.</shortDescription>
+        <value>Individual Details</value>
+    </labels>
+    <labels>
+        <fullName>Wizard_Step_Number</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Step Information on the wizard step.</shortDescription>
+        <value>({0} of {1})</value>
+    </labels>
+    <labels>
+        <fullName>Wizard_Step_Relationship_Group_Details</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Wizard step for relationship group details.</shortDescription>
+        <value>Group Details</value>
+    </labels>
+</CustomLabels>

@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Objectif financier</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Objectifs financiers</value>
+    </caseValues>
+    <fields>
+        <label>Valeur actuelle</label>
+        <name>ActualValue__c</name>
+    </fields>
+    <fields>
+        <label>Date de réalisation</label>
+        <name>CompletionDate__c</name>
+    </fields>
+    <fields>
+        <label>Description</label>
+        <name>Description__c</name>
+    </fields>
+    <fields>
+        <label>Foyer</label>
+        <name>Household__c</name>
+        <relationshipLabel>Objectifs financiers du foyer</relationshipLabel>
+    </fields>
+    <fields>
+        <label>Valeur initiale</label>
+        <name>InitialValue__c</name>
+    </fields>
+    <fields>
+        <label>Propriétaire principal</label>
+        <name>PrimaryOwner__c</name>
+        <relationshipLabel>Objectifs financiers du client</relationshipLabel>
+    </fields>
+    <fields>
+        <label>ID du système source</label>
+        <name>SourceSystemId__c</name>
+    </fields>
+    <fields>
+        <label>Statut</label>
+        <name>Status__c</name>
+        <picklistValues>
+            <masterLabel>Completed</masterLabel>
+            <translation><!-- Completed --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>In Progress</masterLabel>
+            <translation><!-- In Progress --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Not Started</masterLabel>
+            <translation><!-- Not Started --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label>Date cible</label>
+        <name>TargetDate__c</name>
+    </fields>
+    <fields>
+        <label>Valeur cible</label>
+        <name>TargetValue__c</name>
+    </fields>
+    <fields>
+        <label>Type</label>
+        <name>Type__c</name>
+        <picklistValues>
+            <masterLabel>Education</masterLabel>
+            <translation><!-- Education --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Home Purchase</masterLabel>
+            <translation><!-- Home Purchase --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Other</masterLabel>
+            <translation><!-- Other --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Retirement</masterLabel>
+            <translation><!-- Retirement --></translation>
+        </picklistValues>
+    </fields>
+    <gender>Masculine</gender>
+    <layouts>
+        <layout>Financial Goal Layout</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- Information --></label>
+            <section>Information</section>
+        </sections>
+    </layouts>
+    <nameFieldLabel>Nom de l&apos;objectif financier</nameFieldLabel>
+    <startsWith>Vowel</startsWith>
+</CustomObjectTranslation>

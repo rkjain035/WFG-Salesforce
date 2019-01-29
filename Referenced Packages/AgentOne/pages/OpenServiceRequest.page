@@ -1,0 +1,197 @@
+<apex:page standardController="AgentOne__Policy_Request__c" extensions="AgentOne.PolicyRequestController" action="{!openServiceRequest}">
+    <html xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <apex:stylesheet value="{!URLFOR($Resource.AgentOne__SLDS, 'assets/styles/salesforce-lightning-design-system-vf.min.css')}" />
+    <apex:stylesheet value="{!URLFOR($Resource.AgentOne__AgentOneSLDS, 'agentone-slds.css')}" />
+
+    <apex:form >
+        <apex:actionfunction name="selectedPolicyRequestAction" action="{!selectedPolicyRequestAction}" rerender="false">
+            <apex:param name="firstParam" assignTo="{!selectedPolicyRequestId }" value=""  />
+
+        </apex:actionFunction>
+    </apex:form>
+
+    <style type="text/css">
+    .highlight {
+        background-color: #ffffa0;
+    }
+
+    .policy-request-select-button {
+       background-color: #4bca81 !important;
+       color: #fff !important;
+    }
+
+    .warning-modal {
+      display: none; /* Hidden by default */
+    }
+    </style>
+
+    <!-- Begin Default Content REMOVE THIS -->
+
+    <div class="agentone">
+        <div class="slds">
+            <apex:outputPanel rendered="{!showPolicyRequestPage == true}">
+                <apex:outputPanel rendered="{!policyRequests.size > 0}">
+                    <div class="slds-container--center slds-container--medium slds-modal__header slds-text-heading--large slds-text-align--center  slds-modal__header slds-text-heading--large slds-text-align--center ">{!$Label.LBL_Open_Service_Request}</div>
+
+                    <div class="slds-container--center slds-container--medium">
+                        <div class="slds-text-heading--small slds-m-top--small slds-m-bottom--small">{!$Label.LBL_Select_Policy_Request}</div>
+                        <ul class="slds-has-dividers--around-space">
+                            <apex:repeat value="{!policyRequests}" var="policyRequest">
+                                <li class="slds-item" id="policy-request-{!policyRequest.id}">
+                                    <div class="slds-grid slds-wrap slds-grid--pull-padded">
+                                        <div class="slds-col slds-col--padded slds-size--1-of-2 slds-medium-size--5-of-6 slds-large-size--10-of-12">
+                                            <div class="slds-tile slds-tile--board">
+                                                <div class="slds-text-heading--medium">{!policyRequest.name}</div>
+                                                <div class="slds-text-heading--label-normal">{!policyRequest.Policy_Owner__r.name} · {!policyRequest.Request_Type__c} · {!policyRequest.Request_Status__c} · <apex:outputText value="{0, date, MM'/'dd'/'yyyy}">
+                                                <apex:param value="{!policyRequest.AgentOne__Request_Date__c}" />
+                                            </apex:outputText></div>
+                                            </div>
+                                        </div>
+                                        <div class="slds-m-top--xx-small slds-col slds-col--padded slds-size--1-of-2 slds-medium-size--1-of-6 slds-large-size--2-of-12">
+                                            <button class="slds-button slds-button--neutral" id="policy-request-select-{!policyRequest.id}" onclick="selectPolicyRequestClick('{!JSENCODE(policyRequest.id)}')">{!$Label.LBL_Select}</button>
+                                        </div>
+                                    </div>
+                                </li>
+                            </apex:repeat>
+
+                        </ul>
+                    </div>
+                    <div class="slds-container--center slds-container--medium slds-m-top--large slds-modal__footer">
+                        <button class="slds-button slds-button--neutral" onclick="cancelClick('{!JSENCODE(retUrl)}')">{!$Label.LBL_Cancel}</button>
+                        <button id="start-selected-policy-request" class="slds-button slds-button--neutral slds-button--brand" disabled="true" onclick="saveClick()">{!$Label.LBL_Open}</button>
+                    </div>
+                </apex:outputPanel>
+                <apex:outputPanel rendered="{!policyRequests.size == 0}">
+                    <div>
+                      <div aria-hidden="false" aria-labelledby="prompt-heading-id" aria-describedby="prompt-message-wrapper" role="alertdialog" class="slds-modal slds-modal--prompt slds-fade-in-open">
+                        <div class="slds-modal__container slds-modal--prompt" role="document" id="prompt-message-wrapper">
+                          <div class="slds-modal__header slds-theme--info slds-theme--alert-texture">
+                            <h2 class="slds-text-heading--medium" id="prompt-heading-id">{!$Label.LBL_Notification}</h2>
+                          </div>
+                          <div class="slds-modal__content slds-p-around--medium">
+                            <div>
+                              <apex:outputPanel rendered="{!isFromPolicy == true}">
+                                <p>{!$Label.agentone__msg_policy_request_inactive_policy}</p>
+                              </apex:outputPanel>
+                              <apex:outputPanel rendered="{!isFromPolicy == false}">
+                                <p>{!$Label.agentone__msg_policy_request_inactive_policy_for_client}</p>
+                              </apex:outputPanel>
+                            </div>
+                          </div>
+                          <div class="slds-modal__footer slds-theme--default">
+                            <button class="slds-button slds-button--neutral" onclick="cancelClick('{!JSENCODE(retUrl)}')">Ok</button>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="slds-backdrop slds-backdrop--open"></div>
+                    </div>
+                </apex:outputPanel>
+            </apex:outputPanel>
+
+            <!-- The Modal -->
+
+        </div>
+    </div>
+
+    <!-- End Default Content REMOVE THIS -->
+
+    <script>
+        var selectedPolicyRequest = {
+            id: -1
+        }
+
+        var isSF1 = ((typeof sforce != 'undefined') && (sforce != null));
+
+        function selectPolicyRequestClick(id) {
+
+            //do nothing if the same policy is selected
+            if(selectedPolicyRequest.id === id) {
+                return;
+            }
+
+            var oldSelectedPolicyRequestId = selectedPolicyRequest.id;
+
+            selectedPolicyRequest.id = id;
+
+            document.getElementById("start-selected-policy-request").disabled = false;
+            var policySelectButtonEle = document.getElementById("policy-request-select-" + id);
+            var policyItemEle = document.getElementById("policy-request-" + id);
+            policySelectButtonEle.innerHTML = "Selected";
+
+            policyItemEle.className += " highlight";
+            policySelectButtonEle.className += " policy-request-select-button";
+
+
+            //unselect the old policy button after selecting a new policy
+            if(oldSelectedPolicyRequestId !== -1) {
+                document.getElementById("policy-request-select-" + oldSelectedPolicyRequestId).innerHTML = "Select";
+
+                var OldPolicyItemEle = document.getElementById("policy-request-" + oldSelectedPolicyRequestId);
+                var OldPolicySelectButtonEle = document.getElementById("policy-request-select-" + oldSelectedPolicyRequestId);
+
+                OldPolicyItemEle.className = OldPolicyItemEle.className.replace( /(?:^|\s)highlight(?!\S)/g , '' );
+                OldPolicySelectButtonEle.className = OldPolicySelectButtonEle.className.replace( /(?:^|\s)policy-request-select-button(?!\S)/g , '' );
+            }
+        }
+
+        function saveClick() {
+          //only do the action if there is one policy selected
+          if(selectedPolicyRequest.id !== -1) {
+              //check if the selected policy is inactive or deleted before starting PHS
+              Visualforce.remoting.Manager.invokeAction(
+                '{!$RemoteAction.PolicyRequestController.checkPolicyRequestStatus}',
+                selectedPolicyRequest.id,
+                function(result, event){
+                  if (event.status) {
+                    console.log("status: ", event.status);
+                    console.log("result: ", result);
+                    if(result) {
+                      selectedPolicyRequestAction(selectedPolicyRequest.id);
+                    } else {
+                      //display warning modal if selected policy is inactive or deleted
+                      var phsWarningModal = document.getElementById('policy-request-warning-modal');
+                      phsWarningModal.style.display = "block";
+                    }
+                  } else if (event.type === 'exception') {
+                    console.log('error!!!');
+                  } else {
+                    console.log(event.message);
+                  }},
+                {escape: false});
+
+
+
+              // PolicyRequestController.PolicyRequestController(
+              //   selectedPolicyRequest.id,
+              //   function(result, event){
+              //     if (event.status) {
+              //       console.log("status: ", event.status);
+              //       console.log("result: ", result);
+              //       if(result) {
+              //         selectedPolicyRequestAction(selectedPolicyRequest.id);
+              //       } else {
+              //         //display warning modal if selected policy is inactive or deleted
+              //         var phsWarningModal = document.getElementById('policy-request-warning-modal');
+              //         phsWarningModal.style.display = "block";
+              //       }
+              //     } else if (event.type === 'exception') {
+              //       console.log('error!!!');
+              //     } else {
+              //       console.log(event.message);
+              //     }},
+              //   {escape: false});
+          }
+        }
+
+        function cancelClick(retUrl) {
+           if (isSF1) {
+               sforce.one.back();
+           } else {
+               window.location.href = retUrl;
+           }
+           // console.log('redirect back: ', retUrl);
+           // window.location.href = retUrl;
+        }
+    </script>
+    </html>
+</apex:page>

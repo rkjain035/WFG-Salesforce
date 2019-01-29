@@ -1,0 +1,636 @@
+<apex:page >
+<!--
+
+<apex:page standardController="InsuranceCase__c" extensions="LaunchCaseToolByProductController" id="thePage">
+  <script>
+    var lobs = [];
+    var productTypes = [];
+    var toolCfgs = [];
+    var tools = [];
+    var isSF1 = false;
+    
+    if ( (typeof sforce != 'undefined') && (sforce != null) )
+    	isSF1 = true;
+
+    var previousOnload = window.onload;
+
+    window.onload = function() {
+    if (previousOnload)
+    previousOnload();
+    
+    lobs = JSON.parse(htmlDecode('{!JSENCODE(HTMLENCODE(LineOfBusinesses))}'));
+    productTypes = JSON.parse(htmlDecode('{!JSENCODE(HTMLENCODE(productTypes))}'));
+    
+    toolCfgs = JSON.parse(htmlDecode('{!JSENCODE(HTMLENCODE(productTools))}'));
+    tools = JSON.parse(htmlDecode('{!JSENCODE(HTMLENCODE(InsuranceTools))}'));
+
+    refreshLobs(htmlDecode('{!JSENCODE(HTMLENCODE(selectedLobVal))}'));
+    refreshProductTypes(htmlDecode('{!JSENCODE(HTMLENCODE(selectedProductTypeVal))}'));
+    refreshTools(htmlDecode('{!JSENCODE(HTMLENCODE(selectedToolVal))}'));
+
+    if (document.getElementById('{!JSENCODE(HTMLENCODE($Component.theForm.afTxtPi))}') != null) {
+    document.getElementById('{!JSENCODE(HTMLENCODE($Component.theForm.afTxtPi))}').readOnly = true;
+    document.getElementById('{!JSENCODE(HTMLENCODE($Component.theForm.afTxtPi))}').style.cssText = "border:1px solid;border-color:gray;background-color:white;padding:2px;";
+    }
+    }
+    
+    /*
+    * function to decode encoded parameters
+    */
+    function htmlDecode(input){
+        var e = document.createElement('div');
+        e.innerHTML = input;
+        return e.childNodes.length === 0 ? "" : e.childNodes[0].nodeValue;
+    }
+
+    /*
+    *
+    */
+    function refreshLobs(selectedVal) {
+    var ddlLob = document.getElementById('{!JSENCODE(HTMLENCODE($Component.theForm.ddlLOB))}');
+    var ddlPt = document.getElementById('{!JSENCODE(HTMLENCODE($Component.theForm.ddlProductType))}');
+    ddlLob.innerHTML = '';
+    if (lobs.length == 0) ddlLob.disabled = true;
+    else {
+    var selected = false;
+    for (var i = 0; i < lobs.length; i++) {
+                    var option = document.createElement('option');
+                    option.text = lobs[i].name;
+                    option.value = lobs[i].Id;
+                    ddlLob.add(option);     
+                    if (selectedVal == option.value) {
+                        selected = true;
+                        option.selected = true;
+                    }   
+                }
+                
+                if (!selected) ddlLob.selectedIndex = -1;
+            }
+            
+            if (selectedVal !== '' && ddlLob.value === selectedVal) {
+    ddlLob.disabled = true;
+    ddlPt.disabled = true;
+    }
+    else {
+    ddlLob.disabled = false;
+    ddlPt.disabled = false;
+    }
+    }
+
+    /*
+    *
+    */
+    function refreshProductTypes(selectedVal) {
+    var ddlLob = document.getElementById('{!JSENCODE(HTMLENCODE($Component.theForm.ddlLOB))}');
+    var ddlPt = document.getElementById('{!JSENCODE(HTMLENCODE($Component.theForm.ddlProductType))}');
+    ddlPt.innerHTML = '';
+
+    if (ddlLob.value != null && ddlLob.value != '') {
+    var selected = false;
+    for (var i = 0; i < productTypes.length; i++) {
+                    if (ddlLob.value == productTypes[i].lobId) {
+                        var option = document.createElement('option');
+                        option.text = productTypes[i].name;
+                        option.value = productTypes[i].Id;
+                        ddlPt.add(option);          
+                        if (selectedVal == option.value) {
+                            selected = true;
+                            option.selected = true;
+                        }   
+                    }
+                }
+                if (!selected) ddlPt.selectedIndex = -1;
+            } 
+            
+            ddlPt.disabled = ddlPt.length == 0;
+            if (ddlPt.length == 0)
+                refreshTools('{!JSENCODE(HTMLENCODE(selectedToolVal))}');
+        }
+        
+        /*
+         *
+         */
+        function refreshTools(selectedVal) {
+            var ddlLob = document.getElementById('{!JSENCODE(HTMLENCODE($Component.theForm.ddlLOB))}');
+            var ddlPt = document.getElementById('{!JSENCODE(HTMLENCODE($Component.theForm.ddlProductType))}');    
+            var ddlTool = document.getElementById('{!JSENCODE(HTMLENCODE($Component.theForm.ddlTools))}');
+            
+            var tools = [];
+            ddlTool.innerHTML = '';
+            if (ddlPt.length == 0 || (ddlPt.value != null && ddlPt.value != '')) {
+    for (var i = 0; i < toolCfgs.length; i++) {
+                    var tool = toolCfgs[i];
+                    var matchedTool = null;
+                    if (tool.productTypeId != null && tool.productTypeId != '') {
+    if (tool.productTypeId === ddlPt.value)
+    matchedTool = tool;
+    }
+    else if (tool.lobId === ddlLob.value) {
+    matchedTool = tool;
+    }
+
+    //                  alert(tool.productTypeId + ', ' + ddlPt.value + ', ' + tool.lobId + ', ' + ddlLob.value); // + matchedTool == null ? '' : matchedTool.toolDisplayName);
+    if (matchedTool != null) {
+    tools.push(matchedTool);
+    }
+    }
+    }
+    tools.sort(function(x, y) {
+    return x.displayOrder - y.displayOrder;
+    });
+
+    var selected = false;
+    for (var i = 0; i < tools.length; i++) {
+                matchedTool = tools[i];
+                var option = document.createElement('option');
+                option.text = matchedTool.toolDisplayName;
+                option.value = matchedTool.tool;
+                ddlTool.add(option);            
+                if (selectedVal == option.value) {
+                    selected = true;
+                    option.selected = true;
+                }   
+            }
+            if (!selected) ddlTool.selectedIndex = -1;
+            
+//          alert(selectedVal !== '' && selectedVal != null && selectedVal == ddlTool.value);
+    if (ddlTool.length == 1 && ddlTool.value === '')
+    ddlTool.selectedIndex = 0;
+    ddlTool.disabled = ddlTool.length == 0 || (selectedVal !== '' && selectedVal != null && selectedVal == ddlTool.value);
+
+    setBtnStatus();
+    }
+
+
+    /*
+    * Update the page sub title with the new selected Primary insured contact(person account) name
+    */
+    function onPiChange(txtPi) {
+    document.getElementById('pageSubTitle').innerHTML = txtPi.value + "<span class='titleSeparatingColon'>:</span>";
+    document.getElementById('{!JSENCODE(HTMLENCODE($Component.theForm.afTxtCaseName))}').value = htmlDecode('{!JSENCODE(HTMLENCODE($Label.TXT_CaseFor_Template))}'.replace('{0}', txtPi.value));
+    return false;
+    }
+
+
+    /*
+    *
+    */
+    function onLobChange() {
+    refreshProductTypes('{!JSENCODE(HTMLENCODE(selectedProductTypeVal))}');
+    refreshTools('{!JSENCODE(HTMLENCODE(selectedToolVal))}');
+
+    return false;
+    }
+
+    /*
+    *
+    */
+    function onProductTypeChange() {
+    refreshTools('{!JSENCODE(HTMLENCODE(selectedToolVal))}');
+
+    return false;
+    }
+
+    /*
+    *
+    */
+    function onToolChange() {
+    setBtnStatus();
+
+    return false;
+    }
+
+    /*
+    * Enable/disable button or controls depending on the status
+    */
+    function setBtnStatus() {
+    var ddlPt = document.getElementById('{!JSENCODE(HTMLENCODE($Component.theForm.ddlProductType))}');
+    var ddlTool = document.getElementById('{!JSENCODE(HTMLENCODE($Component.theForm.ddlTools))}');
+    var btnLaunch = document.getElementById('{!JSENCODE(HTMLENCODE($Component.theForm.btnLaunch))}');
+    var btnSave = document.getElementById('{!JSENCODE(HTMLENCODE($Component.theForm.btnSave))}');
+    if ('{!JSENCODE(HTMLENCODE(phase))}' === '') {
+    // No phase, no tool will be launched. always enable the save button
+    disableButton(btnSave, false);
+    }
+    else {
+    disableButton(btnLaunch, ddlTool.value == null || ddlTool.value == '');
+    if (ddlTool.value == null || ddlTool.value == '') {
+    disableButton(btnLaunch, true); // always disable launch button when there is no tool selected
+    }
+
+    if ('{!JSENCODE(HTMLENCODE(Id))}' !== '') {
+    if ('{!JSENCODE(HTMLENCODE(selectedProductTypeVal))}' === '') {
+    // product type and LOB is not selected yet for this case, allow the case to be saved
+    disableButton(btnSave, btnLaunch.disabled == false);
+    }
+    else
+    //disableButton(btnSave, true);
+    // TK - temp enabled
+    disableButton(btnSave, false);
+    }
+    else {
+    // TK - temp enabled
+    //disableButton(btnSave, ddlPt.value === '' || ddlTool.length !== 0);
+    disableButton(btnSave, false);
+    }
+    }
+    }
+
+    /*
+    *
+    */
+    function validate() {
+    var hasError = false;
+    var requiredMsg = '{!$Label.MSG_Err_MustEnterValue}';
+    // Check required field
+    if ('{!JSENCODE(HTMLENCODE(Id))}' === '') {
+    // new case
+    if (document.getElementById('{!$Component.theForm.afTxtPi}' + '_lkid').value.substring(0, 3) === '000') {
+    hasError = true;
+    document.getElementById('errPi').innerHTML = requiredMsg;
+    } else
+    document.getElementById('errPi').innerHTML = '';
+    if (document.getElementById('{!$Component.theForm.afTxtCaseName}').value === '') {
+    hasError = true;
+    document.getElementById('errCase').innerHTML = requiredMsg;
+    } else
+    document.getElementById('errCase').innerHTML = '';
+    }
+    if (document.getElementById('{!$Component.theForm.ddlLOB}').value === '') {
+    hasError = true;
+    document.getElementById('errLob').innerHTML = requiredMsg;
+    }else
+    document.getElementById('errLob').innerHTML = '';
+
+    if (document.getElementById('{!$Component.theForm.ddlProductType}').length > 0 && document.getElementById('{!$Component.theForm.ddlProductType}').value === '') {
+    hasError = true;
+    document.getElementById('errPt').innerHTML = requiredMsg;
+    } else
+    document.getElementById('errPt').innerHTML = '';
+
+    if (hasError) {
+    document.getElementById('errDiv_ep').innerHTML = '{!$Label.MSG_Err_InvalidData}';
+    }
+    else
+    document.getElementById('errDiv_ep').innerHTML = '';
+
+
+    return hasError;
+    }
+
+    /*
+    *
+    */
+    function doSave(launchTool) {
+    if (validate()) return false;
+    var enId = '';
+    var enName = '';
+
+    if ('{!Id}' === '') {
+    enId = document.getElementById('{!$Component.theForm.afTxtPI}' + '_lkid').value;
+    enName = 'Contact';
+    }
+    else {
+    enId = '{!JSENCODE(HTMLENCODE(Id))}';
+    enName = 'InsuranceCase';
+    }
+
+    var caseName = '{!Id}' === '' ? document.getElementById('{!$Component.theForm.afTxtCaseName}').value : '{!JSENCODE(InsuranceCase__c.Name)}';
+    var args = [
+    '{!JSENCODE(HTMLENCODE(phase))}',
+    enName,
+    enId,
+    caseName,
+    document.getElementById('{!$Component.theForm.ddlLOB}').value,
+    document.getElementById('{!$Component.theForm.ddlProductType}').value,
+    document.getElementById('{!$Component.theForm.ddlTools}').value
+    ];
+
+    var remoteFunc;
+
+    if ('{!Id}' !== '') {
+    remoteFunc = '{!$RemoteAction.LaunchCaseToolByProductController.updateInsuranceCase}';
+    } else {
+    remoteFunc = '{!$RemoteAction.LaunchCaseToolByProductController.createInsuranceCase}';
+
+    }
+
+    Visualforce.remoting.Manager.invokeAction(
+    remoteFunc,
+    args,
+    function(result, event) {
+    if (event.status) {
+    if (!launchTool) {
+    if ('{!JSENCODE(HTMLENCODE(phase))}' == 'Illustration') {
+
+    // Open Illustration New screen with fields filled in.
+    var illustrationEditPage = '/' + '{!JSENCODE(HTMLENCODE(illustrationObjectCode))}' + '/e';
+
+    // Primary Insured/Annuitant Contact
+    if (document.getElementById('{!$Component.theForm.afTxtPI}') != null) {
+    illustrationEditPage += '?CF{!JSINHTMLENCODE(insuredNameFieldId)}=' + document.getElementById('{!JSENCODE(HTMLENCODE($Component.theForm.afTxtPI))}').value;
+    } else {
+    illustrationEditPage += '?CF{!JSINHTMLENCODE(insuredNameFieldId)}=' + result["{!JSENCODE(HTMLENCODE($ObjectType.InsuranceCase__c.fields.Contact__c.relationshipName))}"].Name;
+    }
+    illustrationEditPage += '&CF{!JSINHTMLENCODE(insuredNameFieldId)}_lkid=' + result["{!$ObjectType.InsuranceCase__c.fields.Contact__c.name}"];
+
+    // InsuranceCase
+    illustrationEditPage += '&CF{!JSENCODE(HTMLENCODE(insuranceCaseFieldId))}='+ result.Name;
+    illustrationEditPage += '&CF{!JSENCODE(HTMLENCODE(insuranceCaseFieldId))}_lkid=' + result.Id;
+
+    // Illustration Insurance Tool Name
+    // illustrationEditPage += '&{!JSENCODE(HTMLENCODE(illustrationInsuranceToolFieldId))}='+ result.Illustration_Tool__c;
+
+    // Product Type
+    var productType = document.getElementById('{!JSENCODE(HTMLENCODE($Component.theForm.ddlProductType))}');
+    var productTypeText = productType.options[productType.selectedIndex].text;
+
+    illustrationEditPage += '&CF{!JSENCODE(HTMLENCODE(productTypeFieldId))}=' + productTypeText;
+    illustrationEditPage += '&CF{!JSENCODE(HTMLENCODE(productTypeFieldId))}_lkid=' + result["{!$ObjectType.InsuranceCase__c.fields.Product_Type__c.name}"];
+
+    // Return URL
+    illustrationEditPage += '&saveURL=%2F' + result.Id;
+    illustrationEditPage += '&retURL=%2F' + result.Id;
+
+    if (isSF1)
+    	sforce.one.navigateToURL(illustrationEditPage);
+    else
+    	window.parent.location = illustrationEditPage;
+
+    } else {
+    if (isSF1)
+    sforce.one.navigateToSObject(result.Id);
+    else
+    window.parent.location = '/' + result.Id;
+    }
+
+    }
+    else {
+    var toolName = '';
+    var newWindow = false;
+    if ('{!JSENCODE(HTMLENCODE(phase))}'.toLowerCase() === 'application') {
+    toolName = result["{!$ObjectType.InsuranceCase__c.fields.Application_Tool__c.name}"];
+    newWindow = result["{!$ObjectType.InsuranceCase__c.fields.ApplicationTool_NewWindow__c.name}"];
+    }
+    else if ('{!JSENCODE(HTMLENCODE(phase))}'.toLowerCase() === 'illustration') {
+    toolName = result["{!$ObjectType.InsuranceCase__c.fields.Illustration_Tool__c.name}"]; // typeof(result.Illustration_Tool__c) === 'undefined' ? result.AgentOne__Illustration_Tool__c : result.Illustration_Tool__c;
+    newWindow = result["{!$ObjectType.InsuranceCase__c.fields.IllustrationTool_NewWindow__c.name}"] // typeof(result.IllustrationTool_NewWindow__c) === 'undefined' ? result.AgentOne__IllustrationTool_NewWindow__c : result.IllustrationTool_NewWindow__c;
+    }
+    var url = '{!URLFOR($Page.ApplicationToolsDispatcher)}';
+    if (url.indexOf('?') == -1)
+    url = url + '?id=' + result.Id + '&entity=InsuranceCase&tool=' + toolName + '&phase=' + '{!JSENCODE(HTMLENCODE(phase))}';
+    else    // sforce one added ?isdtp=1 to the url
+    url = url + '&id=' + result.Id + '&entity=InsuranceCase&tool=' + toolName + '&phase=' + '{!JSENCODE(HTMLENCODE(phase))}';
+    if (newWindow) {
+    	var tool = null;
+    	for (var i = 0; i < tools.length; i++) {
+        	if (tools[i].name === toolName) {
+            	tool = tools[i];
+                break;
+            }
+        }
+        var win = null;
+        var specs = 'resizable=yes,scrollbars=yes';
+        
+        if (tool != null) {
+        	if (typeof(tool.width) !== 'undefined' && tool.width != null) specs = specs + ',width=' + tool.width;
+    	else specs = specs + ',width=600';
+    		if (typeof(tool.height) !== 'undefined' && tool.height != null) specs = specs + ',height=' + tool.height;
+    	}
+    	
+    	// if( (typeof sforce != 'undefined') && (sforce != null) ) {
+    	if (isSF1) {
+    		// check if ipad or native app on ipad
+    		if (navigator.userAgent.indexOf('Salesforce') != -1)
+    			sforce.one.navigateToURL(url);
+    		else { 
+    			if (specs == '') spec = 'fullscreen=yes';
+    		// comment out open in new window
+    			win = window.open(url, toolName, specs);
+    			sforce.one.navigateToSObject(result.Id);
+    		}
+    	}
+    else {
+    //win = window.open(url, toolName, specs);
+    win = window.open(url, '', specs);//IE does not support middle argument.
+    window.parent.location = '/' + result.Id; // Redirect to case window
+    }
+    if (win != null) win.focus();
+    }
+    else {
+    // if( (typeof sforce != 'undefined') && (sforce != null) ) {
+    if (isSF1) {
+    sforce.one.navigateToURL(url);
+    }
+    else
+    window.parent.location = url;
+    }
+    }
+    } else if (event.type === 'exception') {
+    // event.where, event.message
+    document.getElementById('errDiv_ep').innerHTML = event.message;
+    } else {
+    // event.message
+    document.getElementById('errDiv_ep').innerHTML = event.message;
+    }
+    },
+    {escape: true}
+    );
+    return false; // no postback from the button click
+    }
+
+    /*
+    *
+    */
+    function save() {
+    doSave(false);
+    return false;
+    }
+
+    /*
+    *
+    */
+    function saveAndLaunch() {
+    if(document.getElementById('{!$Component.theForm.ddlTools}').value != '') {
+
+    // Check for OS version and resolution compatibility for the selected tool
+    var scale = window.devicePixelRatio || window.screen.deviceXDPI / window.screen.logicalXDPI;
+    var screenWidth = screen.width;
+    var screenHeight = screen.height;
+    if(scale) {
+    screenWidth = screenWidth * scale;
+    screenHeight = screenHeight * scale;
+    }
+    Visualforce.remoting.Manager.invokeAction(
+    '{!$RemoteAction.LaunchCaseToolByProductController.checkCompatibility}',
+    navigator.userAgent,
+    screenWidth+'x'+screenHeight,
+    document.getElementById('{!$Component.theForm.ddlTools}').value,
+    function(result, event) {
+
+    if (result[0] == 'y') {
+    doSave(true);
+    } else if (result[0] == 'n') {
+    var errMsg = result[3];
+    document.getElementById('errDiv_ep').innerHTML = errMsg;
+    } else {
+    var errMsg = result[3];
+    document.getElementById('errDiv_ep').innerHTML = errMsg;
+    }
+    //return false;
+    }
+    );
+    }
+
+    return false; // no postback from the button click
+    }
+
+    /*
+    *
+    */
+    function disableButton(btn, disabled) {
+    btn.disabled = disabled;
+    btn.className = disabled ? "btnDisabled" : "btn";
+    }
+
+    /*
+    *
+    */
+    function cancel() {
+    var qryStr = window.parent.location.search.substring(1);
+    var returnUrl = '', i, l, temp;
+    var queries = qryStr.split('&');
+    for (i = 0, l = queries.length; i < l; i++) {
+                temp = queries[i].split('=');
+                if (temp[0] === 'retURL') {
+                    returnUrl = decodeURIComponent(temp[1]);
+                    break; 
+                }
+            }
+
+
+            if (returnUrl !== '')
+                window.parent.location = returnUrl;
+            else if ('{!Id}' !== '')
+                window.parent.location = '/{!JSENCODE(HTMLENCODE(Id))}'; // Redirect to case window
+            else if ('{!JSENCODE(HTMLENCODE(entityId))}' !== '')
+                window.parent.location = '/{!JSENCODE(HTMLENCODE(entityId))}'; // Redirect to case window
+            else
+                window.parent.location = '/';
+                
+            return false;
+        }
+
+
+
+  </script>
+  <div class="bPageTitle">
+    <div class="ptBody">
+      <div class="content">
+        <img src="{!URLFOR($Resource.InsuranceCase_eApp_Icon)}" alt="Insurance Tool" class="pageTitleIcon" title="Insurance Tool" />
+        <h1 class="pageTitle" id="pageSubTitle">
+          {!subPageTitle}
+          <span class="titleSeparatingColon">:</span>
+        </h1>
+        <h2 class="pageDescription">{!pageTitle}</h2>
+        <div class="blank">&nbsp;</div>
+      </div>
+      <div class="links">
+        <a href="" title="{!$Label.TXT_Help_for_this_Page_NewWindow}">
+          <span class="helpLink">{!$Label.TXT_Help_for_this_Page}</span>
+          <img src="/s.gif" class="helpIcon" />
+        </a>
+      </div>
+    </div>
+    <div class="ptBreadcrumb">
+    </div>
+  </div>
+  <apex:form id="theForm">
+
+    <div class="bPageBlock">
+      <div class="pbError" id='errDiv_ep'></div>
+      <div class="pbSubheader  first" id="head_1_ep" style="padding:6px 8px;background-color:#daeeee;">
+        <span class="pbSubExtra">
+          <span class="requiredLegend" style="background-color:#daeeee;">
+            <span class="requiredExampleOuter">
+              <span class="requiredExample">&nbsp;</span>
+            </span>
+            <span class="requiredMark">*</span>
+            <span class="requiredText" style="background-color:#daeeee;"> = Required Information</span>
+          </span>
+        </span>
+      </div>
+      <div class="pbBody">
+        <div class="pbSubsection">
+          <table class="detailList" border="0" cellpadding="0" cellspacing="0">
+            <tbody>
+              <tr>
+                <td class="labelCol">{!$ObjectType.InsuranceCase__c.fields.Contact__c.label}</td>
+                <td class="dataCol">
+                  <div class="requiredInput">
+                    <div class="requiredBlock"></div>
+                    <apex:inputField id="afTxtPI" value="{!InsuranceCase__c.Contact__c}" onchange="onPiChange(this);" required="false" rendered="{!Id == ''}" />
+                    <div class="errorMsg" id="errPi"></div>
+                  </div>
+                  <apex:outputField id="afLblPI" value="{!InsuranceCase__c.Contact__c}" rendered="{!Id != ''}"/>
+                </td>
+              </tr>
+              <tr>
+                <td class="labelCol">{!$ObjectType.InsuranceCase__c.fields.Name.label}</td>
+                <td class="dataCol">
+                  <div class="requiredInput">
+                    <div class="requiredBlock"></div>
+                    <apex:inputField id="afTxtCaseName" value="{!InsuranceCase__c.Name}" rendered="{!Id == ''}"/>
+                    <div class="errorMsg" id="errCase"></div>
+                  </div>
+                  <apex:outputField id="afLblCaseName" value="{!InsuranceCase__c.Name}" rendered="{!Id != ''}"/>
+                </td>
+              </tr>
+              <tr>
+                <td class="labelCol">{!$ObjectType.Insurance_Product_Type__c.fields.Line_of_Business__c.label}</td>
+                <td class="dataCol">
+                  <div class="requiredInput">
+                    <div class="requiredBlock"></div>
+                    <apex:selectList multiselect="false" id="ddlLOB" value="{!selectedLobVal}" size="1" style="width:200px" onchange="return onLobChange();">
+                    </apex:selectList>
+                    <div class="errorMsg" id="errLob"></div>
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <td class="labelCol">{!$ObjectType.InsuranceCase__c.fields.Product_Type__c.label}</td>
+                <td class="dataCol">
+                  <div class="requiredInput">
+                    <div class="requiredBlock" style="visibility:hidden"></div>
+                    <apex:selectList multiselect="false" id="ddlProductType" value="{!selectedProductTypeVal}" size="1" style="width:200px" onchange="return onProductTypeChange();" disabled="true">
+                    </apex:selectList>
+                    <div class="errorMsg" id="errPt"></div>
+                  </div>
+                </td>
+              </tr>
+              <tr style="{!IF(phase=='', 'display:none', '')}">
+                <td class="labelCol">{!$Label.LBL_CSTOOL_InsuranceTool}</td>
+                <td class="dataCol">
+                  <apex:selectList multiselect="false" id="ddlTools" value="{!selectedToolVal}" size="1" style="width:200px" onchange="return onToolChange();" disabled="true">
+                  </apex:selectList>
+                </td>
+              </tr>
+              <tr>
+                <td class="labelCol" style='vertical-align:middle'>
+                  <apex:actionStatus id="ajaxMessage" startText="Please Wait..." StopText="" />
+                </td>
+                <td class="dataCol">
+                  <apex:commandButton id="btnLaunch" value="{!$Label.LBL_CSTOOL_Launch}" onclick="return saveAndLaunch();" disabled="true" rendered="{!phase!=''}"/>
+                  <apex:commandButton id="btnSave" value="{!IF(phase=='Illustration', $Label.LBL_CSTOOL_Save2, $Label.LBL_CSTOOL_Save)}" onclick="return save();" disabled="true"/>
+                  <apex:commandButton id="btnCancel" value="Cancel" onclick="return cancel();" disabled="false"/>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+  </apex:form>
+-->
+
+</apex:page>

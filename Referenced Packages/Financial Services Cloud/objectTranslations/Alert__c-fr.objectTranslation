@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Alerte</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Alertes</value>
+    </caseValues>
+    <fields>
+        <label>Compte</label>
+        <name>Account__c</name>
+        <relationshipLabel>Alertes</relationshipLabel>
+    </fields>
+    <fields>
+        <label>Actif</label>
+        <name>Active__c</name>
+    </fields>
+    <fields>
+        <label>Compte financier</label>
+        <name>FinancialAccount__c</name>
+        <relationshipLabel>Alertes</relationshipLabel>
+    </fields>
+    <fields>
+        <label>Description du message</label>
+        <name>MessageDescription__c</name>
+    </fields>
+    <fields>
+        <label>Message</label>
+        <name>Message__c</name>
+    </fields>
+    <fields>
+        <label>Priorité</label>
+        <name>Priority__c</name>
+        <picklistValues>
+            <masterLabel>High</masterLabel>
+            <translation><!-- High --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Low</masterLabel>
+            <translation><!-- Low --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Medium</masterLabel>
+            <translation><!-- Medium --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label>Sévérité</label>
+        <name>Severity__c</name>
+        <picklistValues>
+            <masterLabel>Error</masterLabel>
+            <translation><!-- Error --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Info</masterLabel>
+            <translation><!-- Info --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Warning</masterLabel>
+            <translation><!-- Warning --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label>ID du système source</label>
+        <name>SourceSystemId__c</name>
+    </fields>
+    <gender>Feminine</gender>
+    <nameFieldLabel>Nom de l&apos;alerte</nameFieldLabel>
+    <startsWith>Vowel</startsWith>
+</CustomObjectTranslation>

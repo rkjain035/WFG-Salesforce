@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fields>
+        <label>Attentes</label>
+        <name>Expectations__c</name>
+    </fields>
+    <fields>
+        <label>Foyer</label>
+        <name>Household__c</name>
+        <relationshipLabel>Activités</relationshipLabel>
+    </fields>
+    <fields>
+        <label>Étapes suivantes</label>
+        <name>NextSteps__c</name>
+    </fields>
+    <fields>
+        <label>Objectifs</label>
+        <name>Objectives__c</name>
+    </fields>
+    <fields>
+        <label>Examen</label>
+        <name>Regarding__c</name>
+        <picklistValues>
+            <masterLabel>Client Retention</masterLabel>
+            <translation><!-- Client Retention --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Onboarding</masterLabel>
+            <translation><!-- Onboarding --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Prospecting</masterLabel>
+            <translation><!-- Prospecting --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Service</masterLabel>
+            <translation><!-- Service --></translation>
+        </picklistValues>
+    </fields>
+</CustomObjectTranslation>

@@ -1,0 +1,121 @@
+<apex:page controller="AgentOne.ApplicationTemplateController" tabStyle="AgentOne__Inforce_Policy__c" sidebar="true" action="{!loadApplication}">
+
+
+<script>
+
+  var _isMobileDevice = (/iPhone|iPod|iPad|Android|BlackBerry/).test(navigator.userAgent);
+
+
+  function openAppropriateWindows()  {
+    if (_isMobileDevice) {
+        if ({!isSF1NativeApp})
+        return;
+    }
+
+    // if we are supposed to open this in a new window
+    // then we will instead open the existing case in a new window - which kind of simulates opening this in a new window
+    if ( {!openAdditionalWindow} )  {
+
+        //if it is from SF1, open case in SF1 browser
+        if(_isMobileDevice && (typeof sforce != 'undefined') && (sforce != null) ) {
+            // Update to fix Knowledge # 000269064 - 
+            // new URL format for lightning experience and salesforce mobile app
+            // previously https://agentone-dev16-dev-ed.lightning.force.com/one/one.app#/sObject/a0VB0000000oykRMAQ/view
+            // var caseWindow = window.open('/one/one.app#/sObject/' + '{!JSINHTMLENCODE(newId)}' + '/view', '', '');
+            //
+            // now https://agentone-dev16-dev-ed.lightning.force.com/lightning/r/InsuranceCase__c/a0VB0000000oykRMAQ/view
+            // 
+            var caseWindow = window.open('/lightning/r/' + '{!$ObjectType.Inforce_Policy__c.name}' + '/' + '{!JSINHTMLENCODE(newId)}' + '/view', '', '');  
+           
+            caseWindow.blur();
+            window.focus();
+        } else {
+            var caseWindow = window.open('/' + '{!JSINHTMLENCODE(newId)}', '', 'alwaysLowered=true');
+            caseWindow.blur();
+            window.focus();
+        }
+    }
+  }
+
+
+  function setupApplicationTemplatePage()  {
+
+    // We will check if we need to modify the canvas scrolling
+    openAppropriateWindows();
+
+}
+
+
+</script>
+
+    <div class="agentone">
+    <div class="slds">
+
+    <!-- ERROR PANEL -->
+    <apex:outputPanel id="errorPanel" rendered="{!displayError}">
+       <apex:pageBlock >
+            <apex:pageMessage summary="{!dispatcherErrorMessage}" severity="warning" strength="3" >
+            </apex:pageMessage>
+        </apex:pageBlock>
+     </apex:outputPanel>
+
+
+
+    <!-- BEGIN OF AGENTONE HEADER -->
+    <apex:outputPanel rendered="{!displayheader}">
+
+      <apex:form style="width:100%;" >
+      <div class="bPageTitle">
+        <div class="ptBody">
+          <div class="content">
+            <img src="{!URLFOR($Resource.InforcePolicy_Icon)}" alt="{!$ObjectType.Inforce_Policy__c.Label}" class="pageTitleIcon" title="{!$ObjectType.Inforce_Policy__c.Label}" width="32" height="32"/>
+            <h1 class="pageType">
+              {!$ObjectType.Inforce_Policy__c.Label}
+              <span class="titleSeparatingColon">:</span>
+            </h1>
+            <h2 class="pageDescription">
+              <apex:outputLink value="/{!serviceId}" styleClass="headerLink">
+                {!newName}
+              </apex:outputLink>
+            </h2>
+            <div class="blank">&nbsp;</div>
+          </div>
+        </div>
+        <div class="ptBreadcrumb">
+            &nbsp;&#171;&nbsp;
+           <apex:commandLink value="{!returnTo}" action="{!returnToOriginatingPage}"></apex:commandLink>
+        </div>
+      </div>
+  </apex:form>
+
+
+
+     <apex:include id="PolicyAtAGlance" pageName="AgentOne__PolicyAtGlance" />
+
+
+      <apex:pageBlock mode="maindetail" rendered="{!accessAllowed == false}">
+        <div class="blank">&nbsp;</div>
+         <div class="content">{!accessErrorMessage}</div>
+        <apex:pageMessages />
+      </apex:pageBlock>
+
+      <div class="slds-m-bottom--medium">
+          &nbsp;
+      </div>
+    </apex:outputPanel>
+
+    </div>
+    </div>
+
+
+    <!-- BEGIN OF CANVAS CONTAINER  -->
+
+
+  <apex:form style="width:100%;" >
+     <apex:outputPanel >
+        <apex:canvasApp scrolling="{!canvasScrolling}" applicationName="{!tool.AgentOne__URL__c}" namespacePrefix=""
+                        width="{!tool.AgentOne__Width__c}" maxHeight="infinite" height="{!tool.AgentOne__Height__c}" parameters="{!canvasParameter}"
+                        rendered="{!accessAllowed}"  onCanvasAppLoad="setupApplicationTemplatePage" />
+    </apex:outputPanel>
+   </apex:form>
+</apex:page>

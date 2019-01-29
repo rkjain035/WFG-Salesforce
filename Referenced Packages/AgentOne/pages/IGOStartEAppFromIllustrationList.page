@@ -1,0 +1,39 @@
+<apex:page standardController="AgentOne__Illustration__c"  extensions="AgentOne.IGOStartEAppFromIllustrationController" recordSetVar="illustrations" showQuickActionVfHeader="False" action="{!startEApp}">
+	<html xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+        <apex:stylesheet value="{!URLFOR($Resource.AgentOne__SLDS, 'assets/styles/salesforce-lightning-design-system-vf.min.css')}" />
+        <apex:stylesheet value="{!URLFOR($Resource.AgentOne__AgentOneSLDS, 'agentone-slds.css')}" />
+
+        <div class="agentone">
+            <div class="slds">
+                <apex:outputPanel rendered="{!ISBLANK(pageMessage) == false}">
+                  <div>
+                    <div role="dialog" tabindex="-1" aria-labelledby="header43" class="slds-modal slds-fade-in-open">
+                      <div class="slds-modal__container">
+                        <div class="slds-modal__header">
+                          <h2 id="header43" class="slds-text-heading--medium">Start E-App</h2>
+                        </div>
+                        <div class="slds-modal__content slds-p-around--medium">
+                          {!pageMessage}
+                        </div>
+                        <div class="slds-modal__footer">
+                          <button class="slds-button slds-button--neutral" onclick="cancelClick('{!JSENCODE(retUrl)}')">{!$Label.LBL_Ok}</button>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="slds-backdrop slds-backdrop--open"></div>
+                  </div>
+                </apex:outputPanel>
+            </div>
+        </div>
+        <script type="text/javascript">
+            var isSF1 = ((typeof sforce != 'undefined') && (sforce != null));
+            function cancelClick(retUrl) {
+               if (isSF1) {
+                   sforce.one.back();
+               } else {
+                   window.location.href = retUrl;
+               }
+            }
+        </script>
+    </html>
+</apex:page>

@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value><!-- ET4AE Private Settings --></value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value><!-- ET4AE Private Settings --></value>
+    </caseValues>
+    <fields>
+        <label><!-- Hours Until Next API User Failure Email --></label>
+        <name>Email_Expiration_Hours__c</name>
+    </fields>
+    <fields>
+        <help><!-- The timestamp of the most recently sent email indicating an issue with the API user integration credentials --></help>
+        <label><!-- Last Failed API User Tokens Email Sent --></label>
+        <name>Last_API_Email_Send__c</name>
+    </fields>
+    <fields>
+        <label><!-- TenantSpecificOAuthEndpoint --></label>
+        <name>TenantSpecificOAuthEndpoint__c</name>
+    </fields>
+    <gender><!-- Masculine --></gender>
+    <startsWith><!-- Consonant --></startsWith>
+</CustomObjectTranslation>

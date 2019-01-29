@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <columns>
+        <field>InsuranceCase__c$Name</field>
+    </columns>
+    <columns>
+        <field>InsuranceCase__c$Agent_Owner__c</field>
+    </columns>
+    <columns>
+        <field>InsuranceCase__c$Phase__c</field>
+    </columns>
+    <columns>
+        <field>InsuranceCase__c$Contact__c</field>
+    </columns>
+    <columns>
+        <field>InsuranceCase__c$InsuranceProduct__c</field>
+    </columns>
+    <columns>
+        <field>InsuranceCase__c$Days_Since_Last_Activity__c</field>
+    </columns>
+    <columns>
+        <field>InsuranceCase__c$LastModifiedDate</field>
+    </columns>
+    <description>All insurance cases in illustration phase</description>
+    <filter>
+        <criteriaItems>
+            <column>InsuranceCase__c$Phase__c</column>
+            <isUnlocked>false</isUnlocked>
+            <operator>equals</operator>
+            <value>Illustration</value>
+        </criteriaItems>
+        <language>en_US</language>
+    </filter>
+    <format>Tabular</format>
+    <name>Insurance Cases in Illustration Phase</name>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>All_Insurance_Cases__c</reportType>
+    <scope>organization</scope>
+    <showDetails>true</showDetails>
+    <timeFrameFilter>
+        <dateColumn>InsuranceCase__c$CreatedDate</dateColumn>
+        <interval>INTERVAL_CUSTOM</interval>
+    </timeFrameFilter>
+</Report>
